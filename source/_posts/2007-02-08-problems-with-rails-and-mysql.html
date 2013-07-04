@@ -1,0 +1,47 @@
+---
+layout: post
+title: Problems with Rails and MySQL
+tags:
+- fedora
+- mysql
+- rails
+---
+<p>
+I recently reinstalled my laptop with Fedora Core 6, and when I went to fiddle with my prototype Rails project, I found that nothing worked. I had a bunch of problems, and I thought I&#8217;d note down the solutions here, in case anyone else had the same problem. So, forgive me, it&#8217;s going to be techy for a while.
+</p>
+
+<p>
+First, the thing wouldn&#8217;t connect to the MySQL database at all, claiming that /tmp/mysql.sock didn&#8217;t exist. Odd. Well, not that odd, in fact, because the MySQL RPM for FC6 creates its socket in /var/lib/mysql/mysql.sock instead of /tmp/mysql.sock. So, the addition of a socket line to config/database.yml and we&#8217;re off again:
+</p>
+
+<p><code lang="strings_file" theme="zenburnesque">
+socket: /var/lib/mysql/mysql.sock
+</code></p>
+
+<p>
+Next problem: the thing is now connecting, but when I try to recreate the tables using rake db:migrate, it complains thusly:
+</p>
+
+<p><code lang="strings_file" theme="zenburnesque">
+Mysql::Error: Lost connection to MySQL server during query: SELECT version FROM schema_info
+</code></p>
+
+<p>
+Bugger. Turns out, after some web research, that Rails has changed to  new-style password authentication for MySQL. However, the FC6  MySQL installation hasn&#8217;t, in order to keep compatibility with older clients. Fair enough. Again, it&#8217;s a fairly simple fix. I had to change the appropriate setting from 1 to 0 in /etc/my.cnf:
+</p>
+
+<p><code lang="strings_file" theme="zenburnesque">
+old_passwords=0
+</code></p>
+
+<p>
+I was feeling good at this point, and restarted the MySQL server, ready for my Rails app to spring into life. Alas, no, same problem. However, resetting the MySQL password using mysqladmin sorted it all out, and the thing is now happy.
+</p>
+
+<p><code lang="strings_file" theme="zenburnesque">
+mysqladmin -u user -p password xxxxx
+</code></p>
+
+<p>
+If you&#8217;re having similar problems, I hope this helps!
+</p>

@@ -1,0 +1,23 @@
+---
+layout: post
+title: Adventures with GitHub
+tags:
+- git
+- github
+- mephisto
+---
+<p>
+While moving this site over to <a href="http://mephistoblog.com">Mephisto</a>, I had a problem with the asset system, in that while assets have a &#8220;title" field in the database, it&#8217;s not editable in the admin interface, or accessible in liquid templates. The fix was simple, just a couple of lines (once I found where to put them), but patching my local copy of Mephisto was somehow unsatisfying. Well, Mephisto is hosted on <a href="http://github.com">GitHub</a> these days, so it was time to dive in!
+</p>
+
+<p>
+Normally, the process of sending a patch to an open source project is <em>just</em> too laborious to bother with for small stuff. Check out the code, editing it, creating a patchfile, subscribing to the mailing list, introducing yourself, explaining the patch, and so on. However, following the <a href="http://railsontherun.com/2008/3/3/how-to-use-github-and-submit-a-patch">Rails on the Run GitHub tutorial</a>, I was done in 5 minutes, even accounting for learning a new version control tool!
+</p>
+
+<p>
+The way it works is just great - press the button to get your own fork, check it out, change the code, commit, and then press another button to send a &#8220;pull request" back to the main trunk. It really does make quite a difference - and if they don&#8217;t like my change, who cares? I now have my own version-controlled branch of Mephisto which I can use to manage my local copy, and make any other changes I feel like.
+</p>
+
+<p>
+Thanks, git (and specifically GitHub&#8217;s web toolset), for solving problems I never even really knew I had.
+</p>

@@ -1,0 +1,58 @@
+---
+layout: post
+title: Mocking Kernel#require
+tags:
+- amee
+- json
+- monkeypatching
+- ruby
+---
+<p>
+The other day, I remembered to add coverage analysis to my <a href="http://github.com/Floppy/amee-ruby">AMEE-Ruby</a> tests, using <a href="http://">rcov</a>. The results were pretty good - most of the code was already tested, except a few failure cases, and I quickly wrote some new tests to make sure those were working properly. One little bit of code stood out though. Because AMEE talks XML and JSON, my gem can use JSON, but only if the JSON gem is available on the system (XML support is built into core Ruby). Problem is, require calls throw errors if they fail, so I had to write some code to handle the load failure and carry on regardless. This is the code inside amee.rb:
+</p>
+
+<p>
+<code lang="ruby" theme="zenburnesque">
+begin
+  require 'json'
+rescue LoadError
+  nil
+end
+</code>
+</p>
+
+<p>
+Problem with this is that the gem is installed on my system, so the require never fails, and the rescue is never used. Rcov notices, and I can&#8217;t get to 100% coverage, which is <em>annoying</em>.
+</p>
+
+<p>
+So, mocking to the rescue. We have to make Kernel#rescue throw an error if we try to require &#8216;json&#8217;, even if the gem is installed. At first, I tried to use flexmock to do this, but couldn&#8217;t make it work - if anyone knows how, <em>please</em> tell me. My final approach was to monkeypatch Kernel#require inside my test so that require &#8216;json&#8217; (and only json) would fail:
+</p>
+
+<p>
+<code lang="ruby" theme="zenburnesque">
+it "should cope if json gem isn't available" do
+  # Monkeypatch Kernel#require to make sure that require 'json'
+  # raises a LoadError
+  module Kernel
+    def require_with_mock(string)
+      raise LoadError.new if string == 'json' 
+      require_without_mock(string)
+    end
+    alias_method :require_without_mock, :require 
+    alias_method :require, :require_with_mock
+  end
+  # Remove amee.rb from required file list so we can load it again
+  $".delete_if{|x| x.include? 'amee.rb'}
+  # Require file - require 'json' should throw a LoadError,
+  # but we should cope with it OK.
+  lambda {
+    require 'amee'
+  }.should_not raise_error
+end
+</code>
+</p>
+
+<p>
+We have to make a new require function, then use alias_method to rename the old one and install our new one in it&#8217;s place. Rails includes alias_method_chain to make this easier, but that&#8217;s not available in pure Ruby. Never mind. Once we&#8217;ve done the monkeypatch, we take amee.rb out of the $" array, which lists all the currently-required files, to make sure we can require it again, then simply run the require and make sure it catches the error that is thrown by our patched require. And the most satisfying part? The rescue is executed, the test works, and we get to 100% coverage. I&#8217;ve got a nice warm fuzzy feeling inside&#8230; mmmmmm.
+</p>

@@ -1,0 +1,47 @@
+---
+layout: post
+title: Sanitizing :limit and :offset
+tags:
+- limit
+- offset
+- rails
+- sanitize
+---
+<p>
+I have a need in the Green Thing Rails app to pass in limit and offset parameters to a find query, and these parameters come from the URL. For example:
+</p>
+
+<p>
+<code lang="ruby_on_rails" theme="zenburnesque">
+@examples = Example.find(:all, :limit =&gt; params[:limit], :offset =&gt; params[:offset])
+</code>
+</p>
+
+<p>
+This works fine, but is vulnerable to dodgy things making their way in through the parameters. Normally, to defend against SQL injection, you would use the array form of :conditions to sanitize the parameters, like so:
+</p>
+
+<p>
+<code lang="ruby_on_rails" theme="zenburnesque">
+@examples = Example.find(:all, :conditions =&gt; ["name LIKE ?", params[:name])
+</code>
+</p>
+
+<p>
+This is great for :conditions. However, you can&#8217;t use it with :limit and :offset, despite the fact that they are just as vulnerable to SQL injection. The trick I came up with is this. :limit and :offset are both integers, so simply force the conversion to an integer before using them (checking for nil first, of course):
+</p>
+
+<p>
+<code lang="ruby_on_rails" theme="zenburnesque">
+@examples = Example.find(:all, :limit =&gt; (params[:limit].nil? ? nil : params[:limit].to_i),
+                               :offset =&gt; (params[:offset].nil? ? nil : params[:offset].to_i))
+</code>
+</p>
+
+<p>
+This means that no nasty SQL can get in, because it won&#8217;t get through the integer conversion. Simple and effective. Probably blindingly obvious, but I didn&#8217;t find anything online to point me to this solution while I was looking around for :conditions-style sanitizing, so I thought I&#8217;d share.
+</p>
+
+<p>
+Of course, if I&#8217;ve missed something glaringly obvious, please let me know ;)
+</p>

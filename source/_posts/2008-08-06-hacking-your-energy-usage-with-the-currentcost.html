@@ -1,0 +1,23 @@
+---
+layout: post
+title: Hacking your energy usage with the CurrentCost
+tags:
+- amee
+- currentcost
+- energy
+- gem
+- github
+- meter
+- ruby
+---
+<p>
+The other day, I managed to get hold of a <a href="http://www.currentcost.com/">CurrentCost</a> energy monitor (available to buy from <a href="https://www.ecogadgetshop.co.uk/ProductDetails.aspx?ProductCode=Current%20Cost%20Device%20(TEST)&amp;Category=1">here</a>, or maybe from your electricity supplier). Now, the nice thing about this particular monitor (apart from the ton of information on-screen) is the fact that it has a serial output on the bottom, which you can (with <a href="http://rooreynolds.com/2008/07/06/current-cost-presentation-at-open-tech-2008/">a bit of hacking</a>) plug into your PC, and - bingo - lovely XML data!
+</p>
+
+<p>
+However, once you have it connected and spewing XML at you, you really need something to do with all that data. I don&#8217;t have anything big  written yet, but my first step towards making something useful is a Ruby gem, which is available from <a href="http://github.com/Floppy/currentcost-ruby/tree/master">GitHub</a>. So far it can only parse the XML data from the meter - direct access to the serial port is hopefully coming soon.
+</p>
+
+<p>
+In other news, the AMEE gem I started a while ago is still coming on. It can now use the XML and JSON interfaces, parse the whole Data API, and retrieve a list of Profiles. Not a bad start.
+</p>
