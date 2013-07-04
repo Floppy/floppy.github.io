@@ -1,0 +1,17 @@
+div.topbar p {
+	color: white;
+	
+}
+
+div.row {
+	margin-bottom: 20px;
+}
+
+div.span-one-third p {
+	text-align: justify;
+}
+
+div.span-one-third img {
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+}
