@@ -1,17 +1,23 @@
-div.topbar p {
-	color: white;
-	
+div.span-one-third {
+	width: 33%;
 }
 
-div.row {
-	margin-bottom: 20px;
+div.gallery div {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-div.span-one-third p {
+div.gallery p {
 	text-align: justify;
+  font-size: 14px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-div.span-one-third img {
+div.gallery img {
 	border-radius: 15px;
 	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
 }
