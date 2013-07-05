@@ -108,7 +108,7 @@ linkedin_user: floppy
 navigation:
 - text: Home
   url: /
-- text: Archives
+- text: Archive
   url: /blog/archives
 - text: Code
   url: /code
