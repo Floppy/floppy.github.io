@@ -100,3 +100,15 @@ google_analytics_tracking_id: UA-2310810-2
 facebook_like: false
 
 linkedin_user: floppy
+
+## Theme settings
+
+# navigation
+
+navigation:
+- text: Home
+  url: /
+- text: Archives
+  url: /blog/archives
+- text: Code
+  url: /code
