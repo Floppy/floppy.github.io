@@ -7,4 +7,5 @@ tags:
 <p>The problem comes if you do this in a single action with lots of different chained scopes to show different data. You end up with a whole bunch of SQL queries, which can get expensive. In the system I&#8217;m currently building, which includes geospatial queries, this gets far too slow to use. So, instead, let&#8217;s get one big list of objects and filter them in Ruby when we need them.</p>
 <p>Simple enough. The only thing is, the ActiveRecord chaining syntax is lovely. I don&#8217;t want to write tons of chained selects with blocks and all that faff. Instead, let&#8217;s extend Array to give us the syntax we like. The trick is to wrap an Array inside another class and then use method_missing to delegate. We then make sure that returned objects aren&#8217;t Arrays, but our new type instead.</p>
 <p>It&#8217;s best explained with the code:</p>
-<div class="gist"><a href="https://gist.github.com/3228297">https://gist.github.com/3228297</a></div>
+
+<script src="https://gist.github.com/Floppy/3228297.js"></script>
