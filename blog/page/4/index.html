@@ -9,7 +9,7 @@
   <meta name="author" content="James Smith">
 
   
-  <meta name="description" content="James Smith Building a better future out of code Nov 26th, 2010 Comments Francis Maude on the LRRA In 2006, I wrote to my MP about the Legislative &hellip;">
+  <meta name="description" content="James Smith Building a better future out of code Jun 8th, 2011 Comments Resolving a method_missing fight Recently, I was writing tests for a piece &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -126,6 +126,144 @@
   
 
 
+<i class="icon-calendar-empty"></i> <time datetime="2011-06-08T00:00:00+01:00" pubdate data-updated="true">Jun 8<span>th</span>, 2011</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2011/06/08/resolving-a-method_missing-fight/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2011/06/08/resolving-a-method_missing-fight/">Resolving a method_missing fight</a></h1>
+      <p>Recently, I was writing tests for a piece of code, and came up against some strange problems. The code talks to an external web service using RestClient (1.6.1), so of course the web service is mocked for the tests, in this case using Mocha (0.9.8).</p>
+<p class="western">The problem came when I tried to test failure modes; for instance, what happens when the service comes back with a 401 due to bad credentials? RestClient raises an exception for this containing the response, so the mock has to do the same.</p>
+
+<pre>request.stubs(:put).raises(RestClient::Unauthorized.new(<br/>  stub(:code =&gt; 401, :body =&gt; nil)<br/>)</pre>
+<p class="western">So far so good. The exception is raised, and all is well. The problem comes when we try to access the response code later on in our error-handling code:</p>
+
+<pre>rescue RestClient::Exception =&gt; e
+  puts e.response.code
+</pre>
+<p class="western">Seems reasonable, right? The response object should be a Mocha::Mock that responds to #code and gives back 401. Unfortunately not. We get a &#8216;stack too deep&#8217; error thrown inside a recursive method_missing call. Huh?</p>
+<p class="western">This really should work, so let&#8217;s take a look inside the gems. It turns out that RestClient mixes something special into the response object (in this case the mock) for compatibility. The gem used to return Net::HTTP::Response objects, not RestClient::Response objects, so in order to retain compatibility with old code, it mixes in the behaviour of the Net::HTTP class to responses contained inside exceptions. This is taken from restclient/exceptions.rb:</p>
+
+<pre># Compatibility : make the Response act like a <br/># Net::HTTPResponse when needed
+module ResponseForException
+  def method_missing symbol, *args
+    if net_http_res.respond_to?(symbol)
+      warn "[warning] ..."
+      net_http_res.send symbol, *args
+    else
+      super
+    end
+  end
+end
+
+class Exception &lt; RuntimeError
+  attr_accessor :message, :response
+
+  def initialize response = nil, initial_response_code = nil
+    @response = response
+    @initial_response_code = initial_response_code
+    # compatibility: this make the exception behave like <br/>    # a Net::HTTPResponse
+    response.extend ResponseForException if response
+  end
+end
+</pre>
+<p class="western">As you can see, it does this by adding its own method_missing, which accesses the <strong>net_http_res</strong> function of the response. In our mock, that doesn&#8217;t exist, so of course method_missing is called ad infinitum. So, let&#8217;s add it:</p>
+
+<pre>request.stubs(:put).raises(RestClient::Unauthorized.new(<br/>  stub(:code =&gt; 401, :body =&gt; nil, :net_http_res =&gt; nil)<br/>)</pre>
+<p class="western">Better. Does it work now? Hm. No. It&#8217;s still digging a method_missing hole to the Earth&#8217;s core.</p>
+<p class="western">The <strong>real</strong> problem is that the method_missing that is mixed in by RestClient::Exception is masking the one in Mocha::Mock, and that one is what does the actual handling of the stub code that we pass in. So, even though we added net_http_res up there, the bit of code that handles it is never called, so we&#8217;re still stuffed.</p>
+<p class="western">Now, there&#8217;s not a lot we can do about that without rewriting the gems. If I <strong>was</strong> going to do that, I&#8217;d try to make sure that RestClient::Exception doesn&#8217;t mask existing method_missing functions, but instead aliases them and makes sure they are still called. Not sure how easy that would be, I&#8217;ve not tried it, but it would be worth a shot.</p>
+<p class="western">I would try to make some general rule here about making sure your code plays nice with other code, but to be honest, I doubt you can consider every case where someone might be subverting your code by giving it things like mock objects (which could implement the mocking in any number of ways) instead of real ones. I guess there will always be a gap somewhere.</p>
+<p class="western">The solution I hit upon in the end was to change the stub. Instead of using Mocha, which relies on method_missing to implement its stubbing, I changed to OpenStruct, which doesn&#8217;t, and is sufficient in this case.</p>
+
+<pre>request.stubs(:put).raises(RestClient::Unauthorized.new(<br/>  OpenStruct.new(:code =&gt; 401, :body =&gt; nil, :net_http_res =&gt; nil)<br/>)</pre>
+<p class="western">Yay, by using a stub that doesn&#8217;t require method_missing to operate, it all works nicely now! My tests are saved and I can get on with some real work&#8230; about time.</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2011-04-20T00:00:00+01:00" pubdate data-updated="true">Apr 20<span>th</span>, 2011</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2011/04/20/the-social-meter/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2011/04/20/the-social-meter/">The Social Meter</a></h1>
+      <iframe src="http://player.vimeo.com/video/22657011" width="400" height="300" frameborder="0"></iframe><br/><p>Last year, I went to the Rewired State Carbon &amp; Energy hack day (#rscarbon), which was a great event. I went along with <a href="http://www.floppy.org.uk/2010/10/25/rewired-state-a-social-energy-monitor">an idea</a>,  and even better actually got to build it! We got a great team together,  and despite initial technical teething problems, had a demo running in  time for the show and tell at the end (by the skin of our teeth). I’ve  been meaning to write it up for ages, but instead, I decided to make a  video.</p>
+<p>The code is, as ever, available on <a href="http://github.com/Floppy/socialmeter">Github</a>, and there are other writeups on <a href="http://www.e-ssociation.net/blog/?p=59">Paul Tanner’s blog</a> and the <a href="http://rewiredstate.org/projects/social-meter">Rewired State site</a>.</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
 <i class="icon-calendar-empty"></i> <time datetime="2010-11-26T00:00:00+00:00" pubdate data-updated="true">Nov 26<span>th</span>, 2010</time></h5>
           <div class="row-fluid">
           
@@ -167,148 +305,6 @@ Anyway, my MP happens to be Francis Maude, who is now Minister for the Cabinet O
 
 <p>
 Maybe the PBB is consistent with what he said 4 years ago, but maybe not. I&#8217;d be interested to know.
-</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2010-10-25T00:00:00+01:00" pubdate data-updated="true">Oct 25<span>th</span>, 2010</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://floppy.org.uk/blog/2010/10/25/rewired-state-a-social-energy-monitor/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2010/10/25/rewired-state-a-social-energy-monitor/">Rewired State: A Social Energy Monitor</a></h1>
-      <p>
-The <a href="http://rewiredstate.org/events/carbon-and-energy">Rewired State Carbon &amp; Energy hack weekend</a> is coming up this weekend, and I&#8217;ve got a proposal for a hack I&#8217;d like to build (by kind permission of AMEE, my employer). I&#8217;m after a team to help, so if you&#8217;re interested, please get in touch.
-</p>
-
-<p>
-Energy monitors are useful, but lack a certain something to keep people coming back to them. The web excels at social and game mechanics, but is &#8216;out there&#8217;, not present in the normal home environment. The idea is to bring the two together by building a system that takes realtime energy data from a home and displays similarly realtime social context for that data.
-</p>
-
-<p>
-The end product is a simple display that shows not only current energy usage, but how that usage compares to other users of the system, <em>in real time</em>.
-</p>
-
-<p>
-How it works: each home (probably just one in the initial hack, with the rest mocked up) has a CurrentCost meter. This, via a script or bridge device, submits 5-minute energy usage readings into AMEE, where it&#8217;s stored and its carbon equivalent calculated. A website is then created to take that information from all registered devices and do some simple stats. It will calculate a realtime league table, position for each user, realtime average power usage, and so on. This, along with the user&#8217;s own data, is then displayed on a screen in the home - I have an O2 Joggler touchscreen which would do the trick, either through a browser or via a native OpenPeak app.
-</p>
-
-<p>
-The panel continuously shows the home user their energy usage, but also what their usage is compared to other users <em>right now</em>. It might display chart position, whether usage is going up or down, and other simple stats perhaps aggregated over time. This will bring some essential social context into the home energy monitoring space, and demonstrate the sort of innovation that can take place if smart metering systems are kept open.
-</p>
-
-<p>
-Many parts of the system exist already, so I think this is buildable in a weekend at least as a prototype. Like I say, if you want to help me build it, get in touch in the comments or via Twitter (#rscarbon).
-</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2010-05-06T00:00:00+01:00" pubdate data-updated="true">May 6<span>th</span>, 2010</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://floppy.org.uk/blog/2010/05/06/what-did-you-do-in-the-election-daddy/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2010/05/06/what-did-you-do-in-the-election-daddy/">What did you do in the election, Daddy?</a></h1>
-      <p>
-One wondeful thing about the 2010 General Election is that so many great projects have happened online; Francis Irving covers them in a <a href="http://blog.okfn.org/2010/05/05/election-data/">post on the OKFN blog</a>.
-</p>
-
-<p>
-I was personally lucky enough to find the time to use these services to build something. I couldn&#8217;t find election hustings in my area, so I decided to make a site to crowdsource and open up that information properly. Enter <a href="http://questionyourcandidates.org.uk">QuestionYourCandidates</a>.
-</p>
-
-<p style="text-align:center">
-<img src="http://s3.amazonaws.com/twitpic/photos/large/89425316.png?AWSAccessKeyId=0ZRYP5X5F6FSMBCCSE82&amp;Expires=1273159187&amp;Signature=ERA7Bsv2Xe57mOGIPoCZ7QCUQjo%3D"/></p>
-
-<p>
-The site allows anyone to enter details of hustings in their area, basically, and link to them in a reliable way. It&#8217;s made from:
-</p>
-
-<ul><li>Rails 2.3.5 - this reminded me how excellent Rails is for rapid development</li>
-<li>Constituency &amp; candidate data from <a href="http://yournextmp.com">YourNextMP</a> through their API.</li>
-<li>Postcode search via the <a href="http://theyworkforyou.com">TheyWorkForYou</a> API.
-</li></ul><p>
-Both these APIs were incredibly easy to use, and because they use canonical names for both constituencies and candidates, it was easy to then link the site across to other services like <a href="http://democracyclub.org.uk">Democracy Club</a> and <a href="http://thestraightchoice.org">The Straight Choice</a>.
-</p>
-
-<p>
-The main dilemma while coding I had was whether to have user accounts. I decided against it in the end, just protecting the edit pages with a captcha. User accounts would have just added another layer of complexity, for really no extra functionality or security.
-</p>
-
-<p>
-The whole thing took around 6 hours from start to deploy, and I&#8217;m pretty proud of it. Unfortunately I did it a bit late to really be useful for this election, but I will try to generalise it to is can continue to be used for future elections. And, as always, it&#8217;s open source. Code is on <a href="http://github.com/Floppy/questionyourcandidates">Github</a>.
 </p>
 
       

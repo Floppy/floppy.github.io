@@ -9,7 +9,7 @@
   <meta name="author" content="James Smith">
 
   
-  <meta name="description" content="James Smith Building a better future out of code Aug 29th, 2008 Comments CurrentCost data live on Pachube So, the other day I got a nice little tray &hellip;">
+  <meta name="description" content="James Smith Building a better future out of code Oct 13th, 2008 Comments Gems, Bookmarks, and Sandwiches I&#8217;ve been crazy busy for a while, but &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -126,6 +126,162 @@
   
 
 
+<i class="icon-calendar-empty"></i> <time datetime="2008-10-13T00:00:00+01:00" pubdate data-updated="true">Oct 13<span>th</span>, 2008</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2008/10/13/gems-bookmarks-and-sandwiches/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2008/10/13/gems-bookmarks-and-sandwiches/">Gems, Bookmarks, and Sandwiches</a></h1>
+      <p>
+I&#8217;ve been crazy busy for a while, but what little spare time I have grabbed here and there has been used investigating some areas of Rails I hadn&#8217;t played with before, like route globbing and running without a database. The results are a couple of tools, one useful, one most definitely not.
+</p>
+
+<p><img src="http://img.skitch.com/20081010-dy86i2ny1rbu91b995nt6r5hrj.png" style="float:right"/></p>
+
+<p>
+The first (and most useful) is <a href="http://hasmygembuiltyet.org">Has My Gem Built Yet?</a>. I have a bunch of ruby gems on GitHub and get annoyed that I have to keep running &#8220;gem update&#8221; while waiting for GitHub to build the gem once I&#8217;ve pushed the code. Well, no more. Just put in the details, and the page checks for you and pops up a message when the gem is done. Nice. It got picked up on <a href="http://github.com/blog/177-has-my-gem-built-yet">the GitHub blog</a>, and I&#8217;ve even had some patches sent in. It&#8217;s a nice feeling :)
+</p>
+
+<p>
+The second app is somewhat less useful (though still entertaining). After a suggestion on Twitter by <a href="http://tomtaylor.co.uk">Tom Taylor</a>, I built a website which lets you bookmark <a href="http://s.andwi.ch">sandwich</a> combinations. There are a couple of interesting bits in this though - first is route globbing, which is the Rails way of using arbitrary bits of the URL as parameters to an action. Not something you use in every project, but still. More importantly, I&#8217;ve used it to test out <a href="http://github.com/Floppy/rubymarks">rubymarks</a>, a Rails plugin for generating links for social bookmarking services.
+</p>
+
+<p>
+I love Rails for this sort of thing. I can&#8217;t think of other system I&#8217;ve used that would let me create such fun things in the tiny snippets of spare time I have at the moment. And of course, everything above is open source and available on <a href="http://github.com/Floppy">Github</a>.
+</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2008-08-31T00:00:00+01:00" pubdate data-updated="true">Aug 31<span>st</span>, 2008</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2008/08/31/mocking-kernelrequire/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2008/08/31/mocking-kernelrequire/">Mocking Kernel#require</a></h1>
+      <p>
+The other day, I remembered to add coverage analysis to my <a href="http://github.com/Floppy/amee-ruby">AMEE-Ruby</a> tests, using <a href="http://">rcov</a>. The results were pretty good - most of the code was already tested, except a few failure cases, and I quickly wrote some new tests to make sure those were working properly. One little bit of code stood out though. Because AMEE talks XML and JSON, my gem can use JSON, but only if the JSON gem is available on the system (XML support is built into core Ruby). Problem is, require calls throw errors if they fail, so I had to write some code to handle the load failure and carry on regardless. This is the code inside amee.rb:
+</p>
+
+<p>
+<code lang="ruby" theme="zenburnesque">
+begin
+  require 'json'
+rescue LoadError
+  nil
+end
+</code>
+</p>
+
+<p>
+Problem with this is that the gem is installed on my system, so the require never fails, and the rescue is never used. Rcov notices, and I can&#8217;t get to 100% coverage, which is <em>annoying</em>.
+</p>
+
+<p>
+So, mocking to the rescue. We have to make Kernel#rescue throw an error if we try to require &#8216;json&#8217;, even if the gem is installed. At first, I tried to use flexmock to do this, but couldn&#8217;t make it work - if anyone knows how, <em>please</em> tell me. My final approach was to monkeypatch Kernel#require inside my test so that require &#8216;json&#8217; (and only json) would fail:
+</p>
+
+<p>
+<code lang="ruby" theme="zenburnesque">
+it "should cope if json gem isn't available" do
+  # Monkeypatch Kernel#require to make sure that require 'json'
+  # raises a LoadError
+  module Kernel
+    def require_with_mock(string)
+      raise LoadError.new if string == 'json' 
+      require_without_mock(string)
+    end
+    alias_method :require_without_mock, :require 
+    alias_method :require, :require_with_mock
+  end
+  # Remove amee.rb from required file list so we can load it again
+  $".delete_if{|x| x.include? 'amee.rb'}
+  # Require file - require 'json' should throw a LoadError,
+  # but we should cope with it OK.
+  lambda {
+    require 'amee'
+  }.should_not raise_error
+end
+</code>
+</p>
+
+<p>
+We have to make a new require function, then use alias_method to rename the old one and install our new one in it&#8217;s place. Rails includes alias_method_chain to make this easier, but that&#8217;s not available in pure Ruby. Never mind. Once we&#8217;ve done the monkeypatch, we take amee.rb out of the $&#8221; array, which lists all the currently-required files, to make sure we can require it again, then simply run the require and make sure it catches the error that is thrown by our patched require. And the most satisfying part? The rescue is executed, the test works, and we get to 100% coverage. I&#8217;ve got a nice warm fuzzy feeling inside&#8230; mmmmmm.
+</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
 <i class="icon-calendar-empty"></i> <time datetime="2008-08-29T00:00:00+01:00" pubdate data-updated="true">Aug 29<span>th</span>, 2008</time></h5>
           <div class="row-fluid">
           
@@ -166,128 +322,6 @@ class HelloServlet
 
 <p>
 Now, http://localhost:50000/ will say &#8220;hello world&#8221;. From here it&#8217;s a simple modification to publish the EEML feed. EEML-Ruby includes a <a href="http://github.com/Floppy/eeml-ruby/tree/master/examples/simple_server.rb">simple EEML server script</a> as an example. So, after building this into the tray app, now whenever my CurrentCost is connected and the app is running, it serves up EEML data to the web. You can see the data feed (fairly intermittent, as obviously the meter isn&#8217;t always connected to my PC at the moment) <a href="http://pachube.com/feeds/488">live on Pachube</a>.
-</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2008-08-22T00:00:00+01:00" pubdate data-updated="true">Aug 22<span>nd</span>, 2008</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://floppy.org.uk/blog/2008/08/22/some-successful-currentcost-hacking/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2008/08/22/some-successful-currentcost-hacking/">Some successful CurrentCost hacking</a></h1>
-      <p>
-After a bit of work, I&#8217;ve finally got my <a href="http://www.currentcost.com">CurrentCost</a> meter working in Ruby, and I now have a power monitor sitting in my system tray! There were a few stages involved&#8230;
-</p>
-
-<p>
-<strong>Serial comms:</strong> The ruby-serialport library that already existed for Ruby was no good to me. Firstly, it didn&#8217;t seem to be in a working state, but more importantly, the license it is under (GPL) is no good to me. So, I had to write my own. I&#8217;ve created a nice simple serial library (including a gem) for Ruby called RB232, which is available on <a href="http://github.com/Floppy/rb232">GitHub</a>. It only supports reading at the moment, and only works on Linux systems, but it&#8217;s a start. Next!
-</p>
-
-<p>
-<strong>Reading CurrentCost data:</strong> Once RB232 was in place, this was pretty easy. Just create a couple of classes to wrap up the process of getting data from the meter, and away you go. Easy. Also released as a Ruby gem on <a href="http://github.com/Floppy/currentcost-ruby">Github</a>.
-</p>
-
-<p><img src="http://www.floppy.org.uk/assets/2008/8/22/currentcost-tray-monitor.png"/></p>
-
-<p>
-<strong>User interface:</strong> Last step was to make a simple user interface for the meter, which you can see in the picture above. It&#8217;s a simple tray icon that changes colour based on power usage. It&#8217;s based heavily on another very useful tool called <a href="http://rubyforge.org/projects/cctrayrb/">cctrayrb</a>, so many thanks to Daniel Parnell for doing the heavy GUI lifting there. The app is included as part of the currentcost-ruby gem mentioned above.
-</p>
-
-<p>
-Anyway, it&#8217;s all freely available, so if you have a CurrentCost meter and a serial cable for it, you can grab the code and get going. Enjoy :)
-</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2008-08-07T00:00:00+01:00" pubdate data-updated="true">Aug 7<span>th</span>, 2008</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://floppy.org.uk/blog/2008/08/07/twitter-support-in-jabberstatus/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2008/08/07/twitter-support-in-jabberstatus/">Twitter support in JabberStatus</a></h1>
-      <p>
-<a href="http://floppy.github.com/jabberstatus">JabberStatus</a> was originally inspired by Twitter&#8217;s facility to update your status via XMPP/Jabber. Unfortunately, Twitter&#8217;s Jabber interface has been down for months now, which is rather sucky. 
-</p>
-
-<p>
-The solution to this? Extend JabberStatus to work for Twitter as well as Facebook. It turned out to be very easy, so it&#8217;s online now. Just add twitterstatus@jabber.org to your contact list and it will talk you through the rest.
-</p>
-
-<p>
-The JabberStatus code has <a href="http://github.com/Floppy/jabberstatus">moved to GitHub</a> now, so you can grab it from there. The <a href="http://github.com/Floppy/co2updates">code for the CO2Updates app</a> has also moved there.
 </p>
 
       

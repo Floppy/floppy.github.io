@@ -9,7 +9,7 @@
   <meta name="author" content="James Smith">
 
   
-  <meta name="description" content="James Smith Building a better future out of code Aug 6th, 2008 Comments One Hundred Months I just saw the One Hundred Months campaign, and decided &hellip;">
+  <meta name="description" content="James Smith Building a better future out of code Aug 22nd, 2008 Comments Some successful CurrentCost hacking After a bit of work, I&#8217;ve finally &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -126,6 +126,128 @@
   
 
 
+<i class="icon-calendar-empty"></i> <time datetime="2008-08-22T00:00:00+01:00" pubdate data-updated="true">Aug 22<span>nd</span>, 2008</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2008/08/22/some-successful-currentcost-hacking/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2008/08/22/some-successful-currentcost-hacking/">Some successful CurrentCost hacking</a></h1>
+      <p>
+After a bit of work, I&#8217;ve finally got my <a href="http://www.currentcost.com">CurrentCost</a> meter working in Ruby, and I now have a power monitor sitting in my system tray! There were a few stages involved&#8230;
+</p>
+
+<p>
+<strong>Serial comms:</strong> The ruby-serialport library that already existed for Ruby was no good to me. Firstly, it didn&#8217;t seem to be in a working state, but more importantly, the license it is under (GPL) is no good to me. So, I had to write my own. I&#8217;ve created a nice simple serial library (including a gem) for Ruby called RB232, which is available on <a href="http://github.com/Floppy/rb232">GitHub</a>. It only supports reading at the moment, and only works on Linux systems, but it&#8217;s a start. Next!
+</p>
+
+<p>
+<strong>Reading CurrentCost data:</strong> Once RB232 was in place, this was pretty easy. Just create a couple of classes to wrap up the process of getting data from the meter, and away you go. Easy. Also released as a Ruby gem on <a href="http://github.com/Floppy/currentcost-ruby">Github</a>.
+</p>
+
+<p><img src="http://www.floppy.org.uk/assets/2008/8/22/currentcost-tray-monitor.png"/></p>
+
+<p>
+<strong>User interface:</strong> Last step was to make a simple user interface for the meter, which you can see in the picture above. It&#8217;s a simple tray icon that changes colour based on power usage. It&#8217;s based heavily on another very useful tool called <a href="http://rubyforge.org/projects/cctrayrb/">cctrayrb</a>, so many thanks to Daniel Parnell for doing the heavy GUI lifting there. The app is included as part of the currentcost-ruby gem mentioned above.
+</p>
+
+<p>
+Anyway, it&#8217;s all freely available, so if you have a CurrentCost meter and a serial cable for it, you can grab the code and get going. Enjoy :)
+</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2008-08-07T00:00:00+01:00" pubdate data-updated="true">Aug 7<span>th</span>, 2008</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2008/08/07/twitter-support-in-jabberstatus/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2008/08/07/twitter-support-in-jabberstatus/">Twitter support in JabberStatus</a></h1>
+      <p>
+<a href="http://floppy.github.com/jabberstatus">JabberStatus</a> was originally inspired by Twitter&#8217;s facility to update your status via XMPP/Jabber. Unfortunately, Twitter&#8217;s Jabber interface has been down for months now, which is rather sucky. 
+</p>
+
+<p>
+The solution to this? Extend JabberStatus to work for Twitter as well as Facebook. It turned out to be very easy, so it&#8217;s online now. Just add twitterstatus@jabber.org to your contact list and it will talk you through the rest.
+</p>
+
+<p>
+The JabberStatus code has <a href="http://github.com/Floppy/jabberstatus">moved to GitHub</a> now, so you can grab it from there. The <a href="http://github.com/Floppy/co2updates">code for the CO2Updates app</a> has also moved there.
+</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
 <i class="icon-calendar-empty"></i> <time datetime="2008-08-06T00:00:00+01:00" pubdate data-updated="true">Aug 6<span>th</span>, 2008</time></h5>
           <div class="row-fluid">
           
@@ -146,110 +268,6 @@ I just saw the <a href="http://onehundredmonths.org/">One Hundred Months</a> cam
 
 <p>
 I&#8217;m amazed by what computers can do sometimes. This one seriously took me longer to publish to the world than to write.
-</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2008-08-06T00:00:00+01:00" pubdate data-updated="true">Aug 6<span>th</span>, 2008</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://floppy.org.uk/blog/2008/08/06/hacking-your-energy-usage-with-the-currentcost/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2008/08/06/hacking-your-energy-usage-with-the-currentcost/">Hacking your energy usage with the CurrentCost</a></h1>
-      <p>
-The other day, I managed to get hold of a <a href="http://www.currentcost.com/">CurrentCost</a> energy monitor (available to buy from <a href="https://www.ecogadgetshop.co.uk/ProductDetails.aspx?ProductCode=Current%20Cost%20Device%20(TEST)&amp;Category=1">here</a>, or maybe from your electricity supplier). Now, the nice thing about this particular monitor (apart from the ton of information on-screen) is the fact that it has a serial output on the bottom, which you can (with <a href="http://rooreynolds.com/2008/07/06/current-cost-presentation-at-open-tech-2008/">a bit of hacking</a>) plug into your PC, and - bingo - lovely XML data!
-</p>
-
-<p>
-However, once you have it connected and spewing XML at you, you really need something to do with all that data. I don&#8217;t have anything big  written yet, but my first step towards making something useful is a Ruby gem, which is available from <a href="http://github.com/Floppy/currentcost-ruby/tree/master">GitHub</a>. So far it can only parse the XML data from the meter - direct access to the serial port is hopefully coming soon.
-</p>
-
-<p>
-In other news, the AMEE gem I started a while ago is still coming on. It can now use the XML and JSON interfaces, parse the whole Data API, and retrieve a list of Profiles. Not a bad start.
-</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2008-07-10T00:00:00+01:00" pubdate data-updated="true">Jul 10<span>th</span>, 2008</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://floppy.org.uk/blog/2008/07/10/filtering-twitter-with-pipes/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2008/07/10/filtering-twitter-with-pipes/">Filtering Twitter with Pipes</a></h1>
-      <p>
-I like <a href="http://twitter.com">Twitter</a>. I&#8217;m not sure why, but I do. However, I don&#8217;t like the fact that I can&#8217;t view my friends timeline via RSS without seeing my own updates in there as well. I already know what I&#8217;ve written, I just want to see what other people wrote. To scratch that particular itch, over lunchtime I built a <a href="http://pipes.yahoo.com">Yahoo! Pipe</a> to filter my own updates out of my feed, and you can use it too. Check it out <a href="http://pipes.yahoo.com/floppy/twitter_filter">here</a>.
 </p>
 
       

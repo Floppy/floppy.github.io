@@ -9,7 +9,7 @@
   <meta name="author" content="James Smith">
 
   
-  <meta name="description" content="James Smith Building a better future out of code Nov 4th, 2008 Comments Running Mephisto on Ruby 1.8.7 My server runs Ubuntu, and seeing as 8.10 ( &hellip;">
+  <meta name="description" content="James Smith Building a better future out of code May 21st, 2009 Comments The Carbon Diet goes open source Well, I finally got round to it. I started &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -126,6 +126,146 @@
   
 
 
+<i class="icon-calendar-empty"></i> <time datetime="2009-05-21T00:00:00+01:00" pubdate data-updated="true">May 21<span>st</span>, 2009</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2009/05/21/the-carbon-diet-goes-open-source/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2009/05/21/the-carbon-diet-goes-open-source/">The Carbon Diet goes open source</a></h1>
+      <p>
+Well, I finally got round to it. I started developing <a href="http://www.carbondiet.org">The Carbon Diet</a> 2 years ago (had the idea 3 years ago!), and it&#8217;s finally spread it&#8217;s wings and joined the world of open source. 
+</p>
+
+<p>
+After I&#8217;d been developing it for a few months, it became obvious that it was never going to be a commercial proposition, so it&#8217;s been my intention to open it up for a very long time now. However, I was putting it off until &#8220;after I get it finished&#8221;, or &#8220;after I tidy up the code&#8221;, or any number of other reasons. Having a small child puts paid to all those plans, so I&#8217;ve finally bitten the bullet and released my dodgy code to the world as it is, warts and all.
+</p>
+
+<p>
+The site is built in Rails, but it&#8217;s pretty creaky. It was originally written in version 1.2 as I was learning, and a lot of the old-style controller and route code is still hanging around, waiting to be improved. I&#8217;ve started, but there is a long way to go to bring it up to a decent standard.
+</p>
+
+<p>
+Anyway, if you use the site (or not!) and fancy improving it, now you can. Head on over to <a href="http://github.com/Floppy/carbon-diet">github</a> to grab the code and join in. I hope to see you there!
+</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2009-03-28T00:00:00+00:00" pubdate data-updated="true">Mar 28<span>th</span>, 2009</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2009/03/28/publishing-currentcost-data-to-the-world/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2009/03/28/publishing-currentcost-data-to-the-world/">Publishing CurrentCost data to the world</a></h1>
+      <p>
+A while ago, I started hacking around with a <a href="http://www.currentcost.co.uk">CurrentCost</a> real-time energy monitor. This is a very nice little device that measures your electricity use, but more importantly has a serial output on the bottom so you can get data out of it.
+</p>
+
+<p>
+Well, eventually I decided that while being able to get data off the meter was nice, it would be better if I could publish it somewhere. So, I wrote a program in Ruby to do exactly that. It reads data from the meter, and sticks it on the web. I&#8217;ll go into a bit more detail in a minute, but first, you can download it (and get the source code) from <a href="http://github.com/Floppy/currentcost-daemon/">github</a>.
+</p>
+
+<p>
+The program operates as a system daemon, which runs in the background on your Linux box (Mac should work as well) and uploads to various places. Adding new publishers is dead easy, so if you want to publish your data somewhere else, you can easily add it.
+</p>
+
+<h3>The Carbon Diet</h3>
+
+<p>
+First up, my own site, <a href="http://www.carbondiet.org">The Carbon Diet</a>. This uploads your daily usage history from the meter into your carbon diet account so that you don&#8217;t have to take so many meter readings to get an accurate graph. This is still pretty experimental and needs more work, but it&#8217;s pretty useful already. You can see how it looks on <a href="http://www.carbondiet.org/profile/james">my profile</a>.
+</p>
+
+<h3>AMEE</h3>
+
+<p>
+Next, what I think of as the important one. <a href="http://www.amee.com">AMEE</a>, if you&#8217;re not aware, AMEE is a neutral aggregation platform for sharing energy data and carbon calculations (disclaimer: I work for them these days). Think OpenID for your energy identity. Anyway, we have a nice &#8220;smart meter&#8221; demo which uses my currentcost app as the data source. Every minute, it uploads into an AMEE profile, and then another app <a href="http://my.amee.com/demo/1">makes a nice graph</a> of the CO2 produced. In theory, the Carbon Diet could pull that data from AMEE instead of me publishing it directly, but that&#8217;s still to come.
+</p>
+
+<h3>Pachube</h3>
+
+<p>
+Another energy data sharing service is <a href="http://www.pachube.com">Pachube</a> (pronounced &#8220;patch bay&#8221;). As far as I can tell, this is more geared at art and design than rigorous data, but it&#8217;s fun to play with. They&#8217;ve done a bunch of stuff with the CurrentCost, and now my app joins the throng. My <a href="http://www.pachube.com/feeds/488">pachube feed</a> updates every 6 seconds - every time the meter sends data out.
+</p>
+
+<h3>Twitter</h3>
+
+<p>
+Finally, what would be the point of a web energy publisher if it couldn&#8217;t tweet? If you really want to, you can see my minute-by-minute energy usage on Twitter by visiting <a href="http://twitter.com/james_energy">@james_energy</a>.
+</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
 <i class="icon-calendar-empty"></i> <time datetime="2008-11-04T00:00:00+00:00" pubdate data-updated="true">Nov 4<span>th</span>, 2008</time></h5>
           <div class="row-fluid">
           
@@ -165,162 +305,6 @@ As you can tell by the fact that you&#8217;re reading this blog, it works a trea
 </p>
 <p>
 EDIT: Another solution, which I only just worked out, would be to install the very badly-named <a href="http://www.rubyenterpriseedition.com/">Ruby Enterprise Edition</a>, which sits alongside the system&#8217;s Ruby and is call-compatible with 1.8.6. This makes a lot of sense if you&#8217;re using passenger (mod_rails), as well.
-</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2008-10-13T00:00:00+01:00" pubdate data-updated="true">Oct 13<span>th</span>, 2008</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://floppy.org.uk/blog/2008/10/13/gems-bookmarks-and-sandwiches/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2008/10/13/gems-bookmarks-and-sandwiches/">Gems, Bookmarks, and Sandwiches</a></h1>
-      <p>
-I&#8217;ve been crazy busy for a while, but what little spare time I have grabbed here and there has been used investigating some areas of Rails I hadn&#8217;t played with before, like route globbing and running without a database. The results are a couple of tools, one useful, one most definitely not.
-</p>
-
-<p><img src="http://img.skitch.com/20081010-dy86i2ny1rbu91b995nt6r5hrj.png" style="float:right"/></p>
-
-<p>
-The first (and most useful) is <a href="http://hasmygembuiltyet.org">Has My Gem Built Yet?</a>. I have a bunch of ruby gems on GitHub and get annoyed that I have to keep running &#8220;gem update&#8221; while waiting for GitHub to build the gem once I&#8217;ve pushed the code. Well, no more. Just put in the details, and the page checks for you and pops up a message when the gem is done. Nice. It got picked up on <a href="http://github.com/blog/177-has-my-gem-built-yet">the GitHub blog</a>, and I&#8217;ve even had some patches sent in. It&#8217;s a nice feeling :)
-</p>
-
-<p>
-The second app is somewhat less useful (though still entertaining). After a suggestion on Twitter by <a href="http://tomtaylor.co.uk">Tom Taylor</a>, I built a website which lets you bookmark <a href="http://s.andwi.ch">sandwich</a> combinations. There are a couple of interesting bits in this though - first is route globbing, which is the Rails way of using arbitrary bits of the URL as parameters to an action. Not something you use in every project, but still. More importantly, I&#8217;ve used it to test out <a href="http://github.com/Floppy/rubymarks">rubymarks</a>, a Rails plugin for generating links for social bookmarking services.
-</p>
-
-<p>
-I love Rails for this sort of thing. I can&#8217;t think of other system I&#8217;ve used that would let me create such fun things in the tiny snippets of spare time I have at the moment. And of course, everything above is open source and available on <a href="http://github.com/Floppy">Github</a>.
-</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2008-08-31T00:00:00+01:00" pubdate data-updated="true">Aug 31<span>st</span>, 2008</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://floppy.org.uk/blog/2008/08/31/mocking-kernelrequire/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2008/08/31/mocking-kernelrequire/">Mocking Kernel#require</a></h1>
-      <p>
-The other day, I remembered to add coverage analysis to my <a href="http://github.com/Floppy/amee-ruby">AMEE-Ruby</a> tests, using <a href="http://">rcov</a>. The results were pretty good - most of the code was already tested, except a few failure cases, and I quickly wrote some new tests to make sure those were working properly. One little bit of code stood out though. Because AMEE talks XML and JSON, my gem can use JSON, but only if the JSON gem is available on the system (XML support is built into core Ruby). Problem is, require calls throw errors if they fail, so I had to write some code to handle the load failure and carry on regardless. This is the code inside amee.rb:
-</p>
-
-<p>
-<code lang="ruby" theme="zenburnesque">
-begin
-  require 'json'
-rescue LoadError
-  nil
-end
-</code>
-</p>
-
-<p>
-Problem with this is that the gem is installed on my system, so the require never fails, and the rescue is never used. Rcov notices, and I can&#8217;t get to 100% coverage, which is <em>annoying</em>.
-</p>
-
-<p>
-So, mocking to the rescue. We have to make Kernel#rescue throw an error if we try to require &#8216;json&#8217;, even if the gem is installed. At first, I tried to use flexmock to do this, but couldn&#8217;t make it work - if anyone knows how, <em>please</em> tell me. My final approach was to monkeypatch Kernel#require inside my test so that require &#8216;json&#8217; (and only json) would fail:
-</p>
-
-<p>
-<code lang="ruby" theme="zenburnesque">
-it "should cope if json gem isn't available" do
-  # Monkeypatch Kernel#require to make sure that require 'json'
-  # raises a LoadError
-  module Kernel
-    def require_with_mock(string)
-      raise LoadError.new if string == 'json' 
-      require_without_mock(string)
-    end
-    alias_method :require_without_mock, :require 
-    alias_method :require, :require_with_mock
-  end
-  # Remove amee.rb from required file list so we can load it again
-  $".delete_if{|x| x.include? 'amee.rb'}
-  # Require file - require 'json' should throw a LoadError,
-  # but we should cope with it OK.
-  lambda {
-    require 'amee'
-  }.should_not raise_error
-end
-</code>
-</p>
-
-<p>
-We have to make a new require function, then use alias_method to rename the old one and install our new one in it&#8217;s place. Rails includes alias_method_chain to make this easier, but that&#8217;s not available in pure Ruby. Never mind. Once we&#8217;ve done the monkeypatch, we take amee.rb out of the $&#8221; array, which lists all the currently-required files, to make sure we can require it again, then simply run the require and make sure it catches the error that is thrown by our patched require. And the most satisfying part? The rescue is executed, the test works, and we get to 100% coverage. I&#8217;ve got a nice warm fuzzy feeling inside&#8230; mmmmmm.
 </p>
 
       

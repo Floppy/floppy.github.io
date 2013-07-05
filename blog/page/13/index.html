@@ -9,7 +9,7 @@
   <meta name="author" content="James Smith">
 
   
-  <meta name="description" content="James Smith Building a better future out of code May 28th, 2007 Comments Announcing: The Carbon Diet Well, it&#8217;s been quiet here recently, but &hellip;">
+  <meta name="description" content="James Smith Building a better future out of code Jan 9th, 2008 Comments Testing in Trac Hurrah, I&#8217;ve just contributed my first code back to &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -126,6 +126,102 @@
   
 
 
+<i class="icon-calendar-empty"></i> <time datetime="2008-01-09T00:00:00+00:00" pubdate data-updated="true">Jan 9<span>th</span>, 2008</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2008/01/09/testing-in-trac/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2008/01/09/testing-in-trac/">Testing in Trac</a></h1>
+      <p>
+Hurrah, I&#8217;ve just contributed my first code back to the <a href="http://trac.edgewall.org/">Trac</a> project. I&#8217;ve created a workflow for the 0.11 release which adds a simple &#8220;testing&#8221; state to tickets before they are closed. For the Trac addicts amongst you, it&#8217;s available at <a href="http://trac-hacks.swapoff.org/wiki/TestingWorkflow">Trac Hacks</a>. I&#8217;m rather proud of it, because it&#8217;s actually the first workflow hack on the site!
+</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2007-06-01T00:00:00+01:00" pubdate data-updated="true">Jun 1<span>st</span>, 2007</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2007/06/01/sky-channel-changer/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2007/06/01/sky-channel-changer/">Sky Channel Changer</a></h1>
+      <p>
+My MythTV box was changing channels a bit slowly, so with pointers from <a href="http://mezzanines.blogspot.com/">Wilf</a>, I&#8217;ve hacked the Sky Digibox channel change script from <a href="http://www.nexusuk.org/projects/mythtv/lirc/">The Nexus</a> to send the commands all in one go for (marginally) faster channel changing. It also allows extra options to the irsend command. Download the updated version below.
+</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
 <i class="icon-calendar-empty"></i> <time datetime="2007-05-28T00:00:00+01:00" pubdate data-updated="true">May 28<span>th</span>, 2007</time></h5>
           <div class="row-fluid">
           
@@ -165,148 +261,10 @@ If that sounds interesting, head on over and take the tour! If you want to help 
 
     </article>
     
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2007-02-08T00:00:00+00:00" pubdate data-updated="true">Feb 8<span>th</span>, 2007</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://floppy.org.uk/blog/2007/02/08/problems-with-rails-and-mysql/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2007/02/08/problems-with-rails-and-mysql/">Problems with Rails and MySQL</a></h1>
-      <p>
-I recently reinstalled my laptop with Fedora Core 6, and when I went to fiddle with my prototype Rails project, I found that nothing worked. I had a bunch of problems, and I thought I&#8217;d note down the solutions here, in case anyone else had the same problem. So, forgive me, it&#8217;s going to be techy for a while.
-</p>
-
-<p>
-First, the thing wouldn&#8217;t connect to the MySQL database at all, claiming that /tmp/mysql.sock didn&#8217;t exist. Odd. Well, not that odd, in fact, because the MySQL RPM for FC6 creates its socket in /var/lib/mysql/mysql.sock instead of /tmp/mysql.sock. So, the addition of a socket line to config/database.yml and we&#8217;re off again:
-</p>
-
-<p><code lang="strings_file" theme="zenburnesque">
-socket: /var/lib/mysql/mysql.sock
-</code></p>
-
-<p>
-Next problem: the thing is now connecting, but when I try to recreate the tables using rake db:migrate, it complains thusly:
-</p>
-
-<p><code lang="strings_file" theme="zenburnesque">
-Mysql::Error: Lost connection to MySQL server during query: SELECT version FROM schema_info
-</code></p>
-
-<p>
-Bugger. Turns out, after some web research, that Rails has changed to  new-style password authentication for MySQL. However, the FC6  MySQL installation hasn&#8217;t, in order to keep compatibility with older clients. Fair enough. Again, it&#8217;s a fairly simple fix. I had to change the appropriate setting from 1 to 0 in /etc/my.cnf:
-</p>
-
-<p><code lang="strings_file" theme="zenburnesque">
-old_passwords=0
-</code></p>
-
-<p>
-I was feeling good at this point, and restarted the MySQL server, ready for my Rails app to spring into life. Alas, no, same problem. However, resetting the MySQL password using mysqladmin sorted it all out, and the thing is now happy.
-</p>
-
-<p><code lang="strings_file" theme="zenburnesque">
-mysqladmin -u user -p password xxxxx
-</code></p>
-
-<p>
-If you&#8217;re having similar problems, I hope this helps!
-</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2005-06-18T00:00:00+01:00" pubdate data-updated="true">Jun 18<span>th</span>, 2005</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://floppy.org.uk/blog/2005/06/18/mythrename/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2005/06/18/mythrename/">MythRename</a></h1>
-      <p>
-Here in the UK, T4 (a weekend morning kids show thing) put a &#8220;T4:&#8221; prefix on the front of every program they show, so rather than &#8220;Futurama&#8221;, you get &#8220;T4:Futurama&#8221;. If you want to record these shows, you need to have two rules, you end up with two different titles in the program list, and you get duplicated episodes.
-</p>
-
-<p>
-Well, no more. I&#8217;ve written a script called mythrename which strips prefixes from programs in the MythTV database. Configuration is simple - just edit the perl script and add the prefixes you want to remove to the @prefixes array, edit the database options, and away you go. It&#8217;s best run after every mythfilldatabase run, as the listings grabber does away with all our hard work and puts back the original titles.
-</p>
-
-<p>
-There&#8217;s no readme file - all the explanation you need should be in the Perl script. If there&#8217;s anything I&#8217;ve left out, please let me know! 
-</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
   
   <div class="pagination">
+    
+    <a class="prev" href="/blog/page/14/">&larr; Older</a>
     
 
     
