@@ -1,150 +1,344 @@
+
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>floppy.github.com</title>
-    <meta name="description" content="James Smith's code portfolio">
-    <meta name="author" content="James Smith">
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>James Smith</title>
+  <meta name="author" content="James Smith">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  
+  <meta name="description" content="James Smith Building a better future out of code Aug 1st, 2012 Comments ActiveRecord-style array filtering in Ruby Rails&#8217; named scopes are &hellip;">
+  
 
-    <!-- Le styles -->
-    <link href="stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="stylesheets/custom.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-      }
-    </style>
-  </head>
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body>
+  
+  <link rel="canonical" href="http://floppy.org.uk">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="James Smith" type="application/atom+xml">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/bootstrap-collapse.js"></script>
+  <script src="/js/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/js/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="/stylesheets/custom.css" rel="stylesheet" type="text/css">
 
-    <div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="http://www.floppy.org.uk">James Smith</a>
-          <p>coding a better world</p>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2310810-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <div class="navbar navbar-inverse navbar-static-top">
+  	<div class="navbar-inner">
+  	  <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="fui-menu-24"></span>
+        </a>
+  	  	<div class="nav-collapse collapse navbar-responsive-collapse" style="height:0;">
+  	      <ul class="nav">
+    
+        <li ><a href="/">Home</a></li>
+    
+        <li ><a href="/blog/archives">Archives</a></li>
+    
+        <li ><a href="/code">Code</a></li>
+    
+</ul>
+
+<ul class="nav pull-right">
+    
+    <li><a href="http://github.com/Floppy" title="Github Profile"><i class="icon-github-sign social-navbar"></i></a></li>
+    
+    
+    <li><a href="http://linkedin.com/in/floppy" title="Linkedin Profile"><i class="icon-linkedin-sign social-navbar"></i></a></li>
+    
+    
+    <li><a href="http://twitter.com/floppy" title="Twitter Profile"><i class="icon-twitter-sign social-navbar"></i></a></li>
+    
+    
+    <li><a href="http://plus.google.com/106927026319199661821" title="Google+ Profile"><i class="icon-google-plus-sign social-navbar"></i></a></li>
+    
+    
+</ul>
+
+  	    </div>
+  	  </div>
+  	</div>
+  </div>
+  <div class="container" id="main">
+    <div class="span12">
+      <div class="row-fluid">
+        <div id="content">
+          <div class="jumbotron">
+  <div class="container">
+    James Smith
+    <h3 class="tagline">Building a better future out of code</h3>
+  </div>
+</div>
+
+
+<div class="blog-index">
+  
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2012-08-01T00:00:00+01:00" pubdate data-updated="true">Aug 1<span>st</span>, 2012</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2012/08/01/activerecord-style-array-filtering-in-ruby/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2012/08/01/activerecord-style-array-filtering-in-ruby/">ActiveRecord-style array filtering in Ruby</a></h1>
+      <p>Rails&#8217; named scopes are fantastic for making readable code with efficient SQL behind the scenes. Given a Person model, you could define a scope called &#8216;adult&#8217; which could add an SQL <em>WHERE</em> for <em>age&gt;18</em>, and let you write pretty code like Person.adult to find all adults. Great! Chaining them together gets even better with code like Person.adult.male.with_glasses.</p>
+<p>The problem comes if you do this in a single action with lots of different chained scopes to show different data. You end up with a whole bunch of SQL queries, which can get expensive. In the system I&#8217;m currently building, which includes geospatial queries, this gets far too slow to use. So, instead, let&#8217;s get one big list of objects and filter them in Ruby when we need them.</p>
+<p>Simple enough. The only thing is, the ActiveRecord chaining syntax is lovely. I don&#8217;t want to write tons of chained selects with blocks and all that faff. Instead, let&#8217;s extend Array to give us the syntax we like. The trick is to wrap an Array inside another class and then use method_missing to delegate. We then make sure that returned objects aren&#8217;t Arrays, but our new type instead.</p>
+<p>It&#8217;s best explained with the code:</p>
+
+<script src="https://gist.github.com/Floppy/3228297.js"></script>
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2012-07-24T00:00:00+01:00" pubdate data-updated="true">Jul 24<span>th</span>, 2012</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2012/07/24/introducing-therm/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2012/07/24/introducing-therm/">Introducing Therm</a></h1>
+      <p>
+<a href="http://www.therm.uk.com"><img src="/images/therm.png"/></a>
+</p>
+<p>
+It’s been an interesting year. Until April I worked at AMEE as their Platform
+Evangelist. I’d been there almost four years, through lots of interesting times.
+I got to do cool things like build AskAMEE, hack carbon emissions into Minecraft
+(and get on BoingBoing with it), and run the London Green Hackathon. It was sad
+when my time there came to an end, but in startup life there is always a point at
+which it makes sense to move on.
+</p>
+<p>
+Since then, I’ve been trying to find ways to carry making software that at least
+tries to deal with the impending climate crisis that’s heading our way. As I discussed
+at the beginning of the year, we don’t have long. I’ve been carrying on building
+the Cleanweb UK community that we tried to bootstrap at AMEE on a voluntary basis.
+London seems to have the most interesting cleanweb community in the world - we’ve
+certainly been doing it longer than anyone else, so we have to capitalise on that
+and work together!
+</p>
+<p>
+However, the time has come for me to try and make a living out of this stuff again,
+and I’m having a go at doing it by myself.
+</p>
+<p>
+So, meet <a href="http://www.therm.uk.com">Therm</a>. It’s the first specialist cleanweb consultancy in the world (as
+far as I know). If you’re doing anything on the web to do with sustainability, Therm
+can help - get in touch!
+</p>
+<p>
+It’s just me for now, but maybe later it won’t be. It’ll be an adventure, whatever
+happens.
+</p>
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2012-05-23T00:00:00+01:00" pubdate data-updated="true">May 23<span>rd</span>, 2012</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2012/05/23/green-is-useless-to-me/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2012/05/23/green-is-useless-to-me/">Green Is Useless To Me</a></h1>
+      <p>The other day I started reading <a href="http://www.amazon.co.uk/The-Geek-Manifesto-ebook/dp/B007T99H6S" title="The Geek Manifesto">The Geek Manifesto</a>, by Mark Henderson, and, given my particular interests, I started near the end with the chapter on <em>Geeks and Greens</em> before starting properly at the beginning.</p>
+<p>I strongly suggest reading it, but to summarise, the traditional green movement is generally unscientific and deeply political, and this has led to counterproductive politicisation and scepticism of scientific issues like climate change.</p>
+<p>The greens latched onto a few things correctly by accident, like climate change research, but are still vastly wrong on many others. They come with too much junk science to be credible, and this leaks into the real science that they accidentally picked up. The association of the Green Party, for instance, with homeopathy and other alternative medicine approaches, is just sad in this day and age (although I believe it changed recently, it wouldn&#8217;t surprise me if the party still includes many who do believe this junk).</p>
+<p>Add to that that many traditional greens have far-left politics which puts a lot of people off, and you end up with the conclusion that they *cannot* be trusted to be the main voice on important matters of science like climate change, which should essentially be an apolitical issue.</p>
+<p>Whether it&#8217;s NGOs like Greenpeace or Friends of the Earth, or political parties like the Green Party here in the UK, they are just too embedded in their history to be able to deal with this properly. They can&#8217;t give up their hatred of nuclear power, for instance, or their opposition to GM science, both of which are probably going to be essential tools for our future, without alienating their core membership.</p>
+<p>I agree with Mark that a new approach is needed, but I don&#8217;t think those organisations can be rescued &#8216;from the inside&#8217; as he suggests. They can carry on if they like, but even in the unlikely event that they change their views, the public&#8217;s perception of them would still be the same. We need something new, something reality-based, something that aims to have the clean high-tech future that I <em>personally</em> want.</p>
+<p>Even the word &#8216;green&#8217; is now rendered useless by these viewpoints, so we have to just drop it and talk about &#8216;sustainability&#8217; and &#8216;clean&#8217; instead. If someone could come up with a catchy name for it that&#8217;s half as good as &#8216;green&#8217; though, that would be lovely.</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+  
+  <div class="pagination">
+    
+    <a class="prev" href="/blog/page/2/">&larr; Older</a>
+    
+
+    
+  </div>
+</div>
+
+
         </div>
+      </div>
+      <div class="row-fluid">
+        <footer class="footer-page" role="contentinfo">
+          <p>
+  Copyright &copy; 2013 - James Smith -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span> - Theme by <a href="http://alexgaribay.com">Alex Garibay</a>
+</p>
+
+
+        </footer>
       </div>
     </div>
+  </div>
+  
 
-    <div class="container">
+<script type="text/javascript">
+      var disqus_shortname = 'floppyorguk';
       
-      <div class='well'>
-        <h1>My Portfolio</h1>
-        <p>
-         This page lists some of my projects that are worth sharing. There's more on my <a href='http://github.com/Floppy'>Github profile</a>, 
-         or you can find out more general information about me on <a href='http://floppy.org.uk'>my blog</a>.
-        </p>
-      </div>
+        
+        var disqus_script = 'count.js';
       
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
-      <div class="row">
-        <div class="span-one-third">
-          <a href="http://github.com/AMEE">
-            <h3>AMEE »</h3>
-            <img src='images/amee.png' width='300' height='100'/>
-          </a>
-          <p><a href="http://www.amee.com">AMEE</a> is web service that provides calculation of greenhouse gas emissions and other sustainability metrics. My employer from 2008-2012. Favourite projects are <a href='http://discover.amee.com'>AMEEdiscover</a> and <a href='http://ask.amee.com'>Ask AMEE</a>.</p>
-        </div>
-        <div class="span-one-third">
-          <a href="http://carbondiet.org">
-            <h3>The Carbon Diet »</h3>
-            <img src='images/carbondiet.png' width='300' height='100'/>
-          </a>
-          <p>A site created way back in 2007 that combines accurate and timely emissions measurement with social aspects to create a new approach to carbon footprinting. Now <a href='http://github.com/Floppy/carbon-diet'>open source</a>.</p>
-        </div>
-        <div class="span-one-third">
-          <a href="http://www.amee.com/blog/2011/10/24/hacking-carbon-emissions-into-minecraft">
-            <h3>Climatecraft »</h3>
-            <img src='images/climatecraft.png' width='300' height='100'/>
-          </a>
-          <p>A <a href='http://minecraft.net'>Minecraft</a> mod that adds carbon emissions and sequestration. Winning hack at the <a href='http://stockholm.greenhackathon.com'>Stockholm Green Hackathon</a> in 2011, covered by <a href='http://www.guardian.co.uk/environment/green-living-blog/2011/oct/25/climate-change-strikes-minecraft'>The Guardian</a>, <a href='http://kotaku.com/5853419/hacking-carbon-emissions-into-minecraft'>Kotaku</a>, <a href='http://boingboing.net/2011/11/29/hacking-carbon-emissions-into.html'>BoingBoing</a> and <a href='http://www.treehugger.com/clean-technology/hacking-carbon-emissions-minecraft.html'>TreeHugger</a>.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span-one-third">
-          <a href="http://planethopper.co.uk">
-            <h3>Planet Hopper »</h3>
-            <img src='images/planethopper.png' width='300' height='100'/>
-          </a>
-          <p>A webapp for classroom-based exploration of <a href='https://en.wikipedia.org/wiki/Extrasolar_planet'>exoplanets</a>, this was one of 6 global winners of
-          NASA's <a href='http://spaceappschallenge.org/'>International Space Apps Challenge 2012</a>, winning the
-          <a href='http://spaceappschallenge.org/blog/2012/05/18/global-winners-announced/'>Most Inspiring</a> award.</p>
-        </div>
-        <div class="span-one-third">
-          <a href="http://floppy.github.com/traeder">
-            <h3>Traeder »</h3>
-            <img src='images/traeder.png' width='300' height='100'/>
-          </a>
-          <p>An SMS-based system for exchange of alternative currencies, without requiring special hardware or physical 
-          tokens of any kind. Winner of the <a href='http://www.guardian.co.uk/media/blog/2011/jun/21/hactivate-developers-mashup-results'>Most Disruptive</a>
-          award at <a href='http://rewiredstate.org/events/hactivate-2011'>Hactivate 2011</a>.</p>
-        </div>
-        <div class="span-one-third">
-          <a href="http://floppy.org.uk/post/4990055777/the-social-meter">
-            <h3>Social Meter »</h3>
-            <img src='images/socialmeter.png' width='300' height='100'/>
-          </a>
-          <p>A system that combines live energy monitoring information with social networks, to give more context and drive continuous engagement with energy use. Built at <a href='http://rewiredstate.org/events/carbon-and-energy'>#rscarbon</a> in 2010.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span-one-third">
-          <a href="http://questionyourcandidates.org.uk">
-            <h3>QuestionYourCandidates »</h3>
-            <img src='images/qyc.png' width='300' height='100'/>
-          </a>
-          <p>A site written to crowdsource hustings details during the 2010 UK General Election, using APIs from <a href='http://yournextmp.com/'>YourNextMP</a> and <a href='http://theyworkforyou.com/'>TheyWorkForYou</a>. Sadly written too late to be useful, but a good idea.</p>
-       </div>
-        <div class="span-one-third">
-          <a href="http://twitter.com/co2updates">
-            <h3>@CO2Updates »</h3>
-            <img src='images/co2updates.png' width='300' height='100'/>
-          </a>
-          <p>A twitter bot that announces the latest atmospheric CO<sub>2</sub> measurements, grabbed from the <a href='http://www.noaa.gov/'>NOAA</a> on a monthly basis. Serves as a handy reminder of the ticking clock.</p>
-       </div>
-        <div class="span-one-third">
-          <a href="http://github.com/floppy/currentcost-ruby">
-            <h3>Currentcost »</h3>
-            <img src='images/currentcost.png' width='300' height='100'/>
-          </a>
-          <p>Various bits of hacking around with the output of a <a href='http://currentcost.com'>CurrentCost</a> energy monitor, including a ruby gem and <a href="http://github.com/floppy/currentcostd">system daemon</a> for publishing information to the web.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="span-one-third">
-          <a href='http://dothegreenthing.com'>
-            <h3>Green Thing »</h3>
-            <img src='images/greenthing.png' width='300' height='100'/>
-          </a>
-          <p>A charity I worked with in 2007-8 that tries to make a sustainable lifestyle more desirable by creating inspirational (and aspirational) content and allowing people to share their own inspiration with others.</p>
-        </div>
-        <div class="span-one-third">
-          <a href="http://web.archive.org/web/20070821082917/http://web3d.vapourtech.com/tutorials/vrml97/index.html">
-            <h3>Web3D Guide »</h3>
-            <img src='images/web3d.png' width='300' height='100'/>
-          </a>
-          <p>In the early 2000s, I wrote a popular guide to <a href='https://en.wikipedia.org/wiki/VRML'>VRML97</a>, an early 3D language for the web. The language is long dead, and the site is retired, but
-          the tutorials are still available via the Internet Archive.</p>
-       </div>
-        <div class="span-one-third">
-          <a href="https://github.com/downloads/Floppy/phd-thesis/smith03thesis.pdf">
-            <h3>PhD Research »</h3>
-            <img src='images/phd.png' width='300' height='100'/>
-          </a>
-          <p>My PhD thesis was all about efficient animation of dense meshes, using simplification and displacement mapping, in the days before raw computing power made it all irrelevant.</p>
-        </div>
-      </div>
 
-      <footer>
-        <p>© 2012 James Smith. Template shamelessly ripped off from <a href='http://twitter.github.com/bootstrap/'>Bootstrap</a>.</p>
-      </footer>
 
-    </div>
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
 
 </body>
 </html>

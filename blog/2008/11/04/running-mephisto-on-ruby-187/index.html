@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Running Mephisto on Ruby 1.8.7 - James Smith</title>
+  <meta name="author" content="James Smith">
+
+  
+  <meta name="description" content="Running Mephisto on Ruby 1.8.7 Nov 4th, 2008 My server runs Ubuntu, and seeing as 8.10 (Intrepid Ibex) is out, I thought &#8220;woo, let&#8217;s &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://floppy.org.uk/blog/2008/11/04/running-mephisto-on-ruby-187">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="James Smith" type="application/atom+xml">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/bootstrap-collapse.js"></script>
+  <script src="/js/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/js/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="/stylesheets/custom.css" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2310810-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <div class="navbar navbar-inverse navbar-static-top">
+  	<div class="navbar-inner">
+  	  <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="fui-menu-24"></span>
+        </a>
+  	  	<div class="nav-collapse collapse navbar-responsive-collapse" style="height:0;">
+  	      <ul class="nav">
+    
+        <li ><a href="/">Home</a></li>
+    
+        <li ><a href="/blog/archives">Archives</a></li>
+    
+        <li ><a href="/code">Code</a></li>
+    
+</ul>
+
+<ul class="nav pull-right">
+    
+    <li><a href="http://github.com/Floppy" title="Github Profile"><i class="icon-github-sign social-navbar"></i></a></li>
+    
+    
+    <li><a href="http://linkedin.com/in/floppy" title="Linkedin Profile"><i class="icon-linkedin-sign social-navbar"></i></a></li>
+    
+    
+    <li><a href="http://twitter.com/floppy" title="Twitter Profile"><i class="icon-twitter-sign social-navbar"></i></a></li>
+    
+    
+    <li><a href="http://plus.google.com/106927026319199661821" title="Google+ Profile"><i class="icon-google-plus-sign social-navbar"></i></a></li>
+    
+    
+</ul>
+
+  	    </div>
+  	  </div>
+  	</div>
+  </div>
+  <div class="container" id="main">
+    <div class="span12">
+      <div class="row-fluid">
+        <div id="content">
+          <div>
+<article class="hentry" role="article">
+  
+
+  <header>
+  <div class="jumbotron">
+    Running Mephisto on Ruby 1.8.7
+	<h5>
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2008-11-04T00:00:00+00:00" pubdate data-updated="true">Nov 4<span>th</span>, 2008</time></h5>
+  </div>
+</header>
+  <div class="row-fluid">
+    <div class="span12">
+      <p>
+My server runs Ubuntu, and seeing as 8.10 (Intrepid Ibex) is out, I thought &#8220;woo, let&#8217;s upgrade&#8221;. Bad idea. Well, partly. Most of the upgrade went fine, but there was one problem. Intrepid comes with Ruby 1,8.7, which works fine with Rails &gt;=2.1, but doesn&#8217;t work with anything lower. Mephisto, on the other hand, doesn&#8217;t work with Rails 2.1 yet, and is only usable with Rails 
+
+</p><p><code lang="text" theme="zenburnesque">
+NoMethodError (undefined method `[]' for #<:enumerator:0x2aaaad5f7a58>)
+</:enumerator:0x2aaaad5f7a58></code>
+</p><p>
+So, I was faced with having to downgrade to Ruby 1.8.6 (a royal pain as Intrepid doesn&#8217;t provide packages for it), or &#8220;fix&#8221; Mephisto to work with 2.1 (oh my god, don&#8217;t even get me started). Fortunately, another solution presented itself.
+</p>
+<p>
+I came across <a href="http://bicosyes.com/rails-2-1-con-ruby-1-8-7-broken/">this blog post</a> which describes the problem I was having. The gist (it&#8217;s in Spanish) is that the main problem with Rails 2.0.2 and Ruby 1.8.7 is that Ruby 1.8.7 has added a String#chars function to the core language. Rails also adds this function, but the two have different return types, hence causing much breakage. The solution? Remove Ruby&#8217;s String#chars and let Rails do its thing. Add this code to an initializer in your Rails 2.0.2 app, and it will work (better, at least) with Ruby 1.8.7.
+</p>
+<p>
+<code lang="ruby" theme="zenburnesque">
+begin
+  String.class_eval { remove_method :chars }
+rescue NameError
+end
+</code>
+</p>
+<p>
+As you can tell by the fact that you&#8217;re reading this blog, it works a treat. Hurrah!
+</p>
+<p>
+EDIT: Another solution, which I only just worked out, would be to install the very badly-named <a href="http://www.rubyenterpriseedition.com/">Ruby Enterprise Edition</a>, which sits alongside the system&#8217;s Ruby and is call-compatible with 1.8.6. This makes a lot of sense if you&#8217;re using passenger (mod_rails), as well.
+</p>
+
+    </div>
+  </div>
+
+
+
+  <footer>
+    <hr>
+    
+    <div class="row-fluid">
+      
+      <div class="span6">
+        <p class="meta">
+        
+        
+
+
+        </p>
+      </div>
+      
+      <div class="span6 social-sharing">
+        <div class="sharing">
+  <div class="addthis_toolbox addthis_default_style ">
+  
+  
+  <a class="addthis_button_tweet"></a>
+  
+  
+  <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+      </div>
+      
+      
+    </div>
+    
+    <div class="row-fluid">
+      <div class="span12">
+        <p class="meta">
+          
+            <a class="basic-alignment left" href="/blog/2008/10/13/gems-bookmarks-and-sandwiches/" title="Previous Post: Gems, Bookmarks, and Sandwiches">&laquo; Gems, Bookmarks, and Sandwiches</a>
+          
+          
+            <a class="basic-alignment right" href="/blog/2009/03/28/publishing-currentcost-data-to-the-world/" title="Next Post: Publishing CurrentCost data to the world">Publishing CurrentCost data to the world &raquo;</a>
+          
+        </p>
+      </div>
+    </div>
+  </footer>
+</article>
+
+</div>
+
+
+
+        </div>
+      </div>
+      <div class="row-fluid">
+        <footer class="footer-page" role="contentinfo">
+          <p>
+  Copyright &copy; 2013 - James Smith -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span> - Theme by <a href="http://alexgaribay.com">Alex Garibay</a>
+</p>
+
+
+        </footer>
+      </div>
+    </div>
+  </div>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'floppyorguk';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

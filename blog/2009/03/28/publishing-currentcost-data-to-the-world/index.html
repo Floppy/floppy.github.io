@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Publishing CurrentCost data to the world - James Smith</title>
+  <meta name="author" content="James Smith">
+
+  
+  <meta name="description" content="Publishing CurrentCost Data to the World Mar 28th, 2009 A while ago, I started hacking around with a CurrentCost real-time energy monitor. This is a &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://floppy.org.uk/blog/2009/03/28/publishing-currentcost-data-to-the-world">
+  <link href="/favicon.png" rel="icon">
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="James Smith" type="application/atom+xml">
+  <script src="/js/jquery.js"></script>
+  <script src="/js/bootstrap-collapse.js"></script>
+  <script src="/js/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/js/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="/stylesheets/custom.css" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2310810-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <div class="navbar navbar-inverse navbar-static-top">
+  	<div class="navbar-inner">
+  	  <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="fui-menu-24"></span>
+        </a>
+  	  	<div class="nav-collapse collapse navbar-responsive-collapse" style="height:0;">
+  	      <ul class="nav">
+    
+        <li ><a href="/">Home</a></li>
+    
+        <li ><a href="/blog/archives">Archives</a></li>
+    
+        <li ><a href="/code">Code</a></li>
+    
+</ul>
+
+<ul class="nav pull-right">
+    
+    <li><a href="http://github.com/Floppy" title="Github Profile"><i class="icon-github-sign social-navbar"></i></a></li>
+    
+    
+    <li><a href="http://linkedin.com/in/floppy" title="Linkedin Profile"><i class="icon-linkedin-sign social-navbar"></i></a></li>
+    
+    
+    <li><a href="http://twitter.com/floppy" title="Twitter Profile"><i class="icon-twitter-sign social-navbar"></i></a></li>
+    
+    
+    <li><a href="http://plus.google.com/106927026319199661821" title="Google+ Profile"><i class="icon-google-plus-sign social-navbar"></i></a></li>
+    
+    
+</ul>
+
+  	    </div>
+  	  </div>
+  	</div>
+  </div>
+  <div class="container" id="main">
+    <div class="span12">
+      <div class="row-fluid">
+        <div id="content">
+          <div>
+<article class="hentry" role="article">
+  
+
+  <header>
+  <div class="jumbotron">
+    Publishing CurrentCost Data to the World
+	<h5>
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2009-03-28T00:00:00+00:00" pubdate data-updated="true">Mar 28<span>th</span>, 2009</time></h5>
+  </div>
+</header>
+  <div class="row-fluid">
+    <div class="span12">
+      <p>
+A while ago, I started hacking around with a <a href="http://www.currentcost.co.uk">CurrentCost</a> real-time energy monitor. This is a very nice little device that measures your electricity use, but more importantly has a serial output on the bottom so you can get data out of it.
+</p>
+
+<p>
+Well, eventually I decided that while being able to get data off the meter was nice, it would be better if I could publish it somewhere. So, I wrote a program in Ruby to do exactly that. It reads data from the meter, and sticks it on the web. I&#8217;ll go into a bit more detail in a minute, but first, you can download it (and get the source code) from <a href="http://github.com/Floppy/currentcost-daemon/">github</a>.
+</p>
+
+<p>
+The program operates as a system daemon, which runs in the background on your Linux box (Mac should work as well) and uploads to various places. Adding new publishers is dead easy, so if you want to publish your data somewhere else, you can easily add it.
+</p>
+
+<h3>The Carbon Diet</h3>
+
+<p>
+First up, my own site, <a href="http://www.carbondiet.org">The Carbon Diet</a>. This uploads your daily usage history from the meter into your carbon diet account so that you don&#8217;t have to take so many meter readings to get an accurate graph. This is still pretty experimental and needs more work, but it&#8217;s pretty useful already. You can see how it looks on <a href="http://www.carbondiet.org/profile/james">my profile</a>.
+</p>
+
+<h3>AMEE</h3>
+
+<p>
+Next, what I think of as the important one. <a href="http://www.amee.com">AMEE</a>, if you&#8217;re not aware, AMEE is a neutral aggregation platform for sharing energy data and carbon calculations (disclaimer: I work for them these days). Think OpenID for your energy identity. Anyway, we have a nice &#8220;smart meter&#8221; demo which uses my currentcost app as the data source. Every minute, it uploads into an AMEE profile, and then another app <a href="http://my.amee.com/demo/1">makes a nice graph</a> of the CO2 produced. In theory, the Carbon Diet could pull that data from AMEE instead of me publishing it directly, but that&#8217;s still to come.
+</p>
+
+<h3>Pachube</h3>
+
+<p>
+Another energy data sharing service is <a href="http://www.pachube.com">Pachube</a> (pronounced &#8220;patch bay&#8221;). As far as I can tell, this is more geared at art and design than rigorous data, but it&#8217;s fun to play with. They&#8217;ve done a bunch of stuff with the CurrentCost, and now my app joins the throng. My <a href="http://www.pachube.com/feeds/488">pachube feed</a> updates every 6 seconds - every time the meter sends data out.
+</p>
+
+<h3>Twitter</h3>
+
+<p>
+Finally, what would be the point of a web energy publisher if it couldn&#8217;t tweet? If you really want to, you can see my minute-by-minute energy usage on Twitter by visiting <a href="http://twitter.com/james_energy">@james_energy</a>.
+</p>
+
+    </div>
+  </div>
+
+
+
+  <footer>
+    <hr>
+    
+    <div class="row-fluid">
+      
+      <div class="span6">
+        <p class="meta">
+        
+        
+
+
+        </p>
+      </div>
+      
+      <div class="span6 social-sharing">
+        <div class="sharing">
+  <div class="addthis_toolbox addthis_default_style ">
+  
+  
+  <a class="addthis_button_tweet"></a>
+  
+  
+  <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+      </div>
+      
+      
+    </div>
+    
+    <div class="row-fluid">
+      <div class="span12">
+        <p class="meta">
+          
+            <a class="basic-alignment left" href="/blog/2008/11/04/running-mephisto-on-ruby-187/" title="Previous Post: Running Mephisto on Ruby 1.8.7">&laquo; Running Mephisto on Ruby 1.8.7</a>
+          
+          
+            <a class="basic-alignment right" href="/blog/2009/05/21/the-carbon-diet-goes-open-source/" title="Next Post: The Carbon Diet goes open source">The Carbon Diet goes open source &raquo;</a>
+          
+        </p>
+      </div>
+    </div>
+  </footer>
+</article>
+
+</div>
+
+
+
+        </div>
+      </div>
+      <div class="row-fluid">
+        <footer class="footer-page" role="contentinfo">
+          <p>
+  Copyright &copy; 2013 - James Smith -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span> - Theme by <a href="http://alexgaribay.com">Alex Garibay</a>
+</p>
+
+
+        </footer>
+      </div>
+    </div>
+  </div>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'floppyorguk';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

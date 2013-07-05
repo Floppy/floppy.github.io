@@ -1,16 +1,556 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://floppy.github.io/atom.xml" rel="self"/>
-  <link href="http://floppy.github.io/"/>
-  <updated>2013-07-04T20:03:59+01:00</updated>
-  <id>http://floppy.github.io/</id>
+  <title><![CDATA[James Smith]]></title>
+  <link href="http://floppy.org.uk/atom.xml" rel="self"/>
+  <link href="http://floppy.org.uk/"/>
+  <updated>2013-07-05T18:39:23+01:00</updated>
+  <id>http://floppy.org.uk/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
-    
+    <name><![CDATA[James Smith]]></name>
+    <email><![CDATA[james@floppy.org.uk]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ActiveRecord-style array filtering in Ruby]]></title>
+    <link href="http://floppy.org.uk/blog/2012/08/01/activerecord-style-array-filtering-in-ruby/"/>
+    <updated>2012-08-01T00:00:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2012/08/01/activerecord-style-array-filtering-in-ruby</id>
+    <content type="html"><![CDATA[<p>Rails&#8217; named scopes are fantastic for making readable code with efficient SQL behind the scenes. Given a Person model, you could define a scope called &#8216;adult&#8217; which could add an SQL <em>WHERE</em> for <em>age&gt;18</em>, and let you write pretty code like Person.adult to find all adults. Great! Chaining them together gets even better with code like Person.adult.male.with_glasses.</p>
+<p>The problem comes if you do this in a single action with lots of different chained scopes to show different data. You end up with a whole bunch of SQL queries, which can get expensive. In the system I&#8217;m currently building, which includes geospatial queries, this gets far too slow to use. So, instead, let&#8217;s get one big list of objects and filter them in Ruby when we need them.</p>
+<p>Simple enough. The only thing is, the ActiveRecord chaining syntax is lovely. I don&#8217;t want to write tons of chained selects with blocks and all that faff. Instead, let&#8217;s extend Array to give us the syntax we like. The trick is to wrap an Array inside another class and then use method_missing to delegate. We then make sure that returned objects aren&#8217;t Arrays, but our new type instead.</p>
+<p>It&#8217;s best explained with the code:</p>
+
+<script src="https://gist.github.com/Floppy/3228297.js"></script>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Introducing Therm]]></title>
+    <link href="http://floppy.org.uk/blog/2012/07/24/introducing-therm/"/>
+    <updated>2012-07-24T00:00:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2012/07/24/introducing-therm</id>
+    <content type="html"><![CDATA[<p>
+<a href="http://www.therm.uk.com"><img src="http://floppy.org.uk/images/therm.png"/></a>
+</p>
+<p>
+It’s been an interesting year. Until April I worked at AMEE as their Platform
+Evangelist. I’d been there almost four years, through lots of interesting times.
+I got to do cool things like build AskAMEE, hack carbon emissions into Minecraft
+(and get on BoingBoing with it), and run the London Green Hackathon. It was sad
+when my time there came to an end, but in startup life there is always a point at
+which it makes sense to move on.
+</p>
+<p>
+Since then, I’ve been trying to find ways to carry making software that at least
+tries to deal with the impending climate crisis that’s heading our way. As I discussed
+at the beginning of the year, we don’t have long. I’ve been carrying on building
+the Cleanweb UK community that we tried to bootstrap at AMEE on a voluntary basis.
+London seems to have the most interesting cleanweb community in the world - we’ve
+certainly been doing it longer than anyone else, so we have to capitalise on that
+and work together!
+</p>
+<p>
+However, the time has come for me to try and make a living out of this stuff again,
+and I’m having a go at doing it by myself.
+</p>
+<p>
+So, meet <a href="http://www.therm.uk.com">Therm</a>. It’s the first specialist cleanweb consultancy in the world (as
+far as I know). If you’re doing anything on the web to do with sustainability, Therm
+can help - get in touch!
+</p>
+<p>
+It’s just me for now, but maybe later it won’t be. It’ll be an adventure, whatever
+happens.
+</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Green Is Useless To Me]]></title>
+    <link href="http://floppy.org.uk/blog/2012/05/23/green-is-useless-to-me/"/>
+    <updated>2012-05-23T00:00:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2012/05/23/green-is-useless-to-me</id>
+    <content type="html"><![CDATA[<p>The other day I started reading <a href="http://www.amazon.co.uk/The-Geek-Manifesto-ebook/dp/B007T99H6S" title="The Geek Manifesto">The Geek Manifesto</a>, by Mark Henderson, and, given my particular interests, I started near the end with the chapter on <em>Geeks and Greens</em> before starting properly at the beginning.</p>
+<p>I strongly suggest reading it, but to summarise, the traditional green movement is generally unscientific and deeply political, and this has led to counterproductive politicisation and scepticism of scientific issues like climate change.</p>
+<p>The greens latched onto a few things correctly by accident, like climate change research, but are still vastly wrong on many others. They come with too much junk science to be credible, and this leaks into the real science that they accidentally picked up. The association of the Green Party, for instance, with homeopathy and other alternative medicine approaches, is just sad in this day and age (although I believe it changed recently, it wouldn&#8217;t surprise me if the party still includes many who do believe this junk).</p>
+<p>Add to that that many traditional greens have far-left politics which puts a lot of people off, and you end up with the conclusion that they *cannot* be trusted to be the main voice on important matters of science like climate change, which should essentially be an apolitical issue.</p>
+<p>Whether it&#8217;s NGOs like Greenpeace or Friends of the Earth, or political parties like the Green Party here in the UK, they are just too embedded in their history to be able to deal with this properly. They can&#8217;t give up their hatred of nuclear power, for instance, or their opposition to GM science, both of which are probably going to be essential tools for our future, without alienating their core membership.</p>
+<p>I agree with Mark that a new approach is needed, but I don&#8217;t think those organisations can be rescued &#8216;from the inside&#8217; as he suggests. They can carry on if they like, but even in the unlikely event that they change their views, the public&#8217;s perception of them would still be the same. We need something new, something reality-based, something that aims to have the clean high-tech future that I <em>personally</em> want.</p>
+<p>Even the word &#8216;green&#8217; is now rendered useless by these viewpoints, so we have to just drop it and talk about &#8216;sustainability&#8217; and &#8216;clean&#8217; instead. If someone could come up with a catchy name for it that&#8217;s half as good as &#8216;green&#8217; though, that would be lovely.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Planet Hopper]]></title>
+    <link href="http://floppy.org.uk/blog/2012/05/15/planet-hopper/"/>
+    <updated>2012-05-15T00:00:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2012/05/15/planet-hopper</id>
+    <content type="html"><![CDATA[<a href="http://www.planethopper.co.uk">Planet Hopper</a><br/><p>A couple of weeks ago, I went along to ISIC in Harwell to take part in the <a href="http://spaceappschallenge.org/">International Space Apps Challenge</a>, run by NASA. Hackdays are always fun, but this one was particularly exciting, because, you know, SPACE!</p>
+<p>At first I thought about doing something with Earth observation data and climate change, but decided I&#8217;d give myself a break from that and do something else for once. After the usual shenanigans forming a team, a few of us started working on something to do with exoplanet data, particularly from the <a href="http://en.wikipedia.org/wiki/Kepler_(spacecraft)" title="Kepler">Kepler satellite</a>.</p>
+<p>We know about tons of planets now, but most people don&#8217;t know much about them. We decided to make something a bit fun and a bit educational. My sister is a physics teacher, so we aimed at creating something she could use in class to stimulate questions from the kids.</p>
+<p>The result is <a href="http://www.planethopper.co.uk" title="Planet Hopper">Planet Hopper</a>, a webapp that allows you to explore the exoplanets and see various interesting facts about them in a friendly way. For instance, we tell you how old you would be on the planet, hoping to stimulate the question &#8216;why?&#8217;</p>
+<p>We ended up winning the best hack prize at the Harwell site, and are currently in the global judging round, which is always nice.</p>
+<p>Technically, this was my first experience with Django. In general, my first assessment was that it seemed perfectly capable, but not as slick as the Rails toolset perhaps. I&#8217;ll keep playing with it though, it&#8217;s always good to know more!</p>
+<p>If you want to improve Planet Hopper, you can do; the code is, as always, <a href="http://github.com/Floppy/kepler-explorer" title="Code">on github</a>.</p>
+<p><strong>UPDATE</strong>: We won in the global judging! <a href="http://spaceappschallenge.org/blog/2012/05/18/global-winners-announced/">&#8220;Most Inspiring&#8221;</a> - pretty sweet! </p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The need for Cleanweb R&D]]></title>
+    <link href="http://floppy.org.uk/blog/2012/03/12/the-need-for-cleanweb-rd/"/>
+    <updated>2012-03-12T00:00:00+00:00</updated>
+    <id>http://floppy.org.uk/blog/2012/03/12/the-need-for-cleanweb-rd</id>
+    <content type="html"><![CDATA[<p>The newly-named cleanweb is a strange place. It&#8217;s all about social change, better sustainability, and other such noble goals, but it&#8217;s shackled by the demands of today&#8217;s economy; people with mortgages need proper jobs and investors need returns. The potential is enormous, but the opportunity to really explore it feels tiny. Some companies (like <a href="http://www.amee.com">AMEE</a>) do explore this space, but are still bound to go with the most commercially-viable opportunities. There&#8217;s very little space for blue-sky thinking.</p>
+<p>I have a gut feeling that anything that truly changes behaviour will have to do so without the prospect of financial payback. By buying into the current assumptions about how the world should run, you&#8217;re maybe holding back the really ground-breaking ideas. There are some things that will work, sure, but thousands of ideas that could make the world better will never get off the ground because of a lack of business model.</p>
+<p>What we need is a social-good model instead. We don&#8217;t need more space for entrepreneurs, but instead we need space for people who want to change the world for the better to do so. Not for money, but because it&#8217;s a good and noble and important thing to do. We need some way of supporting and developing great ideas that come out of events like the <a href="http://london.greenhackathon.com">London Green Hackathon</a>, even if they don&#8217;t have a way to make money for someone (though of course <a href="http://www.mastodonc.com">some do</a> and that&#8217;s great).</p>
+<p>We need a Cleanweb R&amp;D Foundation of some kind, with a remit to simply make the world better and try things out. That would be a place that could really attack some truly innovative ideas. And it would be a hell of a lot of fun.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Fixing the life support]]></title>
+    <link href="http://floppy.org.uk/blog/2012/01/05/fixing-the-life-support/"/>
+    <updated>2012-01-05T00:00:00+00:00</updated>
+    <id>http://floppy.org.uk/blog/2012/01/05/fixing-the-life-support</id>
+    <content type="html"><![CDATA[<p>Somehow, this year feels different.</p>
+<p>Maybe it&#8217;s because of the increase in public awareness of the problems with the world at the end of 2011. A greater understanding that governments and people don&#8217;t run the world any more, that we have given money too much power, that we are running full tilt at a cliff-edge; it feels like it&#8217;s adding up.</p>
+<p>Charlie Brooker said recently that 2011&#160;<a href="http://www.guardian.co.uk/commentisfree/2011/dec/11/charlie-brooker-2011-season-finale">felt like a series finale</a>; I&#8217;m not sure about that, it felt to me more like the buildup in the penultimate episode. 2012 seems like the actual last episode when the big events will happen (probably with a few cliff-hangers left over for 2013).</p>
+<p>This impending feeling that big events are coming could be imaginary of course, but I hope not. We <em>need</em> big events now (and I don&#8217;t mean the obvious 2012 fake-apocalypse fantasy). We are racing so fast towards collapse that we have to do something <em>now</em>, or we will be a cautionary tale in the Cockroach Book Of Ancient Civilisations. We still have the ability to save ourselves (just); I hope that this year brings the will to engage with the problem.</p>
+<p>We need to grow up, realise the full-spectrum danger we are in, and do something about it. We need to <em>mature</em> as a species, and fast. We need to get over our selfish approach and make a better society for the future, together.</p>
+<p>I am a software engineer; that makes me next to useless in a collapsed society. My daughter quite literally <em>needs</em> a functioning, liberal, caring society to keep her alive. Moving to a farmhouse, becoming self-sufficient and letting everyone else collapse is no good for me. A functioning technological society is an essential life support system.</p>
+<p>With all that in mind, I am going into this year with an objective to make best use of the skills I have to attack the big problems where I can, and if it doesn&#8217;t work out, to fail magnificently having <em>done my best</em>. </p>
+<p>I hope you&#8217;ll join me. We&#8217;ve got a hell of a job to do.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hohm and Powermeter]]></title>
+    <link href="http://floppy.org.uk/blog/2011/07/01/hohm-and-powermeter/"/>
+    <updated>2011-07-01T00:00:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2011/07/01/hohm-and-powermeter</id>
+    <content type="html"><![CDATA[<p>The last week has been an interesting one for online energy  monitoring. Not content with deprecating Powermeter a few weeks ago,  Google decided to <a href="http://gigaom.com/cleantech/google-pulls-the-plug-on-powermeter-energy-tool">properly kill it off.</a> And then, as if to say &#8216;us too!&#8217; (as they did with the initial launch), Microsoft <a href="http://blog.microsoft-hohm.com/news/11-06-30/Microsoft_Hohm_Service_Discontinuation.aspx">killed Hohm</a>.</p>
+<p>Both these efforts were unsuccessful because the companies that put  them out weren&#8217;t serious about them. There is a place for  experimentation, but if you&#8217;re a massive company, even your small  experiments seem larger than other people&#8217;s entire companies. By  half-heartedly grabbing the attention around energy monitoring, these  experiments crowded out the people who are building a business around  this, like <a href="http://www.currentcost.com">Currentcost</a>, <a href="http://www.enio.co.uk">Enio</a>, <a href="http://pachube.com">Pachube</a> and many more.</p>
+<p>The fact is that online energy monitoring is not dead - the demise of  these services will simply provide more room for other companies to  innovate without being stepped on. Neither Powermeter or Hohm were doing  anything particularly innovative that hadn&#8217;t been done many times  before anyway! Powermeter also suffered from being a silo of data, not a  hub. You could put data in, but not get it out, which is a bit  pointless. A truly useful service in this space needs to act as an  aggregator, letting data flow through it so that other innovations can  cluster around it, like the <a href="http://floppy.org.uk/blog/2011/04/20/">Social Meter</a> project, for instance.</p>
+<p>Innovation needs openness, and by smothering a potentially innovative  space with their distinctly non-innovative services, MS and Google did  nobody any favours. We are better off without them.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Resolving a method_missing fight]]></title>
+    <link href="http://floppy.org.uk/blog/2011/06/08/resolving-a-method_missing-fight/"/>
+    <updated>2011-06-08T00:00:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2011/06/08/resolving-a-method_missing-fight</id>
+    <content type="html"><![CDATA[<p>Recently, I was writing tests for a piece of code, and came up against some strange problems. The code talks to an external web service using RestClient (1.6.1), so of course the web service is mocked for the tests, in this case using Mocha (0.9.8).</p>
+<p class="western">The problem came when I tried to test failure modes; for instance, what happens when the service comes back with a 401 due to bad credentials? RestClient raises an exception for this containing the response, so the mock has to do the same.</p>
+
+<pre>request.stubs(:put).raises(RestClient::Unauthorized.new(<br/>  stub(:code =&gt; 401, :body =&gt; nil)<br/>)</pre>
+<p class="western">So far so good. The exception is raised, and all is well. The problem comes when we try to access the response code later on in our error-handling code:</p>
+
+<pre>rescue RestClient::Exception =&gt; e
+  puts e.response.code
+</pre>
+<p class="western">Seems reasonable, right? The response object should be a Mocha::Mock that responds to #code and gives back 401. Unfortunately not. We get a &#8216;stack too deep&#8217; error thrown inside a recursive method_missing call. Huh?</p>
+<p class="western">This really should work, so let&#8217;s take a look inside the gems. It turns out that RestClient mixes something special into the response object (in this case the mock) for compatibility. The gem used to return Net::HTTP::Response objects, not RestClient::Response objects, so in order to retain compatibility with old code, it mixes in the behaviour of the Net::HTTP class to responses contained inside exceptions. This is taken from restclient/exceptions.rb:</p>
+
+<pre># Compatibility : make the Response act like a <br/># Net::HTTPResponse when needed
+module ResponseForException
+  def method_missing symbol, *args
+    if net_http_res.respond_to?(symbol)
+      warn "[warning] ..."
+      net_http_res.send symbol, *args
+    else
+      super
+    end
+  end
+end
+
+class Exception &lt; RuntimeError
+  attr_accessor :message, :response
+
+  def initialize response = nil, initial_response_code = nil
+    @response = response
+    @initial_response_code = initial_response_code
+    # compatibility: this make the exception behave like <br/>    # a Net::HTTPResponse
+    response.extend ResponseForException if response
+  end
+end
+</pre>
+<p class="western">As you can see, it does this by adding its own method_missing, which accesses the <strong>net_http_res</strong> function of the response. In our mock, that doesn&#8217;t exist, so of course method_missing is called ad infinitum. So, let&#8217;s add it:</p>
+
+<pre>request.stubs(:put).raises(RestClient::Unauthorized.new(<br/>  stub(:code =&gt; 401, :body =&gt; nil, :net_http_res =&gt; nil)<br/>)</pre>
+<p class="western">Better. Does it work now? Hm. No. It&#8217;s still digging a method_missing hole to the Earth&#8217;s core.</p>
+<p class="western">The <strong>real</strong> problem is that the method_missing that is mixed in by RestClient::Exception is masking the one in Mocha::Mock, and that one is what does the actual handling of the stub code that we pass in. So, even though we added net_http_res up there, the bit of code that handles it is never called, so we&#8217;re still stuffed.</p>
+<p class="western">Now, there&#8217;s not a lot we can do about that without rewriting the gems. If I <strong>was</strong> going to do that, I&#8217;d try to make sure that RestClient::Exception doesn&#8217;t mask existing method_missing functions, but instead aliases them and makes sure they are still called. Not sure how easy that would be, I&#8217;ve not tried it, but it would be worth a shot.</p>
+<p class="western">I would try to make some general rule here about making sure your code plays nice with other code, but to be honest, I doubt you can consider every case where someone might be subverting your code by giving it things like mock objects (which could implement the mocking in any number of ways) instead of real ones. I guess there will always be a gap somewhere.</p>
+<p class="western">The solution I hit upon in the end was to change the stub. Instead of using Mocha, which relies on method_missing to implement its stubbing, I changed to OpenStruct, which doesn&#8217;t, and is sufficient in this case.</p>
+
+<pre>request.stubs(:put).raises(RestClient::Unauthorized.new(<br/>  OpenStruct.new(:code =&gt; 401, :body =&gt; nil, :net_http_res =&gt; nil)<br/>)</pre>
+<p class="western">Yay, by using a stub that doesn&#8217;t require method_missing to operate, it all works nicely now! My tests are saved and I can get on with some real work&#8230; about time.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Social Meter]]></title>
+    <link href="http://floppy.org.uk/blog/2011/04/20/the-social-meter/"/>
+    <updated>2011-04-20T00:00:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2011/04/20/the-social-meter</id>
+    <content type="html"><![CDATA[<iframe src="http://player.vimeo.com/video/22657011" width="400" height="300" frameborder="0"></iframe><br/><p>Last year, I went to the Rewired State Carbon &amp; Energy hack day (#rscarbon), which was a great event. I went along with <a href="http://www.floppy.org.uk/2010/10/25/rewired-state-a-social-energy-monitor">an idea</a>,  and even better actually got to build it! We got a great team together,  and despite initial technical teething problems, had a demo running in  time for the show and tell at the end (by the skin of our teeth). I’ve  been meaning to write it up for ages, but instead, I decided to make a  video.</p>
+<p>The code is, as ever, available on <a href="http://github.com/Floppy/socialmeter">Github</a>, and there are other writeups on <a href="http://www.e-ssociation.net/blog/?p=59">Paul Tanner’s blog</a> and the <a href="http://rewiredstate.org/projects/social-meter">Rewired State site</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Francis Maude on the LRRA]]></title>
+    <link href="http://floppy.org.uk/blog/2010/11/26/francis-maude-on-the-lrra/"/>
+    <updated>2010-11-26T00:00:00+00:00</updated>
+    <id>http://floppy.org.uk/blog/2010/11/26/francis-maude-on-the-lrra</id>
+    <content type="html"><![CDATA[<p>
+In 2006, I wrote to my MP about the Legislative and Regulator Reform Bill (now Act). The bill contained extremely dangerous powers for Ministers to change anything they liked, giving them the ability to get away with pretty much anything without a proper vote. I campaigned against it, with many others, through <a href="http://saveparliament.org.uk">Save Parliament</a>.
+</p>
+
+<p>
+Anyway, my MP happens to be Francis Maude, who is now Minister for the Cabinet Office. It turns out that his government is now advancing a bill with similar powers, the <a href="http://www.guardian.co.uk/law/afua-hirsch-law-blog/2010/nov/09/lords-quangos">Public Bodies Bill</a>. Now, I admit I&#8217;ve not had chance to follow this in detail, so I <b>don&#8217;t</b> know if it&#8217;s as bad, or if it&#8217;s more limited. However, others who know more might be interested to know what Francis Maude had to say about those sort of powers four years ago.
+</p>
+
+<blockquote>
+&#8220;I am particularly concerned at the potential for Parliament to be bypassed by the order-making powers contained in Part 1 of the Billl. These powers are extremely constitutionally significant.&#8221;
+</blockquote>
+
+<blockquote>
+&#8220;It is imperative that the circumstances in which these powers can be used are limited and clearly set out in the Bill.&#8221;
+</blockquote>
+
+<p>
+<a href="http://www.flickr.com/photos/r-j-smith/sets/72157625471474192/detail/">The full scans</a> are available on my Flickr stream, for anyone who is interested.
+</p>
+
+<p style="text-align:center">
+<a href="http://www.flickr.com/photos/r-j-smith/5208470529/in/set-72157625471474192/"><img src="http://farm5.static.flickr.com/4107/5208470529_56cec99d52_m.jpg"/></a>
+<a href="http://www.flickr.com/photos/r-j-smith/5208441831/in/set-72157625471474192/"><img src="http://farm5.static.flickr.com/4132/5208441831_2d53fcd63e_m.jpg"/></a>
+</p>
+
+<p>
+Maybe the PBB is consistent with what he said 4 years ago, but maybe not. I&#8217;d be interested to know.
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rewired State: A Social Energy Monitor]]></title>
+    <link href="http://floppy.org.uk/blog/2010/10/25/rewired-state-a-social-energy-monitor/"/>
+    <updated>2010-10-25T00:00:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2010/10/25/rewired-state-a-social-energy-monitor</id>
+    <content type="html"><![CDATA[<p>
+The <a href="http://rewiredstate.org/events/carbon-and-energy">Rewired State Carbon &amp; Energy hack weekend</a> is coming up this weekend, and I&#8217;ve got a proposal for a hack I&#8217;d like to build (by kind permission of AMEE, my employer). I&#8217;m after a team to help, so if you&#8217;re interested, please get in touch.
+</p>
+
+<p>
+Energy monitors are useful, but lack a certain something to keep people coming back to them. The web excels at social and game mechanics, but is &#8216;out there&#8217;, not present in the normal home environment. The idea is to bring the two together by building a system that takes realtime energy data from a home and displays similarly realtime social context for that data.
+</p>
+
+<p>
+The end product is a simple display that shows not only current energy usage, but how that usage compares to other users of the system, <em>in real time</em>.
+</p>
+
+<p>
+How it works: each home (probably just one in the initial hack, with the rest mocked up) has a CurrentCost meter. This, via a script or bridge device, submits 5-minute energy usage readings into AMEE, where it&#8217;s stored and its carbon equivalent calculated. A website is then created to take that information from all registered devices and do some simple stats. It will calculate a realtime league table, position for each user, realtime average power usage, and so on. This, along with the user&#8217;s own data, is then displayed on a screen in the home - I have an O2 Joggler touchscreen which would do the trick, either through a browser or via a native OpenPeak app.
+</p>
+
+<p>
+The panel continuously shows the home user their energy usage, but also what their usage is compared to other users <em>right now</em>. It might display chart position, whether usage is going up or down, and other simple stats perhaps aggregated over time. This will bring some essential social context into the home energy monitoring space, and demonstrate the sort of innovation that can take place if smart metering systems are kept open.
+</p>
+
+<p>
+Many parts of the system exist already, so I think this is buildable in a weekend at least as a prototype. Like I say, if you want to help me build it, get in touch in the comments or via Twitter (#rscarbon).
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[What did you do in the election, Daddy?]]></title>
+    <link href="http://floppy.org.uk/blog/2010/05/06/what-did-you-do-in-the-election-daddy/"/>
+    <updated>2010-05-06T00:00:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2010/05/06/what-did-you-do-in-the-election-daddy</id>
+    <content type="html"><![CDATA[<p>
+One wondeful thing about the 2010 General Election is that so many great projects have happened online; Francis Irving covers them in a <a href="http://blog.okfn.org/2010/05/05/election-data/">post on the OKFN blog</a>.
+</p>
+
+<p>
+I was personally lucky enough to find the time to use these services to build something. I couldn&#8217;t find election hustings in my area, so I decided to make a site to crowdsource and open up that information properly. Enter <a href="http://questionyourcandidates.org.uk">QuestionYourCandidates</a>.
+</p>
+
+<p style="text-align:center">
+<img src="http://s3.amazonaws.com/twitpic/photos/large/89425316.png?AWSAccessKeyId=0ZRYP5X5F6FSMBCCSE82&amp;Expires=1273159187&amp;Signature=ERA7Bsv2Xe57mOGIPoCZ7QCUQjo%3D"/></p>
+
+<p>
+The site allows anyone to enter details of hustings in their area, basically, and link to them in a reliable way. It&#8217;s made from:
+</p>
+
+<ul><li>Rails 2.3.5 - this reminded me how excellent Rails is for rapid development</li>
+<li>Constituency &amp; candidate data from <a href="http://yournextmp.com">YourNextMP</a> through their API.</li>
+<li>Postcode search via the <a href="http://theyworkforyou.com">TheyWorkForYou</a> API.
+</li></ul><p>
+Both these APIs were incredibly easy to use, and because they use canonical names for both constituencies and candidates, it was easy to then link the site across to other services like <a href="http://democracyclub.org.uk">Democracy Club</a> and <a href="http://thestraightchoice.org">The Straight Choice</a>.
+</p>
+
+<p>
+The main dilemma while coding I had was whether to have user accounts. I decided against it in the end, just protecting the edit pages with a captcha. User accounts would have just added another layer of complexity, for really no extra functionality or security.
+</p>
+
+<p>
+The whole thing took around 6 hours from start to deploy, and I&#8217;m pretty proud of it. Unfortunately I did it a bit late to really be useful for this election, but I will try to generalise it to is can continue to be used for future elections. And, as always, it&#8217;s open source. Code is on <a href="http://github.com/Floppy/questionyourcandidates">Github</a>.
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My Ecomo09 Google Maps Hack]]></title>
+    <link href="http://floppy.org.uk/blog/2009/12/17/my-ecomo09-google-maps-hack/"/>
+    <updated>2009-12-17T00:00:00+00:00</updated>
+    <id>http://floppy.org.uk/blog/2009/12/17/my-ecomo09-google-maps-hack</id>
+    <content type="html"><![CDATA[<iframe src="http://player.vimeo.com/video/6907428" width="400" height="300" frameborder="0"></iframe><br/><p>In early September, <a href="http://www.betavine.net/bvportal/community/sustainability">Betavine</a> organised a 24-hour hack event called <a href="http://www.vimeo.com/6623187">EcoMo09</a>, with an environmental theme. Unfortunately I couldn’t stay the whole time, but I went along as an <a href="http://www.amee.com">AMEE</a> representative to support other people using our API during the event.  In the quiet periods, I managed to come up with my own hack, which used  GreaseMonkey and AMEE to add carbon emissions to Google Maps.</p>
+<p>You can even <a href="http://gist.github.com/185744">get the code</a> and try it yourself. It’s very basic, and actually most of the work was  dealing with Google Maps and making Greasemonkey behave properly - the  AMEE bit, getting the carbon value, was dead easy.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Activist Geek Philosophy]]></title>
+    <link href="http://floppy.org.uk/blog/2009/11/10/the-activist-geek-philosophy/"/>
+    <updated>2009-11-10T00:00:00+00:00</updated>
+    <id>http://floppy.org.uk/blog/2009/11/10/the-activist-geek-philosophy</id>
+    <content type="html"><![CDATA[<p>
+So, first, let&#8217;s have a stab at identifying the community I&#8217;m talking about - this in itself is a pretty hard problem. I guess I&#8217;m talking about &#8220;activist geeks&#8221;, in a way. The sort of people who are involved in the work of <a href="http://mysociety.org">MySociety</a>, or <a href="http://www.sicamp.org/">Social Innovation Camp</a>. The people who go along to events like <a href="http://www.geekyoto.com/">geeKyoto</a>, or perhaps <a href="http://russelldavies.typepad.com/planning/2009/08/interesting-speakers.html">Interesting</a>. They are the people that go out and create innovative things that make the world better. I can&#8217;t put any names on a list here, though there are some obvious ones of course, but you will probably know if this is your sort of community or not.
+</p>
+
+<p>
+So having made a (very) vague stab at who I&#8217;m talking about, what are the core philosophies that come out of that? One caveat: obviously this is  my own personal viewpoint, and implies absolutely nothing on behalf of those examples linked above. I could be completely wrong on all of this (though I&#8217;d invite comment). I think I am what would traditionally be called &#8220;left wing&#8221;, so my please note that my views may be coloured by that.
+</p>
+
+<p>
+Firstly, I think that while there are certain things that do unite the community, they often don&#8217;t fit along traditional political lines. You cannot say that this community is left-wing for instance; there are certainly members of all political parties involved. We&#8217;ll come back to some of the things that <em>don&#8217;t</em> unite us later on, but let&#8217;s find some common ground first.
+</p>
+
+<dl><dt><b>Privacy</b></dt>
+<dd>
+Even though many of us share vast amounts of information on various social networks, we have a strong belief in privacy of personal data. Perhaps this is better phrased as belief in <em>control</em> of personal data. I can delete my social network accounts at any time, and can decide who can see them, so I remain in control (as long as I trust the site). On the other side, I will not be able to remove my record from the ID card database or decide who accesses it, so I am not in control of that. This is part of a more fundamental belief in <a href="http://www.un.org/en/documents/udhr/">universal human rights.</a>
+</dd>
+<dt><b>Transparency</b></dt>
+<dd>
+While personal information should be kept tightly controlled by its owner, information about (and generated by) government and public services should be fully transparent and open. The MP expenses scandal was an example of further erosion of trust in government because of an opaque system that was open to abuse. As they say (I think), sunlight is the best disinfectant. Government operations should be open to public scrutiny, and assets produced by that system (OS maps anyone?) should be freely available to the taxpayers who have paid for them.
+</dd>
+<dt><b>Tolerance</b></dt>
+<dd>
+I don&#8217;t think we give a monkeys where someone is from, what their background is, or about their religion, sexuality, or favourite colour. It&#8217;s just not relevant. The rest of you, get over it.
+</dd>
+<dt><b>Anti-authoritarian</b></dt>
+<dd>
+It always confuses me that a criticism of the left is that it wants to control people. Maybe that&#8217;s true, in which case I need to recalibrate my open personal compass a little, but my belief is that the community is very much about freedom of the individual. There is a strong anti-authoritarian streak - none of us want to end up in a police state.
+</dd>
+<dt><b>Social Conscience</b></dt>
+<dd>
+However, the above freedom of the individual does not lead to blind self-interest. I believe that the community is not one of self-interested people with no care for others, but of a group of empowered individuals who actively engage in and make society better.
+</dd>
+<dt><b>Engagement</b></dt>
+<dd>
+My final point is that the above lead to a community that is engaged with the world around them. We engage on issues of importance, such as my own personal focus, climate change, and they are interested in the way their society is governed. I believe that those qualities are fundamental for a functioning democracy, and we see that currently most of society does not measure up to that standard (a situation which we try to improve of course).
+</dd>
+</dl><p>
+On the other hand, I seriously doubt we are all united on things like <a href="http://s.wsj.net/public/resources/images/OB-AO890_invisi_20070824192939.jpg">economics</a> (I love that picture), the role of corporations, how to deal with climate change, foreign policy, and so on.
+</p>
+
+<p>
+I&#8217;m sure there is more that can be said, but I will let it play out in the comments (if anyone wants to add to this). My final question is - if there is a central theme emerging, does that mean we should do something with it in these days when so many of the above viewpoints are rather missing from general society?
+</p>
+
+<p>
+Discuss.
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[IBM DeveloperWorks articles]]></title>
+    <link href="http://floppy.org.uk/blog/2009/10/28/ibm-developerworks-articles/"/>
+    <updated>2009-10-28T00:00:00+00:00</updated>
+    <id>http://floppy.org.uk/blog/2009/10/28/ibm-developerworks-articles</id>
+    <content type="html"><![CDATA[<p>
+Over the summer, I was asked to write an article for the IBM <a href="http://www.ibm.com/developerworks/">DeveloperWorks</a> site about energy monitoring and so on. Eventually, that turned into a series of articles centered around <a href="http://www.amee.com">AMEE</a> and how you can track energy consumption and calculate carbon emissions with it.
+</p>
+
+<p>
+So, now that they&#8217;re all published, here&#8217;s a bit of a linkdump to the various articles and other things that came out of them.
+</p>
+
+<dl><dt>
+<a href="http://www.ibm.com/developerworks/xml/library/x-ameeintro/">Introduction to AMEE</a>
+</dt>
+<dd>
+This is a technical introduction to the AMEE platform, how it works, and what you can do with it. It covers things like signing up, creating profiles, storing data, and getting results. It was also adapted into a screencast for the <a href="http://my.amee.com/developers">AMEE developer site</a>.
+</dd>
+<dt>
+<a href="http://www.ibm.com/developerworks/opensource/library/os-green-ict/index.html?S_TACT=105AGX44&amp;S_CMP=HP">Calculate your computer&#8217;s carbon footprint using AMEE</a>
+</dt>
+<dd>
+This one is an introduction to the wide variety of ways in which you can track energy data using AMEE, using the monitoring of computer energy use as a case study. It also shows some code examples for the <a href="http://github.com/Floppy/amee-ruby">AMEE ruby gem</a>.
+</dd>
+<dt>
+<a href="http://www.ibm.com/developerworks/xml/tutorials/x-ameetut/index.html">Monitor home energy with AMEE</a>
+</dt>
+<dd>
+This is my favourite of the three - a long tutorial, with lots of code, which shows a complete implementation of an online energy-monitoring system, using a <a href="http://www.currentcost.com">CurrentCost</a> display, AMEE, and a little Rails code. This uses a lot of the open source software I&#8217;ve been writing over the last year, which regular readers will have seen in previous posts, but it&#8217;s really nice to tie it all together and tell the world how it works!
+</dd>
+<dt>
+<a href="https://www.ibm.com/developerworks/mydeveloperworks/blogs/scott/entry/james_smith_on_embedding_environmental_intelligence">James Smith on embedding environmental intelligence</a>
+</dt>
+<dd>
+Scott Laningham was nice enough to interview me for the DeveloperWorks podcast when the first article went out, so if you want to hear me blathering on about it in person, you can do so!
+</dd>
+</dl>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Reboot Britain]]></title>
+    <link href="http://floppy.org.uk/blog/2009/07/08/reboot-britain/"/>
+    <updated>2009-07-08T00:00:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2009/07/08/reboot-britain</id>
+    <content type="html"><![CDATA[<p>
+I was lucky enough to be invited to talk at the <a href="http://www.rebootbritain.com">Reboot Britain</a> conference on Monday. It was a fascinating day, with lots of inspiring moments. It left me with a feeling that we can make the world a better place if we all get out there and <b>make</b> things. It&#8217;s something I already believed, but it&#8217;s great to have a recharge every now and again.
+</p>
+
+<p>
+My session was on hacking energy data, kind of a <a href="http://homecamp.org.uk">Homecamp</a> intro for the uninitiated. My slides are up on <a href="http://www.slideshare.net/Furtive">Slideshare</a>, and embedded here for your viewing pleasure. Hopefully at some point I&#8217;ll get to re-record the audio and add it in.
+</p>
+
+<div style="width:425px;text-align:left" id="__ss_1687179"><a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/Furtive/if-you-can-see-it-you-can-change-it" title="If you can see it, you can change it">If you can see it, you can change it</a><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=reboot-090706103726-phpapp01&amp;stripped_title=if-you-can-see-it-you-can-change-it"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=reboot-090706103726-phpapp01&amp;stripped_title=if-you-can-see-it-you-can-change-it" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;">View more <a style="text-decoration:underline;" href="http://www.slideshare.net/">documents</a> from <a style="text-decoration:underline;" href="http://www.slideshare.net/Furtive">James Smith</a>.</div></div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Carbon Diet goes open source]]></title>
+    <link href="http://floppy.org.uk/blog/2009/05/21/the-carbon-diet-goes-open-source/"/>
+    <updated>2009-05-21T00:00:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2009/05/21/the-carbon-diet-goes-open-source</id>
+    <content type="html"><![CDATA[<p>
+Well, I finally got round to it. I started developing <a href="http://www.carbondiet.org">The Carbon Diet</a> 2 years ago (had the idea 3 years ago!), and it&#8217;s finally spread it&#8217;s wings and joined the world of open source. 
+</p>
+
+<p>
+After I&#8217;d been developing it for a few months, it became obvious that it was never going to be a commercial proposition, so it&#8217;s been my intention to open it up for a very long time now. However, I was putting it off until &#8220;after I get it finished&#8221;, or &#8220;after I tidy up the code&#8221;, or any number of other reasons. Having a small child puts paid to all those plans, so I&#8217;ve finally bitten the bullet and released my dodgy code to the world as it is, warts and all.
+</p>
+
+<p>
+The site is built in Rails, but it&#8217;s pretty creaky. It was originally written in version 1.2 as I was learning, and a lot of the old-style controller and route code is still hanging around, waiting to be improved. I&#8217;ve started, but there is a long way to go to bring it up to a decent standard.
+</p>
+
+<p>
+Anyway, if you use the site (or not!) and fancy improving it, now you can. Head on over to <a href="http://github.com/Floppy/carbon-diet">github</a> to grab the code and join in. I hope to see you there!
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Publishing CurrentCost data to the world]]></title>
+    <link href="http://floppy.org.uk/blog/2009/03/28/publishing-currentcost-data-to-the-world/"/>
+    <updated>2009-03-28T00:00:00+00:00</updated>
+    <id>http://floppy.org.uk/blog/2009/03/28/publishing-currentcost-data-to-the-world</id>
+    <content type="html"><![CDATA[<p>
+A while ago, I started hacking around with a <a href="http://www.currentcost.co.uk">CurrentCost</a> real-time energy monitor. This is a very nice little device that measures your electricity use, but more importantly has a serial output on the bottom so you can get data out of it.
+</p>
+
+<p>
+Well, eventually I decided that while being able to get data off the meter was nice, it would be better if I could publish it somewhere. So, I wrote a program in Ruby to do exactly that. It reads data from the meter, and sticks it on the web. I&#8217;ll go into a bit more detail in a minute, but first, you can download it (and get the source code) from <a href="http://github.com/Floppy/currentcost-daemon/">github</a>.
+</p>
+
+<p>
+The program operates as a system daemon, which runs in the background on your Linux box (Mac should work as well) and uploads to various places. Adding new publishers is dead easy, so if you want to publish your data somewhere else, you can easily add it.
+</p>
+
+<h3>The Carbon Diet</h3>
+
+<p>
+First up, my own site, <a href="http://www.carbondiet.org">The Carbon Diet</a>. This uploads your daily usage history from the meter into your carbon diet account so that you don&#8217;t have to take so many meter readings to get an accurate graph. This is still pretty experimental and needs more work, but it&#8217;s pretty useful already. You can see how it looks on <a href="http://www.carbondiet.org/profile/james">my profile</a>.
+</p>
+
+<h3>AMEE</h3>
+
+<p>
+Next, what I think of as the important one. <a href="http://www.amee.com">AMEE</a>, if you&#8217;re not aware, AMEE is a neutral aggregation platform for sharing energy data and carbon calculations (disclaimer: I work for them these days). Think OpenID for your energy identity. Anyway, we have a nice &#8220;smart meter&#8221; demo which uses my currentcost app as the data source. Every minute, it uploads into an AMEE profile, and then another app <a href="http://my.amee.com/demo/1">makes a nice graph</a> of the CO2 produced. In theory, the Carbon Diet could pull that data from AMEE instead of me publishing it directly, but that&#8217;s still to come.
+</p>
+
+<h3>Pachube</h3>
+
+<p>
+Another energy data sharing service is <a href="http://www.pachube.com">Pachube</a> (pronounced &#8220;patch bay&#8221;). As far as I can tell, this is more geared at art and design than rigorous data, but it&#8217;s fun to play with. They&#8217;ve done a bunch of stuff with the CurrentCost, and now my app joins the throng. My <a href="http://www.pachube.com/feeds/488">pachube feed</a> updates every 6 seconds - every time the meter sends data out.
+</p>
+
+<h3>Twitter</h3>
+
+<p>
+Finally, what would be the point of a web energy publisher if it couldn&#8217;t tweet? If you really want to, you can see my minute-by-minute energy usage on Twitter by visiting <a href="http://twitter.com/james_energy">@james_energy</a>.
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Running Mephisto on Ruby 1.8.7]]></title>
+    <link href="http://floppy.org.uk/blog/2008/11/04/running-mephisto-on-ruby-187/"/>
+    <updated>2008-11-04T00:00:00+00:00</updated>
+    <id>http://floppy.org.uk/blog/2008/11/04/running-mephisto-on-ruby-187</id>
+    <content type="html"><![CDATA[<p>
+My server runs Ubuntu, and seeing as 8.10 (Intrepid Ibex) is out, I thought &#8220;woo, let&#8217;s upgrade&#8221;. Bad idea. Well, partly. Most of the upgrade went fine, but there was one problem. Intrepid comes with Ruby 1,8.7, which works fine with Rails &gt;=2.1, but doesn&#8217;t work with anything lower. Mephisto, on the other hand, doesn&#8217;t work with Rails 2.1 yet, and is only usable with Rails 
+
+</p><p><code lang="text" theme="zenburnesque">
+NoMethodError (undefined method `[]' for #<:enumerator:0x2aaaad5f7a58>)
+</:enumerator:0x2aaaad5f7a58></code>
+</p><p>
+So, I was faced with having to downgrade to Ruby 1.8.6 (a royal pain as Intrepid doesn&#8217;t provide packages for it), or &#8220;fix&#8221; Mephisto to work with 2.1 (oh my god, don&#8217;t even get me started). Fortunately, another solution presented itself.
+</p>
+<p>
+I came across <a href="http://bicosyes.com/rails-2-1-con-ruby-1-8-7-broken/">this blog post</a> which describes the problem I was having. The gist (it&#8217;s in Spanish) is that the main problem with Rails 2.0.2 and Ruby 1.8.7 is that Ruby 1.8.7 has added a String#chars function to the core language. Rails also adds this function, but the two have different return types, hence causing much breakage. The solution? Remove Ruby&#8217;s String#chars and let Rails do its thing. Add this code to an initializer in your Rails 2.0.2 app, and it will work (better, at least) with Ruby 1.8.7.
+</p>
+<p>
+<code lang="ruby" theme="zenburnesque">
+begin
+  String.class_eval { remove_method :chars }
+rescue NameError
+end
+</code>
+</p>
+<p>
+As you can tell by the fact that you&#8217;re reading this blog, it works a treat. Hurrah!
+</p>
+<p>
+EDIT: Another solution, which I only just worked out, would be to install the very badly-named <a href="http://www.rubyenterpriseedition.com/">Ruby Enterprise Edition</a>, which sits alongside the system&#8217;s Ruby and is call-compatible with 1.8.6. This makes a lot of sense if you&#8217;re using passenger (mod_rails), as well.
+</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Gems, Bookmarks, and Sandwiches]]></title>
+    <link href="http://floppy.org.uk/blog/2008/10/13/gems-bookmarks-and-sandwiches/"/>
+    <updated>2008-10-13T00:00:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2008/10/13/gems-bookmarks-and-sandwiches</id>
+    <content type="html"><![CDATA[<p>
+I&#8217;ve been crazy busy for a while, but what little spare time I have grabbed here and there has been used investigating some areas of Rails I hadn&#8217;t played with before, like route globbing and running without a database. The results are a couple of tools, one useful, one most definitely not.
+</p>
+
+<p><img src="http://img.skitch.com/20081010-dy86i2ny1rbu91b995nt6r5hrj.png" style="float:right"/></p>
+
+<p>
+The first (and most useful) is <a href="http://hasmygembuiltyet.org">Has My Gem Built Yet?</a>. I have a bunch of ruby gems on GitHub and get annoyed that I have to keep running &#8220;gem update&#8221; while waiting for GitHub to build the gem once I&#8217;ve pushed the code. Well, no more. Just put in the details, and the page checks for you and pops up a message when the gem is done. Nice. It got picked up on <a href="http://github.com/blog/177-has-my-gem-built-yet">the GitHub blog</a>, and I&#8217;ve even had some patches sent in. It&#8217;s a nice feeling :)
+</p>
+
+<p>
+The second app is somewhat less useful (though still entertaining). After a suggestion on Twitter by <a href="http://tomtaylor.co.uk">Tom Taylor</a>, I built a website which lets you bookmark <a href="http://s.andwi.ch">sandwich</a> combinations. There are a couple of interesting bits in this though - first is route globbing, which is the Rails way of using arbitrary bits of the URL as parameters to an action. Not something you use in every project, but still. More importantly, I&#8217;ve used it to test out <a href="http://github.com/Floppy/rubymarks">rubymarks</a>, a Rails plugin for generating links for social bookmarking services.
+</p>
+
+<p>
+I love Rails for this sort of thing. I can&#8217;t think of other system I&#8217;ve used that would let me create such fun things in the tiny snippets of spare time I have at the moment. And of course, everything above is open source and available on <a href="http://github.com/Floppy">Github</a>.
+</p>
+]]></content>
+  </entry>
   
 </feed>

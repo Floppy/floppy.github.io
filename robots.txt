@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://floppy.github.io/sitemap.xml 
+Sitemap: http://floppy.org.uk/sitemap.xml 
