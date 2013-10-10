@@ -4,7 +4,7 @@
   <title><![CDATA[James Smith]]></title>
   <link href="http://floppy.org.uk/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2013-09-12T10:26:04+01:00</updated>
+  <updated>2013-10-10T11:46:34+01:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Depression Is A Bug, Not A Feature]]></title>
+    <link href="http://floppy.org.uk/blog/2013/10/10/depression-is-a-bug-not-a-feature/"/>
+    <updated>2013-10-10T11:02:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2013/10/10/depression-is-a-bug-not-a-feature</id>
+    <content type="html"><![CDATA[<p>Today is apparently <a href="http://www.mentalhealth.org.uk/our-work/world-mental-health-day/">World Mental Health Day</a>, which makes it an appropriate time to talk a little about depression. I was thinking of doing this anyway, but today seems a good day to do it.</p>
+
+<p>I&rsquo;ve suffered from intermittent depression for the last few years. If I&rsquo;ve been quiet on Twitter or GitHub for the last couple of weeks, it&rsquo;s because I&rsquo;m currently recovering from my fourth round; they seem to come on just under every two years, it seems. It&rsquo;s not a pleasant thing to admit to, but I honestly believe that only by talking about our experiences can we normalise this, and when you&rsquo;re in the grip of depression, what you really need is to know that you are <em>not alone</em>.</p>
+
+<p>The first time round, I didn&rsquo;t really understand what was happening. Work was stressful, but not ridiculously so, but I lost the ability to cope with it. I couldn&rsquo;t make decisions, and I remember times when I would have to run away and actually <em>hide in a darkened room</em> for a while when something tricky came up like, I dunno, triaging the Monday morning bug list. Fortunately I worked for a flight simulation company at the time, so dark rooms were in plentiful supply.</p>
+
+<p>Depression, for someone who works entirely in their mind, as we do as creative programmers, is utterly debilitating. Imagine:</p>
+
+<ul>
+<li>Your mind slows down</li>
+<li>You lose the ability to focus, or think straight about problems</li>
+<li>You lose the ability to make decisions; even deciding on lunch can be impossible</li>
+<li>You lose confidence; feel like you&rsquo;re a fraud, and that you&rsquo;ll be found out</li>
+<li>You lose the big picture; you can&rsquo;t hold it all in your head</li>
+<li>Anxiety builds, and eventually you find yourself hiding in darkened rooms trying not to panic (and often failing)</li>
+</ul>
+
+
+<p>Our jobs depend on those exact qualities, and often, for many of us, so does our self-worth. I try to compare it to being a sportsman and having a broken leg; it&rsquo;s take you out of the game just as surely, and it robs you of your reason for being just as much.</p>
+
+<p>However; it is manageable. I&rsquo;m still learning, but I am getting better at it. I&rsquo;m spotting it earlier each time, am getting better at warning my co-workers, and have no qualms now with going to the doctor and getting the help I need once it becomes clear. I&rsquo;ve had <a href="https://en.wikipedia.org/wiki/Citalopram">medication</a> the last three times; I&rsquo;m currently a week and a half in to this round.</p>
+
+<p>The important thing to realise that <em>it&rsquo;s not a failing, it&rsquo;s an illness</em>. Your brain is a big bag of chemicals that govern your emotions; there&rsquo;s no magical soul hiding there, I&rsquo;m afraid. But sometimes those chemicals go wrong. In the case of depression, it&rsquo;s apparently a long-term reduction in the amount of Serotonin in the brain that does it. Your synapses hoover up too much, so there&rsquo;s not enough left in the gaps to conduct the signals effectively. It can be brought on by stress, by exhaustion, by sudden shocks, or even by a more &lsquo;normal&rsquo; illness. The brain gets out of kilter, and then just gets <em>stuck</em> in this cycle.</p>
+
+<p>But, as an engineer, <em>I can relate to this</em>. Depression is a <em>bug</em>, not a failure on <em>my</em> part. The medication prevents this serotonin reuptake, and lets your brain recover, and remember how to balance itself. I&rsquo;ve proved this to myself time and again; a few days into the medication, I&rsquo;m <em>back</em>. I&rsquo;m me again. For example, I couldn&rsquo;t have written this two days ago, but today I&rsquo;m feeling more&hellip; <em>present</em>. I&rsquo;m not there yet, but it won&rsquo;t be long now.</p>
+
+<p>The people around you have a huge part to play. You need their understanding, support, and for them to give you time to recover. I wouldn&rsquo;t have been able to cope with this if not for my family, my colleagues at <a href="http://amee.com">AMEE</a> and the <a href="http://www.theodi.org">ODI</a>, and for my great friend <a href="http://twitter.com/wamonite">Warren</a> who, many years ago, taught me how depression works <em>before</em> I found out for myself.</p>
+
+<p>There are a few links I&rsquo;d recommend reading about this:</p>
+
+<ul>
+<li><a href="http://revdancatt.com/2012/07/26/leaving-the-guardian-creativity-vs-mild-depression-the-quantified-self-and-running/">Leaving the Guardian, Creativity vs Mild Depression</a> by Rev Dan Catt</li>
+<li><a href="http://hyperboleandahalf.blogspot.co.uk/2011/10/adventures-in-depression.html">Adventures in Depression</a> and <a href="http://hyperboleandahalf.blogspot.co.uk/2013/05/depression-part-two.html">Part 2</a> by Hyperbole and a Half</li>
+</ul>
+
+
+<p>That was a bit long, but the TL;DR is this: If you&rsquo;re feeling the symptoms above, then talk to your doctor and <em>get help</em>. It&rsquo;s just a bug, it&rsquo;s fixable, and you are <em>not</em> a failure. If you know someone who seems to be suffering, then try to help them understand what&rsquo;s happening, don&rsquo;t just tell them to &ldquo;cheer up&rdquo;.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[It's Time To Step Up]]></title>
@@ -495,49 +540,6 @@ The site is built in Rails, but it&#8217;s pretty creaky. It was originally writ
 
 <p>
 Anyway, if you use the site (or not!) and fancy improving it, now you can. Head on over to <a href="http://github.com/Floppy/carbon-diet">github</a> to grab the code and join in. I hope to see you there!
-</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Publishing CurrentCost data to the world]]></title>
-    <link href="http://floppy.org.uk/blog/2009/03/28/publishing-currentcost-data-to-the-world/"/>
-    <updated>2009-03-28T00:00:00+00:00</updated>
-    <id>http://floppy.org.uk/blog/2009/03/28/publishing-currentcost-data-to-the-world</id>
-    <content type="html"><![CDATA[<p>
-A while ago, I started hacking around with a <a href="http://www.currentcost.co.uk">CurrentCost</a> real-time energy monitor. This is a very nice little device that measures your electricity use, but more importantly has a serial output on the bottom so you can get data out of it.
-</p>
-
-<p>
-Well, eventually I decided that while being able to get data off the meter was nice, it would be better if I could publish it somewhere. So, I wrote a program in Ruby to do exactly that. It reads data from the meter, and sticks it on the web. I&#8217;ll go into a bit more detail in a minute, but first, you can download it (and get the source code) from <a href="http://github.com/Floppy/currentcost-daemon/">github</a>.
-</p>
-
-<p>
-The program operates as a system daemon, which runs in the background on your Linux box (Mac should work as well) and uploads to various places. Adding new publishers is dead easy, so if you want to publish your data somewhere else, you can easily add it.
-</p>
-
-<h3>The Carbon Diet</h3>
-
-<p>
-First up, my own site, <a href="http://www.carbondiet.org">The Carbon Diet</a>. This uploads your daily usage history from the meter into your carbon diet account so that you don&#8217;t have to take so many meter readings to get an accurate graph. This is still pretty experimental and needs more work, but it&#8217;s pretty useful already. You can see how it looks on <a href="http://www.carbondiet.org/profile/james">my profile</a>.
-</p>
-
-<h3>AMEE</h3>
-
-<p>
-Next, what I think of as the important one. <a href="http://www.amee.com">AMEE</a>, if you&#8217;re not aware, AMEE is a neutral aggregation platform for sharing energy data and carbon calculations (disclaimer: I work for them these days). Think OpenID for your energy identity. Anyway, we have a nice &#8220;smart meter&#8221; demo which uses my currentcost app as the data source. Every minute, it uploads into an AMEE profile, and then another app <a href="http://my.amee.com/demo/1">makes a nice graph</a> of the CO2 produced. In theory, the Carbon Diet could pull that data from AMEE instead of me publishing it directly, but that&#8217;s still to come.
-</p>
-
-<h3>Pachube</h3>
-
-<p>
-Another energy data sharing service is <a href="http://www.pachube.com">Pachube</a> (pronounced &#8220;patch bay&#8221;). As far as I can tell, this is more geared at art and design than rigorous data, but it&#8217;s fun to play with. They&#8217;ve done a bunch of stuff with the CurrentCost, and now my app joins the throng. My <a href="http://www.pachube.com/feeds/488">pachube feed</a> updates every 6 seconds - every time the meter sends data out.
-</p>
-
-<h3>Twitter</h3>
-
-<p>
-Finally, what would be the point of a web energy publisher if it couldn&#8217;t tweet? If you really want to, you can see my minute-by-minute energy usage on Twitter by visiting <a href="http://twitter.com/james_energy">@james_energy</a>.
 </p>
 ]]></content>
   </entry>
