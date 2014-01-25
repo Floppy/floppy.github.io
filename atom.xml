@@ -4,7 +4,7 @@
   <title><![CDATA[James Smith]]></title>
   <link href="http://floppy.org.uk/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2013-10-10T13:30:52+01:00</updated>
+  <updated>2014-01-25T10:32:52+00:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Open Democracy, Operating Systems, and Open Source]]></title>
+    <link href="http://floppy.org.uk/blog/2014/01/25/musings-on-open-democracy/"/>
+    <updated>2014-01-25T08:58:00+00:00</updated>
+    <id>http://floppy.org.uk/blog/2014/01/25/musings-on-open-democracy</id>
+    <content type="html"><![CDATA[<p>Since I wrote my blog post <a href="http://floppy.org.uk/blog/2013/07/05/its-time-to-step-up/">&ldquo;It&rsquo;s time to step up&rdquo;</a> last summer, I&rsquo;ve got very interested in the concept of Open Democracy, and have been discovering a lot about what&rsquo;s currently going on in this area. This post is an attempt to delineate the various efforts, mainly for my own benefit, but perhaps others may find it useful as well.</p>
+
+<p>There are a number of overlapping concepts. First, we have political parties, with their manifestos. Then we have the idea of a constitution, and finally the policy-making process itself. A few examples:</p>
+
+<h2>Party Manifestos</h2>
+
+<p>Firstly, and most familiar, we have the political party manifesto. My view is that this is a collection of statements that outlines the beliefs of the party, and how it intends to attack problems. It isn&rsquo;t necessarily detailed, or fully costed, but is indicative of the direction that the party wishes to go. The Pirate Party UK will soon be launching their next open manifesto process, and I&rsquo;m experimenting with building a new political platform under the <a href="http://openpolitics.org.uk/manifesto">OpenPolitics Manifesto</a> project (an interesting aspect of which is that is designed to deprecate the party system).</p>
+
+<h2>Constitutions</h2>
+
+<p>Then, we have the idea of a constitution. The UK does not have a proper written constitution, but there is a crowdsourcing effort going on at <a href="http://www.constitutionuk.com/">Constitution UK</a> to create one. Interestingly, a lot of ideas that are going into that are ones that I consider far too specific for a constitution, and instead belong in a party manifesto. A consititution should be short, simple, and consist of the basic rules on which we all agree. The constitution can be added to, but it&rsquo;s best to start with something very simple.</p>
+
+<p>Some examples; the structure of Parliament, the role (or lack thereof) of the monarchy, and the <a href="http://www.un.org/en/documents/udhr/">UDHR</a> would belong in a constitution, but things like economic and social policy, including the role of the NHS and welfare state, would not.</p>
+
+<h2>Tenuous Analogies</h2>
+
+<p>To use a computer analogy, if a party manifesto can be considered a piece of software, which the user can choose to run or not, a consitution is more like the OS; a lower-level design that allows the higher-level manifesto to run, and on which all participants in the system agree.</p>
+
+<p>(Obviously, there are many OSes. And we have many countries with different constitutions, so I&rsquo;m sticking with this analogy for now&hellip; let&rsquo;s see where it breaks)</p>
+
+<h2>Open Policy</h2>
+
+<p>Then we have the policy-design level, which is I think what the <a href="http://my.civilservice.gov.uk/policy/">Cabinet Office Open Policy Team</a> is looking at. This is apolitical, driven by the choices made by the electorate, and is about effective implementation of the ideas in a manifesto. In my mind this is like the content that you create using a piece of software. So, it reflects the manifesto commitment used to drive it, but then is richer in terms of how that commitment is implemented, funded, and so on.</p>
+
+<h2>Conclusion</h2>
+
+<p>The world of Open Democeacy is one with many pieces, and how they all fit together isn&rsquo;t necessarily obvious at the first look. Anyone who wants to contribute to this (including myself) should understand the &lsquo;stack&rsquo; to know which ideas fit where.</p>
+
+<p>And of course, all this could be wrong, it&rsquo;s just my assessment of it. If anyone wants to enlighten me further, please do, and please contribute to all the open democracy efforts that are out there, at whatever level you feel is most appropriate for you.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Depression Is A Bug, Not A Feature]]></title>
@@ -518,29 +555,6 @@ My session was on hacking energy data, kind of a <a href="http://homecamp.org.uk
 </p>
 
 <div style="width:425px;text-align:left" id="__ss_1687179"><a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/Furtive/if-you-can-see-it-you-can-change-it" title="If you can see it, you can change it">If you can see it, you can change it</a><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=reboot-090706103726-phpapp01&amp;stripped_title=if-you-can-see-it-you-can-change-it"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=reboot-090706103726-phpapp01&amp;stripped_title=if-you-can-see-it-you-can-change-it" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;">View more <a style="text-decoration:underline;" href="http://www.slideshare.net/">documents</a> from <a style="text-decoration:underline;" href="http://www.slideshare.net/Furtive">James Smith</a>.</div></div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Carbon Diet goes open source]]></title>
-    <link href="http://floppy.org.uk/blog/2009/05/21/the-carbon-diet-goes-open-source/"/>
-    <updated>2009-05-21T00:00:00+01:00</updated>
-    <id>http://floppy.org.uk/blog/2009/05/21/the-carbon-diet-goes-open-source</id>
-    <content type="html"><![CDATA[<p>
-Well, I finally got round to it. I started developing <a href="http://www.carbondiet.org">The Carbon Diet</a> 2 years ago (had the idea 3 years ago!), and it&#8217;s finally spread it&#8217;s wings and joined the world of open source. 
-</p>
-
-<p>
-After I&#8217;d been developing it for a few months, it became obvious that it was never going to be a commercial proposition, so it&#8217;s been my intention to open it up for a very long time now. However, I was putting it off until &#8220;after I get it finished&#8221;, or &#8220;after I tidy up the code&#8221;, or any number of other reasons. Having a small child puts paid to all those plans, so I&#8217;ve finally bitten the bullet and released my dodgy code to the world as it is, warts and all.
-</p>
-
-<p>
-The site is built in Rails, but it&#8217;s pretty creaky. It was originally written in version 1.2 as I was learning, and a lot of the old-style controller and route code is still hanging around, waiting to be improved. I&#8217;ve started, but there is a long way to go to bring it up to a decent standard.
-</p>
-
-<p>
-Anyway, if you use the site (or not!) and fancy improving it, now you can. Head on over to <a href="http://github.com/Floppy/carbon-diet">github</a> to grab the code and join in. I hope to see you there!
-</p>
 ]]></content>
   </entry>
   

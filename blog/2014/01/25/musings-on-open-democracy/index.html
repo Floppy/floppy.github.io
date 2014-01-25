@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Announcing JabberStatus - James Smith</title>
+  <title>Open Democracy, Operating Systems, and Open Source - James Smith</title>
   <meta name="author" content="James Smith">
 
   
-  <meta name="description" content="Announcing JabberStatus May 30th, 2008 Twitter, while it has its problems, does one thing very well. The IM interface allows you to update your &hellip;">
+  <meta name="description" content="Open Democracy, Operating Systems, and Open Source Jan 25th, 2014 Since I wrote my blog post &ldquo;It&rsquo;s time to step up&rdquo; last summer, I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://floppy.org.uk/blog/2008/05/30/announcing-jabberstatus">
+  <link rel="canonical" href="http://floppy.org.uk/blog/2014/01/25/musings-on-open-democracy">
   <link href="/favicon.png" rel="icon">
   <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
@@ -103,7 +103,7 @@
 
   <header>
   <div class="jumbotron">
-    Announcing JabberStatus
+    Open Democracy, Operating Systems, and Open Source
 	<h5>
 
 
@@ -116,22 +116,40 @@
   
 
 
-<i class="icon-calendar-empty"></i> <time datetime="2008-05-30T00:00:00+01:00" pubdate data-updated="true">May 30<span>th</span>, 2008</time></h5>
+<i class="icon-calendar-empty"></i> <time datetime="2014-01-25T08:58:00+00:00" pubdate data-updated="true">Jan 25<span>th</span>, 2014</time></h5>
   </div>
 </header>
   <div class="row-fluid">
     <div class="span12">
-      <p>
-Twitter, while it has its problems, does one thing very well. The IM interface allows you to update your status via a Jabber account, which just makes it <em>so</em> easy to do. Facebook, on the other hand, has no such facility, which is unfortunate because although I like the Facebook service, I hate using the website itself. Yes, OK, you can update your Facebook status via Twitter, but I write different things on Facebook and Twitter, so I didn&#8217;t want to go down that route. So, my solution? Write my own!
-</p>
+      <p>Since I wrote my blog post <a href="/blog/2013/07/05/its-time-to-step-up/">&ldquo;It&rsquo;s time to step up&rdquo;</a> last summer, I&rsquo;ve got very interested in the concept of Open Democracy, and have been discovering a lot about what&rsquo;s currently going on in this area. This post is an attempt to delineate the various efforts, mainly for my own benefit, but perhaps others may find it useful as well.</p>
 
-<p>
-<a href="http://www.jabberstatus.org">JabberStatus</a> is a simple Ruby script which listens on a Jabber account and updates your Facebook status for you. You add <strong>facebook@jabber.org</strong> to your Jabber contact list, then it says hello and gives you instructions on what to do. You click a couple of URLs to give it access to your Facebook account, and that&#8217;s it! Then you just send it status updates, and it posts them on Facebook for you. It&#8217;s free for anyone to use, so give it a go!
-</p>
+<p>There are a number of overlapping concepts. First, we have political parties, with their manifestos. Then we have the idea of a constitution, and finally the policy-making process itself. A few examples:</p>
 
-<p>
-Technically, it&#8217;s pretty cunning though I say so myself. It stores Facebook session data for each person that talks to it in it&#8217;s own Jabber contact list, so no backend database is required. Anyway, it&#8217;s all open source so you can <a href="http://github.com/Floppy/jabberstatus/">take a look yourself</a>. You can even run your own instance of it. It&#8217;s still under development (needs code tidying up, as well as better error handling), but it&#8217;s out there working now, so have a go.
-</p>
+<h2>Party Manifestos</h2>
+
+<p>Firstly, and most familiar, we have the political party manifesto. My view is that this is a collection of statements that outlines the beliefs of the party, and how it intends to attack problems. It isn&rsquo;t necessarily detailed, or fully costed, but is indicative of the direction that the party wishes to go. The Pirate Party UK will soon be launching their next open manifesto process, and I&rsquo;m experimenting with building a new political platform under the <a href="http://openpolitics.org.uk/manifesto">OpenPolitics Manifesto</a> project (an interesting aspect of which is that is designed to deprecate the party system).</p>
+
+<h2>Constitutions</h2>
+
+<p>Then, we have the idea of a constitution. The UK does not have a proper written constitution, but there is a crowdsourcing effort going on at <a href="http://www.constitutionuk.com/">Constitution UK</a> to create one. Interestingly, a lot of ideas that are going into that are ones that I consider far too specific for a constitution, and instead belong in a party manifesto. A consititution should be short, simple, and consist of the basic rules on which we all agree. The constitution can be added to, but it&rsquo;s best to start with something very simple.</p>
+
+<p>Some examples; the structure of Parliament, the role (or lack thereof) of the monarchy, and the <a href="http://www.un.org/en/documents/udhr/">UDHR</a> would belong in a constitution, but things like economic and social policy, including the role of the NHS and welfare state, would not.</p>
+
+<h2>Tenuous Analogies</h2>
+
+<p>To use a computer analogy, if a party manifesto can be considered a piece of software, which the user can choose to run or not, a consitution is more like the OS; a lower-level design that allows the higher-level manifesto to run, and on which all participants in the system agree.</p>
+
+<p>(Obviously, there are many OSes. And we have many countries with different constitutions, so I&rsquo;m sticking with this analogy for now&hellip; let&rsquo;s see where it breaks)</p>
+
+<h2>Open Policy</h2>
+
+<p>Then we have the policy-design level, which is I think what the <a href="http://my.civilservice.gov.uk/policy/">Cabinet Office Open Policy Team</a> is looking at. This is apolitical, driven by the choices made by the electorate, and is about effective implementation of the ideas in a manifesto. In my mind this is like the content that you create using a piece of software. So, it reflects the manifesto commitment used to drive it, but then is richer in terms of how that commitment is implemented, funded, and so on.</p>
+
+<h2>Conclusion</h2>
+
+<p>The world of Open Democeacy is one with many pieces, and how they all fit together isn&rsquo;t necessarily obvious at the first look. Anyone who wants to contribute to this (including myself) should understand the &lsquo;stack&rsquo; to know which ideas fit where.</p>
+
+<p>And of course, all this could be wrong, it&rsquo;s just my assessment of it. If anyone wants to enlighten me further, please do, and please contribute to all the open democracy efforts that are out there, at whatever level you feel is most appropriate for you.</p>
 
     </div>
   </div>
@@ -174,16 +192,20 @@ Technically, it&#8217;s pretty cunning though I say so myself. It stores Faceboo
       <div class="span12">
         <p class="meta">
           
-            <a class="basic-alignment left" href="/blog/2008/05/19/geekyoto-08/" title="Previous Post: geeKyoto 08">&laquo; geeKyoto 08</a>
+            <a class="basic-alignment left" href="/blog/2013/10/10/depression-is-a-bug-not-a-feature/" title="Previous Post: Depression Is A Bug, Not A Feature">&laquo; Depression Is A Bug, Not A Feature</a>
           
-          
-            <a class="basic-alignment right" href="/blog/2008/07/10/amee-for-ruby/" title="Next Post: AMEE for Ruby">AMEE for Ruby &raquo;</a>
           
         </p>
       </div>
     </div>
   </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -209,7 +231,10 @@ Technically, it&#8217;s pretty cunning though I say so myself. It stores Faceboo
       var disqus_shortname = 'floppyorguk';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://floppy.org.uk/blog/2014/01/25/musings-on-open-democracy/';
+        var disqus_url = 'http://floppy.org.uk/blog/2014/01/25/musings-on-open-democracy/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
