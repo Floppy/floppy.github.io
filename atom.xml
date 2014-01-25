@@ -4,7 +4,7 @@
   <title><![CDATA[James Smith]]></title>
   <link href="http://floppy.org.uk/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2014-01-25T10:32:52+00:00</updated>
+  <updated>2014-01-25T10:37:27+00:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Open Democracy, Operating Systems, and Open Source]]></title>
-    <link href="http://floppy.org.uk/blog/2014/01/25/musings-on-open-democracy/"/>
+    <title type="html"><![CDATA[The Open Democracy Stack]]></title>
+    <link href="http://floppy.org.uk/blog/2014/01/25/the-open-democracy-stack/"/>
     <updated>2014-01-25T08:58:00+00:00</updated>
-    <id>http://floppy.org.uk/blog/2014/01/25/musings-on-open-democracy</id>
+    <id>http://floppy.org.uk/blog/2014/01/25/the-open-democracy-stack</id>
     <content type="html"><![CDATA[<p>Since I wrote my blog post <a href="http://floppy.org.uk/blog/2013/07/05/its-time-to-step-up/">&ldquo;It&rsquo;s time to step up&rdquo;</a> last summer, I&rsquo;ve got very interested in the concept of Open Democracy, and have been discovering a lot about what&rsquo;s currently going on in this area. This post is an attempt to delineate the various efforts, mainly for my own benefit, but perhaps others may find it useful as well.</p>
 
 <p>There are a number of overlapping concepts. First, we have political parties, with their manifestos. Then we have the idea of a constitution, and finally the policy-making process itself. A few examples:</p>
