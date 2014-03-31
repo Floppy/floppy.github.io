@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/floppy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://floppy.org.uk
+  * I am floppy (https://keybase.io/floppy) on keybase.
+  * I have a public key with fingerprint FD95 A574 673E CCB9 4A26  7169 DAB8 61E4 501F 794C
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "fd95a574673eccb94a267169dab861e4501f794c",
+            "host": "keybase.io",
+            "key_id": "DAB861E4501F794C",
+            "uid": "30f08fa65bdb6c99146c4a25a954ed00",
+            "username": "floppy"
+        },
+        "service": {
+            "hostname": "floppy.org.uk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1396259896,
+    "expire_in": 157680000,
+    "prev": "b1254351798ee9f5fd5d847d989ecc925da25b8048c5c0b949b8f1e061f75fac",
+    "seqno": 12,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.19 (Darwin)
+Comment: GPGTools - http://gpgtools.org
+
+owGbwMvMwMXI3Rd4zEp0+lPG0wc+JjEEW9pYVCsl5adUKllVK2Wngqm0zLz01KKC
+osy8EiUrpbQUS9NEU3MTM3Pj1OTkJEuTRCMzc0Mzy5TEJAszw1QTUwPDNHNLk2Ql
+HaWM/GKQDqAxSYnFqXqZ+UAxICc+MwUo6uLoBFTvClLvBlTvDJQrBUsYG6QZWKQl
+mpkmpSSZJVtaGpqYJQMtMU20NDVJTTEwACksTi3KS8xNBTknJ7+goFKpVkcJKFaW
+mZwKcjHIYhR5vfyidL3SbKDWgqL8kvzk/BygVEZJSYEVSGdJZQFIaXlqUjzUkPik
+zLwUoLeBGspSi4oz8/OUrAyBKpNLMkGmGhpbmhmZWlpYmukopVYUZBalxmeCVJia
+m1kYAAHImtQyoJFJhkamJsamhuaWFqmplmmmaSmmKRYm5ilArcDAszQyTQF6LMnC
+wMQi2TTZABiYlkkWaYapBmbAMDRNSwQFYnFqYV4+0GwjoDsT04FmFmem5yWWlBal
+KtV2MsmwMDByMbCxMoFijoGLUwAWn8YcAgy32VaX6FyY4btZODm0TVtI967Qv3SR
+1ek1N92OqeUmrBdOUf8WX3lnncDKme9V2B/FHty3yiTzDUPYpl9ljzy/HE+9HHHx
+8aYmmV+7mYMD/9V+WH/Zakf+1VXZH94+m+UbvV7I/MbP9Qobl3Us6OtU3R8cmB29
+KVFy6vrODZZLHFVSNn97xvBuf112XJ7Toqlvji9K436w8JX6mllvrJ12OKx4vV6m
+b+/kQw7TnXWX/riuWrz6H+fe+veCCxWvdMVUluyb92/Nt7psoaPRJ0UuXyttjtpg
+Vtswv/ZukGtpxRTnnjqu2Dn+z1ptb83fpahf6/DeN1hs76IZDi/vJ+Vzl33b8GKG
+nc7kR8Z/xWwYr9bnffmnUBzUZ6AttcouPMPkCqfF1YWfAqeInjLz+BK7R/YB+wvJ
+Nb9jHq3OWMXcqfHLsXAdY+yz+4Kzq8rK1ySxfXzml7Owt5vhzIaHoo0VR4oa+E12
+GfsHam+4JJ9paj0lYkWvwW1O1v7fa3xaWzTUlP0Cd1av38fh8a+Lg13oUe7rpupr
+zefusu6sYPSc3bSmqG3C4XuvtjEH8rNVmUxRLv+15iFrB3MWh8rx1nsbONd/VHig
+VvvyquZnlyKB0uWJKg6eRb/E8t/s1Wv0rKmp6d8bnxUU3q72VMw69G5Dc9SbNO51
+koxHNu8TqHdJ/nvtdOCywy4sbTIb+xJrYlu8NvH3cq6YK3YgAwA=
+=VXPj
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/floppy
+
+==================================================================
