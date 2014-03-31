@@ -8,6 +8,7 @@ subtitle: Building a better future out of code
 author: James Smith
 simple_search: http://google.com/search
 description:
+include: [.well-known]
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
