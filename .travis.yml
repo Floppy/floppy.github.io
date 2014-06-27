@@ -1,4 +1,13 @@
+---
 language: ruby
 rvm:
-  - 2.1.0
-script: bundle exec rake install; bundle exec rake generate; bundle exec rake deploy
+- 2.1.0
+before_script:
+- bundle exec rake setup_github_pages[$REPO]
+script:
+- bundle exec rake generate
+after_script:
+- bundle exec rake deploy
+env:
+  global:
+  - REPO="git@github.com:Floppy/floppy.github.io.git"
