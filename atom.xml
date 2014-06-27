@@ -4,7 +4,7 @@
   <title><![CDATA[James Smith]]></title>
   <link href="http://floppy.org.uk/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2014-03-31T11:06:30+01:00</updated>
+  <updated>2014-06-27T10:31:48+01:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Standing for Parliament in 2015]]></title>
+    <link href="http://floppy.org.uk/blog/2014/06/27/standing-for-parliament-in-2015/"/>
+    <updated>2014-06-27T10:18:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/06/27/standing-for-parliament-in-2015</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve got an exciting announcement to make; <strong>in May 2015, I&rsquo;m planning to stand in the
+general election to be MP for Horsham</strong>. I&rsquo;ll be running on the
+principles in the <a href="http://openpolitics.org.uk">OpenPolitics Manifesto</a>,
+an open source collaborative manifesto that <em>anyone</em> can contribute to; I&rsquo;m reasonably sure that&rsquo;s a world first.</p>
+
+<h2>Why do this?</h2>
+
+<p>I&rsquo;m an optimist. I look to the future and hope that we can build a brighter, happier, more collaborative, more equal society for everyone, enabled by the best aspects of our technology. I see a future where we can do <em>democracy itself</em> better, where we all have a say in the way we do things together. I realise that&rsquo;s utopian, but I figure that it&rsquo;s better to have a idea of where you want to get to than just stumbling from crisis to crisis without an end goal in mind.</p>
+
+<p>On the other hand, I&rsquo;ve come to the conclusion over the last few years that nobody is
+representing me or others who are optimistically working towards a better future. I&rsquo;m fed up of the politics of fear, the <a href="https://therearenoothers.wordpress.com/2011/12/28/othering-101-what-is-othering/">othering</a> of the vulnerable, and the misguided doctrine of austerity. I&rsquo;m also frustrated by our lack of sufficient climate action, and our dismal record when adopting supposedly &ldquo;new&rdquo; technologies like the web. The bleak future offered by the current political choices just isn&rsquo;t a place I want to be.</p>
+
+<p>So, I think we can do better, and the right way to deal with that in our current system is <em>provide the option yourself</em> and stand for office.</p>
+
+<h2>Starting something</h2>
+
+<p>I&rsquo;m the first to admit that it will be a hard fight; I&rsquo;m standing in a very safe Conservative seat, against Francis Maude, a cabinet minister. However, Horsham is where I live, and so while there are probably easier targets, this one falls to me, and I&rsquo;m ready to take it on.</p>
+
+<p>Also, this isn&rsquo;t simply about winning one seat next May; it&rsquo;s about trying to inspire others to stand across the country on the same platform, and about getting started on the long haul of building a political movement across many years and multiple elections. There is a growing movement towards a more networked citizen-powered form of democracy across the world, and standing on an open-source manifesto is an exciting way to be part of that.</p>
+
+<h2>Let&rsquo;s do it</h2>
+
+<p>In summary; I&rsquo;m not a politician, but I <em>do</em> think things need to change if we&rsquo;re going to build a decent future. If you agree, and like me you can&rsquo;t trust anyone else to fix things for you, stand where <em>you</em> are, and maybe we&rsquo;ll put a party name on this thing.</p>
+
+<p><strong>Let&rsquo;s bring an Open Revolution to British politics.</strong></p>
+
+<p><em>If you&rsquo;re in the Horsham area, visit <a href="http://openhorsham.org.uk">openhorsham.org.uk</a> to keep in touch with the campaign when it starts.</em></p>
+
+<p><em>To get involved in writing the manifesto, visit <a href="http://openpolitics.org.uk">openpolitics.org.uk</a> and <a href="http://twitter.com/OpenPoliticsUK">@OpenPoliticsUK</a> on Twitter.</em></p>
+
+<p><em>And finally, you can follow me on Twitter at <a href="http://twitter.com/Floppy">@Floppy</a>. If you want to stand where you are, let me know!</em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Open Democracy Stack]]></title>
@@ -538,23 +577,6 @@ This is my favourite of the three - a long tutorial, with lots of code, which sh
 Scott Laningham was nice enough to interview me for the DeveloperWorks podcast when the first article went out, so if you want to hear me blathering on about it in person, you can do so!
 </dd>
 </dl>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Reboot Britain]]></title>
-    <link href="http://floppy.org.uk/blog/2009/07/08/reboot-britain/"/>
-    <updated>2009-07-08T00:00:00+01:00</updated>
-    <id>http://floppy.org.uk/blog/2009/07/08/reboot-britain</id>
-    <content type="html"><![CDATA[<p>
-I was lucky enough to be invited to talk at the <a href="http://www.rebootbritain.com">Reboot Britain</a> conference on Monday. It was a fascinating day, with lots of inspiring moments. It left me with a feeling that we can make the world a better place if we all get out there and <b>make</b> things. It&#8217;s something I already believed, but it&#8217;s great to have a recharge every now and again.
-</p>
-
-<p>
-My session was on hacking energy data, kind of a <a href="http://homecamp.org.uk">Homecamp</a> intro for the uninitiated. My slides are up on <a href="http://www.slideshare.net/Furtive">Slideshare</a>, and embedded here for your viewing pleasure. Hopefully at some point I&#8217;ll get to re-record the audio and add it in.
-</p>
-
-<div style="width:425px;text-align:left" id="__ss_1687179"><a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/Furtive/if-you-can-see-it-you-can-change-it" title="If you can see it, you can change it">If you can see it, you can change it</a><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=reboot-090706103726-phpapp01&amp;stripped_title=if-you-can-see-it-you-can-change-it"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=reboot-090706103726-phpapp01&amp;stripped_title=if-you-can-see-it-you-can-change-it" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;">View more <a style="text-decoration:underline;" href="http://www.slideshare.net/">documents</a> from <a style="text-decoration:underline;" href="http://www.slideshare.net/Furtive">James Smith</a>.</div></div>
 ]]></content>
   </entry>
   
