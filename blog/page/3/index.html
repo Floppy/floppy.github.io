@@ -9,7 +9,7 @@
   <meta name="author" content="James Smith">
 
   
-  <meta name="description" content="James Smith Building a better future out of code Jul 24th, 2012 Comments Introducing Therm It’s been an interesting year. Until April I worked at &hellip;">
+  <meta name="description" content="James Smith Building a better future out of code Aug 1st, 2012 Comments ActiveRecord-style array filtering in Ruby Rails&#8217; named scopes are &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -107,6 +107,56 @@
 
 <div class="blog-index">
   
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2012-08-01T00:00:00+01:00" pubdate data-updated="true">Aug 1<span>st</span>, 2012</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2012/08/01/activerecord-style-array-filtering-in-ruby/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2012/08/01/activerecord-style-array-filtering-in-ruby/">ActiveRecord-style array filtering in Ruby</a></h1>
+      <p>Rails&#8217; named scopes are fantastic for making readable code with efficient SQL behind the scenes. Given a Person model, you could define a scope called &#8216;adult&#8217; which could add an SQL <em>WHERE</em> for <em>age&gt;18</em>, and let you write pretty code like Person.adult to find all adults. Great! Chaining them together gets even better with code like Person.adult.male.with_glasses.</p>
+<p>The problem comes if you do this in a single action with lots of different chained scopes to show different data. You end up with a whole bunch of SQL queries, which can get expensive. In the system I&#8217;m currently building, which includes geospatial queries, this gets far too slow to use. So, instead, let&#8217;s get one big list of objects and filter them in Ruby when we need them.</p>
+<p>Simple enough. The only thing is, the ActiveRecord chaining syntax is lovely. I don&#8217;t want to write tons of chained selects with blocks and all that faff. Instead, let&#8217;s extend Array to give us the syntax we like. The trick is to wrap an Array inside another class and then use method_missing to delegate. We then make sure that returned objects aren&#8217;t Arrays, but our new type instead.</p>
+<p>It&#8217;s best explained with the code:</p>
+
+<script src="https://gist.github.com/Floppy/3228297.js"></script>
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
   
   
     <article>
@@ -224,59 +274,6 @@ happens.
 <p>Whether it&#8217;s NGOs like Greenpeace or Friends of the Earth, or political parties like the Green Party here in the UK, they are just too embedded in their history to be able to deal with this properly. They can&#8217;t give up their hatred of nuclear power, for instance, or their opposition to GM science, both of which are probably going to be essential tools for our future, without alienating their core membership.</p>
 <p>I agree with Mark that a new approach is needed, but I don&#8217;t think those organisations can be rescued &#8216;from the inside&#8217; as he suggests. They can carry on if they like, but even in the unlikely event that they change their views, the public&#8217;s perception of them would still be the same. We need something new, something reality-based, something that aims to have the clean high-tech future that I <em>personally</em> want.</p>
 <p>Even the word &#8216;green&#8217; is now rendered useless by these viewpoints, so we have to just drop it and talk about &#8216;sustainability&#8217; and &#8216;clean&#8217; instead. If someone could come up with a catchy name for it that&#8217;s half as good as &#8216;green&#8217; though, that would be lovely.</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2012-05-15T00:00:00+01:00" pubdate data-updated="true">May 15<span>th</span>, 2012</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://floppy.org.uk/blog/2012/05/15/planet-hopper/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2012/05/15/planet-hopper/">Planet Hopper</a></h1>
-      <p>A couple of weeks ago, I went along to ISIC in Harwell to take part in the <a href="http://spaceappschallenge.org/">International Space Apps Challenge</a>, run by NASA. Hackdays are always fun, but this one was particularly exciting, because, you know, SPACE!</p>
-<p>At first I thought about doing something with Earth observation data and climate change, but decided I&#8217;d give myself a break from that and do something else for once. After the usual shenanigans forming a team, a few of us started working on something to do with exoplanet data, particularly from the <a href="http://en.wikipedia.org/wiki/Kepler_(spacecraft)" title="Kepler">Kepler satellite</a>.</p>
-<p>We know about tons of planets now, but most people don&#8217;t know much about them. We decided to make something a bit fun and a bit educational. My sister is a physics teacher, so we aimed at creating something she could use in class to stimulate questions from the kids.</p>
-<p>The result is <a href="http://www.planethopper.co.uk" title="Planet Hopper">Planet Hopper</a>, a webapp that allows you to explore the exoplanets and see various interesting facts about them in a friendly way. For instance, we tell you how old you would be on the planet, hoping to stimulate the question &#8216;why?&#8217;</p>
-<p>We ended up winning the best hack prize at the Harwell site, and are currently in the global judging round, which is always nice.</p>
-<p>Technically, this was my first experience with Django. In general, my first assessment was that it seemed perfectly capable, but not as slick as the Rails toolset perhaps. I&#8217;ll keep playing with it though, it&#8217;s always good to know more!</p>
-<p>If you want to improve Planet Hopper, you can do; the code is, as always, <a href="http://github.com/Floppy/kepler-explorer" title="Code">on github</a>.</p>
-<p><strong>UPDATE</strong>: We won in the global judging! <a href="http://spaceappschallenge.org/blog/2012/05/18/global-winners-announced/">&#8220;Most Inspiring&#8221;</a> - pretty sweet! </p>
 
       
       
