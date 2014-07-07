@@ -4,7 +4,7 @@
   <title><![CDATA[James Smith]]></title>
   <link href="http://floppy.org.uk/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2014-07-01T08:58:18+01:00</updated>
+  <updated>2014-07-07T16:54:54+01:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learning from the Electoral Commission]]></title>
+    <link href="http://floppy.org.uk/blog/2014/07/07/learning-from-the-electoral-commission/"/>
+    <updated>2014-07-07T16:36:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/07/07/learning-from-the-electoral-commission</id>
+    <content type="html"><![CDATA[<p><em>This is the latest in my series about standing as an MP. See the archive for older posts.</em></p>
+
+<p>So, today I spoke to the Electoral Commission. In my last post, I made a bunch of assumptions based on reading their website about what was legal and what wasn&rsquo;t. Today I checked all that with them, and was pretty much right, thankfully.</p>
+
+<p>The Commission offices all have their <a href="http://www.electoralcommission.org.uk/contact-us/our-offices">phone numbers online</a>, and connect you straight to people who can answer your questions. I highly recommend giving them a call if you&rsquo;re considering this yourself.</p>
+
+<p>So, what did we find out? (By the way &ndash; don&rsquo;t take this as solid legal advice, it&rsquo;s just my own interpretation, not guaranteed fact)</p>
+
+<h2>Standing</h2>
+
+<p>There aren&rsquo;t many rules around actually standing. First of all, it&rsquo;s perfectly legal to announce that you intend to, as I have. You don&rsquo;t have to have anything &ldquo;official&rdquo; in place first.</p>
+
+<p>The regulated campaigning period doesn&rsquo;t start until mid-December, so until then, you can do what you like. After that, things become a little more regulated financially, but more of that later.</p>
+
+<p>As for registering as a candidate, or as a party, that all comes a lot later. The deadlines will be a few weeks before the election itself, so the official signing of things can be put off for a good while yet. Parties can be registered until a little while before the actual candidate nomination deadline, so we&rsquo;ve got plenty of time to decide if this gets branded with a party name or not.</p>
+
+<h2>Spending</h2>
+
+<p>There was a bit more around finances, but again this only takes effect during the regulated period. There is a period starting in mid-December called the &ldquo;Long Campaign&rdquo;, which changes to the &ldquo;Short Campaign&rdquo; nearer the actual election date. Each period has different spending limits, but I&rsquo;m not worrying about that too much yet.</p>
+
+<p>You need to report all spending on the campaign to the Commission, but it&rsquo;s just a matter of keeping simple books of expenditure. No rocket science here, and in my case I&rsquo;m going to have it all open anyway. Again, this doesn&rsquo;t take effect until the start of the Long Campaign, but I&rsquo;ll probably start now anyway.</p>
+
+<p>Incidentally, if you start campaigning early, but don&rsquo;t officially register until later, the need to keep the books applies retroactively, so just get ahead and make sure you keep track from the beginning.</p>
+
+<h2>Raising money</h2>
+
+<p>This was the interesting bit.</p>
+
+<p>You can raise money to spend during your campaign any way you like, but you must disclose who your donors are. For independent candidates, all donations over £50 must be disclosed &ndash; the figure for parties is higher, I think.</p>
+
+<p>The interesting part is that all donors must be on the electoral roll, and <em>you</em> have to verify this. This makes crowdfunding interesting. Apparently some people have tried it, but found it very hard to get the right information to check that their donors are legal. I&rsquo;m hoping to start a conversation with crowdfunding organisations <em>now</em> to try to get this sorted out so I can do things that way.</p>
+
+<p>To summarise, so far, the legalities around standing for election are pretty minimal. Just a bit of bookkeeping, and making sure your money comes from the right places. Should be even easier with the kind of radically transparent approach I&rsquo;ll be taking.</p>
+
+<p>On to the next step!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Work In Progress]]></title>
@@ -562,61 +605,6 @@ The whole thing took around 6 hours from start to deploy, and I&#8217;m pretty p
     <id>http://floppy.org.uk/blog/2009/12/17/my-ecomo09-google-maps-hack</id>
     <content type="html"><![CDATA[<iframe src="http://player.vimeo.com/video/6907428" width="400" height="300" frameborder="0"></iframe><br/><p>In early September, <a href="http://www.betavine.net/bvportal/community/sustainability">Betavine</a> organised a 24-hour hack event called <a href="http://www.vimeo.com/6623187">EcoMo09</a>, with an environmental theme. Unfortunately I couldn’t stay the whole time, but I went along as an <a href="http://www.amee.com">AMEE</a> representative to support other people using our API during the event.  In the quiet periods, I managed to come up with my own hack, which used  GreaseMonkey and AMEE to add carbon emissions to Google Maps.</p>
 <p>You can even <a href="http://gist.github.com/185744">get the code</a> and try it yourself. It’s very basic, and actually most of the work was  dealing with Google Maps and making Greasemonkey behave properly - the  AMEE bit, getting the carbon value, was dead easy.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Activist Geek Philosophy]]></title>
-    <link href="http://floppy.org.uk/blog/2009/11/10/the-activist-geek-philosophy/"/>
-    <updated>2009-11-10T00:00:00+00:00</updated>
-    <id>http://floppy.org.uk/blog/2009/11/10/the-activist-geek-philosophy</id>
-    <content type="html"><![CDATA[<p>
-So, first, let&#8217;s have a stab at identifying the community I&#8217;m talking about - this in itself is a pretty hard problem. I guess I&#8217;m talking about &#8220;activist geeks&#8221;, in a way. The sort of people who are involved in the work of <a href="http://mysociety.org">MySociety</a>, or <a href="http://www.sicamp.org/">Social Innovation Camp</a>. The people who go along to events like <a href="http://www.geekyoto.com/">geeKyoto</a>, or perhaps <a href="http://russelldavies.typepad.com/planning/2009/08/interesting-speakers.html">Interesting</a>. They are the people that go out and create innovative things that make the world better. I can&#8217;t put any names on a list here, though there are some obvious ones of course, but you will probably know if this is your sort of community or not.
-</p>
-
-<p>
-So having made a (very) vague stab at who I&#8217;m talking about, what are the core philosophies that come out of that? One caveat: obviously this is  my own personal viewpoint, and implies absolutely nothing on behalf of those examples linked above. I could be completely wrong on all of this (though I&#8217;d invite comment). I think I am what would traditionally be called &#8220;left wing&#8221;, so my please note that my views may be coloured by that.
-</p>
-
-<p>
-Firstly, I think that while there are certain things that do unite the community, they often don&#8217;t fit along traditional political lines. You cannot say that this community is left-wing for instance; there are certainly members of all political parties involved. We&#8217;ll come back to some of the things that <em>don&#8217;t</em> unite us later on, but let&#8217;s find some common ground first.
-</p>
-
-<dl><dt><b>Privacy</b></dt>
-<dd>
-Even though many of us share vast amounts of information on various social networks, we have a strong belief in privacy of personal data. Perhaps this is better phrased as belief in <em>control</em> of personal data. I can delete my social network accounts at any time, and can decide who can see them, so I remain in control (as long as I trust the site). On the other side, I will not be able to remove my record from the ID card database or decide who accesses it, so I am not in control of that. This is part of a more fundamental belief in <a href="http://www.un.org/en/documents/udhr/">universal human rights.</a>
-</dd>
-<dt><b>Transparency</b></dt>
-<dd>
-While personal information should be kept tightly controlled by its owner, information about (and generated by) government and public services should be fully transparent and open. The MP expenses scandal was an example of further erosion of trust in government because of an opaque system that was open to abuse. As they say (I think), sunlight is the best disinfectant. Government operations should be open to public scrutiny, and assets produced by that system (OS maps anyone?) should be freely available to the taxpayers who have paid for them.
-</dd>
-<dt><b>Tolerance</b></dt>
-<dd>
-I don&#8217;t think we give a monkeys where someone is from, what their background is, or about their religion, sexuality, or favourite colour. It&#8217;s just not relevant. The rest of you, get over it.
-</dd>
-<dt><b>Anti-authoritarian</b></dt>
-<dd>
-It always confuses me that a criticism of the left is that it wants to control people. Maybe that&#8217;s true, in which case I need to recalibrate my open personal compass a little, but my belief is that the community is very much about freedom of the individual. There is a strong anti-authoritarian streak - none of us want to end up in a police state.
-</dd>
-<dt><b>Social Conscience</b></dt>
-<dd>
-However, the above freedom of the individual does not lead to blind self-interest. I believe that the community is not one of self-interested people with no care for others, but of a group of empowered individuals who actively engage in and make society better.
-</dd>
-<dt><b>Engagement</b></dt>
-<dd>
-My final point is that the above lead to a community that is engaged with the world around them. We engage on issues of importance, such as my own personal focus, climate change, and they are interested in the way their society is governed. I believe that those qualities are fundamental for a functioning democracy, and we see that currently most of society does not measure up to that standard (a situation which we try to improve of course).
-</dd>
-</dl><p>
-On the other hand, I seriously doubt we are all united on things like <a href="http://s.wsj.net/public/resources/images/OB-AO890_invisi_20070824192939.jpg">economics</a> (I love that picture), the role of corporations, how to deal with climate change, foreign policy, and so on.
-</p>
-
-<p>
-I&#8217;m sure there is more that can be said, but I will let it play out in the comments (if anyone wants to add to this). My final question is - if there is a central theme emerging, does that mean we should do something with it in these days when so many of the above viewpoints are rather missing from general society?
-</p>
-
-<p>
-Discuss.
-</p>
 ]]></content>
   </entry>
   
