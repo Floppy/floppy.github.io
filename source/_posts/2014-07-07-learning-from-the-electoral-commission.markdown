@@ -5,7 +5,7 @@ date: 2014-07-07 16:36
 comments: true
 categories:
 ---
-*This is the latest in my series about standing as an MP. See the archive for older posts.*
+*This is part of my series about standing as an MP. See the archive for other posts.*
 
 So, today I spoke to the Electoral Commission. In my last post, I made a bunch of assumptions based on reading their website about what was legal and what wasn't. Today I checked all that with them, and was pretty much right, thankfully.
 
