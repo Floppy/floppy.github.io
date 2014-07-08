@@ -4,7 +4,7 @@
   <title><![CDATA[James Smith]]></title>
   <link href="http://floppy.org.uk/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2014-07-07T17:53:41+01:00</updated>
+  <updated>2014-07-08T22:07:51+01:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -14,11 +14,162 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Diving into election finances]]></title>
+    <link href="http://floppy.org.uk/blog/2014/07/08/diving-into-election-finances/"/>
+    <updated>2014-07-08T19:17:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/07/08/diving-into-election-finances</id>
+    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the archive for other posts.</em></p>
+
+<p>After talking to the electoral commission yesterday, I got interested in what other candidates actually do spend on their campaigns. This has bearing on what I&rsquo;ll need to raise through crowdfunding, and will give me an idea of what I&rsquo;ll need in order to compete.</p>
+
+<p>Fortunately, this is all open data. The Electoral Commission publish the statistics about election spending on their website, all under the Open Government License. All figures in this article come from them.</p>
+
+<p>There is one particular dataset which we&rsquo;ll dive into here; the <a href="http://www.electoralcommission.org.uk/find-information-by-subject/elections-and-referendums/past-elections-and-referendums/uk-general-elections/candidate-election-spending">candidate spending in the 2010 general election</a>. This lists all candidates in the general election of 2010, what they spent, what they raised, and even better, what the split of spending was. It also include the number of votes they gained, so you could do some handy analysis of spending vs seats gained, perhaps. There&rsquo;s lots of data in there, so what follows are excerpts, not the whole lot.</p>
+
+<h2>Total spending</h2>
+
+<p>Let&rsquo;s look at campaign spending first.</p>
+
+<p>We had 8 candidates in the last election. During the long campaign (see yesterday&rsquo;s post), they were allowed to spend <strong>£30,429.48</strong>. During the short campaign, they were allowed to spend <strong>£12,579.48</strong>.</p>
+
+<table class="table table-striped">
+<thead>
+<tr>
+<th></th>
+<th> Party </th>
+<th> Votes </th>
+<th> Long Campaign Spend </th>
+<th> Short Campaign Spend</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td> Conservatives </td>
+<td>   29,447 </td>
+<td> £3,577.41 </td>
+<td> £7,564.69</td>
+</tr>
+<tr>
+<td></td>
+<td> Lib Dems </td>
+<td> 17,987 </td>
+<td> £1,158.83 </td>
+<td> £4,446.94</td>
+</tr>
+<tr>
+<td></td>
+<td> Labour Party </td>
+<td> 4,189 </td>
+<td> £75.75 </td>
+<td> £1,460.67</td>
+</tr>
+<tr>
+<td></td>
+<td> UKIP </td>
+<td> 2,839 </td>
+<td> £350.00 </td>
+<td> £2,299.20</td>
+</tr>
+<tr>
+<td></td>
+<td> Green Party </td>
+<td> 570 </td>
+<td> £0.00 </td>
+<td> £0.00</td>
+</tr>
+<tr>
+<td></td>
+<td> Christian Party </td>
+<td> 469 </td>
+<td> £0.00 </td>
+<td> £1,056.50</td>
+</tr>
+<tr>
+<td></td>
+<td> Peace Party </td>
+<td> 253 </td>
+<td> £0.00 </td>
+<td> £400.00</td>
+</tr>
+<tr>
+<td></td>
+<td> Independent </td>
+<td> 87 </td>
+<td> £0.00 </td>
+<td> £501.09</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><a href="https://plot.ly/~Floppy/1"><img src="http://floppy.org.uk/images/2010_horsham_campaign_spending.png" alt="2010 Horsham Campaign Spending" /></a></p>
+
+<p>So, what can we learn from this?</p>
+
+<ol>
+<li><p>The total cost of the campaign was not much over £11k for the highest-spending party. That&rsquo;s reassuring.</p></li>
+<li><p>None of them spent anywhere near the maximum allowed.</p></li>
+<li><p>Most of the spending happens in the short campaign; this makes sense, as that&rsquo;s when your mailouts happen, etc.</p></li>
+<li><p>The Green Party spent <em>nothing</em>. That explains why I never got a leaflet telling me about the candidate. I&rsquo;m going to ignore anyone else who suggests I&rsquo;ll split their vote now, as they quite obviously <em>aren&rsquo;t interested</em> here.</p></li>
+</ol>
+
+
+<h2>Where does the money go?</h2>
+
+<p>Let&rsquo;s dig into a bit more detail on what that money is spent on. We&rsquo;ll just look at the Conservatives here, as they have the largest spend.</p>
+
+<table class='table table-striped'>
+<thead>
+<tr>
+<th></th>
+<th> Category </th>
+<th> Spend </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td> Advertising </td>
+<td> £966.32 </td>
+</tr>
+<tr>
+<td></td>
+<td> Leaflets </td>
+<td> £4,897.67 </td>
+</tr>
+<tr>
+<td></td>
+<td> Staff </td>
+<td> £4,177.63 </td>
+</tr>
+<tr>
+<td></td>
+<td> Accomodation </td>
+<td> £1,100.48 </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>This is really interesting for my planning. The actual cost of getting a leaflet to (presumably) every home in the constituency (which has 77,000 voters) is <em>under £5k</em>. That&rsquo;s a <em>lot</em> less than I expected, and should totally be crowdfundable. That&rsquo;s verified by the other parties as well &ndash; the Lib Dems spent a similar amount.</p>
+
+<h2>Learning more</h2>
+
+<p>This has given me some really useful insights. I&rsquo;d recommend having a dig into the figures for your area as well, you might find something interesting! I think this could be a good data-driven website as well &ndash; exposing this stuff through a nice data visualisation would be lovely; maybe a project for <a href="http://twitter.com/democlub">Democracy Club</a>?</p>
+
+<p>You can dig into the data at the link above, and <a href="http://www.electoralcommission.org.uk/__data/assets/pdf_file/0011/163793/EPE-Part-3-Spending-and-donations-for-individual-candidates.pdf">this guide</a> from the Electoral Commission gives lots more detail on what it all means. It&rsquo;s for the 2014 EU elections, but the concepts are the same, so it&rsquo;s a decent reference. I&rsquo;ll be digging more into that guide as I go along, sorting out my own finances, so more of this to come.</p>
+
+<p>Until next time&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Learning from the Electoral Commission]]></title>
     <link href="http://floppy.org.uk/blog/2014/07/07/learning-from-the-electoral-commission/"/>
     <updated>2014-07-07T16:36:00+01:00</updated>
     <id>http://floppy.org.uk/blog/2014/07/07/learning-from-the-electoral-commission</id>
-    <content type="html"><![CDATA[<p><em>This is the latest in my series about standing as an MP. See the archive for older posts.</em></p>
+    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the archive for other posts.</em></p>
 
 <p>So, today I spoke to the Electoral Commission. In my last post, I made a bunch of assumptions based on reading their website about what was legal and what wasn&rsquo;t. Today I checked all that with them, and was pretty much right, thankfully.</p>
 
@@ -61,7 +212,9 @@
     <link href="http://floppy.org.uk/blog/2014/06/30/work-in-progress/"/>
     <updated>2014-06-30T16:35:00+01:00</updated>
     <id>http://floppy.org.uk/blog/2014/06/30/work-in-progress</id>
-    <content type="html"><![CDATA[<p>A few days ago, I announced that <a href="http://floppy.org.uk/blog/2014/06/27/standing-for-parliament-in-2015">I intend to stand for Parliament next May</a>. Since then, I&rsquo;ve had a bunch of really great feedback (thank you all!), suggestions, and questions. Lots of questions have been about the process of standing, and about how complex it is.</p>
+    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the archive for other posts.</em></p>
+
+<p>A few days ago, I announced that <a href="http://floppy.org.uk/blog/2014/06/27/standing-for-parliament-in-2015">I intend to stand for Parliament next May</a>. Since then, I&rsquo;ve had a bunch of really great feedback (thank you all!), suggestions, and questions. Lots of questions have been about the process of standing, and about how complex it is.</p>
 
 <p>The entertaining thing is that I&rsquo;ve had to answer most these with an &ldquo;I don&rsquo;t know&rdquo;, as I really don&rsquo;t at this stage. Really all I&rsquo;ve got so far is an intent, a lack of self-control, and am comfortable with the fact that <a href="http://codon.com/i-have-no-idea-what-im-doing">I have no idea what I&rsquo;m doing</a>.</p>
 
@@ -142,7 +295,9 @@
     <link href="http://floppy.org.uk/blog/2014/06/27/standing-for-parliament-in-2015/"/>
     <updated>2014-06-27T10:18:00+01:00</updated>
     <id>http://floppy.org.uk/blog/2014/06/27/standing-for-parliament-in-2015</id>
-    <content type="html"><![CDATA[<p>I&rsquo;ve got an exciting announcement to make; <strong>in May 2015, I&rsquo;m planning to stand in the
+    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the archive for other posts.</em></p>
+
+<p>I&rsquo;ve got an exciting announcement to make; <strong>in May 2015, I&rsquo;m planning to stand in the
 general election to be MP for Horsham</strong>. I&rsquo;ll be running on the
 principles in the <a href="http://openpolitics.org.uk">OpenPolitics Manifesto</a>,
 an open source collaborative manifesto that <em>anyone</em> can contribute to; I&rsquo;m reasonably sure that&rsquo;s a world first.</p>
@@ -595,16 +750,6 @@ The main dilemma while coding I had was whether to have user accounts. I decided
 <p>
 The whole thing took around 6 hours from start to deploy, and I&#8217;m pretty proud of it. Unfortunately I did it a bit late to really be useful for this election, but I will try to generalise it to is can continue to be used for future elections. And, as always, it&#8217;s open source. Code is on <a href="http://github.com/Floppy/questionyourcandidates">Github</a>.
 </p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[My Ecomo09 Google Maps Hack]]></title>
-    <link href="http://floppy.org.uk/blog/2009/12/17/my-ecomo09-google-maps-hack/"/>
-    <updated>2009-12-17T00:00:00+00:00</updated>
-    <id>http://floppy.org.uk/blog/2009/12/17/my-ecomo09-google-maps-hack</id>
-    <content type="html"><![CDATA[<iframe src="http://player.vimeo.com/video/6907428" width="400" height="300" frameborder="0"></iframe><br/><p>In early September, <a href="http://www.betavine.net/bvportal/community/sustainability">Betavine</a> organised a 24-hour hack event called <a href="http://www.vimeo.com/6623187">EcoMo09</a>, with an environmental theme. Unfortunately I couldn’t stay the whole time, but I went along as an <a href="http://www.amee.com">AMEE</a> representative to support other people using our API during the event.  In the quiet periods, I managed to come up with my own hack, which used  GreaseMonkey and AMEE to add carbon emissions to Google Maps.</p>
-<p>You can even <a href="http://gist.github.com/185744">get the code</a> and try it yourself. It’s very basic, and actually most of the work was  dealing with Google Maps and making Greasemonkey behave properly - the  AMEE bit, getting the carbon value, was dead easy.</p>
 ]]></content>
   </entry>
   
