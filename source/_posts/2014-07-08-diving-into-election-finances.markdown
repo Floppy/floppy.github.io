@@ -7,11 +7,11 @@ categories:
 ---
 *This is part of my series about standing as an MP. See the archive for other posts.*
 
-After talking to the electoral commission yesterday, I got interested in what other candidates actually do spend on their campaigns. This has bearing on what I'll need to raise through crowdfunding, and will give me an idea of what I'll need in order to compete.
+After talking to the electoral commission yesterday, I got interested in what local candidates normally spend on their campaigns.
 
 Fortunately, this is all open data. The Electoral Commission publish the statistics about election spending on their website, all under the Open Government License. All figures in this article come from them.
 
-There is one particular dataset which we'll dive into here; the [candidate spending in the 2010 general election](http://www.electoralcommission.org.uk/find-information-by-subject/elections-and-referendums/past-elections-and-referendums/uk-general-elections/candidate-election-spending). This lists all candidates in the general election of 2010, what they spent, what they raised, and even better, what the split of spending was. It also include the number of votes they gained, so you could do some handy analysis of spending vs seats gained, perhaps. There's lots of data in there, so what follows are excerpts, not the whole lot.
+There is one particular dataset which we'll dive into here; the [candidate spending in the 2010 general election](http://www.electoralcommission.org.uk/find-information-by-subject/elections-and-referendums/past-elections-and-referendums/uk-general-elections/candidate-election-spending). This lists all candidates in the general election of 2010, what they spent, what they raised, and even better, what the split of spending was. It also includes the number of votes they gained, so you could do some handy analysis of spending vs seats gained, perhaps. There's lots of data in there, so what follows are excerpts, not the whole lot.
 
 ## Total spending
 
@@ -131,7 +131,7 @@ Let's dig into a bit more detail on what that money is spent on. We'll just look
 </tr>
 <tr>
 <td></td>
-<td> Accomodation </td>
+<td> Accommodation </td>
 <td> £1,100.48 </td>
 </tr>
 </tbody>
