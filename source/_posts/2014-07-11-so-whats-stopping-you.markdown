@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "So what's stopping you?"
-date: 2014-07-11 09:00
+date: 2014-07-10 09:00
 comments: true
 categories:
 ---
 *This is part of my series about standing as an MP. See the archive for other posts.*
 
-Today, it's 300 days until the General Election. [I've decided to stand](/blog/2014/06/27/standing-for-parliament-in-2015/), and have been looking into the practicalities of it all (see the blog archive for more articles on this).
+Tomorrow it will be 300 days until the General Election. [I've decided to stand](/blog/2014/06/27/standing-for-parliament-in-2015/), and have been looking into the practicalities of it all (see the blog archive for more articles on this).
 
 In this blog, I want to ask a question. I know that a lot of people out there are politically engaged, and are angry with the choices available to them. I see regular attacks on all the major parties, and a massive distaste for the rise of UKIP. So, the question is this:
 
