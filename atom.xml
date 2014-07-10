@@ -4,7 +4,7 @@
   <title><![CDATA[James Smith]]></title>
   <link href="http://floppy.org.uk/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2014-07-08T22:16:49+01:00</updated>
+  <updated>2014-07-10T07:40:09+01:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[So what's stopping you?]]></title>
+    <link href="http://floppy.org.uk/blog/2014/07/11/so-whats-stopping-you/"/>
+    <updated>2014-07-11T09:00:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/07/11/so-whats-stopping-you</id>
+    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the archive for other posts.</em></p>
+
+<p>Today, it&rsquo;s 300 days until the General Election. <a href="http://floppy.org.uk/blog/2014/06/27/standing-for-parliament-in-2015/">I&rsquo;ve decided to stand</a>, and have been looking into the practicalities of it all (see the blog archive for more articles on this).</p>
+
+<p>In this blog, I want to ask a question. I know that a lot of people out there are politically engaged, and are angry with the choices available to them. I see regular attacks on all the major parties, and a massive distaste for the rise of UKIP. So, the question is this:</p>
+
+<p><em>What&rsquo;s stopping you?</em></p>
+
+<p>Our democracy is far from perfect, but the way I see it, if you&rsquo;re angry with the choices available to you, you only have two options:</p>
+
+<ol>
+<li>Take to the streets</li>
+<li>Create your own alternative</li>
+</ol>
+
+
+<p>Note that &ldquo;tweet angrily&rdquo; isn&rsquo;t on there, and so unless you&rsquo;re taking option 1 and are going to camp out in Parliament Square in some kind of British Spring, you&rsquo;re left with option 2.</p>
+
+<p>The great thing about our system is that you <em>can</em> create your own option, and the great thing about <em>now</em> is that that option is available to you in just 300 days&#8217; time.</p>
+
+<p>Are you avoiding it because it&rsquo;s too complicated? Well, I have no idea what I&rsquo;m doing, but I&rsquo;m working it all out as I go along in a series of blog posts, so that might help.</p>
+
+<p>Is it because it won&rsquo;t make a difference? In a way, that&rsquo;s not the point. That&rsquo;s like saying you won&rsquo;t vote. The system <em>doesn&rsquo;t work</em> if people don&rsquo;t take part, and yes, most of them will lose, but that&rsquo;s how we decide together.</p>
+
+<p>How about because the major parties have it all sewn up? Well, things are changing. With the web, social media, and other things that the majors don&rsquo;t really get, there is an amazing opportunity for disruption of the status quo. There&rsquo;s a lot of talk about how democracy will change in the future. Well, the future doesn&rsquo;t come unless someone <em>does it</em>, so let&rsquo;s do it.</p>
+
+<p>Don&rsquo;t know enough? Well, neither do they, I guarantee you; that&rsquo;s why they&rsquo;re surrounded by advisors. Fortunately we have advisors too &ndash; each other.</p>
+
+<p>Don&rsquo;t know what to actually stand for? There are plenty to pick from that you can join, or you can help the <a href="http://openpolitics.org.uk">OpenPolitics Manifesto</a> project, an open-source election manifesto that anyone can edit. Taking part and holding your opinions up for inspection is a great way to refine and improve them, and you <em>won&rsquo;t</em> be simply shot down for saying something stupid; we all do that.</p>
+
+<p>So, what&rsquo;s left? That&rsquo;s it&rsquo;s just too much hard work?</p>
+
+<p>Guess what. Like anything worth fighting for, democracy <em>is</em> hard work, and a long slog, but someone has to do it. However, the more of us do it, the greater support network we will have, and the wider we can spread the load.</p>
+
+<p>Join me on the adventure, and we&rsquo;ll change the world. Maybe not this time, maybe not next, but if the &ldquo;traditional&rdquo; political class is still running the country when we&rsquo;re old and grey, wouldn&rsquo;t that be a wasted opportunity?</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Diving into election finances]]></title>
@@ -712,43 +755,6 @@ The panel continuously shows the home user their energy usage, but also what the
 
 <p>
 Many parts of the system exist already, so I think this is buildable in a weekend at least as a prototype. Like I say, if you want to help me build it, get in touch in the comments or via Twitter (#rscarbon).
-</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What did you do in the election, Daddy?]]></title>
-    <link href="http://floppy.org.uk/blog/2010/05/06/what-did-you-do-in-the-election-daddy/"/>
-    <updated>2010-05-06T00:00:00+01:00</updated>
-    <id>http://floppy.org.uk/blog/2010/05/06/what-did-you-do-in-the-election-daddy</id>
-    <content type="html"><![CDATA[<p>
-One wondeful thing about the 2010 General Election is that so many great projects have happened online; Francis Irving covers them in a <a href="http://blog.okfn.org/2010/05/05/election-data/">post on the OKFN blog</a>.
-</p>
-
-<p>
-I was personally lucky enough to find the time to use these services to build something. I couldn&#8217;t find election hustings in my area, so I decided to make a site to crowdsource and open up that information properly. Enter <a href="http://questionyourcandidates.org.uk">QuestionYourCandidates</a>.
-</p>
-
-<p style="text-align:center">
-<img src="http://s3.amazonaws.com/twitpic/photos/large/89425316.png?AWSAccessKeyId=0ZRYP5X5F6FSMBCCSE82&amp;Expires=1273159187&amp;Signature=ERA7Bsv2Xe57mOGIPoCZ7QCUQjo%3D"/></p>
-
-<p>
-The site allows anyone to enter details of hustings in their area, basically, and link to them in a reliable way. It&#8217;s made from:
-</p>
-
-<ul><li>Rails 2.3.5 - this reminded me how excellent Rails is for rapid development</li>
-<li>Constituency &amp; candidate data from <a href="http://yournextmp.com">YourNextMP</a> through their API.</li>
-<li>Postcode search via the <a href="http://theyworkforyou.com">TheyWorkForYou</a> API.
-</li></ul><p>
-Both these APIs were incredibly easy to use, and because they use canonical names for both constituencies and candidates, it was easy to then link the site across to other services like <a href="http://democracyclub.org.uk">Democracy Club</a> and <a href="http://thestraightchoice.org">The Straight Choice</a>.
-</p>
-
-<p>
-The main dilemma while coding I had was whether to have user accounts. I decided against it in the end, just protecting the edit pages with a captcha. User accounts would have just added another layer of complexity, for really no extra functionality or security.
-</p>
-
-<p>
-The whole thing took around 6 hours from start to deploy, and I&#8217;m pretty proud of it. Unfortunately I did it a bit late to really be useful for this election, but I will try to generalise it to is can continue to be used for future elections. And, as always, it&#8217;s open source. Code is on <a href="http://github.com/Floppy/questionyourcandidates">Github</a>.
 </p>
 ]]></content>
   </entry>
