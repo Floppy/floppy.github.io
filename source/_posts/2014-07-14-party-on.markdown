@@ -1,0 +1,32 @@
+---
+layout: post
+title: "Party On"
+date: 2014-07-14 11:42
+comments: true
+categories:
+---
+*This is part of my series about standing as an MP. See the archive for other posts.*
+
+Currently, I'm intending to stand as an Independent candidate. I believe that candidates should be a lot more independent, and that parties, while useful for some things, tend to wield far too much power.
+
+However, we find ourselves in a political climate that doesn't reward the independent, and doesn't allow lone voices through. Also, there are some built-in biases in the system against the independent candidate.
+
+There has been an open question for a while on the OpenPolitics Manifesto over whether it should form a party. Some think we should, some not. I personally fall on the side that says that forming a party is a good thing, if only for short-term tactical reasons. It would be a party designed to make itself unnecessary by reforming the democratic system. The alternative view is that we would be better as a loose collection of independents.
+
+This post is a long-form contribution to that debate, really.
+
+In my view, the disadvantages of remaining independents mainly come down to brand awareness. When you have to get home a very simple strong message to as many people as possible, being able to present that in a unified way that people will come across in lots of places is a big advantage. Nuanced messages about being an independent but having a shared manifesto will get lost.
+
+Also, the fact that parties get to have their party name, logo, and tagline on the ballot paper is a massive advantage to them over independents, who get none of that.
+
+Anyway, a thought occurred to me. We want to remain a decentralised network of contributors, but capitalise on shared recognition and branding. How can we be a party without being a party? What if we register a party with the Electoral Commission, but avoid the use of the word "Party" like hell?
+
+Instead, how about the **OpenPolitics Network**?
+
+That way we get the best of both, I think. Anyone could stand as a candidate for the network as long as they are standing on the manifesto, but there's no central party control telling them what to do, or even *looking* like it does. Each candidate is free to run their campaign however they want; after all, they're basically independents.
+
+Unfortunately, the rules state that parties do have to have some centralised aspects - a leader, and a couple of other posts, but these can be elected from the pool of contributors, and while they may *technically* exist, we can avoid using them in the usual way.
+
+I think this might be a way to gain the advantages of party recognition without having to conform to the existing views of parties.
+
+Oh, and there is no registered party in the UK at the moment that uses the word "network", so I think that's a good omen.
