@@ -24,5 +24,7 @@ I announced a couple of weeks ago that [I intend to stand against you in next ye
 
 Horsham is my home, so my choice to stand was not *against you*, but rather *for Horsham*. However, with the government's actions over this bill, I am rather looking forward to challenging your choices and true commitment to openness and transparency over the next year.
 
+Note: I have published this letter on my [personal website](http://floppy.org.uk), and will also publish your response to it, to give you proper right of reply.
+
 Yours sincerely,
 James Smith
