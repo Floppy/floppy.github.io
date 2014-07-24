@@ -4,7 +4,7 @@
   <title><![CDATA[James Smith]]></title>
   <link href="http://floppy.org.uk/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2014-07-22T08:30:53+01:00</updated>
+  <updated>2014-07-24T08:52:34+01:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The machine that goes BEEP]]></title>
+    <link href="http://floppy.org.uk/blog/2014/07/24/the-machine-that-goes-beep/"/>
+    <updated>2014-07-24T07:47:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/07/24/the-machine-that-goes-beep</id>
+    <content type="html"><![CDATA[<p>I commute into London a few days a week, and my nearest station is <a href="https://en.wikipedia.org/wiki/Littlehaven_railway_station">Littlehaven</a>, a small station on the <a href="http://www.southernrailway.com/">Southern</a> network. Over the last little while, Southern have been introducing an <a href="https://en.wikipedia.org/wiki/Integrated_Transport_Smartcard_Organisation">ITSO</a> smartcard called <a href="https://www.southernrailway.com/smart-card/">The Key</a>, which is pretty great. Now that I have my season ticket on one, I don&rsquo;t have a scraggly piece of card in my wallet, I feel safer if I lose  it, I can order tickets quickly online, and other good stuff. In general it&rsquo;s a good bit of kit.</p>
+
+<p>However, there&rsquo;s only one problem. At Littlehaven, the card readers are outside, and whenever I tap in and out, they beep <em>really</em> loudly. It&rsquo;s so loud that it must disturb the people in the houses nearby, especially when they&rsquo;re sleeping with their windows open in the current heat. I feel awful every time I tap in and out, I really do.</p>
+
+<p>When putting these in, there was a failure to think about where these machines were going. On a platform in a large station, or inside a station building, no problem, but out in the open near houses is a bad idea. The externalities weren&rsquo;t taken into account.</p>
+
+<p>This has made me think about how we design and deploy technologies in general. In the past, the technology itself was often the driver of its form and function; nowadays we have a lot more user-centred design going on, where technology is designed to meet the precise and simple need that the user has. We need to remember to widen that though, to consider the wider impact our technologies have on the world around us; we need more society-centred design.</p>
+
+<p>Technology is, I believe, a force for good, but we must remember what a powerful driver of social change it is, and that almost any technology choice has inherent assumptions about the society it fits into. When Tim Berners-Lee invented the World Wide Web, it came with a built-in set of assumptions about freedom, democratisation of information, and so on (good ones, in my opinion). When we use Facebook, we&rsquo;re buying into the societal assumption that we are not citizens but products, whose information is handed over to trade to advertisers and others to build shareholder value for Facebook, <em>and that that&rsquo;s OK</em>.</p>
+
+<p>Ethics are important in technology; we need to be aware of what we&rsquo;re building and the wider impact it will have on society at large if it succeeds. We can use technology to build a better society, or we can let it evolve along its own lines without making those choices. Personally, I&rsquo;d rather be in a world of well-designed ethical technology that makes the world better, than surrounded by badly-placed machines that go beep.</p>
+
+<p>In the meantime, I&rsquo;m going to see if I can go back to a paper ticket until they turn down the volume. I don&rsquo;t like waking up the neighbours simply to make my wallet neater.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Answering back]]></title>
@@ -745,60 +766,6 @@ happens.
 <p>Both these efforts were unsuccessful because the companies that put  them out weren&#8217;t serious about them. There is a place for  experimentation, but if you&#8217;re a massive company, even your small  experiments seem larger than other people&#8217;s entire companies. By  half-heartedly grabbing the attention around energy monitoring, these  experiments crowded out the people who are building a business around  this, like <a href="http://www.currentcost.com">Currentcost</a>, <a href="http://www.enio.co.uk">Enio</a>, <a href="http://pachube.com">Pachube</a> and many more.</p>
 <p>The fact is that online energy monitoring is not dead - the demise of  these services will simply provide more room for other companies to  innovate without being stepped on. Neither Powermeter or Hohm were doing  anything particularly innovative that hadn&#8217;t been done many times  before anyway! Powermeter also suffered from being a silo of data, not a  hub. You could put data in, but not get it out, which is a bit  pointless. A truly useful service in this space needs to act as an  aggregator, letting data flow through it so that other innovations can  cluster around it, like the <a href="http://floppy.org.uk/blog/2011/04/20/">Social Meter</a> project, for instance.</p>
 <p>Innovation needs openness, and by smothering a potentially innovative  space with their distinctly non-innovative services, MS and Google did  nobody any favours. We are better off without them.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Resolving a method_missing fight]]></title>
-    <link href="http://floppy.org.uk/blog/2011/06/08/resolving-a-method_missing-fight/"/>
-    <updated>2011-06-08T00:00:00+01:00</updated>
-    <id>http://floppy.org.uk/blog/2011/06/08/resolving-a-method_missing-fight</id>
-    <content type="html"><![CDATA[<p>Recently, I was writing tests for a piece of code, and came up against some strange problems. The code talks to an external web service using RestClient (1.6.1), so of course the web service is mocked for the tests, in this case using Mocha (0.9.8).</p>
-<p class="western">The problem came when I tried to test failure modes; for instance, what happens when the service comes back with a 401 due to bad credentials? RestClient raises an exception for this containing the response, so the mock has to do the same.</p>
-
-<pre>request.stubs(:put).raises(RestClient::Unauthorized.new(<br/>  stub(:code =&gt; 401, :body =&gt; nil)<br/>)</pre>
-<p class="western">So far so good. The exception is raised, and all is well. The problem comes when we try to access the response code later on in our error-handling code:</p>
-
-<pre>rescue RestClient::Exception =&gt; e
-  puts e.response.code
-</pre>
-<p class="western">Seems reasonable, right? The response object should be a Mocha::Mock that responds to #code and gives back 401. Unfortunately not. We get a &#8216;stack too deep&#8217; error thrown inside a recursive method_missing call. Huh?</p>
-<p class="western">This really should work, so let&#8217;s take a look inside the gems. It turns out that RestClient mixes something special into the response object (in this case the mock) for compatibility. The gem used to return Net::HTTP::Response objects, not RestClient::Response objects, so in order to retain compatibility with old code, it mixes in the behaviour of the Net::HTTP class to responses contained inside exceptions. This is taken from restclient/exceptions.rb:</p>
-
-<pre># Compatibility : make the Response act like a <br/># Net::HTTPResponse when needed
-module ResponseForException
-  def method_missing symbol, *args
-    if net_http_res.respond_to?(symbol)
-      warn "[warning] ..."
-      net_http_res.send symbol, *args
-    else
-      super
-    end
-  end
-end
-
-class Exception &lt; RuntimeError
-  attr_accessor :message, :response
-
-  def initialize response = nil, initial_response_code = nil
-    @response = response
-    @initial_response_code = initial_response_code
-    # compatibility: this make the exception behave like <br/>    # a Net::HTTPResponse
-    response.extend ResponseForException if response
-  end
-end
-</pre>
-<p class="western">As you can see, it does this by adding its own method_missing, which accesses the <strong>net_http_res</strong> function of the response. In our mock, that doesn&#8217;t exist, so of course method_missing is called ad infinitum. So, let&#8217;s add it:</p>
-
-<pre>request.stubs(:put).raises(RestClient::Unauthorized.new(<br/>  stub(:code =&gt; 401, :body =&gt; nil, :net_http_res =&gt; nil)<br/>)</pre>
-<p class="western">Better. Does it work now? Hm. No. It&#8217;s still digging a method_missing hole to the Earth&#8217;s core.</p>
-<p class="western">The <strong>real</strong> problem is that the method_missing that is mixed in by RestClient::Exception is masking the one in Mocha::Mock, and that one is what does the actual handling of the stub code that we pass in. So, even though we added net_http_res up there, the bit of code that handles it is never called, so we&#8217;re still stuffed.</p>
-<p class="western">Now, there&#8217;s not a lot we can do about that without rewriting the gems. If I <strong>was</strong> going to do that, I&#8217;d try to make sure that RestClient::Exception doesn&#8217;t mask existing method_missing functions, but instead aliases them and makes sure they are still called. Not sure how easy that would be, I&#8217;ve not tried it, but it would be worth a shot.</p>
-<p class="western">I would try to make some general rule here about making sure your code plays nice with other code, but to be honest, I doubt you can consider every case where someone might be subverting your code by giving it things like mock objects (which could implement the mocking in any number of ways) instead of real ones. I guess there will always be a gap somewhere.</p>
-<p class="western">The solution I hit upon in the end was to change the stub. Instead of using Mocha, which relies on method_missing to implement its stubbing, I changed to OpenStruct, which doesn&#8217;t, and is sufficient in this case.</p>
-
-<pre>request.stubs(:put).raises(RestClient::Unauthorized.new(<br/>  OpenStruct.new(:code =&gt; 401, :body =&gt; nil, :net_http_res =&gt; nil)<br/>)</pre>
-<p class="western">Yay, by using a stub that doesn&#8217;t require method_missing to operate, it all works nicely now! My tests are saved and I can get on with some real work&#8230; about time.</p>
 ]]></content>
   </entry>
   
