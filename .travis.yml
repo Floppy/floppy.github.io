@@ -1,13 +1,16 @@
----
 language: ruby
 rvm:
 - 2.1.0
-before_script:
-- bundle exec rake setup_github_pages[$REPO]
 script:
 - bundle exec rake generate
-after_script:
-- bundle exec rake deploy
-env:
-  global:
-  - REPO="git@github.com:Floppy/floppy.github.io.git"
+before_deploy: "cd public"
+deploy:
+  provider: cloudfiles
+  username: floppy
+  api_key:
+    secure: dUm2oP4e7ij8jHcOBhe3mNNh5dpJramUstqQVaF/VfOLxIv6OQw+nWAOPo/Jl5tTmYQcsrz2FokHsHVc9RCjtNgWbI0+lMvbgFFlBpNohytkxMj9SOZ34c6arpsGS5CoP7OdhZgWhDizolcumB5yYA8tOcveNvQeGRusSYM6Ojg=
+  region: LON
+  container: floppy.org.uk
+  on:
+    repo: Floppy/floppy.github.io
+    branch: source
