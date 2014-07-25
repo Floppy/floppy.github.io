@@ -9,7 +9,7 @@ deploy:
   username: floppy
   api_key:
     secure: dUm2oP4e7ij8jHcOBhe3mNNh5dpJramUstqQVaF/VfOLxIv6OQw+nWAOPo/Jl5tTmYQcsrz2FokHsHVc9RCjtNgWbI0+lMvbgFFlBpNohytkxMj9SOZ34c6arpsGS5CoP7OdhZgWhDizolcumB5yYA8tOcveNvQeGRusSYM6Ojg=
-  region: LON
+  region: lon
   container: floppy.org.uk
   on:
     repo: Floppy/floppy.github.io
