@@ -3,7 +3,7 @@ layout: post
 title: "The Open Democracy Stack"
 date: 2014-01-25 08:58
 comments: true
-categories: 
+categories: democracy
 ---
 Since I wrote my blog post ["It's time to step up"](/blog/2013/07/05/its-time-to-step-up/) last summer, I've got very interested in the concept of Open Democracy, and have been discovering a lot about what's currently going on in this area. This post is an attempt to delineate the various efforts, mainly for my own benefit, but perhaps others may find it useful as well.
 

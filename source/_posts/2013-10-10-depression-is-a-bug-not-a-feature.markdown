@@ -3,7 +3,7 @@ layout: post
 title: "Depression Is A Bug, Not A Feature"
 date: 2013-10-10 11:02
 comments: true
-categories: 
+categories: depression
 ---
 Today is apparently [World Mental Health Day](http://www.mentalhealth.org.uk/our-work/world-mental-health-day/), which makes it an appropriate time to talk a little about depression. I was thinking of doing this anyway, but today seems a good day to do it.
 

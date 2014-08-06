@@ -3,7 +3,7 @@ layout: post
 title: "Work In Progress"
 date: 2014-06-30 16:35
 comments: true
-categories:
+categories: election
 ---
 *This is part of my series about standing as an MP. See the archive for other posts.*
 

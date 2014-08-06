@@ -3,7 +3,7 @@ layout: post
 title: "The machine that goes BEEP"
 date: 2014-07-24 07:47
 comments: true
-categories:
+categories: technology
 ---
 I commute into London a few days a week, and my nearest station is [Littlehaven](https://en.wikipedia.org/wiki/Littlehaven_railway_station), a small station on the [Southern](http://www.southernrailway.com/) network. Over the last little while, Southern have been introducing an [ITSO](https://en.wikipedia.org/wiki/Integrated_Transport_Smartcard_Organisation) smartcard called [The Key](https://www.southernrailway.com/smart-card/), which is pretty great. Now that I have my season ticket on one, I don't have a scraggly piece of card in my wallet, I feel safer if I lose  it, I can order tickets quickly online, and other good stuff. In general it's a good bit of kit.
 

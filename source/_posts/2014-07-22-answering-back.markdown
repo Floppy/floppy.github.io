@@ -3,7 +3,7 @@ layout: post
 title: "Answering back"
 date: 2014-07-22 07:11
 comments: true
-categories:
+categories: election
 ---
 *This is part of my series about standing as an MP. See the archive for other posts.*
 

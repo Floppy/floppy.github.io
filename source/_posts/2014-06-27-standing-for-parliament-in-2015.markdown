@@ -3,7 +3,7 @@ layout: post
 title: "Standing for Parliament in 2015"
 date: 2014-06-27 10:18
 comments: true
-categories:
+categories: election democracy
 ---
 *This is part of my series about standing as an MP. See the archive for other posts.*
 

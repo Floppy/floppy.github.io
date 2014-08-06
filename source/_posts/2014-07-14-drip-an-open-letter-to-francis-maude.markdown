@@ -3,7 +3,7 @@ layout: post
 title: "DRIP: An Open Letter to Francis Maude"
 date: 2014-07-14 10:16
 comments: true
-categories:
+categories: election surveillance democracy
 ---
 
 Dear Mr Maude,

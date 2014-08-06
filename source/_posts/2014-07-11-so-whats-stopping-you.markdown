@@ -3,7 +3,7 @@ layout: post
 title: "So what's stopping you?"
 date: 2014-07-10 09:00
 comments: true
-categories:
+categories: election
 ---
 *This is part of my series about standing as an MP. See the archive for other posts.*
 

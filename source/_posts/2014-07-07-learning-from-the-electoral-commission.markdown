@@ -3,7 +3,7 @@ layout: post
 title: "Learning from the Electoral Commission"
 date: 2014-07-07 16:36
 comments: true
-categories:
+categories: election
 ---
 *This is part of my series about standing as an MP. See the archive for other posts.*
 

@@ -3,7 +3,7 @@ layout: post
 title: "Diving into election finances"
 date: 2014-07-08 19:17
 comments: true
-categories:
+categories: election
 ---
 *This is part of my series about standing as an MP. See the archive for other posts.*
 

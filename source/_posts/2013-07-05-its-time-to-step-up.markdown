@@ -3,7 +3,7 @@ layout: post
 title: "It's Time To Step Up"
 date: 2013-07-05 20:08
 comments: true
-categories: 
+categories: democracy
 ---
 
 I find the current state of politics in the UK incredibly depressing.
