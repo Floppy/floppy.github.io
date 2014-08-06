@@ -15,7 +15,7 @@ There is a growing movement of independent candidates across Horsham, with mysel
 
 However, a danger here is that if there is a movement of independent local councillor candidates, that I get drawn into that *too far*, and don't get enough focus on the specific needs of the MP campaign. This is dangerous, not least because Horsham district and constituency are not the same shape; some of my constituents are in Mid Sussex District, and not all Horsham District residents vote in Horsham constituency.
 
-But, it will be helpful to have allies; we've set up a mailing list for independents in the Horsham area - if you want to join, visit the [Horsham Unparty google group](http://groups.google.com/horsham-unparty).
+But, it will be helpful to have allies; we've set up a mailing list for independents in the Horsham area - if you want to join, visit the [Horsham Unparty google group](https://groups.google.com/forum/#!forum/horsham-unparty).
 
 ## Issues
 
