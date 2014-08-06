@@ -5,7 +5,7 @@ date: 2014-07-08 19:17
 comments: true
 categories: election
 ---
-*This is part of my series about standing as an MP. See the archive for other posts.*
+*This is part of my series about standing as an MP. See the [election category](/blog/categories/election/) for other posts.*
 
 After talking to the electoral commission yesterday, I got interested in what local candidates normally spend on their campaigns.
 

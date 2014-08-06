@@ -5,7 +5,7 @@ date: 2014-07-22 07:11
 comments: true
 categories: election
 ---
-*This is part of my series about standing as an MP. See the archive for other posts.*
+*This is part of my series about standing as an MP. See the [election category](/blog/categories/election/) for other posts.*
 
 There are a few of common reactions I get from people when I tell them I'm standing (though by far the response is positive).
 

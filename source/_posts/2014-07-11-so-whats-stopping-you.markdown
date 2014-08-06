@@ -5,7 +5,7 @@ date: 2014-07-10 09:00
 comments: true
 categories: election
 ---
-*This is part of my series about standing as an MP. See the archive for other posts.*
+*This is part of my series about standing as an MP. See the [election category](/blog/categories/election/) for other posts.*
 
 Tomorrow it will be 300 days until the General Election. [I've decided to stand](/blog/2014/06/27/standing-for-parliament-in-2015/), and have been looking into the practicalities of it all (see the blog archive for more articles on this).
 

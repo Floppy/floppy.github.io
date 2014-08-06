@@ -5,7 +5,7 @@ date: 2014-07-14 11:42
 comments: true
 categories: election
 ---
-*This is part of my series about standing as an MP. See the archive for other posts.*
+*This is part of my series about standing as an MP. See the [election category](/blog/categories/election/) for other posts.*
 
 Currently, I'm intending to stand as an Independent candidate. I believe that candidates should be a lot more independent, and that parties, while useful for some things, tend to wield far too much power.
 
