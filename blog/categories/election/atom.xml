@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: election | James Smith]]></title>
+  <link href="http://floppy.org.uk/blog/categories/election/atom.xml" rel="self"/>
+  <link href="http://floppy.org.uk/"/>
+  <updated>2014-08-06T08:46:42+01:00</updated>
+  <id>http://floppy.org.uk/</id>
+  <author>
+    <name><![CDATA[James Smith]]></name>
+    <email><![CDATA[james@floppy.org.uk]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Political Cartography]]></title>
+    <link href="http://floppy.org.uk/blog/2014/08/08/political-cartography/"/>
+    <updated>2014-08-08T20:30:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/08/08/political-cartography</id>
+    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the <a href="/blog/categories/election/">election category</a> for other posts.</em></p>
+
+<p>One thing you really need to know when standing as a candidate is what areas are actually part of your constituency. Constituencies are pretty weird shapes, especially out in the country, and the area is probably larger than you think. So, time to find out for sure.</p>
+
+<p>Fortunately the Ordnance Survey makes this easy. Their <a href="http://www.ordnancesurvey.co.uk/election-maps/gb/">Election Maps</a> service shows all the constituency, ward, and other boundaries you might want in a nice map format. Enter your constituency name in the box, choose the right one, and you get something like this (apologies for the screenshot, there&rsquo;s no way to embed):</p>
+
+<p><img src="/images/horsham_constituency.png" alt="Horsham constituency OS map" /></p>
+
+<p>Now, what I really want is a map on my wall that I can refer to easily. The Election Maps service does have a print option, but it&rsquo;s just to print a single page yourself, and no way is that good enough for what I want.</p>
+
+<p>Fortunately, OS come to the rescue again with their <a href="https://www.ordnancesurvey.co.uk/shop/custom-made-maps.html">custom map printing</a>. Unfortunately, there&rsquo;s no link on the election maps to &ldquo;order a custom map of this area&rdquo; (which would be awesome, OS, if you&rsquo;re listening) so we have to do it manually.</p>
+
+<p>In my case, I found a point roughly in the middle of the constituency&rsquo;s bounding box, Lower Beeding, and I found that at Landranger scale (1:50000), the whole constituency would fit on one map. This probably won&rsquo;t always be the case, but it worked for me. £16.99 and 5 days later, and I have an 80x80cm wall map of my constituency is hanging on my wall:</p>
+
+<p>Unfortunately, that custom map doesn&rsquo;t include the boundary of the constituency, so I had to draw it on with a sharpie, but it&rsquo;s not a bad solution.</p>
+
+<p>Note: I tried to do this using OpenStreetMap, but I just couldn&rsquo;t work out how. If anyone knows, then please tell me, I&rsquo;d love to have a method of using the open data in OSM to plan my campaigning :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Horsham Election Meetup #1]]></title>
+    <link href="http://floppy.org.uk/blog/2014/08/05/horsham-election-meetup-1/"/>
+    <updated>2014-08-05T23:11:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/08/05/horsham-election-meetup-1</id>
+    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the <a href="/blog/categories/election/">election category</a> for other posts.</em></p>
+
+<p>Last night was our first Horsham election meetup, and while very useful, it&rsquo;s left so many thoughts swirling around my brain that it&rsquo;s hard to get them in any kind of order. These, I think, were the main outcomes for me:</p>
+
+<h2>Independent movement</h2>
+
+<p>There is a growing movement of independent candidates across Horsham, with myself at national level, and a number of others at district level. With all the seats up for election at the same time next year, there&rsquo;s a lot of possible cooperation to be had. There is a general disillusionment with our representatives at all levels, that they are not representing the concerns of residents, which plays into the hands of independents.</p>
+
+<p>However, a danger here is that if there is a movement of independent local councillor candidates, that I get drawn into that <em>too far</em>, and don&rsquo;t get enough focus on the specific needs of the MP campaign. This is dangerous, not least because Horsham district and constituency are not the same shape; some of my constituents are in Mid Sussex District, and not all Horsham District residents vote in Horsham constituency.</p>
+
+<p>But, it will be helpful to have allies; we&rsquo;ve set up a mailing list for independents in the Horsham area &ndash; if you want to join, visit the <a href="https://groups.google.com/forum/#!forum/horsham-unparty">Horsham Unparty google group</a>.</p>
+
+<h2>Issues</h2>
+
+<p>We discussed the most important issues to Horsham right now, and I&rsquo;m glad to say that they were pretty much in line with my expectations. Gatwick expansion is a biggie, but the main concern at the moment seems to be around the planning and development going on around the town. Housing needs to be built, but it&rsquo;s not being built in a way that local people are happy with. They feel that their views are ignored, and that decisions are being taken behind closed doors.</p>
+
+<p>Both these play nicely into my national stance on greater transparency at all levels, environmental issues around airports and vehicles, and fixing the democratic process. It&rsquo;ll be important in the campaign to keep my focus on the national-level trends and laws that make local problems worse, while trying to facilitate solutions to local problems. The advantage of having a group of independent candidates for the council is that we can have good coverage of whatever level is actually responsible for an issue.</p>
+
+<p>My action from this is to start creating a set of local issue pages on <a href="http://openhorsham.org.uk">openhorsham.org.uk</a> and set out my views and how they link to national legislation, etc.</p>
+
+<h2>Campaign planning</h2>
+
+<p>We discussed how to engage with people during the campaign. We threw around ideas of town centre engagement on a Saturday morning, and running local surgeries around the constituency. We talked about engaging with influential local groups (and being explicit about getting endorsements!), and also about increasing the number of election hustings meetings &ndash; last time round, there were two, both run by church groups. We need to improve that this time.</p>
+
+<p>We also talked about getting a team together to help. Volunteers for leaflet dropping are essential, but it&rsquo;s becoming increasingly clear to me that I need other people involved on my campaign to help run and organise it. How to find all these people? I&rsquo;m not sure.</p>
+
+<h2>Media</h2>
+
+<p>Engagement with local media is important. I need to be writing opinion pieces and letters on a regular basis. I have no problem with writing (I don&rsquo;t think), but my instinct is always to publish immediately online; I will have to restrain myself slightly to get anything visible in the local paper.</p>
+
+<h2>Too Much Information</h2>
+
+<p>There is always a danger that as a new entrant into the democratic arena, there are many many people out there who know a lot more than you about the area, the process, and the politics. These people are <em>great</em>, but they do leave your head spinning. It&rsquo;s important to take what is useful on board, but not allow yourself to be subsumed into the stream of information.</p>
+
+<p>At the end of the day, to be a genuine candidate, I have to be <em>myself</em>, and not try to turn myself into an expert politician. So far, while there are massive gaps in my knowledge, my instincts have been confirmed, so I feel like I&rsquo;m on the right track.</p>
+
+<p>It will be an interesting year. Balancing the different aspects will be hard, but I need to make sure I remain focused on representing what the constituents want from their MP, and making sure they understand what I have to offer. <em>Everything</em> else is negotiable.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Energy illiteracy]]></title>
+    <link href="http://floppy.org.uk/blog/2014/07/29/energy-illiteracy/"/>
+    <updated>2014-07-29T10:23:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/07/29/energy-illiteracy</id>
+    <content type="html"><![CDATA[<p>Earlier this week more licenses were handed out for oil and gas extraction under the UK, and if you live in the Horsham area, it&rsquo;s very likely that <a href="https://www.og.decc.gov.uk/eng/fox/decc/PED300X/licence?LICENCE_TYPE=PEDL&amp;LICENCE_NO=243">Celtique Energie</a> or <a href="https://www.og.decc.gov.uk/eng/fox/decc/PED300X/licence?LICENCE_TYPE=PEDL&amp;LICENCE_NO=244">Cuadrilla</a> now have a right to extract the resources under your home. Also, the government are currently <a href="https://www.gov.uk/government/consultations/underground-drilling-access">in the process of changing the law</a> so that you won&rsquo;t have the right to object to this if it happens.</p>
+
+<p>There are many reasons to object to fracking &ndash; some good, some bad &ndash; but the one that concerns me most is that <a href="http://www.economist.com/news/business/21577097-either-governments-are-not-serious-about-climate-change-or-fossil-fuel-firms-are">proven fossil fuels reserves are way higher than the amount we can use</a> while having a chance of staying within a 2 degree rise in global temperatures. We simply can&rsquo;t burn what we already have, so finding more seems a wilfully ignorant course.</p>
+
+<p>Perhaps someone can explain to me why we seem so obsessed with propping up the energy status quo, rather than moving forward? The other day, UKIP councillors in Sussex <a href="http://www.wscountytimes.co.uk/news/letters/letter-petition-to-stop-new-wind-farm-1-6195820">voiced strong objections to the new Rampion wind farm</a> which will be built off the south coast, while at the same time their party welcomes fracking for gas and oil all across the Weald, which would be <em>much</em> more invasive. Having said that though, their climate beliefs are <a href="https://en.wikipedia.org/wiki/UKIP#Energy.2C_environment_and_climate_change">absolutely laughable</a>, so we shouldn&rsquo;t be surprised at such anti-scientific, pro-business posturing. How they are considered &ldquo;anti-establishment&rdquo; is beyond me.</p>
+
+<p>It seems to me that the conservative side of British politics is not concerned with conserving our countryside, our society, our future, or anything else, but instead with conserving the ways that they and their friends got their money and power.</p>
+
+<p>I&rsquo;d much rather the country followed the model of Balcombe, right here in Horsham constituency. When presented with the threat of fracking, they didn&rsquo;t just say NO (though they did), they then created <a href="http://www.repowerbalcombe.com/our-mission/">Repower Balcombe</a> to provide 100% of their own energy from renewable sources.</p>
+
+<p>This kind of thinking is how we move forward to the future, not by propping up the profits of outdated energy production industries and hedge fund managers for a few more months.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Answering back]]></title>
+    <link href="http://floppy.org.uk/blog/2014/07/22/answering-back/"/>
+    <updated>2014-07-22T07:11:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/07/22/answering-back</id>
+    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the <a href="/blog/categories/election/">election category</a> for other posts.</em></p>
+
+<p>There are a few of common reactions I get from people when I tell them I&rsquo;m standing (though by far the response is positive).</p>
+
+<p>I&rsquo;d like to put down my own responses to them here. Note that the questions aren&rsquo;t direct quotes from particular individuals, they are a kind of merged version of many times I&rsquo;ve been asked the same thing. I&rsquo;ve tried not to caricature them, but they are simplified; apologies if anyone feels I&rsquo;m putting words into their mouths.</p>
+
+<h2>Why Bother?</h2>
+
+<p><strong>Voting doesn&rsquo;t change anything, so neither will standing. And even if you get in, you&rsquo;ll have no power.</strong></p>
+
+<p>That&rsquo;s a pretty damning indictment of our system, right there. If voters have no power, and even elected representatives have no power, isn&rsquo;t it time to change that? Thing is, these changes take time and effort, and unless you&rsquo;re going to literally start a revolution out on the streets, what other routes do we have other than voting and standing? No seat is safe if people vote for a different option. It won&rsquo;t be easy, but it is possible if we work together. I know that&rsquo;s optimistic, but what&rsquo;s the alternative other than fatalistic disengagement?</p>
+
+<p>In the end, my response to &ldquo;why bother&rdquo; comes down to this. If your ideal roadmap for the future doesn&rsquo;t include people that you agree with in government at some point, then what <em>is</em> your roadmap? Will you be out on the streets in violent revolution, or will you be running the underground in a police state? Or are you waiting for the established wealth and power of our political class to voluntarily change its mind and go in a direction you like?</p>
+
+<h2>We can work around it!</h2>
+
+<p><strong>We can fix this with technology. Encrypt everything, work around government interference, make it impossible for them to spy on us.</strong></p>
+
+<p>I&rsquo;ve heard this one a number of times in the surveillance-related conversations I&rsquo;ve been in, and I disagree wholeheartedly. So, encryption is great, and all these privacy-protecting things are wonderful; however, I don&rsquo;t want to live somewhere where it&rsquo;s necessary to use them to protect myself from <em>my own government</em>. I don&rsquo;t want to end up in an encryption arms race against well-funded domestic intelligence agencies, who at the end of the day can come round and arrest me if I&rsquo;m using suspicious anonymous routing software. There <em>are</em> places like this in the world today, and I have no desire to see the UK turning into one of them. It would, quite frankly, be a shitty way to live.</p>
+
+<h2>Why Horsham?</h2>
+
+<p><strong>Horsham&rsquo;s a very safe Tory seat, you&rsquo;ll never win there. Why not stand somewhere else?</strong></p>
+
+<p>This one&rsquo;s easy. I think that the parachuting-in of candidates by central parties is a terrible thing for voter engagement. The idea of candidates working their way up through marginals, then being rewarded with a nice safe seat once they&rsquo;re at the upper end of the party is one of the really bad aspects of our system at the moment. We actually propose in the manifesto that <a href="http://openpolitics.org.uk/manifesto/democracy.html#standing-for-election">candidates must live or work in the constituency they want to stand for, and have done so for a while beforehand</a>.</p>
+
+<p>So, because I <em>live</em> in Horsham, that&rsquo;s where I&rsquo;m standing. It&rsquo;s the place I&rsquo;m a part of, that I call home, and that I care about. Is that enough of a reason? Yes, it&rsquo;ll be a hard fight, but what isn&rsquo;t?</p>
+
+<h2>Why Francis?</h2>
+
+<p><strong>Why are you standing against Francis Maude? He&rsquo;s one of the good guys!</strong></p>
+
+<p>This comes along a lot in the Open Data and civic technology worlds. First, I&rsquo;d refer you to my above answer &ndash; I&rsquo;m standing <em>for</em> a better way of doing things, not <em>against</em> Francis in particular.</p>
+
+<p>I quite agree that Francis has done good things during his time in government. His creation of <a href="https://gds.blog.gov.uk/">GDS</a> and the work around <a href="http://gov.uk">gov.uk</a> has been excellent, and I&rsquo;m quite sure that the transformation agenda currently going across the civil service will lead to great things. From what I hear, he&rsquo;s incredibly engaged in these things, and for that I thank him.</p>
+
+<p>Also, his dedication to government transparency is to be lauded (and continued in future). I probably wouldn&rsquo;t have the great job I have now at the <a href="http://theodi.org">ODI</a> if Francis hadn&rsquo;t given his support to the organisation during its formation, so I have that to thank him for as well.</p>
+
+<p>However, and I&rsquo;m being realistic here, if I take Francis' seat in 2015, then it&rsquo;ll be a sign of a much larger shift in British politics, and it&rsquo;s quite likely that he wouldn&rsquo;t have been in his job any more anyway. The likelihood of the rest of the establishment remaining unchanged, and me just taking out the one good guy in government is <em>very</em> low.</p>
+
+<p>Of course, while he&rsquo;s done good things in the area of online and transparent government, he&rsquo;s been heavily involved in much of the austerity agenda, has made statements about reducing the rights of teachers and others to go on strike, and many other more traditional Tory policies which I don&rsquo;t like.</p>
+
+<p>The government&rsquo;s digital and transparency agendas will continue; we shouldn&rsquo;t get too attached to the person running them.</p>
+
+<h2>Apologies (sort of)</h2>
+
+<p>However, I do feel for those who will probably have to have awkward conversations about why one of their own is running against a key figure in government; if I make your life difficult, I can only apologise.</p>
+
+<p>All I can say is that both my current employment and my choice to stand are a natural parts of my own personal trajectory, and that nobody should see it as some conspiracy of a radical think-tank trying to take over the country. If it was, I imagine they&rsquo;d be rather more effective, anyway. ;)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Party On]]></title>
+    <link href="http://floppy.org.uk/blog/2014/07/14/party-on/"/>
+    <updated>2014-07-14T11:42:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/07/14/party-on</id>
+    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the <a href="/blog/categories/election/">election category</a> for other posts.</em></p>
+
+<p>Currently, I&rsquo;m intending to stand as an Independent candidate. I believe that candidates should be a lot more independent, and that parties, while useful for some things, tend to wield far too much power.</p>
+
+<p>However, we find ourselves in a political climate that doesn&rsquo;t reward the independent, and doesn&rsquo;t allow lone voices through. Also, there are some built-in biases in the system against the independent candidate.</p>
+
+<p>There has been an open question for a while on the OpenPolitics Manifesto over whether it should form a party. Some think we should, some not. I personally fall on the side that says that forming a party is a good thing, if only for short-term tactical reasons. It would be a party designed to make itself unnecessary by reforming the democratic system. The alternative view is that we would be better as a loose collection of independents.</p>
+
+<p>This post is a long-form contribution to that debate, really.</p>
+
+<p>In my view, the disadvantages of remaining independents mainly come down to brand awareness. When you have to get home a very simple strong message to as many people as possible, being able to present that in a unified way that people will come across in lots of places is a big advantage. Nuanced messages about being an independent but having a shared manifesto will get lost.</p>
+
+<p>Also, the fact that parties get to have their party name, logo, and tagline on the ballot paper is a massive advantage to them over independents, who get none of that.</p>
+
+<p>Anyway, a thought occurred to me. We want to remain a decentralised network of contributors, but capitalise on shared recognition and branding. How can we be a party without being a party? What if we register a party with the Electoral Commission, but avoid the use of the word &ldquo;Party&rdquo; like hell?</p>
+
+<p>Instead, how about the <strong>OpenPolitics Network</strong>?</p>
+
+<p>That way we get the best of both, I think. Anyone could stand as a candidate for the network as long as they are standing on the manifesto, but there&rsquo;s no central party control telling them what to do, or even <em>looking</em> like it does. Each candidate is free to run their campaign however they want; after all, they&rsquo;re basically independents.</p>
+
+<p>Unfortunately, the rules state that parties do have to have some centralised aspects &ndash; a leader, and a couple of other posts, but these can be elected from the pool of contributors, and while they may <em>technically</em> exist, we can avoid using them in the usual way.</p>
+
+<p>I think this might be a way to gain the advantages of party recognition without having to conform to the existing views of parties.</p>
+
+<p>Oh, and there is no registered party in the UK at the moment that uses the word &ldquo;network&rdquo;, so I think that&rsquo;s a good omen.</p>
+]]></content>
+  </entry>
+  
+</feed>

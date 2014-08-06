@@ -9,7 +9,7 @@
   <meta name="author" content="James Smith">
 
   
-  <meta name="description" content="James Smith Building a better future out of code Oct 13th, 2008 Comments Gems, Bookmarks, and Sandwiches I&#8217;ve been crazy busy for a while, but &hellip;">
+  <meta name="description" content="James Smith Building a better future out of code Mar 28th, 2009 Comments Publishing CurrentCost data to the world A while ago, I started hacking &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -124,6 +124,157 @@
   
 
 
+<i class="icon-calendar-empty"></i> <time datetime="2009-03-28T00:00:00+00:00" pubdate data-updated="true">Mar 28<span>th</span>, 2009</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2009/03/28/publishing-currentcost-data-to-the-world/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2009/03/28/publishing-currentcost-data-to-the-world/">Publishing CurrentCost data to the world</a></h1>
+      <p>
+A while ago, I started hacking around with a <a href="http://www.currentcost.co.uk">CurrentCost</a> real-time energy monitor. This is a very nice little device that measures your electricity use, but more importantly has a serial output on the bottom so you can get data out of it.
+</p>
+
+<p>
+Well, eventually I decided that while being able to get data off the meter was nice, it would be better if I could publish it somewhere. So, I wrote a program in Ruby to do exactly that. It reads data from the meter, and sticks it on the web. I&#8217;ll go into a bit more detail in a minute, but first, you can download it (and get the source code) from <a href="http://github.com/Floppy/currentcost-daemon/">github</a>.
+</p>
+
+<p>
+The program operates as a system daemon, which runs in the background on your Linux box (Mac should work as well) and uploads to various places. Adding new publishers is dead easy, so if you want to publish your data somewhere else, you can easily add it.
+</p>
+
+<h3>The Carbon Diet</h3>
+
+<p>
+First up, my own site, <a href="http://www.carbondiet.org">The Carbon Diet</a>. This uploads your daily usage history from the meter into your carbon diet account so that you don&#8217;t have to take so many meter readings to get an accurate graph. This is still pretty experimental and needs more work, but it&#8217;s pretty useful already. You can see how it looks on <a href="http://www.carbondiet.org/profile/james">my profile</a>.
+</p>
+
+<h3>AMEE</h3>
+
+<p>
+Next, what I think of as the important one. <a href="http://www.amee.com">AMEE</a>, if you&#8217;re not aware, AMEE is a neutral aggregation platform for sharing energy data and carbon calculations (disclaimer: I work for them these days). Think OpenID for your energy identity. Anyway, we have a nice &#8220;smart meter&#8221; demo which uses my currentcost app as the data source. Every minute, it uploads into an AMEE profile, and then another app <a href="http://my.amee.com/demo/1">makes a nice graph</a> of the CO2 produced. In theory, the Carbon Diet could pull that data from AMEE instead of me publishing it directly, but that&#8217;s still to come.
+</p>
+
+<h3>Pachube</h3>
+
+<p>
+Another energy data sharing service is <a href="http://www.pachube.com">Pachube</a> (pronounced &#8220;patch bay&#8221;). As far as I can tell, this is more geared at art and design than rigorous data, but it&#8217;s fun to play with. They&#8217;ve done a bunch of stuff with the CurrentCost, and now my app joins the throng. My <a href="http://www.pachube.com/feeds/488">pachube feed</a> updates every 6 seconds - every time the meter sends data out.
+</p>
+
+<h3>Twitter</h3>
+
+<p>
+Finally, what would be the point of a web energy publisher if it couldn&#8217;t tweet? If you really want to, you can see my minute-by-minute energy usage on Twitter by visiting <a href="http://twitter.com/james_energy">@james_energy</a>.
+</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
+<i class="icon-calendar-empty"></i> <time datetime="2008-11-04T00:00:00+00:00" pubdate data-updated="true">Nov 4<span>th</span>, 2008</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2008/11/04/running-mephisto-on-ruby-187/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2008/11/04/running-mephisto-on-ruby-187/">Running Mephisto on Ruby 1.8.7</a></h1>
+      <p>
+My server runs Ubuntu, and seeing as 8.10 (Intrepid Ibex) is out, I thought &#8220;woo, let&#8217;s upgrade&#8221;. Bad idea. Well, partly. Most of the upgrade went fine, but there was one problem. Intrepid comes with Ruby 1,8.7, which works fine with Rails &gt;=2.1, but doesn&#8217;t work with anything lower. Mephisto, on the other hand, doesn&#8217;t work with Rails 2.1 yet, and is only usable with Rails 
+
+</p><p><code lang="text" theme="zenburnesque">
+NoMethodError (undefined method `[]' for #<:enumerator:0x2aaaad5f7a58>)
+</:enumerator:0x2aaaad5f7a58></code>
+</p><p>
+So, I was faced with having to downgrade to Ruby 1.8.6 (a royal pain as Intrepid doesn&#8217;t provide packages for it), or &#8220;fix&#8221; Mephisto to work with 2.1 (oh my god, don&#8217;t even get me started). Fortunately, another solution presented itself.
+</p>
+<p>
+I came across <a href="http://bicosyes.com/rails-2-1-con-ruby-1-8-7-broken/">this blog post</a> which describes the problem I was having. The gist (it&#8217;s in Spanish) is that the main problem with Rails 2.0.2 and Ruby 1.8.7 is that Ruby 1.8.7 has added a String#chars function to the core language. Rails also adds this function, but the two have different return types, hence causing much breakage. The solution? Remove Ruby&#8217;s String#chars and let Rails do its thing. Add this code to an initializer in your Rails 2.0.2 app, and it will work (better, at least) with Ruby 1.8.7.
+</p>
+<p>
+<code lang="ruby" theme="zenburnesque">
+begin
+  String.class_eval { remove_method :chars }
+rescue NameError
+end
+</code>
+</p>
+<p>
+As you can tell by the fact that you&#8217;re reading this blog, it works a treat. Hurrah!
+</p>
+<p>
+EDIT: Another solution, which I only just worked out, would be to install the very badly-named <a href="http://www.rubyenterpriseedition.com/">Ruby Enterprise Edition</a>, which sits alongside the system&#8217;s Ruby and is call-compatible with 1.8.6. This makes a lot of sense if you&#8217;re using passenger (mod_rails), as well.
+</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
 <i class="icon-calendar-empty"></i> <time datetime="2008-10-13T00:00:00+01:00" pubdate data-updated="true">Oct 13<span>th</span>, 2008</time></h5>
           <div class="row-fluid">
           
@@ -154,172 +305,6 @@ The second app is somewhat less useful (though still entertaining). After a sugg
 
 <p>
 I love Rails for this sort of thing. I can&#8217;t think of other system I&#8217;ve used that would let me create such fun things in the tiny snippets of spare time I have at the moment. And of course, everything above is open source and available on <a href="http://github.com/Floppy">Github</a>.
-</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2008-08-31T00:00:00+01:00" pubdate data-updated="true">Aug 31<span>st</span>, 2008</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://floppy.org.uk/blog/2008/08/31/mocking-kernelrequire/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2008/08/31/mocking-kernelrequire/">Mocking Kernel#require</a></h1>
-      <p>
-The other day, I remembered to add coverage analysis to my <a href="http://github.com/Floppy/amee-ruby">AMEE-Ruby</a> tests, using <a href="http://">rcov</a>. The results were pretty good - most of the code was already tested, except a few failure cases, and I quickly wrote some new tests to make sure those were working properly. One little bit of code stood out though. Because AMEE talks XML and JSON, my gem can use JSON, but only if the JSON gem is available on the system (XML support is built into core Ruby). Problem is, require calls throw errors if they fail, so I had to write some code to handle the load failure and carry on regardless. This is the code inside amee.rb:
-</p>
-
-<p>
-<code lang="ruby" theme="zenburnesque">
-begin
-  require 'json'
-rescue LoadError
-  nil
-end
-</code>
-</p>
-
-<p>
-Problem with this is that the gem is installed on my system, so the require never fails, and the rescue is never used. Rcov notices, and I can&#8217;t get to 100% coverage, which is <em>annoying</em>.
-</p>
-
-<p>
-So, mocking to the rescue. We have to make Kernel#rescue throw an error if we try to require &#8216;json&#8217;, even if the gem is installed. At first, I tried to use flexmock to do this, but couldn&#8217;t make it work - if anyone knows how, <em>please</em> tell me. My final approach was to monkeypatch Kernel#require inside my test so that require &#8216;json&#8217; (and only json) would fail:
-</p>
-
-<p>
-<code lang="ruby" theme="zenburnesque">
-it "should cope if json gem isn't available" do
-  # Monkeypatch Kernel#require to make sure that require 'json'
-  # raises a LoadError
-  module Kernel
-    def require_with_mock(string)
-      raise LoadError.new if string == 'json' 
-      require_without_mock(string)
-    end
-    alias_method :require_without_mock, :require 
-    alias_method :require, :require_with_mock
-  end
-  # Remove amee.rb from required file list so we can load it again
-  $".delete_if{|x| x.include? 'amee.rb'}
-  # Require file - require 'json' should throw a LoadError,
-  # but we should cope with it OK.
-  lambda {
-    require 'amee'
-  }.should_not raise_error
-end
-</code>
-</p>
-
-<p>
-We have to make a new require function, then use alias_method to rename the old one and install our new one in it&#8217;s place. Rails includes alias_method_chain to make this easier, but that&#8217;s not available in pure Ruby. Never mind. Once we&#8217;ve done the monkeypatch, we take amee.rb out of the $&#8221; array, which lists all the currently-required files, to make sure we can require it again, then simply run the require and make sure it catches the error that is thrown by our patched require. And the most satisfying part? The rescue is executed, the test works, and we get to 100% coverage. I&#8217;ve got a nice warm fuzzy feeling inside&#8230; mmmmmm.
-</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2008-08-29T00:00:00+01:00" pubdate data-updated="true">Aug 29<span>th</span>, 2008</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://floppy.org.uk/blog/2008/08/29/currentcost-data-live-on-pachube/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2008/08/29/currentcost-data-live-on-pachube/">CurrentCost data live on Pachube</a></h1>
-      <p>
-So, the other day I got a nice little <a href="http://">tray icon</a> working for my CurrentCost power monitor. That&#8217;s great, but data is only really gets fun when it&#8217;s mashable, so the next step was to get it online somehow.
-</p>
-
-<p>
-<a href="http://pachube.com">Pachube</a> is a site which aggregates data feeds from real-world (and virtual-world) devices, shows them on a map, makes graphs, things like that, so it seemed like a good first attempt at putting my power data online. My first thought was to get my app to post data at regular intervals to the service, but unfortunately Pachube doesn&#8217;t work like that. Instead, it acts more like a news reader, not a publishing platform - Google Reader instead of Blogger, if that makes sense. So, I had to publish my feed live on the web and point Pachube at the URL.
-</p>
-
-<p>
-First step: EEML. This is an XML-based format which Pachube reads which can contain not only multiple data feeds, but tags and other metadata. So (as seems to be the fashion), I wrapped it up in a Ruby gem, <a href="http://github.com/Floppy/eeml-ruby/tree/master">available from GitHub</a> as ever. The gem simply provides utility classes to build an EEML feed and convert it to the XML-based format for delivery over the web.
-</p>
-
-<p>
-Then, the final step was to publish the data on the web. For that, we need a web server. However, having a full web server for just one feed seemed overkill, and I didn&#8217;t want to publish to yet another intermediate server, so we need to serve the data directly. Ruby to the rescue once again. WEBrick is a simple web server which is part of the core Ruby libraries. You create a server, write simple servlet classes, and mount them at particular locations. For instance:
-</p>
-
-<p>
-<code lang="ruby_on_rails" theme="zenburnesque">
-# Create WEBrick server
-s = WEBrick::HTTPServer.new( :Port =&gt; 50000 )
-# A simple "hello world" servlet 
-class HelloServlet 
-</code></p>
-
-<p>
-Now, http://localhost:50000/ will say &#8220;hello world&#8221;. From here it&#8217;s a simple modification to publish the EEML feed. EEML-Ruby includes a <a href="http://github.com/Floppy/eeml-ruby/tree/master/examples/simple_server.rb">simple EEML server script</a> as an example. So, after building this into the tray app, now whenever my CurrentCost is connected and the app is running, it serves up EEML data to the web. You can see the data feed (fairly intermittent, as obviously the meter isn&#8217;t always connected to my PC at the moment) <a href="http://pachube.com/feeds/488">live on Pachube</a>.
 </p>
 
       

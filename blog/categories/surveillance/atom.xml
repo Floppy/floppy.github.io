@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: surveillance | James Smith]]></title>
+  <link href="http://floppy.org.uk/blog/categories/surveillance/atom.xml" rel="self"/>
+  <link href="http://floppy.org.uk/"/>
+  <updated>2014-08-06T08:46:42+01:00</updated>
+  <id>http://floppy.org.uk/</id>
+  <author>
+    <name><![CDATA[James Smith]]></name>
+    <email><![CDATA[james@floppy.org.uk]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[DRIP: An Open Letter to Francis Maude]]></title>
+    <link href="http://floppy.org.uk/blog/2014/07/14/drip-an-open-letter-to-francis-maude/"/>
+    <updated>2014-07-14T10:16:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/07/14/drip-an-open-letter-to-francis-maude</id>
+    <content type="html"><![CDATA[<p>Dear Mr Maude,</p>
+
+<p>I am writing to you today as one of your constituents, in relation to the imminent vote on the Data Retention and Investigatory Powers Bill. The government&rsquo;s actions in this area give me great cause for concern.</p>
+
+<p>In April, the EU Data Retention Directive was ruled as a breach of basic citizen rights by the European Courts of Justice. Too much data stored for too long, on too many people. Then, suddenly, last week, the DRIP Bill appears, ready to be pushed through with haste, due to an &ldquo;emergency&rdquo; need to respond to this.</p>
+
+<p>Firstly, what has changed since April? What requires upsetting the normal procedures of review and taking time over legislation? Civic society will not have sufficient time to inspect this legislation and object (though many are trying their best to analyse the text before it becomes law). How is there a sudden &ldquo;emergency&rdquo;?</p>
+
+<p>Secondly, you are a champion of transparency and accountability within government. How does the drafting of legislation in secret, even <em>with</em> cross-party consensus, square with that? Are citizens not to be trusted on matters such as this? I will be interested in seeing your vote on this, to see how far your commitment to transparency goes.</p>
+
+<p>Thirdly, the bill itself gives much cause for concern. The initial claim was that it only reinstates existing powers (which, by the way, were declared illegal), but <a href="http://cyberleagle.blogspot.com/2014/07/dissecting-emergency-data-retention-and.html">analysis is suggesting</a> that it also extends that power to many other areas.</p>
+
+<p>We are a democracy. We are a free country. Secretive extension of the surveillance state, done in haste without oversight, <a href="http://www.dailymail.co.uk/debate/article-2690181/David-Davis-devastating-attack-loss-privacy-This-data-law-catching-terrorists-lust-power.html">has no place here</a>. The government has a responsibility to balance the needs of security services against the freedoms of its citizens, which were hard-won over hundreds of years, and should not be limited lightly.</p>
+
+<p>I announced a couple of weeks ago that <a href="/blog/2014/06/27/standing-for-parliament-in-2015/">I intend to stand for Horsham in next year&rsquo;s general election</a>, on a <a href="http://openpolitics.org.uk">collaborative and open-source political platform</a> built by normal citizens.</p>
+
+<p>Horsham is my home, so my choice to stand was not <em>against you</em>, but rather <em>for Horsham</em>. However, with the government&rsquo;s actions over this bill, I am rather looking forward to challenging your choices and true commitment to openness and transparency over the next year.</p>
+
+<p>Note: I have published this letter on my <a href="http://floppy.org.uk">personal website</a>, and will also publish your response to it, to give you proper right of reply.</p>
+
+<p>Yours sincerely,
+James Smith</p>
+]]></content>
+  </entry>
+  
+</feed>
