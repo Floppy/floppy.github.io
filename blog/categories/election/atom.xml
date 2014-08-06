@@ -4,7 +4,7 @@
   <title><![CDATA[Category: election | James Smith]]></title>
   <link href="http://floppy.org.uk/blog/categories/election/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2014-08-06T08:46:42+01:00</updated>
+  <updated>2014-08-06T14:36:41+01:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -12,31 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Political Cartography]]></title>
-    <link href="http://floppy.org.uk/blog/2014/08/08/political-cartography/"/>
-    <updated>2014-08-08T20:30:00+01:00</updated>
-    <id>http://floppy.org.uk/blog/2014/08/08/political-cartography</id>
-    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the <a href="/blog/categories/election/">election category</a> for other posts.</em></p>
-
-<p>One thing you really need to know when standing as a candidate is what areas are actually part of your constituency. Constituencies are pretty weird shapes, especially out in the country, and the area is probably larger than you think. So, time to find out for sure.</p>
-
-<p>Fortunately the Ordnance Survey makes this easy. Their <a href="http://www.ordnancesurvey.co.uk/election-maps/gb/">Election Maps</a> service shows all the constituency, ward, and other boundaries you might want in a nice map format. Enter your constituency name in the box, choose the right one, and you get something like this (apologies for the screenshot, there&rsquo;s no way to embed):</p>
-
-<p><img src="/images/horsham_constituency.png" alt="Horsham constituency OS map" /></p>
-
-<p>Now, what I really want is a map on my wall that I can refer to easily. The Election Maps service does have a print option, but it&rsquo;s just to print a single page yourself, and no way is that good enough for what I want.</p>
-
-<p>Fortunately, OS come to the rescue again with their <a href="https://www.ordnancesurvey.co.uk/shop/custom-made-maps.html">custom map printing</a>. Unfortunately, there&rsquo;s no link on the election maps to &ldquo;order a custom map of this area&rdquo; (which would be awesome, OS, if you&rsquo;re listening) so we have to do it manually.</p>
-
-<p>In my case, I found a point roughly in the middle of the constituency&rsquo;s bounding box, Lower Beeding, and I found that at Landranger scale (1:50000), the whole constituency would fit on one map. This probably won&rsquo;t always be the case, but it worked for me. £16.99 and 5 days later, and I have an 80x80cm wall map of my constituency is hanging on my wall:</p>
-
-<p>Unfortunately, that custom map doesn&rsquo;t include the boundary of the constituency, so I had to draw it on with a sharpie, but it&rsquo;s not a bad solution.</p>
-
-<p>Note: I tried to do this using OpenStreetMap, but I just couldn&rsquo;t work out how. If anyone knows, then please tell me, I&rsquo;d love to have a method of using the open data in OSM to plan my campaigning :)</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Horsham Election Meetup #1]]></title>
@@ -189,6 +164,36 @@
 <p>I think this might be a way to gain the advantages of party recognition without having to conform to the existing views of parties.</p>
 
 <p>Oh, and there is no registered party in the UK at the moment that uses the word &ldquo;network&rdquo;, so I think that&rsquo;s a good omen.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[DRIP: An Open Letter to Francis Maude]]></title>
+    <link href="http://floppy.org.uk/blog/2014/07/14/drip-an-open-letter-to-francis-maude/"/>
+    <updated>2014-07-14T10:16:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/07/14/drip-an-open-letter-to-francis-maude</id>
+    <content type="html"><![CDATA[<p>Dear Mr Maude,</p>
+
+<p>I am writing to you today as one of your constituents, in relation to the imminent vote on the Data Retention and Investigatory Powers Bill. The government&rsquo;s actions in this area give me great cause for concern.</p>
+
+<p>In April, the EU Data Retention Directive was ruled as a breach of basic citizen rights by the European Courts of Justice. Too much data stored for too long, on too many people. Then, suddenly, last week, the DRIP Bill appears, ready to be pushed through with haste, due to an &ldquo;emergency&rdquo; need to respond to this.</p>
+
+<p>Firstly, what has changed since April? What requires upsetting the normal procedures of review and taking time over legislation? Civic society will not have sufficient time to inspect this legislation and object (though many are trying their best to analyse the text before it becomes law). How is there a sudden &ldquo;emergency&rdquo;?</p>
+
+<p>Secondly, you are a champion of transparency and accountability within government. How does the drafting of legislation in secret, even <em>with</em> cross-party consensus, square with that? Are citizens not to be trusted on matters such as this? I will be interested in seeing your vote on this, to see how far your commitment to transparency goes.</p>
+
+<p>Thirdly, the bill itself gives much cause for concern. The initial claim was that it only reinstates existing powers (which, by the way, were declared illegal), but <a href="http://cyberleagle.blogspot.com/2014/07/dissecting-emergency-data-retention-and.html">analysis is suggesting</a> that it also extends that power to many other areas.</p>
+
+<p>We are a democracy. We are a free country. Secretive extension of the surveillance state, done in haste without oversight, <a href="http://www.dailymail.co.uk/debate/article-2690181/David-Davis-devastating-attack-loss-privacy-This-data-law-catching-terrorists-lust-power.html">has no place here</a>. The government has a responsibility to balance the needs of security services against the freedoms of its citizens, which were hard-won over hundreds of years, and should not be limited lightly.</p>
+
+<p>I announced a couple of weeks ago that <a href="/blog/2014/06/27/standing-for-parliament-in-2015/">I intend to stand for Horsham in next year&rsquo;s general election</a>, on a <a href="http://openpolitics.org.uk">collaborative and open-source political platform</a> built by normal citizens.</p>
+
+<p>Horsham is my home, so my choice to stand was not <em>against you</em>, but rather <em>for Horsham</em>. However, with the government&rsquo;s actions over this bill, I am rather looking forward to challenging your choices and true commitment to openness and transparency over the next year.</p>
+
+<p>Note: I have published this letter on my <a href="http://floppy.org.uk">personal website</a>, and will also publish your response to it, to give you proper right of reply.</p>
+
+<p>Yours sincerely,
+James Smith</p>
 ]]></content>
   </entry>
   

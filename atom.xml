@@ -4,7 +4,7 @@
   <title><![CDATA[James Smith]]></title>
   <link href="http://floppy.org.uk/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2014-08-06T08:46:42+01:00</updated>
+  <updated>2014-08-06T14:36:41+01:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -12,31 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Political Cartography]]></title>
-    <link href="http://floppy.org.uk/blog/2014/08/08/political-cartography/"/>
-    <updated>2014-08-08T20:30:00+01:00</updated>
-    <id>http://floppy.org.uk/blog/2014/08/08/political-cartography</id>
-    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the <a href="http://floppy.org.uk/blog/categories/election/">election category</a> for other posts.</em></p>
-
-<p>One thing you really need to know when standing as a candidate is what areas are actually part of your constituency. Constituencies are pretty weird shapes, especially out in the country, and the area is probably larger than you think. So, time to find out for sure.</p>
-
-<p>Fortunately the Ordnance Survey makes this easy. Their <a href="http://www.ordnancesurvey.co.uk/election-maps/gb/">Election Maps</a> service shows all the constituency, ward, and other boundaries you might want in a nice map format. Enter your constituency name in the box, choose the right one, and you get something like this (apologies for the screenshot, there&rsquo;s no way to embed):</p>
-
-<p><img src="http://floppy.org.uk/images/horsham_constituency.png" alt="Horsham constituency OS map" /></p>
-
-<p>Now, what I really want is a map on my wall that I can refer to easily. The Election Maps service does have a print option, but it&rsquo;s just to print a single page yourself, and no way is that good enough for what I want.</p>
-
-<p>Fortunately, OS come to the rescue again with their <a href="https://www.ordnancesurvey.co.uk/shop/custom-made-maps.html">custom map printing</a>. Unfortunately, there&rsquo;s no link on the election maps to &ldquo;order a custom map of this area&rdquo; (which would be awesome, OS, if you&rsquo;re listening) so we have to do it manually.</p>
-
-<p>In my case, I found a point roughly in the middle of the constituency&rsquo;s bounding box, Lower Beeding, and I found that at Landranger scale (1:50000), the whole constituency would fit on one map. This probably won&rsquo;t always be the case, but it worked for me. £16.99 and 5 days later, and I have an 80x80cm wall map of my constituency is hanging on my wall:</p>
-
-<p>Unfortunately, that custom map doesn&rsquo;t include the boundary of the constituency, so I had to draw it on with a sharpie, but it&rsquo;s not a bad solution.</p>
-
-<p>Note: I tried to do this using OpenStreetMap, but I just couldn&rsquo;t work out how. If anyone knows, then please tell me, I&rsquo;d love to have a method of using the open data in OSM to plan my campaigning :)</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Horsham Election Meetup #1]]></title>
@@ -815,6 +790,18 @@ happens.
 <p>Technically, this was my first experience with Django. In general, my first assessment was that it seemed perfectly capable, but not as slick as the Rails toolset perhaps. I&#8217;ll keep playing with it though, it&#8217;s always good to know more!</p>
 <p>If you want to improve Planet Hopper, you can do; the code is, as always, <a href="http://github.com/Floppy/kepler-explorer" title="Code">on github</a>.</p>
 <p><strong>UPDATE</strong>: We won in the global judging! <a href="http://spaceappschallenge.org/blog/2012/05/18/global-winners-announced/">&#8220;Most Inspiring&#8221;</a> - pretty sweet! </p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The need for Cleanweb R&D]]></title>
+    <link href="http://floppy.org.uk/blog/2012/03/12/the-need-for-cleanweb-rd/"/>
+    <updated>2012-03-12T00:00:00+00:00</updated>
+    <id>http://floppy.org.uk/blog/2012/03/12/the-need-for-cleanweb-rd</id>
+    <content type="html"><![CDATA[<p>The newly-named cleanweb is a strange place. It&#8217;s all about social change, better sustainability, and other such noble goals, but it&#8217;s shackled by the demands of today&#8217;s economy; people with mortgages need proper jobs and investors need returns. The potential is enormous, but the opportunity to really explore it feels tiny. Some companies (like <a href="http://www.amee.com">AMEE</a>) do explore this space, but are still bound to go with the most commercially-viable opportunities. There&#8217;s very little space for blue-sky thinking.</p>
+<p>I have a gut feeling that anything that truly changes behaviour will have to do so without the prospect of financial payback. By buying into the current assumptions about how the world should run, you&#8217;re maybe holding back the really ground-breaking ideas. There are some things that will work, sure, but thousands of ideas that could make the world better will never get off the ground because of a lack of business model.</p>
+<p>What we need is a social-good model instead. We don&#8217;t need more space for entrepreneurs, but instead we need space for people who want to change the world for the better to do so. Not for money, but because it&#8217;s a good and noble and important thing to do. We need some way of supporting and developing great ideas that come out of events like the <a href="http://london.greenhackathon.com">London Green Hackathon</a>, even if they don&#8217;t have a way to make money for someone (though of course <a href="http://www.mastodonc.com">some do</a> and that&#8217;s great).</p>
+<p>We need a Cleanweb R&amp;D Foundation of some kind, with a remit to simply make the world better and try things out. That would be a place that could really attack some truly innovative ideas. And it would be a hell of a lot of fun.</p>
 ]]></content>
   </entry>
   
