@@ -4,7 +4,7 @@
   <title><![CDATA[James Smith]]></title>
   <link href="http://floppy.org.uk/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2014-08-07T22:05:01+01:00</updated>
+  <updated>2014-08-07T22:10:33+01:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Political Cartography]]></title>
-    <link href="http://floppy.org.uk/blog/2014/08/08/political-cartography/"/>
-    <updated>2014-08-08T20:30:00+01:00</updated>
-    <id>http://floppy.org.uk/blog/2014/08/08/political-cartography</id>
+    <link href="http://floppy.org.uk/blog/2014/08/07/political-cartography/"/>
+    <updated>2014-08-07T20:30:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/08/07/political-cartography</id>
     <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the <a href="http://floppy.org.uk/blog/categories/election/">election category</a> for other posts.</em></p>
 
 <p>One thing you really need to know when standing as a candidate is what areas are actually part of your constituency. Constituencies are pretty weird shapes, especially out in the country, and the area is probably larger than you think. So, time to find out for sure.</p>
@@ -37,6 +37,8 @@
 <p>Unfortunately, that custom map doesn&rsquo;t include the boundary of the constituency, so I had to draw it on with a highlighter pen, but it&rsquo;s not a bad solution.</p>
 
 <p>Note: I tried to do this using OpenStreetMap, but I just couldn&rsquo;t work out how. If anyone knows, then please tell me, I&rsquo;d love to have a method of using the open data in OSM to plan my campaigning :)</p>
+
+<p>Another note: Election boundaries are STUPID. Whoever decided some of those shapes&hellip;</p>
 ]]></content>
   </entry>
   
