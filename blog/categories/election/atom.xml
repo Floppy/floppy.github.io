@@ -4,7 +4,7 @@
   <title><![CDATA[Category: election | James Smith]]></title>
   <link href="http://floppy.org.uk/blog/categories/election/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2014-08-07T22:10:33+01:00</updated>
+  <updated>2014-08-13T18:01:01+01:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Leaflet Drops]]></title>
+    <link href="http://floppy.org.uk/blog/2014/08/13/leaflet-drops/"/>
+    <updated>2014-08-13T16:50:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/08/13/leaflet-drops</id>
+    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the <a href="/blog/categories/election/">election category</a> for other posts.</em></p>
+
+<p>This morning, I learnt a bit about leafletting. As a candidate, the bare minimum for a campaign has to be getting a leaflet through every door, so that people are informed of their choices (although a good half the candidates at the 2010 election didn&rsquo;t manage that).</p>
+
+<p>I figured this would be a major cost; I&rsquo;m amazed how wrong that turned out to be.</p>
+
+<h2>Printing</h2>
+
+<p>First things first &ndash; how much will it cost to get these things printed? Ideally I&rsquo;d like to have a 4-page A5 leaflet with full colour printing, and enough for every household in the constituency.</p>
+
+<p>How many is that? Well, let&rsquo;s start with a rough estimate from the 2011 census. The <a href="http://www.ons.gov.uk/ons/data/area-first/">ONS data explorer</a> makes this pretty easy. You can choose your reporting area by parliamentary constituency, and then find out all sorts of information about the area, including number of households. Turns out, in 2011, there were 43,380 households in the Horsham constituency.</p>
+
+<p>So what will it cost us to print that many? Last night I emailed a request for quotes to four local printers, and was amazed to get back quotes in the £1000-1500 range. Considering that party spending on unsolicited mailings was around £4500 at the last election, this is a lot less than I expected. I wonder where the rest of their money went? Presumably more than one leaflet; perhaps targeted drops for likely voters.</p>
+
+<h2>Delivery</h2>
+
+<p>This is where it gets awesome. As a parliamentary candidate, you get one free mailing from the Royal Mail. That&rsquo;s right, <em>free</em>.</p>
+
+<p>You can choose addressed mailings to every voter, or an unaddressed mailing to each household (i.e. a normal leaflet drop). The Royal Mail have <a href="http://www.royalmail.com/specialist-services/candidate-mailing">a special candidate mailing area on their website</a> all about this, and so I had a read and phoned up their election people, who were <em>very</em> helpful.</p>
+
+<p>The way it works is; a few weeks before the election, you send your artwork to them to check for compliance with the election and postal rules, and once it&rsquo;s approved, you get given a named Election Manager and instructions on where to drop off your leaflets. Simple as that. They also tell you exactly how many you need to print.</p>
+
+<p>After that, you just get them printed, and drop them off at least 7-10 days before the election. They then deliver them over the next week. You can deliver earlier of course, that&rsquo;s just the latest possible date.</p>
+
+<p>They were helpful enough to tell me how many leaflets were dropped in the recent EU elections, which was about 47,300. A bit higher than the census data, but not far off. I&rsquo;d better budget for about 50,000 next year, allowing for new development, etc, but that won&rsquo;t change the figures too much.</p>
+
+<p>They have a <a href="http://www.royalmail.com/sites/default/files/CandidateMail_EuropeanElection_Brochure_Mar2014a.pdf">guidance document for the EU elections</a> up on their site. For now, it&rsquo;s good enough to work from; the 2015 election guidance won&rsquo;t be up until next year.</p>
+
+<h2>Summary</h2>
+
+<p>So, all in all this looks pretty easy. If I can raise £1500-ish, and design a leaflet (which some of the printers can help with for a little more), I can get the Royal Mail to deliver it, and everyone in the area will get told about me.</p>
+
+<p>This isn&rsquo;t all the printing of course; more will be needed to be able to hand out flyers to people before the final leaflet drop, but it&rsquo;s a great baseline. I thought that would cost a lot more, and it&rsquo;s once again underlined just how accessible this actually is.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Political Cartography]]></title>
@@ -160,39 +201,6 @@
 <p>However, I do feel for those who will probably have to have awkward conversations about why one of their own is running against a key figure in government; if I make your life difficult, I can only apologise.</p>
 
 <p>All I can say is that both my current employment and my choice to stand are a natural parts of my own personal trajectory, and that nobody should see it as some conspiracy of a radical think-tank trying to take over the country. If it was, I imagine they&rsquo;d be rather more effective, anyway. ;)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Party On]]></title>
-    <link href="http://floppy.org.uk/blog/2014/07/14/party-on/"/>
-    <updated>2014-07-14T11:42:00+01:00</updated>
-    <id>http://floppy.org.uk/blog/2014/07/14/party-on</id>
-    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the <a href="/blog/categories/election/">election category</a> for other posts.</em></p>
-
-<p>Currently, I&rsquo;m intending to stand as an Independent candidate. I believe that candidates should be a lot more independent, and that parties, while useful for some things, tend to wield far too much power.</p>
-
-<p>However, we find ourselves in a political climate that doesn&rsquo;t reward the independent, and doesn&rsquo;t allow lone voices through. Also, there are some built-in biases in the system against the independent candidate.</p>
-
-<p>There has been an open question for a while on the OpenPolitics Manifesto over whether it should form a party. Some think we should, some not. I personally fall on the side that says that forming a party is a good thing, if only for short-term tactical reasons. It would be a party designed to make itself unnecessary by reforming the democratic system. The alternative view is that we would be better as a loose collection of independents.</p>
-
-<p>This post is a long-form contribution to that debate, really.</p>
-
-<p>In my view, the disadvantages of remaining independents mainly come down to brand awareness. When you have to get home a very simple strong message to as many people as possible, being able to present that in a unified way that people will come across in lots of places is a big advantage. Nuanced messages about being an independent but having a shared manifesto will get lost.</p>
-
-<p>Also, the fact that parties get to have their party name, logo, and tagline on the ballot paper is a massive advantage to them over independents, who get none of that.</p>
-
-<p>Anyway, a thought occurred to me. We want to remain a decentralised network of contributors, but capitalise on shared recognition and branding. How can we be a party without being a party? What if we register a party with the Electoral Commission, but avoid the use of the word &ldquo;Party&rdquo; like hell?</p>
-
-<p>Instead, how about the <strong>OpenPolitics Network</strong>?</p>
-
-<p>That way we get the best of both, I think. Anyone could stand as a candidate for the network as long as they are standing on the manifesto, but there&rsquo;s no central party control telling them what to do, or even <em>looking</em> like it does. Each candidate is free to run their campaign however they want; after all, they&rsquo;re basically independents.</p>
-
-<p>Unfortunately, the rules state that parties do have to have some centralised aspects &ndash; a leader, and a couple of other posts, but these can be elected from the pool of contributors, and while they may <em>technically</em> exist, we can avoid using them in the usual way.</p>
-
-<p>I think this might be a way to gain the advantages of party recognition without having to conform to the existing views of parties.</p>
-
-<p>Oh, and there is no registered party in the UK at the moment that uses the word &ldquo;network&rdquo;, so I think that&rsquo;s a good omen.</p>
 ]]></content>
   </entry>
   

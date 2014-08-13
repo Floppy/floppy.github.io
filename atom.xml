@@ -4,7 +4,7 @@
   <title><![CDATA[James Smith]]></title>
   <link href="http://floppy.org.uk/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2014-08-07T22:10:33+01:00</updated>
+  <updated>2014-08-13T18:01:01+01:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Leaflet Drops]]></title>
+    <link href="http://floppy.org.uk/blog/2014/08/13/leaflet-drops/"/>
+    <updated>2014-08-13T16:50:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/08/13/leaflet-drops</id>
+    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the <a href="http://floppy.org.uk/blog/categories/election/">election category</a> for other posts.</em></p>
+
+<p>This morning, I learnt a bit about leafletting. As a candidate, the bare minimum for a campaign has to be getting a leaflet through every door, so that people are informed of their choices (although a good half the candidates at the 2010 election didn&rsquo;t manage that).</p>
+
+<p>I figured this would be a major cost; I&rsquo;m amazed how wrong that turned out to be.</p>
+
+<h2>Printing</h2>
+
+<p>First things first &ndash; how much will it cost to get these things printed? Ideally I&rsquo;d like to have a 4-page A5 leaflet with full colour printing, and enough for every household in the constituency.</p>
+
+<p>How many is that? Well, let&rsquo;s start with a rough estimate from the 2011 census. The <a href="http://www.ons.gov.uk/ons/data/area-first/">ONS data explorer</a> makes this pretty easy. You can choose your reporting area by parliamentary constituency, and then find out all sorts of information about the area, including number of households. Turns out, in 2011, there were 43,380 households in the Horsham constituency.</p>
+
+<p>So what will it cost us to print that many? Last night I emailed a request for quotes to four local printers, and was amazed to get back quotes in the £1000-1500 range. Considering that party spending on unsolicited mailings was around £4500 at the last election, this is a lot less than I expected. I wonder where the rest of their money went? Presumably more than one leaflet; perhaps targeted drops for likely voters.</p>
+
+<h2>Delivery</h2>
+
+<p>This is where it gets awesome. As a parliamentary candidate, you get one free mailing from the Royal Mail. That&rsquo;s right, <em>free</em>.</p>
+
+<p>You can choose addressed mailings to every voter, or an unaddressed mailing to each household (i.e. a normal leaflet drop). The Royal Mail have <a href="http://www.royalmail.com/specialist-services/candidate-mailing">a special candidate mailing area on their website</a> all about this, and so I had a read and phoned up their election people, who were <em>very</em> helpful.</p>
+
+<p>The way it works is; a few weeks before the election, you send your artwork to them to check for compliance with the election and postal rules, and once it&rsquo;s approved, you get given a named Election Manager and instructions on where to drop off your leaflets. Simple as that. They also tell you exactly how many you need to print.</p>
+
+<p>After that, you just get them printed, and drop them off at least 7-10 days before the election. They then deliver them over the next week. You can deliver earlier of course, that&rsquo;s just the latest possible date.</p>
+
+<p>They were helpful enough to tell me how many leaflets were dropped in the recent EU elections, which was about 47,300. A bit higher than the census data, but not far off. I&rsquo;d better budget for about 50,000 next year, allowing for new development, etc, but that won&rsquo;t change the figures too much.</p>
+
+<p>They have a <a href="http://www.royalmail.com/sites/default/files/CandidateMail_EuropeanElection_Brochure_Mar2014a.pdf">guidance document for the EU elections</a> up on their site. For now, it&rsquo;s good enough to work from; the 2015 election guidance won&rsquo;t be up until next year.</p>
+
+<h2>Summary</h2>
+
+<p>So, all in all this looks pretty easy. If I can raise £1500-ish, and design a leaflet (which some of the printers can help with for a little more), I can get the Royal Mail to deliver it, and everyone in the area will get told about me.</p>
+
+<p>This isn&rsquo;t all the printing of course; more will be needed to be able to hand out flyers to people before the final leaflet drop, but it&rsquo;s a great baseline. I thought that would cost a lot more, and it&rsquo;s once again underlined just how accessible this actually is.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Political Cartography]]></title>
@@ -803,22 +844,6 @@ happens.
 <p>Whether it&#8217;s NGOs like Greenpeace or Friends of the Earth, or political parties like the Green Party here in the UK, they are just too embedded in their history to be able to deal with this properly. They can&#8217;t give up their hatred of nuclear power, for instance, or their opposition to GM science, both of which are probably going to be essential tools for our future, without alienating their core membership.</p>
 <p>I agree with Mark that a new approach is needed, but I don&#8217;t think those organisations can be rescued &#8216;from the inside&#8217; as he suggests. They can carry on if they like, but even in the unlikely event that they change their views, the public&#8217;s perception of them would still be the same. We need something new, something reality-based, something that aims to have the clean high-tech future that I <em>personally</em> want.</p>
 <p>Even the word &#8216;green&#8217; is now rendered useless by these viewpoints, so we have to just drop it and talk about &#8216;sustainability&#8217; and &#8216;clean&#8217; instead. If someone could come up with a catchy name for it that&#8217;s half as good as &#8216;green&#8217; though, that would be lovely.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Planet Hopper]]></title>
-    <link href="http://floppy.org.uk/blog/2012/05/15/planet-hopper/"/>
-    <updated>2012-05-15T00:00:00+01:00</updated>
-    <id>http://floppy.org.uk/blog/2012/05/15/planet-hopper</id>
-    <content type="html"><![CDATA[<p>A couple of weeks ago, I went along to ISIC in Harwell to take part in the <a href="http://spaceappschallenge.org/">International Space Apps Challenge</a>, run by NASA. Hackdays are always fun, but this one was particularly exciting, because, you know, SPACE!</p>
-<p>At first I thought about doing something with Earth observation data and climate change, but decided I&#8217;d give myself a break from that and do something else for once. After the usual shenanigans forming a team, a few of us started working on something to do with exoplanet data, particularly from the <a href="http://en.wikipedia.org/wiki/Kepler_(spacecraft)" title="Kepler">Kepler satellite</a>.</p>
-<p>We know about tons of planets now, but most people don&#8217;t know much about them. We decided to make something a bit fun and a bit educational. My sister is a physics teacher, so we aimed at creating something she could use in class to stimulate questions from the kids.</p>
-<p>The result is <a href="http://www.planethopper.co.uk" title="Planet Hopper">Planet Hopper</a>, a webapp that allows you to explore the exoplanets and see various interesting facts about them in a friendly way. For instance, we tell you how old you would be on the planet, hoping to stimulate the question &#8216;why?&#8217;</p>
-<p>We ended up winning the best hack prize at the Harwell site, and are currently in the global judging round, which is always nice.</p>
-<p>Technically, this was my first experience with Django. In general, my first assessment was that it seemed perfectly capable, but not as slick as the Rails toolset perhaps. I&#8217;ll keep playing with it though, it&#8217;s always good to know more!</p>
-<p>If you want to improve Planet Hopper, you can do; the code is, as always, <a href="http://github.com/Floppy/kepler-explorer" title="Code">on github</a>.</p>
-<p><strong>UPDATE</strong>: We won in the global judging! <a href="http://spaceappschallenge.org/blog/2012/05/18/global-winners-announced/">&#8220;Most Inspiring&#8221;</a> - pretty sweet! </p>
 ]]></content>
   </entry>
   
