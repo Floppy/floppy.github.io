@@ -4,7 +4,7 @@
   <title><![CDATA[James Smith]]></title>
   <link href="http://floppy.org.uk/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2014-09-01T22:23:22+01:00</updated>
+  <updated>2014-10-08T07:13:43+01:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -12,6 +12,225 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Face to Face]]></title>
+    <link href="http://floppy.org.uk/blog/2014/10/08/face-to-face/"/>
+    <updated>2014-10-08T19:59:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/10/08/face-to-face</id>
+    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the
+<a href="http://floppy.org.uk/blog/categories/election/">election category</a> for other posts.</em></p>
+
+<p>A few weeks ago, I held the <a href="http://floppy.org.uk/blog/2014/08/05/horsham-election-meetup-1/">first public meeting</a> for my election campaign.
+It was a small affair, but it was clear that this was something that I&rsquo;m
+going to have to do a lot more of. Whether it&rsquo;s creating an appointment
+time for people to come and ask questions and put across concerns
+individually, or a group discussion, it&rsquo;s good to get into a rhythm and
+be available to people.</p>
+
+<p>I decided I wanted to basically run a public meeting a week from the beginning of
+October until the election. The idea is to provide a space for discussion, ideas,
+questions, and for people to raise issues.</p>
+
+<p>They will be poorly-attended at first, but the
+message will spread, and starting is important. Question is, where to have
+them? Well, as with everything else so far, let&rsquo;s look at the data!</p>
+
+<h2>Wards</h2>
+
+<p>Horsham constituency is divided into 18 wards. Just under half of them are
+in Horsham itself, and the rest cover the surrounding countryside and
+smaller towns. In order to be available to people, it would be good to run
+at least one event in each ward, so that people don&rsquo;t have to travel too
+far, and see their candidate in their local community.</p>
+
+<p>However, wards vary widely in population, so it&rsquo;s not just a matter of
+going to each one once. I should really go to the larger ones more, to try
+and cover the population more evenly.</p>
+
+<p><img src="http://floppy.org.uk/images/horsham_wards.png" alt="Wards" /></p>
+
+<p>The <a href="http://www.ordnancesurvey.co.uk/electionmaps">Ordnance Survey election map</a> shows wards as well as constituencies,
+so it&rsquo;s easy enough to find which wards we need to cover. Each area has an
+&ldquo;statistical identifier&rdquo;, which is a unique code for that area. Helpfully,
+the ONS also break down their <a href="http://www.ons.gov.uk/ons/data/area-first/">census statistics</a> using the same identifier,
+so with a little bit of work, it&rsquo;s pretty easy to get the adult population of each
+ward (16+ actually, but it was in 2011, so that&rsquo;s near enough).</p>
+
+<table class='table table-striped'>
+<thead>
+<tr>
+<th></th>
+<th> ID </th>
+<th> Ward </th>
+<th> Population </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td> E05007665 </td>
+<td> Southwater </td>
+<td> 7741</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007646 </td>
+<td> Billingshurst and Shipley </td>
+<td> 7403</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007657 </td>
+<td> Horsham Park </td>
+<td> 6502</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007678 </td>
+<td> Crawley Down and Turners Hill </td>
+<td> 5667</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007662 </td>
+<td> Roffey South </td>
+<td> 5237</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007661 </td>
+<td> Roffey North </td>
+<td> 5103</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007667 </td>
+<td> Trafalgar </td>
+<td> 4971</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007652 </td>
+<td> Denne </td>
+<td> 4788</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007656 </td>
+<td> Holbrook West </td>
+<td> 4606</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007668 </td>
+<td> Ardingly and Balcombe </td>
+<td> 4495</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007655 </td>
+<td> Holbrook East </td>
+<td> 4381</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007658 </td>
+<td> Itchingfield, Slinfold and Warnham </td>
+<td> 4335</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007677 </td>
+<td> Copthorne and Worth </td>
+<td> 4015</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007653 </td>
+<td> Forest </td>
+<td> 3021</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007648 </td>
+<td> Broadbridge Heath </td>
+<td> 2492</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007659 </td>
+<td> Nuthurst </td>
+<td> 2318</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007664 </td>
+<td> Rusper and Colgate </td>
+<td> 2137</td>
+</tr>
+<tr>
+<td></td>
+<td> E05007663 </td>
+<td> Rudgwick </td>
+<td> 2134</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>If we order the wards by population, and work out the number of weeks we
+have available, we can work out which wards we have time to visit twice.
+I&rsquo;ve left a gap around Christmas, and for a couple of other weeks
+where I already know I&rsquo;m prebooked on the Tuesday (which is the day I&rsquo;m
+aiming for).</p>
+
+<p>It&rsquo;s not as simple as just visiting in size order though; I&rsquo;ve manipulated
+the list and swapped a few things around so that I jump around the constituency.
+Ideally, every other week should be in Horsham, and the other weeks I&rsquo;ll
+alternate east/west or north/south across the other wards. That should get
+me near everyone on a fairly regular basis, and avoid spending too much
+time concentrating on one area.</p>
+
+<p>I did consider writing a bit of code to work this out, but as it was only
+28 weeks and 18 locations, it wasn&rsquo;t worth it. Also, it might be a
+variation of a very hard computer science problem, so no time for that.</p>
+
+<p>As the dates turn out, I&rsquo;ll hit every ward in size order after the new year,
+and I&rsquo;m starting with events in the largest 10 between now and Christmas. Another
+nice thing is that the largest ward is Horsham Park, right in the middle of town,
+so in the week of the election hopefully we can get a nice big finish!</p>
+
+<h2>Venues</h2>
+
+<p>So, where to actually meet people? I had heard that some public buildings
+are available for political candidates to use for free, so I called the
+local council&rsquo;s election officer to have a chat. As with my other
+conversations with election folk at various organisations, they were very
+helpful.</p>
+
+<p>The rule seems to be that candidates can use a publicly-maintained building
+free of charge; however, many things like village halls, etc, are not in fact
+publicly maintained buildings. In fact the only places they could suggest that
+were widely spread across the area were schools, who apparently would be OK
+with being used in that way. There shouldn&rsquo;t be a hire charge, but they might
+have to charge for caretaking; having someone to lock up, etc.</p>
+
+<p>It&rsquo;s not that simple either; there are more rooms available free of charge, but only
+once the election has actually been called, which basically means during April.</p>
+
+<p>So, I&rsquo;m just going to have to call a whole load of places and see
+what I can negotiate on a case-by-case basis. It will end up adding a fair amount
+to the budget too &ndash; if it costs me £30 a week for a room, times 28 weeks&hellip; erk.</p>
+
+<p>But, it&rsquo;s important, so it&rsquo;s time to put my money where my mouth is.</p>
+
+<h2>Let&rsquo;s Go!</h2>
+
+<p>So, armed with that information and a plan, I&rsquo;ve started booking things, and I actually ran
+the first event in the series last night in Roffey North. Keep an eye on the <a href="http://horsham.somethingnew.org.uk/calendar">calendar</a> for future events, and I&rsquo;ll add them as I get the venues booked in, and if you&rsquo;re in Horsham, hopefully I&rsquo;ll see you soon at an event near you!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Democracy geeks at EMFCamp 2014]]></title>
@@ -815,46 +1034,6 @@ representing me or others who are optimistically working towards a better future
 <p>It&#8217;s best explained with the code:</p>
 
 <script src="https://gist.github.com/Floppy/3228297.js"></script>]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Introducing Therm]]></title>
-    <link href="http://floppy.org.uk/blog/2012/07/24/introducing-therm/"/>
-    <updated>2012-07-24T00:00:00+01:00</updated>
-    <id>http://floppy.org.uk/blog/2012/07/24/introducing-therm</id>
-    <content type="html"><![CDATA[<p>
-<a href="http://www.therm.uk.com"><img src="http://floppy.org.uk/images/therm.png"/></a>
-</p>
-<p>
-It’s been an interesting year. Until April I worked at AMEE as their Platform
-Evangelist. I’d been there almost four years, through lots of interesting times.
-I got to do cool things like build AskAMEE, hack carbon emissions into Minecraft
-(and get on BoingBoing with it), and run the London Green Hackathon. It was sad
-when my time there came to an end, but in startup life there is always a point at
-which it makes sense to move on.
-</p>
-<p>
-Since then, I’ve been trying to find ways to carry making software that at least
-tries to deal with the impending climate crisis that’s heading our way. As I discussed
-at the beginning of the year, we don’t have long. I’ve been carrying on building
-the Cleanweb UK community that we tried to bootstrap at AMEE on a voluntary basis.
-London seems to have the most interesting cleanweb community in the world - we’ve
-certainly been doing it longer than anyone else, so we have to capitalise on that
-and work together!
-</p>
-<p>
-However, the time has come for me to try and make a living out of this stuff again,
-and I’m having a go at doing it by myself.
-</p>
-<p>
-So, meet <a href="http://www.therm.uk.com">Therm</a>. It’s the first specialist cleanweb consultancy in the world (as
-far as I know). If you’re doing anything on the web to do with sustainability, Therm
-can help - get in touch!
-</p>
-<p>
-It’s just me for now, but maybe later it won’t be. It’ll be an adventure, whatever
-happens.
-</p>]]></content>
   </entry>
   
 </feed>
