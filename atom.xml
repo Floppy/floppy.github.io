@@ -4,7 +4,7 @@
   <title><![CDATA[James Smith]]></title>
   <link href="http://floppy.org.uk/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2014-10-08T07:45:44+01:00</updated>
+  <updated>2014-10-13T08:26:40+01:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -12,6 +12,160 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[GitHub Democracy]]></title>
+    <link href="http://floppy.org.uk/blog/2014/10/13/github-democracy/"/>
+    <updated>2014-10-13T06:45:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/10/13/github-democracy</id>
+    <content type="html"><![CDATA[<p>A year and a quarter ago, in a fit of political anger,
+I proposed that a bunch of us should start collaborating
+on the public policies we&rsquo;d <em>like</em> to see, rather than just complaining on Twitter.</p>
+
+<p>As I&rsquo;m a software developer, I suggested that we could use GitHub as a platform,
+and a few of us started doing exactly that. 15 months later, the <a href="http://openpolitics.org.uk">OpenPolitics Manifesto</a>
+contains nearly 8000 words of agreed policy ideas, has inspired me to <a href="http://www.wscountytimes.co.uk/news/local/father-of-two-launches-bid-to-be-horsham-s-next-mp-1-6168976">stand for
+election</a>, and has spawned a <a href="http://somethingnew.org.uk">political party</a> which has adopted the manifesto (though
+it remains an independent project). I&rsquo;m quite proud of all of that.</p>
+
+<p>Last night, someone new to the project asked me how it worked, and to clarify who
+can take part, and I realised I&rsquo;ve never really written it up in a blog form. We have
+the <a href="http://openpolitics.org.uk/contributing.html">contributing guide</a>, but that&rsquo;s probably fairly well buried. So, in this post I&rsquo;m
+going to explain the democratic process we&rsquo;ve arrived at over the last 15 months.</p>
+
+<h2>Who can make changes?</h2>
+
+<p>The simple answer here is &ldquo;anyone&rdquo;, though the reality is slightly more complex.</p>
+
+<p>Anyone with a GitHub account can hit the edit button and change the text to match what
+they want. Thanks to GitHub&rsquo;s great workflow tools, this automatically creates a fork
+of the project (a copy, basically) and submits a pull request (PR), which you can
+think of as a &ldquo;request to adopt the proposed change&rdquo;. The user interface here can
+be confusing to new users though, and that&rsquo;s something we want to improve.</p>
+
+<p>Anyway, once your change is made, it gets added to the <a href="http://github.com/openpolitics/manifesto/pulls">pull request queue</a>, ready
+for inspection.</p>
+
+<h2>Who decides what gets accepted?</h2>
+
+<p>We&rsquo;re modeled on an open-source type workflow, not a straight-majority universal-suffrage
+democratic model. That means that while anyone can submit a change, <em>not</em> everyone gets
+to vote straight away.</p>
+
+<p>We&rsquo;re a little different from other open policymaking tools, in that we&rsquo;re not actually
+trying to express a solution that satisfies the majority. We&rsquo;re trying, with help from
+everybody, to build a cohesive platform that will hopefully appeal to some voters. This
+is a party-style manifesto, not a universally-accepted list of things we should do.</p>
+
+<p>So, because of that, you can only vote on a change if you&rsquo;ve already made a contribution.
+That means that the project should be able to maintain the direction and general outlook
+that it started with, without being twisted around.</p>
+
+<p>However, as soon as your change is in, you get to vote, so nobody maintains a list of
+&ldquo;approved&rdquo; contributors. If you add something good enough to get in, you get control.</p>
+
+<p>This is really similar to the process in a bit of open source software, where existing maintainers decide what gets added in order to keep the project moving the right way.</p>
+
+<p><img src="http://memecrunch.com/meme/L5EI/service-guarantees-citizenship/image.png" alt="Service Guarantees Citizenship" /></p>
+
+<h2>What about takeovers?</h2>
+
+<p>People often ask what we do about hostile takeovers. Say a number of people make helpful
+and acceptable additions (thanks!), but then gang together and vote to bring back
+capital punishment.</p>
+
+<p>Again, the open source model helps us here. We can&rsquo;t stop that happening, not at all.
+However, it would gain the attacker pretty much nothing, as anyone in the world is
+entitled to take the project and fork it into a parallel effort at any time.</p>
+
+<p>If something happened that a caused a large split in the group, I have no doubt the project
+would fork into two. That&rsquo;s not a bad thing &ndash; the two forks can still share the ideas they
+agree on, while maintaining their own differences.</p>
+
+<p>I&rsquo;m not sure how this will work in practice. I guess we&rsquo;ll cross that bridge when we come to it, but I think we have an escape route prepared if we need it.</p>
+
+<h2>How do changes get voted on?</h2>
+
+<p>I initially expected that we&rsquo;d go with a straight majority vote of contributors, but that&rsquo;s
+not what we&rsquo;re doing right now. The long tail of participation is as true in this project
+as in any online space, so we have a few very active contributors, some less-regular ones,
+and a long tail of people who&rsquo;ve only contributed once.</p>
+
+<p>Because of this, it would be easy for the regular contributors to overrule the long
+tail, but that would lead to complete disengagement and a &ldquo;why should I contribute&rdquo;
+reaction. After all, if the cabal control all the votes, there&rsquo;s no power.</p>
+
+<p>So, we use a sort of <a href="https://en.wikipedia.org/wiki/Blackballing">blackballing</a> system instead. A change must get &ldquo;yes&rdquo; votes from 10%
+of the contributors in order to be passed. However, anyone can block a change,
+which means we can&rsquo;t merge it until that block is removed. That means that anyone in the
+long tail can make their objections known over the view of the regular contributors, and
+force improvements and further discussion.</p>
+
+<p>So far, this has worked OK. We have a few changes that have been blocked for a long time,
+and how to work through those blocks is something we&rsquo;re still learning, but in general it&rsquo;s
+working OK.</p>
+
+<p>We try to make sure that blocks are substantive; that is, a simple &ldquo;NO&rdquo; isn&rsquo;t allowed.
+For a block to be considered, it must come with reasons, requests for more evidence, or some
+other form of constructive feedback. Generally this does seem to happen.</p>
+
+<p>We also keep each vote open for 14 days to give the long tail time to respond.</p>
+
+<h2>Who counts the votes?</h2>
+
+<p>Robots!</p>
+
+<p>Votes are currently expressed in GitHub comments with +1 / -1 statements (using emoticons), and we have a <a href="http://votebot.openpolitics.org.uk">script that watches those changes</a> and counts them up. There are a number of rules enforced by the robot; for instance, yes votes are cleared by a change to the PR (so you can&rsquo;t amend at the last minute).</p>
+
+<p>Using the GitHub API, we check all this stuff, and then we set the build status appropriately for the change. This means that the GitHub merge button will have a warning on it until the time period has expired, and until it has enough votes and no blocks.</p>
+
+<p>Nothing fundamentally stops earlier merging, and that does happen sometimes for spelling corrections, etc. Only a <a href="https://github.com/orgs/openpolitics/teams/owners">couple of admins</a> have merge powers, so there is a potential corruption point there; perhaps the robot should do the merging as well, but it&rsquo;s nice to have a human in the final check.</p>
+
+<p>The robot also helps with making the information more accessible. It sends tweets from
+<a href="http://twitter.com/openpoliticsuk">@OpenPoliticsUK</a> for new changes, and notifies our  <a href="irc://irc.freenode.net#openpolitics">#openpolitics IRC channel</a>. It also
+has a few web pages that <a href="http://votebot.openpolitics.org.uk/227">list vote status</a> in a simple way, so we can see who&rsquo;s taking
+part, who&rsquo;s voted which way. There is also a <a href="http://votebot.openpolitics.org.uk/users/Floppy">user page</a> for every contributor that shows
+what they have and haven&rsquo;t voted on.</p>
+
+<p>Of course, the robot is <a href="http://github.com/openpolitics/votebot">open source</a>, so you can check that the rules match what&rsquo;s agreed.</p>
+
+<h2>What next?</h2>
+
+<p>Usability is a big concern. Currently we use the GitHub editor; I&rsquo;d rather use <a href="http://prose.io">prose.io</a>,
+but it has a massive <a href="https://github.com/prose/prose/issues/643">bug</a> in it that means that new users don&rsquo;t get invited to sign in to
+GitHub first, and changes get lost. If you can fix that, I&rsquo;ll pay you a <a href="https://www.bountysource.com/issues/1839687-unauthenticated-users-can-t-submit-pull-requests">$25 bounty</a>.</p>
+
+<p>However, I&rsquo;m starting to think we need a completely custom editor that explains every step
+along the way, and hides the GitHubness right down away from the user. Ideally the
+contributor shouldn&rsquo;t know they&rsquo;re using GitHub (unless they want to). The version control
+base layer is important for change visibility, accountability, forking, and so on, but
+expecting non-developers to be OK with it from the outset is asking a bit much.</p>
+
+<p>There are other options for the voting as well; I&rsquo;d like to get something like <a href="http://loomio.org/">Loomio</a> or
+<a href="http://democracyos.org/">DemocracyOS</a> integrated into the voting system, so that people don&rsquo;t need to use the pull
+request UI to discuss and vote. Again, maybe this should be a custom thing that presents
+the information exactly the way we want.</p>
+
+<p>I&rsquo;d also like to experiment with wider (but less official) feedback using something like <a href="http://iagr.ee">IAgree</a>. It would be great to have a user agreement level on every point in the manifesto.</p>
+
+<p>If you&rsquo;re working on any of those tools, I&rsquo;m more than happy to offer input into your API design process!</p>
+
+<h2>Will this scale?</h2>
+
+<p>The simple answer here is &ldquo;I don&rsquo;t know&rdquo;. I really don&rsquo;t. This is an evolved process
+that works for us right now. It will certainly change in future to cope with changing
+demand, and I can&rsquo;t anticipate exactly how that will happen.</p>
+
+<p>For now, we&rsquo;re building political policy in a way that anyone can get involved with, and
+for me that&rsquo;s revolutionary. How that revolution copes when it hits the mainstream is
+a scary adventure I&rsquo;m looking forward to, but as often stated in software, scaling problems
+are &ldquo;good problems to have&rdquo;.</p>
+
+<p>If you want to get involved, visit the <a href="http://openpolitics.org.uk">OpenPolitics Manifesto</a> and make a change. If you
+want to vote for someone who is using it, or want to stand on the principles yourself,
+I humbly suggest you check out our party, <a href="http://somethingnew.org.uk">Something New</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Face to Face]]></title>
@@ -1021,19 +1175,6 @@ representing me or others who are optimistically working towards a better future
 
 <p>It will be an adventure, and hopefully I will come out of it with a better understanding both of myself, and my role in the better future I hope to build.</p>
 ]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ActiveRecord-style array filtering in Ruby]]></title>
-    <link href="http://floppy.org.uk/blog/2012/08/01/activerecord-style-array-filtering-in-ruby/"/>
-    <updated>2012-08-01T00:00:00+01:00</updated>
-    <id>http://floppy.org.uk/blog/2012/08/01/activerecord-style-array-filtering-in-ruby</id>
-    <content type="html"><![CDATA[<p>Rails&#8217; named scopes are fantastic for making readable code with efficient SQL behind the scenes. Given a Person model, you could define a scope called &#8216;adult&#8217; which could add an SQL <em>WHERE</em> for <em>age&gt;18</em>, and let you write pretty code like Person.adult to find all adults. Great! Chaining them together gets even better with code like Person.adult.male.with_glasses.</p>
-<p>The problem comes if you do this in a single action with lots of different chained scopes to show different data. You end up with a whole bunch of SQL queries, which can get expensive. In the system I&#8217;m currently building, which includes geospatial queries, this gets far too slow to use. So, instead, let&#8217;s get one big list of objects and filter them in Ruby when we need them.</p>
-<p>Simple enough. The only thing is, the ActiveRecord chaining syntax is lovely. I don&#8217;t want to write tons of chained selects with blocks and all that faff. Instead, let&#8217;s extend Array to give us the syntax we like. The trick is to wrap an Array inside another class and then use method_missing to delegate. We then make sure that returned objects aren&#8217;t Arrays, but our new type instead.</p>
-<p>It&#8217;s best explained with the code:</p>
-
-<script src="https://gist.github.com/Floppy/3228297.js"></script>]]></content>
   </entry>
   
 </feed>
