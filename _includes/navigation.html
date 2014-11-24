@@ -6,22 +6,19 @@
 
 <ul class="nav pull-right">
     {% if site.email %}
-    <li><a href="mailto:{{ site.email }}" title="Email"><i class="icon-envelope-alt social-navbar"></i></a></li>
+    <li><a href="mailto:{{ site.email }}" title="Email"><i class="fa fa-lg fa-envelope social-navbar"></i></a></li>
     {% endif %}
     {% if site.github_user %}
-    <li><a href="http://github.com/{{ site.github_user }}" title="Github Profile"><i class="icon-github social-navbar"></i></a></li>
-    {% endif %}
-    {% if site.linkedin_user %}
-    <li><a href="http://linkedin.com/in/{{ site.linkedin_user }}" title="Linkedin Profile"><i class="icon-linkedin social-navbar"></i></a></li>
+    <li><a href="http://github.com/{{ site.github_user }}" title="Github Profile"><i class="fa fa-lg fa-github social-navbar"></i></a></li>
     {% endif %}
     {% if site.twitter_user %}
-    <li><a href="http://twitter.com/{{ site.twitter_user }}" title="Twitter Profile"><i class="icon-twitter social-navbar"></i></a></li>
+    <li><a href="http://twitter.com/{{ site.twitter_user }}" title="Twitter Profile"><i class="fa fa-lg fa-twitter social-navbar"></i></a></li>
     {% endif %}
     {% if site.googleplus_user %}
-    <li><a href="http://plus.google.com/{{ site.googleplus_user }}" title="Google+ Profile"><i class="icon-google-plus social-navbar"></i></a></li>
+    <li><a href="http://plus.google.com/{{ site.googleplus_user }}" title="Google+ Profile"><i class="fa fa-lg fa-google-plus social-navbar"></i></a></li>
     {% endif %}
     {% if site.facebook_user %}
-    <li><a href="http://facebook.com/{{ site.facebook_user }}" title="Facebook Profile"><i class="icon-facebook social-navbar"></i></a></li>
+    <li><a href="http://facebook.com/{{ site.facebook_user }}" title="Facebook Profile"><i class="fa fa-lg fa-facebook social-navbar"></i></a></li>
     {% endif %}
-    <li><a href="{{ site.url }}/atom.xml" title="Subscribe"><i class="icon-rss social-navbar"></i></a></li>
+    <li><a href="{{ site.url }}/atom.xml" title="Subscribe"><i class="fa fa-rss fa-lg social-navbar"></i></a></li>
 </ul>
