@@ -28,6 +28,7 @@ category_dir: blog/categories
 markdown: kramdown
 
 gems:
+  - jekyll-redirect-from
   - jekyll-sitemap
   
 paginate: 3           # Posts per page on the blog index
