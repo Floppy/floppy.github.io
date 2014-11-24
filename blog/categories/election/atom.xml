@@ -4,7 +4,7 @@
   <title><![CDATA[Category: election | James Smith]]></title>
   <link href="http://floppy.org.uk/blog/categories/election/atom.xml" rel="self"/>
   <link href="http://floppy.org.uk/"/>
-  <updated>2014-10-13T08:26:40+01:00</updated>
+  <updated>2014-11-24T09:37:10+00:00</updated>
   <id>http://floppy.org.uk/</id>
   <author>
     <name><![CDATA[James Smith]]></name>
@@ -12,6 +12,218 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Open Party Finance Data]]></title>
+    <link href="http://floppy.org.uk/blog/2014/11/24/open-party-finance-data/"/>
+    <updated>2014-11-24T07:18:00+00:00</updated>
+    <id>http://floppy.org.uk/blog/2014/11/24/open-party-finance-data</id>
+    <content type="html"><![CDATA[<p>One of the things we want to do with Something New is to be as transparent as we possible can on donations and spending. We do have to report a certain amount to the Electoral Commission, but it&rsquo;s also about walking the talk of openness and transparency.</p>
+
+<p>We&rsquo;re not raising money yet, so donations will come later, but we have started to track our spending. Working at the ODI, I&rsquo;m surrounded by smart people, and there&rsquo;s always someone who knows about whatever you&rsquo;re trying to do. So, when thinking about spending data, I went to have a chat with Ian Makgill of <a href="https://spendnetwork.com/">Spend Network</a>, and asked if there were any formats that parties already use.</p>
+
+<p>Fairly obviously, there weren&rsquo;t, so I then asked &ldquo;what would you <em>want</em> them to do?&rdquo;, and together we came up with a decent schema for political spending data. We&rsquo;re now publishing our finances in that format, so I thought I&rsquo;d give you a quick run through.</p>
+
+<p>I talked about this in a recent <a href="theodi.org/lunchtime-lectures/friday-lunchtime-lecture-data-for-democracy-how-to-stand-for-parliament-with-open-data">ODI Friday Lunchtime Lecture</a>, so you can watch the video if you like. Or, read on below&hellip;</p>
+
+<div style="width:500px; height:281px; margin: 0px auto">
+  <iframe src="http://floppy.org.uk//player.vimeo.com/video/111864914" frameborder="0" width="100%" height="281px" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+
+<h2>Schema</h2>
+
+<p>You can see the full schema on our <a href="https://somethingnewuk.github.io/finances/">finances microsite</a>.</p>
+
+<p>It divides into a few sections. First there are names for suppliers and buyers, but also URIs, so we can uniquely identify them and correlate across other spending. Then we have the amount and date, including foreign currency where appropriate. Next comes a description of the item, and some categorisation of the product or service, and finally the supplier&rsquo;s transaction ID. I want to add links to (PDF?) copies of receipts as well, though I&rsquo;ve not got to that yet.</p>
+
+<p>There are a few interesting parts to this, which I&rsquo;ll go into next&hellip;</p>
+
+<h2>URIs</h2>
+
+<p>It&rsquo;s easy enough to write the name of a company or buyer, but if we want to uniquely identify them, we need a URI. For companies, we use the <a href="http://opencorporates.com">OpenCorporates</a> URL; they cover millions of companies across the world, which is great. Unfortunately they don’t seem to include <a href="http://nationbuilder.com">NationBuilder</a>, who I suspect are based somewhere OpenCorporates don’t cover yet. Won’t be long, I’m sure.</p>
+
+<p>Charities are another matter; there isn&rsquo;t a stable-looking URL for a charity on the <a href="https://www.gov.uk/government/organisations/charity-commission">Charity Commission</a> website, only a search box. Fortunately there is a project called <a href="http://opencharities.org/">OpenCharities</a> which does the same thing for charities as OpenCorporates does for companies, so I can use their URLs. Hurrah for Open Data.</p>
+
+<p>One room I booked was from&hellip; I have no idea. I guess it&rsquo;s an unincorporated association. How we define URIs for things that barely exist legally, I don&rsquo;t know. If you do, let me know.</p>
+
+<p>The last bit here is URIs for councils. Again, when booking rooms, councils are often the supplier, particularly Parish Councils. The LGA defines a set of URIs for councils down to the local authority level, but it doesn&rsquo;t go down to the parish level. In fact, it looks like there may not even be a proper list of parish councils, let alone a URI for each. The closest we have appears to be <a href="http://politicsresources.net/area/uk/parish.htm">this unofficial list</a>. We could do with an OpenCouncils project, perhaps, to bring these all together and let people reference them reliably.</p>
+
+<p>The last bit on URIs was to talk about buyer URIs. For the party, that should be easy enough, but for individuals? What&rsquo;s <em>my</em> URI? I don&rsquo;t feel quite right with it just being my website, but that&rsquo;s basically the right thing to do. So, I&rsquo;ve made one up. If you need to refer to me officially, you can use <a href="http://id.floppy.org.uk">http://id.floppy.org.uk</a>. It also acts as an OpenID delegator (see the source for how), so it&rsquo;s now also my OpenID. If you visit it, you won&rsquo;t get much though, except a GIF of a <a href="https://www.youtube.com/watch?v=9hBpF_Zj4OA">rotating owl</a>. Because&hellip; reasons.</p>
+
+<h2>Codes</h2>
+
+<p>Moving on, let&rsquo;s talk about codes. We use two different coding schemes for the data. The first is from the electoral commission, which is only really useful for official reporting. The other is the <a href="http://unspsc.org">UN Standard Products and Services Code (UNSPSC)</a>. The UNSPSC has a decent search function, so it&rsquo;s easy enough to classify your spending, and the categories are <em>very</em> fine-grained. At least, they are in the area of traditional products; it&rsquo;s a bit vague on the whole &ldquo;Internet&rdquo; thing. Probably needs an update. Still, it&rsquo;s a standard, and will suffice for us. We can always use new codes as they create them.</p>
+
+<h2>Publishing</h2>
+
+<p>The last bit to talk about is how we publish the data. As I mentioned, the schema and data are wrapped up in a Datapackage, which is a JSON file which lists the fields, license, data file locations, etc. All this is in a <a href="https://github.com/SomethingNewUK/finances">GitHub repository</a>, and it&rsquo;s the live version, which means that we&rsquo;re not really publishing our data; instead you&rsquo;re seeing the real thing all the time.</p>
+
+<p>Having the data in GitHub lets us do something cool &ndash; publish it on the web using github pages. If it&rsquo;s in a gh-pages branch, GitHub will publish it for us, and run it through <a href="http://jekyllrb.com">Jekyll</a>, which means you can also generate HTML pages alongside.</p>
+
+<p>Jekyll has support for data files, both in JSON and YAML, and in CSV (which I <a href="https://github.com/jekyll/jekyll/pull/2761">specifically added</a> over the summer so I could use it for this &ndash; yay Open Source!). If we tell Jekyll that our entire repository is a source of data files, we can access all the files, both the CSVs and datapackage, from the HTML-generating files. That means we can have a single source of data, and use Jekyll to automatically publish both a human-readable version and the original machine-readable files. We&rsquo;ve basically rolled our own data publishing system, which is pretty cool. You can see how it all works in the <a href="https://github.com/SomethingNewUK/finances">repository</a>, but if you need more explanation, leave a comment and I&rsquo;ll elaborate.</p>
+
+<h2>Validation &amp; Certification</h2>
+
+<p>The last thing is that it&rsquo;s all validated and certified using tools I&rsquo;ve helped build at the ODI. We use <a href="http://csvlint.io">CSVlint</a> to check that the CSV files are valid when they&rsquo;re committed, and we&rsquo;ve also obtained an <a href="https://certificates.theodi.org/datasets/2254/certificates/14550">Open Data Certificate</a> for the data, showing that it&rsquo;s good, reliable, open data.</p>
+
+<p>I&rsquo;d love to see more parties doing this. The data schema is totally reusable, as is the rest, and this took me no more than a few hours to put together from scratch. There is no technological reason why all the parties couldn&rsquo;t open up all their data tomorrow. All that they lack is the vision and the courage.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[GitHub Democracy]]></title>
+    <link href="http://floppy.org.uk/blog/2014/10/13/github-democracy/"/>
+    <updated>2014-10-13T06:45:00+01:00</updated>
+    <id>http://floppy.org.uk/blog/2014/10/13/github-democracy</id>
+    <content type="html"><![CDATA[<p>A year and a quarter ago, in a fit of political anger,
+I proposed that a bunch of us should start collaborating
+on the public policies we&rsquo;d <em>like</em> to see, rather than just complaining on Twitter.</p>
+
+<p>As I&rsquo;m a software developer, I suggested that we could use GitHub as a platform,
+and a few of us started doing exactly that. 15 months later, the <a href="http://openpolitics.org.uk">OpenPolitics Manifesto</a>
+contains nearly 8000 words of agreed policy ideas, has inspired me to <a href="http://www.wscountytimes.co.uk/news/local/father-of-two-launches-bid-to-be-horsham-s-next-mp-1-6168976">stand for
+election</a>, and has spawned a <a href="http://somethingnew.org.uk">political party</a> which has adopted the manifesto (though
+it remains an independent project). I&rsquo;m quite proud of all of that.</p>
+
+<p>Last night, someone new to the project asked me how it worked, and to clarify who
+can take part, and I realised I&rsquo;ve never really written it up in a blog form. We have
+the <a href="http://openpolitics.org.uk/contributing.html">contributing guide</a>, but that&rsquo;s probably fairly well buried. So, in this post I&rsquo;m
+going to explain the democratic process we&rsquo;ve arrived at over the last 15 months.</p>
+
+<h2>Who can make changes?</h2>
+
+<p>The simple answer here is &ldquo;anyone&rdquo;, though the reality is slightly more complex.</p>
+
+<p>Anyone with a GitHub account can hit the edit button and change the text to match what
+they want. Thanks to GitHub&rsquo;s great workflow tools, this automatically creates a fork
+of the project (a copy, basically) and submits a pull request (PR), which you can
+think of as a &ldquo;request to adopt the proposed change&rdquo;. The user interface here can
+be confusing to new users though, and that&rsquo;s something we want to improve.</p>
+
+<p>Anyway, once your change is made, it gets added to the <a href="http://github.com/openpolitics/manifesto/pulls">pull request queue</a>, ready
+for inspection.</p>
+
+<h2>Who decides what gets accepted?</h2>
+
+<p>We&rsquo;re modeled on an open-source type workflow, not a straight-majority universal-suffrage
+democratic model. That means that while anyone can submit a change, <em>not</em> everyone gets
+to vote straight away.</p>
+
+<p>We&rsquo;re a little different from other open policymaking tools, in that we&rsquo;re not actually
+trying to express a solution that satisfies the majority. We&rsquo;re trying, with help from
+everybody, to build a cohesive platform that will hopefully appeal to some voters. This
+is a party-style manifesto, not a universally-accepted list of things we should do.</p>
+
+<p>So, because of that, you can only vote on a change if you&rsquo;ve already made a contribution.
+That means that the project should be able to maintain the direction and general outlook
+that it started with, without being twisted around.</p>
+
+<p>However, as soon as your change is in, you get to vote, so nobody maintains a list of
+&ldquo;approved&rdquo; contributors. If you add something good enough to get in, you get control.</p>
+
+<p>This is really similar to the process in a bit of open source software, where existing maintainers decide what gets added in order to keep the project moving the right way.</p>
+
+<p><img src="http://memecrunch.com/meme/L5EI/service-guarantees-citizenship/image.png" alt="Service Guarantees Citizenship" /></p>
+
+<h2>What about takeovers?</h2>
+
+<p>People often ask what we do about hostile takeovers. Say a number of people make helpful
+and acceptable additions (thanks!), but then gang together and vote to bring back
+capital punishment.</p>
+
+<p>Again, the open source model helps us here. We can&rsquo;t stop that happening, not at all.
+However, it would gain the attacker pretty much nothing, as anyone in the world is
+entitled to take the project and fork it into a parallel effort at any time.</p>
+
+<p>If something happened that a caused a large split in the group, I have no doubt the project
+would fork into two. That&rsquo;s not a bad thing &ndash; the two forks can still share the ideas they
+agree on, while maintaining their own differences.</p>
+
+<p>I&rsquo;m not sure how this will work in practice. I guess we&rsquo;ll cross that bridge when we come to it, but I think we have an escape route prepared if we need it.</p>
+
+<h2>How do changes get voted on?</h2>
+
+<p>I initially expected that we&rsquo;d go with a straight majority vote of contributors, but that&rsquo;s
+not what we&rsquo;re doing right now. The long tail of participation is as true in this project
+as in any online space, so we have a few very active contributors, some less-regular ones,
+and a long tail of people who&rsquo;ve only contributed once.</p>
+
+<p>Because of this, it would be easy for the regular contributors to overrule the long
+tail, but that would lead to complete disengagement and a &ldquo;why should I contribute&rdquo;
+reaction. After all, if the cabal control all the votes, there&rsquo;s no power.</p>
+
+<p>So, we use a sort of <a href="https://en.wikipedia.org/wiki/Blackballing">blackballing</a> system instead. A change must get &ldquo;yes&rdquo; votes from 10%
+of the contributors in order to be passed. However, anyone can block a change,
+which means we can&rsquo;t merge it until that block is removed. That means that anyone in the
+long tail can make their objections known over the view of the regular contributors, and
+force improvements and further discussion.</p>
+
+<p>So far, this has worked OK. We have a few changes that have been blocked for a long time,
+and how to work through those blocks is something we&rsquo;re still learning, but in general it&rsquo;s
+working OK.</p>
+
+<p>We try to make sure that blocks are substantive; that is, a simple &ldquo;NO&rdquo; isn&rsquo;t allowed.
+For a block to be considered, it must come with reasons, requests for more evidence, or some
+other form of constructive feedback. Generally this does seem to happen.</p>
+
+<p>We also keep each vote open for 14 days to give the long tail time to respond.</p>
+
+<h2>Who counts the votes?</h2>
+
+<p>Robots!</p>
+
+<p>Votes are currently expressed in GitHub comments with +1 / -1 statements (using emoticons), and we have a <a href="http://votebot.openpolitics.org.uk">script that watches those changes</a> and counts them up. There are a number of rules enforced by the robot; for instance, yes votes are cleared by a change to the PR (so you can&rsquo;t amend at the last minute).</p>
+
+<p>Using the GitHub API, we check all this stuff, and then we set the build status appropriately for the change. This means that the GitHub merge button will have a warning on it until the time period has expired, and until it has enough votes and no blocks.</p>
+
+<p>Nothing fundamentally stops earlier merging, and that does happen sometimes for spelling corrections, etc. Only a <a href="https://github.com/orgs/openpolitics/teams/owners">couple of admins</a> have merge powers, so there is a potential corruption point there; perhaps the robot should do the merging as well, but it&rsquo;s nice to have a human in the final check.</p>
+
+<p>The robot also helps with making the information more accessible. It sends tweets from
+<a href="http://twitter.com/openpoliticsuk">@OpenPoliticsUK</a> for new changes, and notifies our  <a href="irc://irc.freenode.net#openpolitics">#openpolitics IRC channel</a>. It also
+has a few web pages that <a href="http://votebot.openpolitics.org.uk/227">list vote status</a> in a simple way, so we can see who&rsquo;s taking
+part, who&rsquo;s voted which way. There is also a <a href="http://votebot.openpolitics.org.uk/users/Floppy">user page</a> for every contributor that shows
+what they have and haven&rsquo;t voted on.</p>
+
+<p>Of course, the robot is <a href="http://github.com/openpolitics/votebot">open source</a>, so you can check that the rules match what&rsquo;s agreed.</p>
+
+<h2>What next?</h2>
+
+<p>Usability is a big concern. Currently we use the GitHub editor; I&rsquo;d rather use <a href="http://prose.io">prose.io</a>,
+but it has a massive <a href="https://github.com/prose/prose/issues/643">bug</a> in it that means that new users don&rsquo;t get invited to sign in to
+GitHub first, and changes get lost. If you can fix that, I&rsquo;ll pay you a <a href="https://www.bountysource.com/issues/1839687-unauthenticated-users-can-t-submit-pull-requests">$25 bounty</a>.</p>
+
+<p>However, I&rsquo;m starting to think we need a completely custom editor that explains every step
+along the way, and hides the GitHubness right down away from the user. Ideally the
+contributor shouldn&rsquo;t know they&rsquo;re using GitHub (unless they want to). The version control
+base layer is important for change visibility, accountability, forking, and so on, but
+expecting non-developers to be OK with it from the outset is asking a bit much.</p>
+
+<p>There are other options for the voting as well; I&rsquo;d like to get something like <a href="http://loomio.org/">Loomio</a> or
+<a href="http://democracyos.org/">DemocracyOS</a> integrated into the voting system, so that people don&rsquo;t need to use the pull
+request UI to discuss and vote. Again, maybe this should be a custom thing that presents
+the information exactly the way we want.</p>
+
+<p>I&rsquo;d also like to experiment with wider (but less official) feedback using something like <a href="http://iagr.ee">IAgree</a>. It would be great to have a user agreement level on every point in the manifesto.</p>
+
+<p>If you&rsquo;re working on any of those tools, I&rsquo;m more than happy to offer input into your API design process!</p>
+
+<h2>Will this scale?</h2>
+
+<p>The simple answer here is &ldquo;I don&rsquo;t know&rdquo;. I really don&rsquo;t. This is an evolved process
+that works for us right now. It will certainly change in future to cope with changing
+demand, and I can&rsquo;t anticipate exactly how that will happen.</p>
+
+<p>For now, we&rsquo;re building political policy in a way that anyone can get involved with, and
+for me that&rsquo;s revolutionary. How that revolution copes when it hits the mainstream is
+a scary adventure I&rsquo;m looking forward to, but as often stated in software, scaling problems
+are &ldquo;good problems to have&rdquo;.</p>
+
+<p>If you want to get involved, visit the <a href="http://openpolitics.org.uk">OpenPolitics Manifesto</a> and make a change. If you
+want to vote for someone who is using it, or want to stand on the principles yourself,
+I humbly suggest you check out our party, <a href="http://somethingnew.org.uk">Something New</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Face to Face]]></title>
@@ -295,80 +507,6 @@ the first event in the series last night in Roffey North. Keep an eye on the <a 
 <p>So, all in all this looks pretty easy. If I can raise £1500-ish, and design a leaflet (which some of the printers can help with for a little more), I can get the Royal Mail to deliver it, and everyone in the area will get told about me.</p>
 
 <p>This isn&rsquo;t all the printing of course; more will be needed to be able to hand out flyers to people before the final leaflet drop, but it&rsquo;s a great baseline. I thought that would cost a lot more, and it&rsquo;s once again underlined just how accessible this actually is.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Political Cartography]]></title>
-    <link href="http://floppy.org.uk/blog/2014/08/07/political-cartography/"/>
-    <updated>2014-08-07T20:30:00+01:00</updated>
-    <id>http://floppy.org.uk/blog/2014/08/07/political-cartography</id>
-    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the <a href="/blog/categories/election/">election category</a> for other posts.</em></p>
-
-<p>One thing you really need to know when standing as a candidate is what areas are actually part of your constituency. Constituencies are pretty weird shapes, especially out in the country, and the area is probably larger than you think. So, time to find out for sure.</p>
-
-<p>Fortunately the Ordnance Survey makes this easy. Their <a href="http://www.ordnancesurvey.co.uk/election-maps/gb/">Election Maps</a> service shows all the constituency, ward, and other boundaries you might want in a nice map format. Enter your constituency name in the box, choose the right one, and you get something like this (apologies for the screenshot, there&rsquo;s no way to embed):</p>
-
-<p><img src="/images/horsham_constituency.png" alt="Horsham constituency OS map" /></p>
-
-<p>Now, what I really want is a map on my wall that I can refer to easily. The Election Maps service does have a print option, but it&rsquo;s just to print a single page yourself, and no way is that good enough for what I want.</p>
-
-<p>Fortunately, OS come to the rescue again with their <a href="https://www.ordnancesurvey.co.uk/shop/custom-made-maps.html">custom map printing</a>. Unfortunately, there&rsquo;s no link on the election maps to &ldquo;order a custom map of this area&rdquo; (which would be awesome, OS, if you&rsquo;re listening) so we have to do it manually.</p>
-
-<p>In my case, I found a point roughly in the middle of the constituency&rsquo;s bounding box, Lower Beeding, and I found that at Landranger scale (1:50000), the whole constituency would fit on one map. This probably won&rsquo;t always be the case, but it worked for me. £16.99 and 5 days later, and I have an 80x80cm wall map of my constituency is hanging on my wall:</p>
-
-<p><img src="/images/wall_map.jpg" alt="Horsham constituency wall map" /></p>
-
-<p>Unfortunately, that custom map doesn&rsquo;t include the boundary of the constituency, so I had to draw it on with a highlighter pen, but it&rsquo;s not a bad solution.</p>
-
-<p>Note: I tried to do this using OpenStreetMap, but I just couldn&rsquo;t work out how. If anyone knows, then please tell me, I&rsquo;d love to have a method of using the open data in OSM to plan my campaigning :)</p>
-
-<p>Another note: Election boundaries are STUPID. Whoever decided some of those shapes&hellip;</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Horsham Election Meetup #1]]></title>
-    <link href="http://floppy.org.uk/blog/2014/08/05/horsham-election-meetup-1/"/>
-    <updated>2014-08-05T23:11:00+01:00</updated>
-    <id>http://floppy.org.uk/blog/2014/08/05/horsham-election-meetup-1</id>
-    <content type="html"><![CDATA[<p><em>This is part of my series about standing as an MP. See the <a href="/blog/categories/election/">election category</a> for other posts.</em></p>
-
-<p>Last night was our first Horsham election meetup, and while very useful, it&rsquo;s left so many thoughts swirling around my brain that it&rsquo;s hard to get them in any kind of order. These, I think, were the main outcomes for me:</p>
-
-<h2>Independent movement</h2>
-
-<p>There is a growing movement of independent candidates across Horsham, with myself at national level, and a number of others at district level. With all the seats up for election at the same time next year, there&rsquo;s a lot of possible cooperation to be had. There is a general disillusionment with our representatives at all levels, that they are not representing the concerns of residents, which plays into the hands of independents.</p>
-
-<p>However, a danger here is that if there is a movement of independent local councillor candidates, that I get drawn into that <em>too far</em>, and don&rsquo;t get enough focus on the specific needs of the MP campaign. This is dangerous, not least because Horsham district and constituency are not the same shape; some of my constituents are in Mid Sussex District, and not all Horsham District residents vote in Horsham constituency.</p>
-
-<p>But, it will be helpful to have allies; we&rsquo;ve set up a mailing list for independents in the Horsham area &ndash; if you want to join, visit the <a href="https://groups.google.com/forum/#!forum/horsham-unparty">Horsham Unparty google group</a>.</p>
-
-<h2>Issues</h2>
-
-<p>We discussed the most important issues to Horsham right now, and I&rsquo;m glad to say that they were pretty much in line with my expectations. Gatwick expansion is a biggie, but the main concern at the moment seems to be around the planning and development going on around the town. Housing needs to be built, but it&rsquo;s not being built in a way that local people are happy with. They feel that their views are ignored, and that decisions are being taken behind closed doors.</p>
-
-<p>Both these play nicely into my national stance on greater transparency at all levels, environmental issues around airports and vehicles, and fixing the democratic process. It&rsquo;ll be important in the campaign to keep my focus on the national-level trends and laws that make local problems worse, while trying to facilitate solutions to local problems. The advantage of having a group of independent candidates for the council is that we can have good coverage of whatever level is actually responsible for an issue.</p>
-
-<p>My action from this is to start creating a set of local issue pages on <a href="http://openhorsham.org.uk">openhorsham.org.uk</a> and set out my views and how they link to national legislation, etc.</p>
-
-<h2>Campaign planning</h2>
-
-<p>We discussed how to engage with people during the campaign. We threw around ideas of town centre engagement on a Saturday morning, and running local surgeries around the constituency. We talked about engaging with influential local groups (and being explicit about getting endorsements!), and also about increasing the number of election hustings meetings &ndash; last time round, there were two, both run by church groups. We need to improve that this time.</p>
-
-<p>We also talked about getting a team together to help. Volunteers for leaflet dropping are essential, but it&rsquo;s becoming increasingly clear to me that I need other people involved on my campaign to help run and organise it. How to find all these people? I&rsquo;m not sure.</p>
-
-<h2>Media</h2>
-
-<p>Engagement with local media is important. I need to be writing opinion pieces and letters on a regular basis. I have no problem with writing (I don&rsquo;t think), but my instinct is always to publish immediately online; I will have to restrain myself slightly to get anything visible in the local paper.</p>
-
-<h2>Too Much Information</h2>
-
-<p>There is always a danger that as a new entrant into the democratic arena, there are many many people out there who know a lot more than you about the area, the process, and the politics. These people are <em>great</em>, but they do leave your head spinning. It&rsquo;s important to take what is useful on board, but not allow yourself to be subsumed into the stream of information.</p>
-
-<p>At the end of the day, to be a genuine candidate, I have to be <em>myself</em>, and not try to turn myself into an expert politician. So far, while there are massive gaps in my knowledge, my instincts have been confirmed, so I feel like I&rsquo;m on the right track.</p>
-
-<p>It will be an interesting year. Balancing the different aspects will be hard, but I need to make sure I remain focused on representing what the constituents want from their MP, and making sure they understand what I have to offer. <em>Everything</em> else is negotiable.</p>
 ]]></content>
   </entry>
   

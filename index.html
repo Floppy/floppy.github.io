@@ -9,7 +9,7 @@
   <meta name="author" content="James Smith">
 
   
-  <meta name="description" content="James Smith Building a better future out of code Oct 13th, 2014 Comments github politics GitHub Democracy A year and a quarter ago, in a fit of &hellip;">
+  <meta name="description" content="James Smith Building a better future out of code Nov 24th, 2014 Comments election Open Party Finance Data One of the things we want to do with &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -124,6 +124,103 @@
   
 
 
+<i class="icon-calendar-empty"></i> <time datetime="2014-11-24T07:18:00+00:00" pubdate data-updated="true">Nov 24<span>th</span>, 2014</time></h5>
+          <div class="row-fluid">
+          
+          <a href="http://floppy.org.uk/blog/2014/11/24/open-party-finance-data/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
+          
+          </div>
+          
+          <div class="row-fluid">
+          
+          <a href="/blog/categories/election/"><span class="badge">election</span></a>
+          
+          </div>
+          
+    </div>
+    <div class="span10">
+      <h1 class="link"><a href="/blog/2014/11/24/open-party-finance-data/">Open Party Finance Data</a></h1>
+      <p>One of the things we want to do with Something New is to be as transparent as we possible can on donations and spending. We do have to report a certain amount to the Electoral Commission, but it&rsquo;s also about walking the talk of openness and transparency.</p>
+
+<p>We&rsquo;re not raising money yet, so donations will come later, but we have started to track our spending. Working at the ODI, I&rsquo;m surrounded by smart people, and there&rsquo;s always someone who knows about whatever you&rsquo;re trying to do. So, when thinking about spending data, I went to have a chat with Ian Makgill of <a href="https://spendnetwork.com/">Spend Network</a>, and asked if there were any formats that parties already use.</p>
+
+<p>Fairly obviously, there weren&rsquo;t, so I then asked &ldquo;what would you <em>want</em> them to do?&rdquo;, and together we came up with a decent schema for political spending data. We&rsquo;re now publishing our finances in that format, so I thought I&rsquo;d give you a quick run through.</p>
+
+<p>I talked about this in a recent <a href="theodi.org/lunchtime-lectures/friday-lunchtime-lecture-data-for-democracy-how-to-stand-for-parliament-with-open-data">ODI Friday Lunchtime Lecture</a>, so you can watch the video if you like. Or, read on below&hellip;</p>
+
+<div style="width:500px; height:281px; margin: 0px auto">
+  <iframe src="//player.vimeo.com/video/111864914" frameborder="0" width="100%" height="281px" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+
+<h2>Schema</h2>
+
+<p>You can see the full schema on our <a href="https://somethingnewuk.github.io/finances/">finances microsite</a>.</p>
+
+<p>It divides into a few sections. First there are names for suppliers and buyers, but also URIs, so we can uniquely identify them and correlate across other spending. Then we have the amount and date, including foreign currency where appropriate. Next comes a description of the item, and some categorisation of the product or service, and finally the supplier&rsquo;s transaction ID. I want to add links to (PDF?) copies of receipts as well, though I&rsquo;ve not got to that yet.</p>
+
+<p>There are a few interesting parts to this, which I&rsquo;ll go into next&hellip;</p>
+
+<h2>URIs</h2>
+
+<p>It&rsquo;s easy enough to write the name of a company or buyer, but if we want to uniquely identify them, we need a URI. For companies, we use the <a href="http://opencorporates.com">OpenCorporates</a> URL; they cover millions of companies across the world, which is great. Unfortunately they don’t seem to include <a href="http://nationbuilder.com">NationBuilder</a>, who I suspect are based somewhere OpenCorporates don’t cover yet. Won’t be long, I’m sure.</p>
+
+<p>Charities are another matter; there isn&rsquo;t a stable-looking URL for a charity on the <a href="https://www.gov.uk/government/organisations/charity-commission">Charity Commission</a> website, only a search box. Fortunately there is a project called <a href="http://opencharities.org/">OpenCharities</a> which does the same thing for charities as OpenCorporates does for companies, so I can use their URLs. Hurrah for Open Data.</p>
+
+<p>One room I booked was from&hellip; I have no idea. I guess it&rsquo;s an unincorporated association. How we define URIs for things that barely exist legally, I don&rsquo;t know. If you do, let me know.</p>
+
+<p>The last bit here is URIs for councils. Again, when booking rooms, councils are often the supplier, particularly Parish Councils. The LGA defines a set of URIs for councils down to the local authority level, but it doesn&rsquo;t go down to the parish level. In fact, it looks like there may not even be a proper list of parish councils, let alone a URI for each. The closest we have appears to be <a href="http://politicsresources.net/area/uk/parish.htm">this unofficial list</a>. We could do with an OpenCouncils project, perhaps, to bring these all together and let people reference them reliably.</p>
+
+<p>The last bit on URIs was to talk about buyer URIs. For the party, that should be easy enough, but for individuals? What&rsquo;s <em>my</em> URI? I don&rsquo;t feel quite right with it just being my website, but that&rsquo;s basically the right thing to do. So, I&rsquo;ve made one up. If you need to refer to me officially, you can use <a href="http://id.floppy.org.uk">http://id.floppy.org.uk</a>. It also acts as an OpenID delegator (see the source for how), so it&rsquo;s now also my OpenID. If you visit it, you won&rsquo;t get much though, except a GIF of a <a href="https://www.youtube.com/watch?v=9hBpF_Zj4OA">rotating owl</a>. Because&hellip; reasons.</p>
+
+<h2>Codes</h2>
+
+<p>Moving on, let&rsquo;s talk about codes. We use two different coding schemes for the data. The first is from the electoral commission, which is only really useful for official reporting. The other is the <a href="http://unspsc.org">UN Standard Products and Services Code (UNSPSC)</a>. The UNSPSC has a decent search function, so it&rsquo;s easy enough to classify your spending, and the categories are <em>very</em> fine-grained. At least, they are in the area of traditional products; it&rsquo;s a bit vague on the whole &ldquo;Internet&rdquo; thing. Probably needs an update. Still, it&rsquo;s a standard, and will suffice for us. We can always use new codes as they create them.</p>
+
+<h2>Publishing</h2>
+
+<p>The last bit to talk about is how we publish the data. As I mentioned, the schema and data are wrapped up in a Datapackage, which is a JSON file which lists the fields, license, data file locations, etc. All this is in a <a href="https://github.com/SomethingNewUK/finances">GitHub repository</a>, and it&rsquo;s the live version, which means that we&rsquo;re not really publishing our data; instead you&rsquo;re seeing the real thing all the time.</p>
+
+<p>Having the data in GitHub lets us do something cool &ndash; publish it on the web using github pages. If it&rsquo;s in a gh-pages branch, GitHub will publish it for us, and run it through <a href="http://jekyllrb.com">Jekyll</a>, which means you can also generate HTML pages alongside.</p>
+
+<p>Jekyll has support for data files, both in JSON and YAML, and in CSV (which I <a href="https://github.com/jekyll/jekyll/pull/2761">specifically added</a> over the summer so I could use it for this &ndash; yay Open Source!). If we tell Jekyll that our entire repository is a source of data files, we can access all the files, both the CSVs and datapackage, from the HTML-generating files. That means we can have a single source of data, and use Jekyll to automatically publish both a human-readable version and the original machine-readable files. We&rsquo;ve basically rolled our own data publishing system, which is pretty cool. You can see how it all works in the <a href="https://github.com/SomethingNewUK/finances">repository</a>, but if you need more explanation, leave a comment and I&rsquo;ll elaborate.</p>
+
+<h2>Validation &amp; Certification</h2>
+
+<p>The last thing is that it&rsquo;s all validated and certified using tools I&rsquo;ve helped build at the ODI. We use <a href="http://csvlint.io">CSVlint</a> to check that the CSV files are valid when they&rsquo;re committed, and we&rsquo;ve also obtained an <a href="https://certificates.theodi.org/datasets/2254/certificates/14550">Open Data Certificate</a> for the data, showing that it&rsquo;s good, reliable, open data.</p>
+
+<p>I&rsquo;d love to see more parties doing this. The data schema is totally reusable, as is the rest, and this took me no more than a few hours to put together from scratch. There is no technological reason why all the parties couldn&rsquo;t open up all their data tomorrow. All that they lack is the vision and the courage.</p>
+
+      
+      
+    </div>
+  </div>
+
+
+
+    </article>
+    
+    <hr>
+    
+  
+  
+    <article>
+      
+
+  <div class="row-fluid">
+    <div class="span2">
+		<h1 class="date-time">
+
+
+
+
+
+
+
+
+  
+
+
 <i class="icon-calendar-empty"></i> <time datetime="2014-10-13T06:45:00+01:00" pubdate data-updated="true">Oct 13<span>th</span>, 2014</time></h5>
           <div class="row-fluid">
           
@@ -132,6 +229,8 @@
           </div>
           
           <div class="row-fluid">
+          
+          <a href="/blog/categories/election/"><span class="badge">election</span></a>
           
           <a href="/blog/categories/github/"><span class="badge">github</span></a>
           
@@ -546,70 +645,6 @@ to the budget too &ndash; if it costs me £30 a week for a room, times 28 weeks&
 
 <p>So, armed with that information and a plan, I&rsquo;ve started booking things, and I actually ran
 the first event in the series last night in Roffey North. Keep an eye on the <a href="http://horsham.somethingnew.org.uk/calendar">calendar</a> for future events, and I&rsquo;ll add them as I get the venues booked in, and if you&rsquo;re in Horsham, hopefully I&rsquo;ll see you soon at an event near you!</p>
-
-      
-      
-    </div>
-  </div>
-
-
-
-    </article>
-    
-    <hr>
-    
-  
-  
-    <article>
-      
-
-  <div class="row-fluid">
-    <div class="span2">
-		<h1 class="date-time">
-
-
-
-
-
-
-
-
-  
-
-
-<i class="icon-calendar-empty"></i> <time datetime="2014-08-31T19:22:00+01:00" pubdate data-updated="true">Aug 31<span>st</span>, 2014</time></h5>
-          <div class="row-fluid">
-          
-          <a href="http://floppy.org.uk/blog/2014/08/31/democracy-geeks-at-emfcamp-2014/#disqus_thread">Comments </a> <span class="fui-bubble-16"></span>
-          
-          </div>
-          
-          <div class="row-fluid">
-          
-          <a href="/blog/categories/election/"><span class="badge">election</span></a>
-          
-          </div>
-          
-    </div>
-    <div class="span10">
-      <h1 class="link"><a href="/blog/2014/08/31/democracy-geeks-at-emfcamp-2014/">Democracy geeks at EMFCamp 2014</a></h1>
-      <p><em>This is part of my series about standing as an MP. See the <a href="/blog/categories/election/">election category</a> for other posts.</em></p>
-
-<p>I&rsquo;m on the train on the way home from <a href="http://emfcamp.org">Electromagnetic Field 2014</a>. It&rsquo;s a sort of technology / maker festival in a field near Milton Keynes. Imagine a load of tech geeks camping in tents with laser cutters, LEDs, laptops, excellent wifi, and a robot that makes cocktails. It&rsquo;s an amazing place.</p>
-
-<p>I was lucky enough to get a speaking slot to talk about my current project, standing for Parliament next year. As it happened, there were two other talks on a similar theme; <a href="https://twitter.com/tom_watson">Tom Watson MP</a> spoke about <a href="/blog/2014/07/14/drip-an-open-letter-to-francis-maude/">DRIP</a>, and <a href="http://www.danjellinek.com/">Dan Jellinek</a> talked about digital democracy ideas and tools, so there was a common thread between all our talks.</p>
-
-<p>All three of us wanted more people to get engaged in politics. Tom Watson went as far as challenging people to join their local Labour or Conservative parties and change them from the inside (which, given enough people, could totally work, though I would like to try a different path).</p>
-
-<p>My talk went down really well, I think. I was very pleased with the turnout, and there were loads of great questions at the end. I came away more convinced that what I&rsquo;m trying to do will resonate with a whole load of people. The new party name that I presented also went down really well, though I&rsquo;ll tell <em>you</em> all about it in a future post &ndash; stay tuned.</p>
-
-<p><img src="https://pbs.twimg.com/media/BwTPxI5IIAAkHoe.jpg" alt="EMFcamp talk" /></p>
-
-<p>To give people a chance to discuss things further, we held an informal democracy meetup on Saturday evening. I expected a few people to turn up, but we had over 40 and packed out our tent, with standing room only. What followed was two hours of lively debate, discussion, and passion from the people who came along, and I was absolutely blown away by how much people <em>do</em> care, and <em>do</em> want to get involved.</p>
-
-<p>The icing on the cake was Sunday morning. I was walking to get some breakfast and I ran into one of the participants from the night before. He told me that I&rsquo;d inspired him to stand as well, which is just <em>amazing</em>. I&rsquo;ve since had a few others email or grab me around the event saying they want to get more involved and help out somehow. I&rsquo;m &hellip; honoured.</p>
-
-<p>After this weekend, I&rsquo;m even more convinced that this is the start of a movement, the start of something big. The start of something new.</p>
 
       
       
