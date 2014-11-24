@@ -1,4 +1,9 @@
-{% include custom/navigation.html %}
+<ul class="nav">
+  {% for link in site.navigation %}
+  <li {% if page.url == link.url %}class="active"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
+  {% endfor %}
+</ul>
+
 <ul class="nav pull-right">
     {% if site.email %}
     <li><a href="mailto:{{ site.email }}" title="Email"><i class="icon-envelope-alt social-navbar"></i></a></li>
