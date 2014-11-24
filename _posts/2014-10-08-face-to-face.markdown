@@ -5,9 +5,6 @@ date: 2014-10-08 19:59
 comments: true
 categories: election
 ---
-*This is part of my series about standing as an MP. See the 
-[election category](/blog/categories/election/) for other posts.*
-
 A few weeks ago, I held the [first public meeting](/blog/2014/08/05/horsham-election-meetup-1/) for my election campaign. 
 It was a small affair, but it was clear that this was something that I'm 
 going to have to do a lot more of. Whether it's creating an appointment 

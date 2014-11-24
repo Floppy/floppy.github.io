@@ -5,8 +5,6 @@ date: 2014-07-08 19:17
 comments: true
 categories: election
 ---
-*This is part of my series about standing as an MP. See the [election category](/blog/categories/election/) for other posts.*
-
 After talking to the electoral commission yesterday, I got interested in what local candidates normally spend on their campaigns.
 
 Fortunately, this is all open data. The Electoral Commission publish the statistics about election spending on their website, all under the Open Government License. All figures in this article come from them.

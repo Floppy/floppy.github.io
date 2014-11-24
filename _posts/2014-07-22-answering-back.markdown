@@ -5,8 +5,6 @@ date: 2014-07-22 07:11
 comments: true
 categories: election
 ---
-*This is part of my series about standing as an MP. See the [election category](/blog/categories/election/) for other posts.*
-
 There are a few of common reactions I get from people when I tell them I'm standing (though by far the response is positive).
 
 I'd like to put down my own responses to them here. Note that the questions aren't direct quotes from particular individuals, they are a kind of merged version of many times I've been asked the same thing. I've tried not to caricature them, but they are simplified; apologies if anyone feels I'm putting words into their mouths.

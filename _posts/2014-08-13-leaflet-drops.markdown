@@ -5,8 +5,6 @@ date: 2014-08-13 16:50
 comments: true
 categories: election
 ---
-*This is part of my series about standing as an MP. See the [election category](/blog/categories/election/) for other posts.*
-
 This morning, I learnt a bit about leafletting. As a candidate, the bare minimum for a campaign has to be getting a leaflet through every door, so that people are informed of their choices (although a good half the candidates at the 2010 election didn't manage that).
 
 I figured this would be a major cost; I'm amazed how wrong that turned out to be.

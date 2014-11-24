@@ -5,8 +5,6 @@ date: 2014-06-27 10:18
 comments: true
 categories: election democracy
 ---
-*This is part of my series about standing as an MP. See the [election category](/blog/categories/election/) for other posts.*
-
 I've got an exciting announcement to make; **in May 2015, I'm planning to stand in the
 general election to be MP for Horsham**. I'll be running on the
 principles in the [OpenPolitics Manifesto](http://openpolitics.org.uk),

@@ -5,8 +5,6 @@ date: 2014-08-05 23:11
 comments: true
 categories: election
 ---
-*This is part of my series about standing as an MP. See the [election category](/blog/categories/election/) for other posts.*
-
 Last night was our first Horsham election meetup, and while very useful, it's left so many thoughts swirling around my brain that it's hard to get them in any kind of order. These, I think, were the main outcomes for me:
 
 ## Independent movement

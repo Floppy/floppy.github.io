@@ -5,8 +5,6 @@ date: 2014-08-31 19:22
 comments: true
 categories: election
 ---
-*This is part of my series about standing as an MP. See the [election category](/blog/categories/election/) for other posts.*
-
 I'm on the train on the way home from [Electromagnetic Field 2014](http://emfcamp.org). It's a sort of technology / maker festival in a field near Milton Keynes. Imagine a load of tech geeks camping in tents with laser cutters, LEDs, laptops, excellent wifi, and a robot that makes cocktails. It's an amazing place.
 
 I was lucky enough to get a speaking slot to talk about my current project, standing for Parliament next year. As it happened, there were two other talks on a similar theme; [Tom Watson MP](https://twitter.com/tom_watson) spoke about [DRIP](/blog/2014/07/14/drip-an-open-letter-to-francis-maude/), and [Dan Jellinek](http://www.danjellinek.com/) talked about digital democracy ideas and tools, so there was a common thread between all our talks.

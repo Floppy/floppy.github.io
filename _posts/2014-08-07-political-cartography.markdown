@@ -5,8 +5,6 @@ date: 2014-08-07 20:30
 comments: true
 categories: election
 ---
-*This is part of my series about standing as an MP. See the [election category](/blog/categories/election/) for other posts.*
-
 One thing you really need to know when standing as a candidate is what areas are actually part of your constituency. Constituencies are pretty weird shapes, especially out in the country, and the area is probably larger than you think. So, time to find out for sure.
 
 Fortunately the Ordnance Survey makes this easy. Their [Election Maps](http://www.ordnancesurvey.co.uk/election-maps/gb/) service shows all the constituency, ward, and other boundaries you might want in a nice map format. Enter your constituency name in the box, choose the right one, and you get something like this (apologies for the screenshot, there's no way to embed):

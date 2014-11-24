@@ -5,8 +5,6 @@ date: 2014-06-30 16:35
 comments: true
 categories: election
 ---
-*This is part of my series about standing as an MP. See the [election category](/blog/categories/election/) for other posts.*
-
 A few days ago, I announced that [I intend to stand for Parliament next May](/blog/2014/06/27/standing-for-parliament-in-2015). Since then, I've had a bunch of really great feedback (thank you all!), suggestions, and questions. Lots of questions have been about the process of standing, and about how complex it is.
 
 The entertaining thing is that I've had to answer most these with an "I don't know", as I really don't at this stage. Really all I've got so far is an intent, a lack of self-control, and am comfortable with the fact that [I have no idea what I'm doing](http://codon.com/i-have-no-idea-what-im-doing).

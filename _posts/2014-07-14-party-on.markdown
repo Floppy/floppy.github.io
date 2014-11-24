@@ -5,8 +5,6 @@ date: 2014-07-14 11:42
 comments: true
 categories: election
 ---
-*This is part of my series about standing as an MP. See the [election category](/blog/categories/election/) for other posts.*
-
 Currently, I'm intending to stand as an Independent candidate. I believe that candidates should be a lot more independent, and that parties, while useful for some things, tend to wield far too much power.
 
 However, we find ourselves in a political climate that doesn't reward the independent, and doesn't allow lone voices through. Also, there are some built-in biases in the system against the independent candidate.
