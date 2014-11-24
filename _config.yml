@@ -27,6 +27,9 @@ code_dir: downloads/code
 category_dir: blog/categories
 markdown: kramdown
 
+gems:
+  - jekyll-sitemap
+  
 paginate: 3           # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
