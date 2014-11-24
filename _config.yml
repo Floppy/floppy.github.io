@@ -9,7 +9,6 @@ author: James Smith
 simple_search: http://google.com/search
 description:
 include: [.well-known]
-exclude: ["vendor"]
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -79,25 +78,12 @@ google_plus_one_size: medium
 googleplus_user: 106927026319199661821
 googleplus_hidden: false
 
-# Pinboard
-pinboard_user:
-pinboard_count: 3
-
-# Delicious
-delicious_user:
-delicious_count: 3
-
 # Disqus Comments
 disqus_short_name: floppyorguk
 disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id: UA-2310810-2
-
-# Facebook Like
-facebook_like: false
-
-#linkedin_user:
 
 ## Theme settings
 
