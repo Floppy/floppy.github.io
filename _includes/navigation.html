@@ -8,6 +8,9 @@
     {% if site.email %}
     <li><a href="mailto:{{ site.email }}" title="Email"><i class="fa fa-lg fa-envelope social-navbar"></i></a></li>
     {% endif %}
+    {% if site.keybase_user %}
+    <li><a href="http://keybase.io/{{ site.keybase_user }}" title="Keybase Profile"><i class="fa fa-lg fa-key social-navbar"></i></a></li>
+    {% endif %}
     {% if site.github_user %}
     <li><a href="http://github.com/{{ site.github_user }}" title="Github Profile"><i class="fa fa-lg fa-github social-navbar"></i></a></li>
     {% endif %}

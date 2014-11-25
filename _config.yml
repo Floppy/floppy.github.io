@@ -43,6 +43,9 @@ titlecase: true       # Converts page and post titles to titlecase
 # Github repositories
 github_user: Floppy
 
+# Keybase.io
+keybase_user: floppy
+
 # Twitter
 twitter_user: floppy
 twitter_tweet_button: true
