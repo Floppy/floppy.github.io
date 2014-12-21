@@ -3,6 +3,7 @@ layout: post
 title: "The Ghost of Open Data Future"
 date: 2014-12-21 21:07
 comments: true
+categories: ["open data"]
 ---
 
 *This is a transcript of my part of the ODI Friday Lunchtime Lecture on 19th December, titled ["A Christmas Carol - The ghosts of open data’s past, present and future"](http://theodi.org/lunchtime-lectures/friday-lunchtime-lecture-a-christmas-carol-the-ghosts-of-open-datas-past-present-and-future)*
