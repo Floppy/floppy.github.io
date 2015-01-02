@@ -57,6 +57,8 @@ I think we might look back at this as a pivotal moment in the evolution of the n
 
 ### ["I Have No Idea What I'm Doing"](http://codon.com/i-have-no-idea-what-im-doing), by Tom Stuart
 
+OK, a transcript of a talk rather than an article:
+
 <iframe src="//player.vimeo.com/video/96882197" width="100%" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 I've come to realise that the point at which you reach actual adulthood and freedom is when you realise that *everyone* is just making up life as they go along, and proceeding in the same kind of accidental random walk as you are. I find that very very freeing, personally. Nobody else has a plan either, so they've got no right to look down on any of yours. Anyone who looks like they know what's going on is just putting on a facade.
@@ -65,7 +67,7 @@ I've come to realise that the point at which you reach actual adulthood and free
 
 ### Elon Musk
 
-Tough competition here, with many other worthy people doing amazing things, but Musk's opening of the Tesla patents tips him over the top for me. He's fixing the future with electric vehicles and space travel, and sharing his knowledge with the world. Inspiring stuff.
+Tough competition here, with many other worthy people doing amazing things, but Musk's [opening of the Tesla patents](http://www.teslamotors.com/blog/all-our-patent-are-belong-you) tips him over the top for me. He's fixing the future with electric vehicles and space travel, and sharing his knowledge with the world. Inspiring stuff.
 
 <iframe width="100%" height="315" src="//www.youtube.com/embed/TLp6Y7YZbRw" frameborder="0" allowfullscreen></iframe>
 
