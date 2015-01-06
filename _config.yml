@@ -8,6 +8,7 @@ author: James Smith
 simple_search: http://google.com/search
 description:
 include: [.well-known]
+exclude: [vendor]
 
 date_format: "ordinal"
 
