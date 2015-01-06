@@ -8,7 +8,7 @@ tags:
 - ruby
 ---
 <p>
-The other day, I remembered to add coverage analysis to my <a href="http://github.com/Floppy/amee-ruby">AMEE-Ruby</a> tests, using <a href="http://">rcov</a>. The results were pretty good - most of the code was already tested, except a few failure cases, and I quickly wrote some new tests to make sure those were working properly. One little bit of code stood out though. Because AMEE talks XML and JSON, my gem can use JSON, but only if the JSON gem is available on the system (XML support is built into core Ruby). Problem is, require calls throw errors if they fail, so I had to write some code to handle the load failure and carry on regardless. This is the code inside amee.rb:
+The other day, I remembered to add coverage analysis to my <a href="http://github.com/Floppy/amee-ruby">AMEE-Ruby</a> tests, using <a href="https://github.com/relevance/rcov">rcov</a>. The results were pretty good - most of the code was already tested, except a few failure cases, and I quickly wrote some new tests to make sure those were working properly. One little bit of code stood out though. Because AMEE talks XML and JSON, my gem can use JSON, but only if the JSON gem is available on the system (XML support is built into core Ruby). Problem is, require calls throw errors if they fail, so I had to write some code to handle the load failure and carry on regardless. This is the code inside amee.rb:
 </p>
 
 <p>
