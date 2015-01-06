@@ -28,8 +28,6 @@ markdown: kramdown
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
-  
-paginate: 1           # Posts per page on the blog index
 
 titlecase: true       # Converts page and post titles to titlecase
 
@@ -68,6 +66,6 @@ navigation:
 - text: Home
   url: /
 - text: Archive
-  url: /blog/archives
+  url: /blog
 - text: Code
   url: /code
