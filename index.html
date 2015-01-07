@@ -4,15 +4,11 @@ layout: default
 {% include header.html %}
 <div class="blog-index">
   {% assign index = true %}
-  {% for post in paginator.posts %}
+  {% assign post = site.posts[0] %}
   {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-    {% unless post == paginator.posts.last %}
-    <hr>
-    {% endunless %}
-  {% endfor %}
+  <article>
+    {% include article.html %}
+  </article>
   <div class="pagination">
     <a class="prev" href="/blog">&larr; Older Posts</a>
   </div>
