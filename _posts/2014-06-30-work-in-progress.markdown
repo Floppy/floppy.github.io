@@ -45,9 +45,9 @@ You get your deposit back if you gain 5% of the votes cast; in Horsham I think t
 
 ## Time to announce
 
-So, I think it's legal to do what I'm trying to do. I love working in the open, so I guess it's time to tell people! I wrote a blog post, but then realised that people might want to express an interest, so cobbled together a landing page at [openhorsham.org.uk](http://openhorsham.org.uk).
+So, I think it's legal to do what I'm trying to do. I love working in the open, so I guess it's time to tell people! I wrote a blog post, but then realised that people might want to express an interest, so cobbled together a landing page at openhorsham.org.uk (which has since been replaced by [horsham.somethingnew.org.uk](http://horsham.somethingnew.org.uk).
 
-There's a [mailchimp](http://mailchimp.com) mailing list, and a [Facebook](http://facebook.com/openhorsham) page; both were easy to set up, and I should be fine on the free mailchimp plan for a long time. Both will let me get in touch with people who are interested in spreading the word. I'm also trying out [GoSquared](http://gosquared.com) to count website visitors - they promise not to share visitor data with others, so it's privacy-friendly.
+There's a [mailchimp](http://mailchimp.com) mailing list, and a [Facebook](http://facebook.com/somethingnewhorsham) page; both were easy to set up, and I should be fine on the free mailchimp plan for a long time. Both will let me get in touch with people who are interested in spreading the word. I'm also trying out [GoSquared](http://gosquared.com) to count website visitors - they promise not to share visitor data with others, so it's privacy-friendly.
 
 Incidentally, I chose a Facebook page rather than a group. Facebook doesn't make it massively clear which is appropriate for what, but as this is a contact point for a *thing*, a page seemed more sensible.
 

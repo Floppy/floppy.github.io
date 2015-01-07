@@ -110,7 +110,7 @@ Nothing fundamentally stops earlier merging, and that does happen sometimes for 
 
 The robot also helps with making the information more accessible. It sends tweets from
 [@OpenPoliticsUK](http://twitter.com/openpoliticsuk) for new changes, and notifies our  [#openpolitics IRC channel](irc://irc.freenode.net#openpolitics). It also
-has a few web pages that [list vote status](http://votebot.openpolitics.org.uk/227) in a simple way, so we can see who's taking
+has a few web pages that list vote status in a simple way, so we can see who's taking
 part, who's voted which way. There is also a [user page](http://votebot.openpolitics.org.uk/users/Floppy) for every contributor that shows
 what they have and haven't voted on.
 
