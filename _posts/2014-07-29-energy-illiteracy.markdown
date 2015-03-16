@@ -14,6 +14,6 @@ Perhaps someone can explain to me why we seem so obsessed with propping up the e
 
 It seems to me that the conservative side of British politics is not concerned with conserving our countryside, our society, our future, or anything else, but instead with conserving the ways that they and their friends got their money and power.
 
-I'd much rather the country followed the model of Balcombe, right here in Horsham constituency. When presented with the threat of fracking, they didn't just say NO (though they did), they then created [Repower Balcombe](http://www.repowerbalcombe.com/our-mission/) to provide 100% of their own energy from renewable sources.
+I'd much rather the country followed the model of Balcombe, right here in Horsham constituency. When presented with the threat of fracking, they didn't just say NO (though they did), they then created [Repower Balcombe](http://www.repowerbalcombe.com) to provide 100% of their own energy from renewable sources.
 
 This kind of thinking is how we move forward to the future, not by propping up the profits of outdated energy production industries and hedge fund managers for a few more months.

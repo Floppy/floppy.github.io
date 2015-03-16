@@ -25,7 +25,7 @@ Now, that may still be the case for most people in politics, but for
 me it's utterly changed over the last few weeks.
 
 I *love* 38 Degrees emails and the like. I love days where
-a campaign obviously kicks in and I get over 100 emails about [TTIP](www.somethingnew.org.uk/ttip_putting_corporations_first), or something
+a campaign obviously kicks in and I get over 100 emails about [TTIP](http://www.somethingnew.org.uk/ttip_putting_corporations_first), or something
 like that.
 
 Many candidates will see this as spam, but not me. Why not? Because I know how to
