@@ -64,8 +64,7 @@ Here's what it does:
     and apply a tag.
  * Find the address, and run it through [Open Addresses](http://openaddressesuk.org)' [Sorting Office](http://sorting-office.openaddressesuk.org)
     app (which I helped write at work) to turn it into structured data. Note we don't
-    submit the address into Open Addresses, as there isn't consent from the sender to do
-    so.
+    submit the address into Open Addresses, as even though the existence of an address isn't personal information,  it feels like it is, and I don't want to annoy anyone.
  * Set the address for the sender back into NationBuilder. This also does auto-assignment
     to wards, constituencies, etc.
 
