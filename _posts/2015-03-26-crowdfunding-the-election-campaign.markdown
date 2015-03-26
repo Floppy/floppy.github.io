@@ -14,7 +14,7 @@ After rather a long delay, I've finally got my crowdfunding campaign launched fo
 
 1. It shows that it's possible to stand without rich donors bankrolling you. Limiting party donations to individuals only (and only up to £5000) is [part of our manifesto](http://openpolitics.org.uk/manifesto/democracy.html#party-funding), so it's important to show that it can work!
 
-2. It helps our transparency agenda; we'll be publishing the details of all our donors (not just those we have to) in our open accounts, so everyone can see who's backing us.
+2. It helps our transparency agenda; we'll be publishing the details of all our donors (not just those we have to) in our [open accounts](https://somethingnewuk.github.io/finances/), so everyone can see who's backing us.
 
 ## What's it for?
 
@@ -27,7 +27,7 @@ I'm raising money for the following:
 
 So, all in all, that's why the stretch goal on the crowdfunding campaign is £3000. We *need* £2000 to scrape by as a useful campaign, but the more we have the more we can do!
 
-Bear in mind that all this will be published openly in our accounts, which are 100% transparent, so there's no danger of your money being funnelled offshore to my swiss bank account, or something.
+Bear in mind that all this will be published openly in our [accounts](https://somethingnewuk.github.io/finances/), which are 100% transparent, so there's no danger of your money being funnelled offshore to my swiss bank account, or something.
 
 ## How to crowdfunding
 
