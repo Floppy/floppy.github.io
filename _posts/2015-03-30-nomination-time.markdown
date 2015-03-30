@@ -12,7 +12,9 @@ categories: election
 
 Today is the 30th March, and at midnight Parliament was officially dissolved for the election. That means that it's time for everything to kick off, and the first thing is to get nomination sorted.
 
-A while ago, I got in touch with our local elections officer to let her know that I was intending to stand. She sent the forms a few weeks ago, and on Wednesday I have an appointment at 10am to go and hand them in. I booked in as early as I could so that I'd have time to fix any problems; nominations are only open until 4pm on April 9th, and after that it's all over. As it's Easter weekend in between, I thought it best to give myself plenty of contingency time.
+A while ago, I got in touch with our local elections officer to let her know that I was intending to stand. She sent the forms a few weeks ago, and on Wednesday I have an appointment at 10am to go and hand them in, which you have to do in person. 
+
+I booked in as early as I could so that I'd have time to fix any problems; nominations are only open until 4pm on April 9th, and after that it's all over. As it's Easter weekend in between, I thought it best to give myself plenty of contingency time.
 
 Anyway, let's take a look at the forms themselves. As well as getting the forms from the elections office, you can [download standard forms](http://www.electoralcommission.org.uk/__data/assets/pdf_file/0008/183437/Nomination-pack-incl-election-agent-notification-form.pdf) from the Electoral Commission website, which is helpful. However, if you are standing, I'd get them from the local returning officer - they might have done something a bit different, you never know.
 
