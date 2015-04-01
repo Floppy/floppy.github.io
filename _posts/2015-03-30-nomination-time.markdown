@@ -6,10 +6,6 @@ comments: true
 categories: election
 ---
 
-<div class='pull-right' style='line-height: auto'>
-  <script type="text/javascript" src="http://www.crowdfunder.co.uk/something-new-for-horsham/widget.js/"></script>
-</div>
-
 Today is the 30th March, and at midnight Parliament was officially dissolved for the election. That means that it's time for everything to kick off, and the first thing is to get nomination sorted.
 
 A while ago, I got in touch with our local elections officer to let her know that I was intending to stand. She sent the forms a few weeks ago, and on Wednesday I have an appointment at 10am to go and hand them in, which you have to do in person. 

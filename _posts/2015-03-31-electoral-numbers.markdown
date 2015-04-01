@@ -6,10 +6,6 @@ comments: true
 categories: election
 ---
 
-<div class='pull-right' style='line-height: auto'>
-  <script type="text/javascript" src="http://www.crowdfunder.co.uk/something-new-for-horsham/widget.js/"></script>
-</div>
-
 Last night I went around rounding up signatures for nominations, and checking the signers against the electoral register. This is a short story about consistency of naming and data.
 
 The form has two columns for the "electoral number" for each signer. The headings on mine were "Distinctive letter", and "Number".

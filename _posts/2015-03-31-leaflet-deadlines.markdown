@@ -6,10 +6,6 @@ comments: true
 categories: election
 ---
 
-<div class='pull-right' style='line-height: auto'>
-  <script type="text/javascript" src="http://www.crowdfunder.co.uk/something-new-for-horsham/widget.js/"></script>
-</div>
-
 It's getting close to the election, and we're starting our leaflet design process. The Royal Mail send out a free leaflet, as [I discovered last year](/blog/2014/08/13/leaflet-drops/), but now we need to actually get them made.
 
 I called up the [Royal Mail candidate mailing](http://www.royalmail.com/corporate/electoral-services/candidate-mailing) department this morning, and spoke to a very helpful chap to confirm all the deadlines, etc. This is my calendar, working backwards:

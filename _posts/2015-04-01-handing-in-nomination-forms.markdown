@@ -6,10 +6,6 @@ comments: true
 categories: election
 ---
 
-<div class='pull-right' style='line-height: auto'>
-  <script type="text/javascript" src="http://www.crowdfunder.co.uk/something-new-for-horsham/widget.js/"></script>
-</div>
-
 I'm currently sitting in the election services office of Horsham District Council, waiting for my nomination forms to be checked, and I've learned a couple of new things.
 
 ## Agent Appointment Form

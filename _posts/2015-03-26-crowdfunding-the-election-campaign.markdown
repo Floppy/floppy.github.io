@@ -6,10 +6,6 @@ comments: true
 categories: election
 ---
 
-<div class='pull-right' style='line-height: auto'>
-  <script type="text/javascript" src="http://www.crowdfunder.co.uk/something-new-for-horsham/widget.js/"></script>
-</div>
-
 After rather a long delay, I've finally got my crowdfunding campaign launched for the election. This is a big part of the whole thing, and not just because it raises the money I need to do this right.
 
 1. It shows that it's possible to stand without rich donors bankrolling you. Limiting party donations to individuals only (and only up to £5000) is [part of our manifesto](http://openpolitics.org.uk/manifesto/democracy.html#party-funding), so it's important to show that it can work!
