@@ -30,4 +30,10 @@ So, to summarise my understanding so far, your nominators must:
 
 Bear all that in mind when you do your forms.
 
-Now, where's my agent form got to?
+## Party description
+
+Last thing - the party description that you write on the form will be the *only* textual thing that identifies you as a party. You don't automatically get the party name as well. I didn't realise this, but fortunately our description includes the party name, and the logo includes the name text, so I'm sticking with what we had.
+
+![Description](/images/descriptions.png)
+
+So, if your description doesn't include the party name and your logo is a bit more abstract, you might want to think again.
