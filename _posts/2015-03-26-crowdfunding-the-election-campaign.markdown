@@ -27,7 +27,7 @@ Bear in mind that all this will be published openly in our [accounts](https://so
 
 ## How to crowdfunding
 
-When I first started looking at crowdfunding last summer, it was all a bit vague. The Electoral Commission weren't quite sure, and none of the crowdfunding sites had really done it before. Since then, however, as I've been busy doing other things, it's all changed. Crowdfunder have put the work in to supporting political campaigns, and have even written a handy [guide on how to do it](http://www.crowdfunder.co.uk/blog/2015/03/how-to-use-crowdfunding-for-general-election-political-projects/).
+When I first started looking at crowdfunding last summer, it was all a bit vague. The Electoral Commission weren't quite sure, and none of the crowdfunding sites had really done it before. Since then, however, as I've been busy doing other things, it's all changed. Crowdfunder have put the work in to supporting political campaigns, and have even written a handy [guide on how to do it](http://www.crowdfunder.co.uk/blog/how-to-use-crowdfunding-for-general-election-political-projects/).
 
 They've got a massive number of political campaigns on there now, covering all the main parties, so it was a no-brainer to use their expertise.
 
