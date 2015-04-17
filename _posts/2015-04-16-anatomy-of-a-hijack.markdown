@@ -67,26 +67,26 @@ Finally, after a fraught hour on the phone, I can relax a bit. We're safe it see
 
 It seems the fraudster and I were interleaving calls all day.
 
-After my first call, coincidentally, he called the bank and pretended to be me. The
-number was withheld, but he identified and passed security by giving my name, address, 
+After my first call, coincidentally, they called the bank and pretended to be me. The
+number was withheld, but they identified and passed security by giving my name, address, 
 email, mobile number, card number and expiry.
 
 As you might notice, all of that would be available to a store with whom I ordered something online.
-And that got him all the way into my account, or at least far enough for the next part. So much
+And that got them all the way into my account, or at least far enough for the next part. So much
 for security; we know that the security questions that protect the account online *weren't asked*.
 
-Anyway, once he was in there, I guess he looked up the most recent direct debits; found my mobile operator, 
-and got the last amount I paid them. He then reset the security PIN (hence my failure to get in on the 
+Anyway, once they where in there, I guess they looked up the most recent direct debits; found my mobile operator, 
+and got the last amount I paid them. They then reset the security PIN (hence my failure to get in on the 
 second call) and called my mobile operator to swap the SIM cards for my number.
 
-He got control of my mobile number pretty much straight away; how do criminals get this level of 
+They got control of my mobile number pretty much straight away; how do criminals get this level of 
 service? Normally moving a number is a total pain in the arse. 
 
-Anyway, once he had that, he called the bank back (I was probably already on the phone to the operator at this
+Anyway, once they had that, they called the bank back (I was probably already on the phone to the operator at this
 point), and with the extra identification of calling on my number, initiated the transfer. The 
 bank were suspicious though;
-they called my number back, and got him again, but weren't happy about the response. They locked everything 
-down, and his ride was over.
+they called my number back, and got them again, but weren't happy about the response. They locked everything 
+down, and their ride was over.
 
 ## What went right?
 
@@ -118,8 +118,8 @@ companies asking for them, and denying callers access even if it pisses off a cu
 My digital security is good; unique strong passwords, held in a secure password store 
 behind another strong password. It would be hard to compromise. However, this attacker
 had only a bunch of data that you could hoover up from any online store order. Nothing
-specifically about me - he didn't know who I was, where I went to school, my mothers' maiden
-name, nothing. But it was enough to convince the bank that he was me. Social engineering is,
+specifically about me - they didn't know who I was, where I went to school, my mothers' maiden
+name, nothing. But it was enough to convince the bank that they were me. Social engineering is,
 as always, the best way to break security.
 
 I guess that the banks and mobile companies have to deal with a lot of people who forget their
@@ -140,11 +140,11 @@ into the bank account in a read-only capacity, followed by the phone hijack and 
 final transfer attack.
 
 While the later stages can seem more secure, a simple breach earlier on can leak more information
-that allows the attacker to escalate his privileges.
+that allows the attacker to escalate their privileges.
 
 Also, attackers *know* which attacks to use for particular services. It seems likely that the first
 call to the bank was intentionally looking for more information to escalate privileges with. Once
-he found my mobile operator, he knew that they would take the direct debit details as proof, so off he went.
+they found my mobile operator, they knew that they would take the direct debit details as proof, so off they went.
 
 ### SMS two-factor security is not good enough
 
