@@ -27,7 +27,7 @@ respectively.
 
 That may not sound like a lot, but when compared to other small parties and independents,
 we did great! We've tallied a [list of other candidates](https://docs.google.com/spreadsheets/d/19x3dHw_CZA3DGejNzzkJtFSlChdT8HcqpRvmoN_fiTQ/edit?usp=sharing) standing on future-democracy type platforms,
-and both our results come right up at the top. Doing that in our first election, in very
+and both our results come right up near the top. Doing that in our first election, in very
 (small c and big C) conservative areas, is something to be proud of.
 
 I think that shows that we have something here worth building on, and so I'd like
