@@ -10,11 +10,11 @@ tags:
 - webrick
 ---
 <p>
-So, the other day I got a nice little <a href="/blog/2008/08/22/some-successful-currentcost-hacking">tray icon</a> working for my CurrentCost power monitor. That&#8217;s great, but data is only really gets fun when it&#8217;s mashable, so the next step was to get it online somehow.
+So, the other day I got a nice little <a href="/blog/2008/08/22/some-successful-currentcost-hacking">tray icon</a> working for my CurrentCost power monitor. That's great, but data is only really gets fun when it's mashable, so the next step was to get it online somehow.
 </p>
 
 <p>
-<a href="http://pachube.com">Pachube</a> is a site which aggregates data feeds from real-world (and virtual-world) devices, shows them on a map, makes graphs, things like that, so it seemed like a good first attempt at putting my power data online. My first thought was to get my app to post data at regular intervals to the service, but unfortunately Pachube doesn&#8217;t work like that. Instead, it acts more like a news reader, not a publishing platform - Google Reader instead of Blogger, if that makes sense. So, I had to publish my feed live on the web and point Pachube at the URL.
+<a href="http://pachube.com">Pachube</a> is a site which aggregates data feeds from real-world (and virtual-world) devices, shows them on a map, makes graphs, things like that, so it seemed like a good first attempt at putting my power data online. My first thought was to get my app to post data at regular intervals to the service, but unfortunately Pachube doesn't work like that. Instead, it acts more like a news reader, not a publishing platform - Google Reader instead of Blogger, if that makes sense. So, I had to publish my feed live on the web and point Pachube at the URL.
 </p>
 
 <p>
@@ -22,7 +22,7 @@ First step: EEML. This is an XML-based format which Pachube reads which can cont
 </p>
 
 <p>
-Then, the final step was to publish the data on the web. For that, we need a web server. However, having a full web server for just one feed seemed overkill, and I didn&#8217;t want to publish to yet another intermediate server, so we need to serve the data directly. Ruby to the rescue once again. WEBrick is a simple web server which is part of the core Ruby libraries. You create a server, write simple servlet classes, and mount them at particular locations. For instance:
+Then, the final step was to publish the data on the web. For that, we need a web server. However, having a full web server for just one feed seemed overkill, and I didn't want to publish to yet another intermediate server, so we need to serve the data directly. Ruby to the rescue once again. WEBrick is a simple web server which is part of the core Ruby libraries. You create a server, write simple servlet classes, and mount them at particular locations. For instance:
 </p>
 
 <p>
@@ -34,5 +34,5 @@ class HelloServlet
 </code></p>
 
 <p>
-Now, http://localhost:50000/ will say &#8220;hello world". From here it&#8217;s a simple modification to publish the EEML feed. EEML-Ruby includes a <a href="http://github.com/Floppy/eeml-ruby/tree/master/examples/simple_server.rb">simple EEML server script</a> as an example. So, after building this into the tray app, now whenever my CurrentCost is connected and the app is running, it serves up EEML data to the web. You can see the data feed (fairly intermittent, as obviously the meter isn&#8217;t always connected to my PC at the moment) <a href="http://pachube.com/feeds/488">live on Pachube</a>.
+Now, http://localhost:50000/ will say "hello world". From here it's a simple modification to publish the EEML feed. EEML-Ruby includes a <a href="http://github.com/Floppy/eeml-ruby/tree/master/examples/simple_server.rb">simple EEML server script</a> as an example. So, after building this into the tray app, now whenever my CurrentCost is connected and the app is running, it serves up EEML data to the web. You can see the data feed (fairly intermittent, as obviously the meter isn't always connected to my PC at the moment) <a href="http://pachube.com/feeds/488">live on Pachube</a>.
 </p>

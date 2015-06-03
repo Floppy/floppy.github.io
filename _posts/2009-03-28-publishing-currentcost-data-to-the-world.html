@@ -14,7 +14,7 @@ A while ago, I started hacking around with a <a href="http://www.currentcost.co.
 </p>
 
 <p>
-Well, eventually I decided that while being able to get data off the meter was nice, it would be better if I could publish it somewhere. So, I wrote a program in Ruby to do exactly that. It reads data from the meter, and sticks it on the web. I&#8217;ll go into a bit more detail in a minute, but first, you can download it (and get the source code) from <a href="http://github.com/Floppy/currentcost-daemon/">github</a>.
+Well, eventually I decided that while being able to get data off the meter was nice, it would be better if I could publish it somewhere. So, I wrote a program in Ruby to do exactly that. It reads data from the meter, and sticks it on the web. I'll go into a bit more detail in a minute, but first, you can download it (and get the source code) from <a href="http://github.com/Floppy/currentcost-daemon/">github</a>.
 </p>
 
 <p>
@@ -24,23 +24,23 @@ The program operates as a system daemon, which runs in the background on your Li
 <h3>The Carbon Diet</h3>
 
 <p>
-First up, my own site, <a href="http://www.carbondiet.org">The Carbon Diet</a>. This uploads your daily usage history from the meter into your carbon diet account so that you don&#8217;t have to take so many meter readings to get an accurate graph. This is still pretty experimental and needs more work, but it&#8217;s pretty useful already. You can see how it looks on <a href="http://www.carbondiet.org/profile/james">my profile</a>.
+First up, my own site, <a href="http://www.carbondiet.org">The Carbon Diet</a>. This uploads your daily usage history from the meter into your carbon diet account so that you don't have to take so many meter readings to get an accurate graph. This is still pretty experimental and needs more work, but it's pretty useful already. You can see how it looks on <a href="http://www.carbondiet.org/profile/james">my profile</a>.
 </p>
 
 <h3>AMEE</h3>
 
 <p>
-Next, what I think of as the important one. <a href="http://www.amee.com">AMEE</a>, if you&#8217;re not aware, AMEE is a neutral aggregation platform for sharing energy data and carbon calculations (disclaimer: I work for them these days). Think OpenID for your energy identity. Anyway, we have a nice &#8220;smart meter" demo which uses my currentcost app as the data source. Every minute, it uploads into an AMEE profile, and then another app makes a nice graph of the CO2 produced. In theory, the Carbon Diet could pull that data from AMEE instead of me publishing it directly, but that&#8217;s still to come.
+Next, what I think of as the important one. <a href="http://www.amee.com">AMEE</a>, if you're not aware, AMEE is a neutral aggregation platform for sharing energy data and carbon calculations (disclaimer: I work for them these days). Think OpenID for your energy identity. Anyway, we have a nice "smart meter" demo which uses my currentcost app as the data source. Every minute, it uploads into an AMEE profile, and then another app makes a nice graph of the CO2 produced. In theory, the Carbon Diet could pull that data from AMEE instead of me publishing it directly, but that's still to come.
 </p>
 
 <h3>Pachube</h3>
 
 <p>
-Another energy data sharing service is <a href="http://www.pachube.com">Pachube</a> (pronounced &#8220;patch bay"). As far as I can tell, this is more geared at art and design than rigorous data, but it&#8217;s fun to play with. They&#8217;ve done a bunch of stuff with the CurrentCost, and now my app joins the throng. My <a href="http://www.pachube.com/feeds/488">pachube feed</a> updates every 6 seconds - every time the meter sends data out.
+Another energy data sharing service is <a href="http://www.pachube.com">Pachube</a> (pronounced "patch bay"). As far as I can tell, this is more geared at art and design than rigorous data, but it's fun to play with. They've done a bunch of stuff with the CurrentCost, and now my app joins the throng. My <a href="http://www.pachube.com/feeds/488">pachube feed</a> updates every 6 seconds - every time the meter sends data out.
 </p>
 
 <h3>Twitter</h3>
 
 <p>
-Finally, what would be the point of a web energy publisher if it couldn&#8217;t tweet? If you really want to, you can see my minute-by-minute energy usage on Twitter by visiting <a href="http://twitter.com/james_energy">@james_energy</a>.
+Finally, what would be the point of a web energy publisher if it couldn't tweet? If you really want to, you can see my minute-by-minute energy usage on Twitter by visiting <a href="http://twitter.com/james_energy">@james_energy</a>.
 </p>

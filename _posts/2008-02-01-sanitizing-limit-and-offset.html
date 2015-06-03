@@ -28,7 +28,7 @@ This works fine, but is vulnerable to dodgy things making their way in through t
 </p>
 
 <p>
-This is great for :conditions. However, you can&#8217;t use it with :limit and :offset, despite the fact that they are just as vulnerable to SQL injection. The trick I came up with is this. :limit and :offset are both integers, so simply force the conversion to an integer before using them (checking for nil first, of course):
+This is great for :conditions. However, you can't use it with :limit and :offset, despite the fact that they are just as vulnerable to SQL injection. The trick I came up with is this. :limit and :offset are both integers, so simply force the conversion to an integer before using them (checking for nil first, of course):
 </p>
 
 <p>
@@ -39,9 +39,9 @@ This is great for :conditions. However, you can&#8217;t use it with :limit and :
 </p>
 
 <p>
-This means that no nasty SQL can get in, because it won&#8217;t get through the integer conversion. Simple and effective. Probably blindingly obvious, but I didn&#8217;t find anything online to point me to this solution while I was looking around for :conditions-style sanitizing, so I thought I&#8217;d share.
+This means that no nasty SQL can get in, because it won't get through the integer conversion. Simple and effective. Probably blindingly obvious, but I didn't find anything online to point me to this solution while I was looking around for :conditions-style sanitizing, so I thought I'd share.
 </p>
 
 <p>
-Of course, if I&#8217;ve missed something glaringly obvious, please let me know ;)
+Of course, if I've missed something glaringly obvious, please let me know ;)
 </p>
