@@ -2,7 +2,7 @@
 {% if index %}
   <div class="row-fluid">
     <div class="span2">
-		<h1 class="date-time">{% include post/date.html %}<i class="fa fa-calendar"></i> {{ time }}</h5>
+		<h1 class="date-time">{% include post/date.html %}<i class="fa fa-calendar"></i> {{ time }}</h1>
           <div class="row-fluid">
           {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
           <a href="{% if index %}{{ site.url }}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread">Comments <i class="fa fa-comments"></i></a> 
