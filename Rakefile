@@ -7,7 +7,8 @@ task :test do
     /royalmail.com/
   ]
   
-  HTML::Proofer.new("./_site", ssl_verifypeer: false, timeout: 30, href_ignore: ignored, check_html: true).run
+  HTML::Proofer.new("./_site", ssl_verifypeer: false, timeout: 30, href_ignore: ignored, 
+                    check_html: true, check_favicon: true).run
 end
 
 task :default => :test
