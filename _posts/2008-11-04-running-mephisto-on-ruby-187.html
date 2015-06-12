@@ -10,8 +10,8 @@ tags:
 My server runs Ubuntu, and seeing as 8.10 (Intrepid Ibex) is out, I thought "woo, let's upgrade". Bad idea. Well, partly. Most of the upgrade went fine, but there was one problem. Intrepid comes with Ruby 1,8.7, which works fine with Rails &gt;=2.1, but doesn't work with anything lower. Mephisto, on the other hand, doesn't work with Rails 2.1 yet, and is only usable with Rails 
 
 </p><p><code lang="text" theme="zenburnesque">
-NoMethodError (undefined method `[]' for #<:enumerator:0x2aaaad5f7a58>)
-</:enumerator:0x2aaaad5f7a58></code>
+NoMethodError (undefined method `[]' for #&lt;:enumerator:0x2aaaad5f7a58&gt;)
+</code>
 </p><p>
 So, I was faced with having to downgrade to Ruby 1.8.6 (a royal pain as Intrepid doesn't provide packages for it), or "fix" Mephisto to work with 2.1 (oh my god, don't even get me started). Fortunately, another solution presented itself.
 </p>
