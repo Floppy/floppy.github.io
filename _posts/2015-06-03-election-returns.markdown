@@ -70,6 +70,8 @@ The answer (so far) is that the donations should be listed *as donated*, not wit
 
 The fee will be listed somewhere, though they've yet to get back to me on that. I'm guessing (and will update here when I know) that it will go in as an administration expense under section F.
 
+UPDATE: The commission got back to me, and said that the fees shouldn't be included in the spending return at all. That means it's in the donation figure but not the spending, and so it looks like I've stashed some of the money away! Ah well.
+
 I'm surprised the Commission are still so unprepared for this; wasn't it obvious that it would be a thing this time? Why isn't it explicitly mentioned in the guidance?
 
 ### Deposit
