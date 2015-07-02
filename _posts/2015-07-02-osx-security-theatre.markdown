@@ -84,6 +84,8 @@ I'm interested in these [FIDO U2F keys](https://www.yubico.com/applications/fido
 
 However for something physical that can be lost, I'd want to be sure there was a way of having at least two keys that can unlock things, and obviously it would be hard to use with anything that needs unlocking on iOS.
 
+I also need to work on my network security and privacy. I want to get a VPN routed via my home connection for use while out and about, and some way of easily swapping onto the [Tor](http://torproject.org) network that's got decent usability for when I want to be anonymous (or look like I'm in a different country). I'll follow up with a further post if I get any of that sorted.
+
 ## Summary
 
 Security is complex, but the software tools are finally getting good now that it's not hard. 
