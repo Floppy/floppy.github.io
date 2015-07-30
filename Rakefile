@@ -41,11 +41,11 @@ namespace :generate do
       else
         File.open("blog/categories/#{category}.html", "w") do |f|
           f.write <<-EOF
-            ---
-            layout: archive
-            title: "Blog Archive: #{category.capitalize}"
-            tag: #{category}
-            ---
+---
+layout: archive
+title: "Blog Archive: #{category.capitalize}"
+tag: #{category}
+---
           EOF
         end
       end
