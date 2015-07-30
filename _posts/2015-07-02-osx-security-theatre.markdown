@@ -3,7 +3,8 @@ layout: post
 title: OSX Security Theatre
 date: 2015-07-02 00:00
 comments: true
-categories: security
+categories:
+- security
 ---
 
 I've always been vaguely dissatisfied with my personal security setup. I've been happy it's pretty secure and safe, but the software hasn't been great. However, that's changed recently with a few new releases, so I thought it might be worth sharing my setup with the world. I'm on OSX, so this is specific to that platform, but most things are open source and cross-platform, so there might be something to learn anyway. Also, some of you might tell me how I can improve it even further.

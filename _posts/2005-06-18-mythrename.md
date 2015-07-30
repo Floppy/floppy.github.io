@@ -1,9 +1,8 @@
 ---
 layout: post
 title: MythRename
-tags:
+categories:
 - mythtv
-- perl
 ---
 Here in the UK, T4 (a weekend morning kids show thing) put a "T4:" prefix on the front of every program they show, so rather than "Futurama", you get "T4:Futurama". If you want to record these shows, you need to have two rules, you end up with two different titles in the program list, and you get duplicated episodes.
 

@@ -3,7 +3,8 @@ layout: post
 title: "Political Cartography"
 date: 2014-08-07 20:30
 comments: true
-categories: election
+categories:
+- election
 ---
 One thing you really need to know when standing as a candidate is what areas are actually part of your constituency. Constituencies are pretty weird shapes, especially out in the country, and the area is probably larger than you think. So, time to find out for sure.
 

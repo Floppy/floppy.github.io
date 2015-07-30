@@ -3,7 +3,8 @@ layout: post
 title: Anatomy of a Hijack
 date: 2015-04-16 17:00
 comments: true
-categories: 
+categories:
+- security
 ---
 
 This post is a brief diversion from election updates to recount the story of 

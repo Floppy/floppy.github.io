@@ -3,7 +3,8 @@ layout: post
 title: Election Returns
 date: 2015-06-03 08:30
 comments: true
-categories: election
+categories:
+- election
 ---
 
 I've put it off for too long, and so for the last couple of evenings I've been completing the election spending and donation returns for the Horsham campaign. I was warned that this was an awkward process, but it's been basically fine (though we've not had to do any of the complex stuff).

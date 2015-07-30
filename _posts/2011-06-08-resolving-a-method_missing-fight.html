@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Resolving a method_missing fight
-tags: 
+categories:
+- ruby 
 ---
 <p>Recently, I was writing tests for a piece of code, and came up against some strange problems. The code talks to an external web service using RestClient (1.6.1), so of course the web service is mocked for the tests, in this case using Mocha (0.9.8).</p>
 <p class="western">The problem came when I tried to test failure modes; for instance, what happens when the service comes back with a 401 due to bad credentials? RestClient raises an exception for this containing the response, so the mock has to do the same.</p>

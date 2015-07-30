@@ -3,7 +3,8 @@ layout: post
 title: Handing In Nomination Forms
 date: 2015-04-01 10:00
 comments: true
-categories: election
+categories:
+- election
 ---
 
 I'm currently sitting in the election services office of Horsham District Council, waiting for my nomination forms to be checked, and I've learned a couple of new things.

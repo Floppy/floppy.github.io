@@ -3,7 +3,9 @@ layout: post
 title: "Standing for Parliament in 2015"
 date: 2014-06-27 10:18
 comments: true
-categories: election democracy
+categories: 
+- election 
+- democracy
 ---
 I've got an exciting announcement to make; **in May 2015, I'm planning to stand in the
 general election to be MP for Horsham**. I'll be running on the

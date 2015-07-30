@@ -3,7 +3,8 @@ layout: post
 title: Crowdfunding the election campaign
 date: 2015-03-26 09:05
 comments: true
-categories: election
+categories:
+- election
 ---
 
 After rather a long delay, I've finally got my crowdfunding campaign launched for the election. This is a big part of the whole thing, and not just because it raises the money I need to do this right.

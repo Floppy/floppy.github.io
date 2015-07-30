@@ -3,7 +3,8 @@ layout: post
 title: The Loneliness Of The Long Distance PPC
 date: 2015-02-11 21:28
 comments: true
-categories: election
+categories:
+- election
 ---
 
 I've not been very good at keeping up with the regular blog posts about my election

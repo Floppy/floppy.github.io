@@ -3,7 +3,8 @@ layout: post
 title: Nomination Time
 date: 2015-03-30 16:41
 comments: true
-categories: election
+categories:
+- election
 ---
 
 Today is the 30th March, and at midnight Parliament was officially dissolved for the election. That means that it's time for everything to kick off, and the first thing is to get nomination sorted.

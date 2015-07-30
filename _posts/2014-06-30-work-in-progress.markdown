@@ -3,7 +3,8 @@ layout: post
 title: "Work In Progress"
 date: 2014-06-30 16:35
 comments: true
-categories: election
+categories: 
+- election
 ---
 A few days ago, I announced that [I intend to stand for Parliament next May](/blog/2014/06/27/standing-for-parliament-in-2015). Since then, I've had a bunch of really great feedback (thank you all!), suggestions, and questions. Lots of questions have been about the process of standing, and about how complex it is.
 

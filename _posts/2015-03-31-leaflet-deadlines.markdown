@@ -3,7 +3,8 @@ layout: post
 title: Leaflet Deadlines
 date: 2015-03-31 16:01
 comments: true
-categories: election
+categories:
+- election
 ---
 
 It's getting close to the election, and we're starting our leaflet design process. The Royal Mail send out a free leaflet, as [I discovered last year](/blog/2014/08/13/leaflet-drops/), but now we need to actually get them made.

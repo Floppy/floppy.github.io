@@ -3,7 +3,8 @@ layout: post
 title: "Democracy geeks at EMFCamp 2014"
 date: 2014-08-31 19:22
 comments: true
-categories: election
+categories:
+- election
 ---
 I'm on the train on the way home from [Electromagnetic Field 2014](http://emfcamp.org). It's a sort of technology / maker festival in a field near Milton Keynes. Imagine a load of tech geeks camping in tents with laser cutters, LEDs, laptops, excellent wifi, and a robot that makes cocktails. It's an amazing place.
 

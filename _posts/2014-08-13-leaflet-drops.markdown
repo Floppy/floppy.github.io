@@ -3,7 +3,8 @@ layout: post
 title: "Leaflet Drops"
 date: 2014-08-13 16:50
 comments: true
-categories: election
+categories:
+- election
 ---
 This morning, I learnt a bit about leafletting. As a candidate, the bare minimum for a campaign has to be getting a leaflet through every door, so that people are informed of their choices (although a good half the candidates at the 2010 election didn't manage that).
 

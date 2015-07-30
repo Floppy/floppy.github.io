@@ -3,7 +3,8 @@ layout: post
 title: "Answering back"
 date: 2014-07-22 07:11
 comments: true
-categories: election
+categories:
+- election
 ---
 There are a few of common reactions I get from people when I tell them I'm standing (though by far the response is positive).
 

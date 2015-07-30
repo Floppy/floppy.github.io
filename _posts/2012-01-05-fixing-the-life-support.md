@@ -1,11 +1,9 @@
 ---
 layout: post
 title: Fixing the life support
-tags:
-- society
+categories:
 - politics
-- climate change
-- collapse
+- climate
 ---
 Somehow, this year feels different.
 

@@ -3,7 +3,8 @@ layout: post
 title: Question Time
 date: 2015-03-24 07:51
 comments: true
-categories: election
+categories:
+- election
 ---
 
 Last Saturday, we had the [first hustings event of 2015 in Horsham](http://horsham.somethingnew.org.uk/horsham_cpre_hustings_2015). These were a 

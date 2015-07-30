@@ -3,7 +3,8 @@ layout: post
 title: What's Next For Something New?
 date: 2015-05-12 08:30
 comments: true
-categories: election
+categories:
+- election
 ---
 
 <div class='alert alert-info'>

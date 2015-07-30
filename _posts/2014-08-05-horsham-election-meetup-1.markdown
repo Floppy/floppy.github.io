@@ -3,7 +3,8 @@ layout: post
 title: "Horsham Election Meetup #1"
 date: 2014-08-05 23:11
 comments: true
-categories: election
+categories:
+- election
 ---
 Last night was our first Horsham election meetup, and while very useful, it's left so many thoughts swirling around my brain that it's hard to get them in any kind of order. These, I think, were the main outcomes for me:
 

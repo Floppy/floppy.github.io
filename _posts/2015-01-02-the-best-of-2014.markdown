@@ -3,6 +3,7 @@ layout: post
 title: The Best of 2014
 date: 2015-01-02 17:28
 comments: true
+categories:
 ---
 
 I've seen a few personal reviews of 2014 around the net, so I thought I'd write one to get back into the writing habit. Here are my favourite things from the last year:

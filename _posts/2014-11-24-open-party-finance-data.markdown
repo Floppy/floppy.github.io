@@ -3,7 +3,9 @@ layout: post
 title: "Open Party Finance Data"
 date: 2014-11-24 07:18
 comments: true
-categories: election
+categories:
+- election
+- opendata
 ---
 
 One of the things we want to do with Something New is to be as transparent as we possible can on donations and spending. We do have to report a certain amount to the Electoral Commission, but it's also about walking the talk of openness and transparency.

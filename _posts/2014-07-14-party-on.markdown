@@ -3,7 +3,8 @@ layout: post
 title: "Party On"
 date: 2014-07-14 11:42
 comments: true
-categories: election
+categories:
+- election
 ---
 Currently, I'm intending to stand as an Independent candidate. I believe that candidates should be a lot more independent, and that parties, while useful for some things, tend to wield far too much power.
 

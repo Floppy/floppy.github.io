@@ -3,7 +3,8 @@ layout: post
 title: What did we spend?
 date: 2015-06-12 08:30
 comments: true
-categories: election
+categories:
+- election
 ---
 
 So, the spending returns are done, and *officially*, we raised £1620 in Horsham, but only spent £1195, leaving me with a profit of over £400! That is obvious bullshit, as you can see from our [open accounts](http://somethingnewuk.github.io/finances), so this post is all about what we *actually* spent over the last year. Also, I'll look at what was useful, and what wasn't.

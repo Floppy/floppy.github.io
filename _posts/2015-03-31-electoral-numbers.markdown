@@ -3,7 +3,8 @@ layout: post
 title: Electoral Numbers
 date: 2015-03-31 16:00
 comments: true
-categories: election
+categories:
+- election
 ---
 
 Last night I went around rounding up signatures for nominations, and checking the signers against the electoral register. This is a short story about consistency of naming and data.

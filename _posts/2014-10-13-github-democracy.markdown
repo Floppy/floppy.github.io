@@ -3,7 +3,10 @@ layout: post
 title: "GitHub Democracy"
 date: 2014-10-13 06:45
 comments: true
-categories: politics github election
+categories:
+- politics
+- github
+- election
 ---
 A year and a quarter ago, in a fit of political anger,
 I proposed that a bunch of us should start collaborating

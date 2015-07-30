@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Planet Hopper
-tags:
+categories:
+- hacks
 ---
 A couple of weeks ago, I went along to ISIC in Harwell to take part in the [International Space Apps Challenge](http://spaceappschallenge.org/), run by NASA. Hackdays are always fun, but this one was particularly exciting, because, you know, SPACE!
 

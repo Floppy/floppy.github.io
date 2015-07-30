@@ -3,7 +3,8 @@ layout: post
 title: The Trials of Forming a Party
 date: 2015-06-13 00:00
 comments: true
-categories: election
+categories:
+- election
 ---
 
 Fair warning; this is probably going to be another very long post. It's all about the long and complex story of our party registration for Something New. I've not really told this story before; when I finally could, it was too close to the election to relate, but now there is time.

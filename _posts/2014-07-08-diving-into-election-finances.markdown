@@ -3,7 +3,8 @@ layout: post
 title: "Diving into election finances"
 date: 2014-07-08 19:17
 comments: true
-categories: election
+categories: 
+- election
 ---
 After talking to the electoral commission yesterday, I got interested in what local candidates normally spend on their campaigns.
 

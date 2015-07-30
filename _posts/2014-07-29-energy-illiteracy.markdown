@@ -3,7 +3,9 @@ layout: post
 title: "Energy illiteracy"
 date: 2014-07-29 10:23
 comments: true
-categories: election environment
+categories:
+- election
+- climate
 ---
 
 Earlier this week more licenses were handed out for oil and gas extraction under the UK, and if you live in the Horsham area, it's very likely that [Celtique Energie](https://www.og.decc.gov.uk/eng/fox/decc/PED300X/licence?LICENCE_TYPE=PEDL&LICENCE_NO=243) or [Cuadrilla](https://www.og.decc.gov.uk/eng/fox/decc/PED300X/licence?LICENCE_TYPE=PEDL&LICENCE_NO=244) now have a right to extract the resources under your home. Also, the government are currently [in the process of changing the law](https://www.gov.uk/government/consultations/underground-drilling-access) so that you won't have the right to object to this if it happens.

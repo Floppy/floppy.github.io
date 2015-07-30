@@ -1,7 +1,9 @@
 ---
 layout: post
 title: The need for Cleanweb R&amp;D
-tags: 
+categories: 
+- cleanweb
+- technology
 ---
 The newly-named cleanweb is a strange place. It's all about social change, better sustainability, and other such noble goals, but it's shackled by the demands of today's economy; people with mortgages need proper jobs and investors need returns. The potential is enormous, but the opportunity to really explore it feels tiny. Some companies (like [AMEE](http://www.amee.com)) do explore this space, but are still bound to go with the most commercially-viable opportunities. There's very little space for blue-sky thinking.
 
