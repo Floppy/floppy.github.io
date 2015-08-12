@@ -11,7 +11,7 @@ I know that I don't live a healthy lifestyle; I've known that for years. But, th
 
 The other day though, I got a kick up the arse. I went to the doctor about some new [depression](/blog/categories/depression.html) symptoms, and he did a blood test to check my general health at the same time.
 
-When I called up for the results, the receptionist asked me to schedule another test in six months as I was "glucose intolerant". This was a surprise to me, and the next day I managed to speak to the doctor for more information.
+When I called up for the results, the receptionist asked me to schedule another test in six months as I was "glucose intolerant". This was a [surprise](https://storify.com/Floppy/surprise-diagnosis) to me, and the next day I managed to speak to the doctor for more information.
 
 Basically, I've got [persistently elevated blood glucose](https://en.wikipedia.org/wiki/Impaired_fasting_glucose). I'm only just outside the normal range (HbA1c 6.2), which means it's not type 2 diabetes *yet*, but I'm heading that way. It puts me in a category of risk much higher than normal; 50% risk of type 2 over the next 10 years, for instance.
 
