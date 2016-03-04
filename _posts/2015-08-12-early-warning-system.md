@@ -29,7 +29,7 @@ Let's look at those in turn.
 
 ## Weight
 
-We'll start with the most obvious. I'm overweight, in fact well into obese. I weight in the region of 120kg at the moment, with a BMI of 35.4. This is *far* too much. Apparently to get into a "normal" BMI bracket, I need to lose 35kg, to get down to 85. That's almost a third of my body weight.
+We'll start with the most obvious. I'm overweight, in fact well into obese. I weigh in the region of 120kg at the moment, with a BMI of 35.4. This is *far* too much. Apparently to get into a "normal" BMI bracket, I need to lose 35kg, to get down to 85. That's almost a third of my body weight.
 
 Now, I'm a big chap. I'm 185cm tall, but also I'm pretty broad and have a large ribcage. I know that BMI isn't a good indicator in these situations, but I've not found anything else to give me a target so far. I'm hoping that our [local wellbeing scheme](http://horsham.westsussexwellbeing.org.uk/) can help me work out where I need to get to.
 
