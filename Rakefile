@@ -1,18 +1,24 @@
 require 'html/proofer'
 require 'colorize'
 
-task :test do
+task :rebuild do
+  sh "rm -rf _site"
   sh "bundle exec jekyll build"
-  
+end
+
+task :htmlproofer => :rebuild do
   ignored = [
     /royalmail.com/
   ]
-  
-  HTML::Proofer.new("./_site", typhoeus: {ssl_verifypeer: false, timeout: 30}, href_ignore: ignored, 
-                    check_html: true, check_favicon: true).run
+  HTML::Proofer.new("./_site", 
+    typhoeus: {ssl_verifypeer: false, timeout: 30}, 
+    url_ignore: ignored, 
+    check_html: true, 
+    assume_extension: ".html",
+    check_favicon: true).run
 end
 
-task :default => :test
+task :default => :htmlproofer
 
 namespace :generate do
 
