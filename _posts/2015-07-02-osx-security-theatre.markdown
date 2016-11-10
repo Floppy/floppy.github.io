@@ -29,6 +29,9 @@ However, last week I found [MacPass](https://mstarke.github.io/MacPass/). This i
 
 KeePassHTTP is a little server in your KeePass app that lets other apps access the database locally, and that means *browser integration* finally.
 
+{:.alert}
+**UPDATE**: KeePassHTTP is now supported directly in MacPass using a plugin, so no patch required. Download the standard install of [MacPass](https://mstarke.github.io/MacPass/), then follow the "Using precompiled version" instructions for [MacPassHTTP](https://github.com/MacPass/MacPassHTTP). Works a treat.
+
 ### Browser integration
 
 Browser plugins were the thing that made me jealous of LastPass and 1Password users; yeah, they were potentially giving their passwords away, but it was *so easy*. Now I have MacPass+KeePassHTTP, that's changed.
@@ -40,6 +43,9 @@ I've since turned off all the built-in browser password storage and syncing, and
 ### iOS app
 
 What about on my phone? Well, that's why the database is stored in Dropbox. I use an app called [iKeePass](https://itunes.apple.com/us/app/ikeepass/id299697688?mt=8) which can read the file directly from Dropbox and open it. Then it's a simple click to copy passwords into the iOS browser app. It's not massively trivial, but it's not too hard for the rare times when I need to use it.
+
+{:.alert}
+**UPDATE**: I've changed to using [Keepass Touch](https://itunes.apple.com/us/app/keepass-touch/id966759076?mt=8) instead, which streamlines the process a bit. It still syncs from dropbox, but allows you to unlock the database with Touch ID, which makes everything quicker. It also supports editing the database and creating passwords on iOS, which is great.
 
 ## Encryption
 
@@ -59,7 +65,7 @@ For a long while I was using Apple's built-in Mail app as GPGTools integrated ni
 
 ### Keybase
 
-Of course, if you want to encrypt email, you need other people's keys. You can share in a number of ways through GPGTools, but one of the easiest is to use [Keybase](http://keybase.io/Floppy). It's invite-only (shout on Twitter if you want one, plenty of people have spares, apart from me), and it's basically a way of linking your PGP key to your social network accounts, and letting people get hold of your key easily.
+Of course, if you want to encrypt email, you need other people's keys. You can share in a number of ways through GPGTools, but one of the easiest is to use [Keybase](http://keybase.io/Floppy). It's invite-only (shout on Twitter if you want one, plenty of people have spares, including me), and it's basically a way of linking your PGP key to your social network accounts, and letting people get hold of your key easily.
 
 The one big thing I'd change about Keybase is that they should just get rid of the ability to generate and store a private key on their site. I know they're trying to make it easy, but it's a massive security antipattern and even people who I know have decent technical knowledge have used it; it's just too temptingly simple.
 
