@@ -140,7 +140,7 @@ This is really interesting for my planning. The actual cost of getting a leaflet
 
 ## Learning more
 
-This has given me some really useful insights. I'd recommend having a dig into the figures for your area as well, you might find something interesting! I think this could be a good data-driven website as well - exposing this stuff through a nice data visualisation would be lovely; maybe a project for [Democracy Club](http://twitter.com/democlub)?
+This has given me some really useful insights. I'd recommend having a dig into the figures for your area as well, you might find something interesting! I think this could be a good data-driven website as well - exposing this stuff through a nice data visualisation would be lovely; maybe a project for [Democracy Club](https://twitter.com/democlub)?
 
 You can dig into the data at the link above, and [this guide](http://www.electoralcommission.org.uk/__data/assets/pdf_file/0011/163793/EPE-Part-3-Spending-and-donations-for-individual-candidates.pdf) from the Electoral Commission gives lots more detail on what it all means. It's for the 2014 EU elections, but the concepts are the same, so it's a decent reference. I'll be digging more into that guide as I go along, sorting out my own finances, so more of this to come.
 

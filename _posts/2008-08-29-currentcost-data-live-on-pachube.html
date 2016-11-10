@@ -15,7 +15,7 @@ So, the other day I got a nice little <a href="/blog/2008/08/22/some-successful-
 </p>
 
 <p>
-First step: EEML. This is an XML-based format which Pachube reads which can contain not only multiple data feeds, but tags and other metadata. So (as seems to be the fashion), I wrapped it up in a Ruby gem, <a href="http://github.com/Floppy/eeml-ruby/tree/master">available from GitHub</a> as ever. The gem simply provides utility classes to build an EEML feed and convert it to the XML-based format for delivery over the web.
+First step: EEML. This is an XML-based format which Pachube reads which can contain not only multiple data feeds, but tags and other metadata. So (as seems to be the fashion), I wrapped it up in a Ruby gem, <a href="https://github.com/Floppy/eeml-ruby/tree/master">available from GitHub</a> as ever. The gem simply provides utility classes to build an EEML feed and convert it to the XML-based format for delivery over the web.
 </p>
 
 <p>
@@ -31,5 +31,5 @@ class HelloServlet
 </code></p>
 
 <p>
-Now, http://localhost:50000/ will say "hello world". From here it's a simple modification to publish the EEML feed. EEML-Ruby includes a <a href="http://github.com/Floppy/eeml-ruby/tree/master/examples/simple_server.rb">simple EEML server script</a> as an example. So, after building this into the tray app, now whenever my CurrentCost is connected and the app is running, it serves up EEML data to the web. You can see the data feed (fairly intermittent, as obviously the meter isn't always connected to my PC at the moment) <a href="http://pachube.com/feeds/488">live on Pachube</a>.
+Now, http://localhost:50000/ will say "hello world". From here it's a simple modification to publish the EEML feed. EEML-Ruby includes a <a href="https://github.com/Floppy/eeml-ruby/tree/master/examples/simple_server.rb">simple EEML server script</a> as an example. So, after building this into the tray app, now whenever my CurrentCost is connected and the app is running, it serves up EEML data to the web. You can see the data feed (fairly intermittent, as obviously the meter isn't always connected to my PC at the moment) <a href="http://pachube.com/feeds/488">live on Pachube</a>.
 </p>

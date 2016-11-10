@@ -6,7 +6,7 @@ version: 3.0.3
 title: James Smith
 subtitle: Building a better future out of code
 author: James Smith
-simple_search: http://google.com/search
+simple_search: https://google.com/search
 description:
 include: [.well-known]
 exclude: [vendor]
@@ -55,7 +55,7 @@ googleplus_hidden: false
 # Disqus Comments
 disqus_short_name: floppyorguk
 disqus_show_comment_count: true
-disqus_base_url: http://floppy.org.uk
+disqus_base_url: https://floppy.org.uk
 
 # Google Analytics
 google_analytics_tracking_id: UA-2310810-2

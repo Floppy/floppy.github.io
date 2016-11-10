@@ -33,7 +33,7 @@ of the project (a copy, basically) and submits a pull request (PR), which you ca
 think of as a "request to adopt the proposed change". The user interface here can 
 be confusing to new users though, and that's something we want to improve.
 
-Anyway, once your change is made, it gets added to the [pull request queue](http://github.com/openpolitics/manifesto/pulls), ready
+Anyway, once your change is made, it gets added to the [pull request queue](https://github.com/openpolitics/manifesto/pulls), ready
 for inspection.
 
 ## Who decides what gets accepted?
@@ -112,12 +112,12 @@ Using the GitHub API, we check all this stuff, and then we set the build status 
 Nothing fundamentally stops earlier merging, and that does happen sometimes for spelling corrections, etc. Only a [couple of admins](https://github.com/orgs/openpolitics/teams/owners) have merge powers, so there is a potential corruption point there; perhaps the robot should do the merging as well, but it's nice to have a human in the final check.
 
 The robot also helps with making the information more accessible. It sends tweets from
-[@OpenPoliticsUK](http://twitter.com/openpoliticsuk) for new changes, and notifies our  [#openpolitics IRC channel](irc://irc.freenode.net#openpolitics). It also
+[@OpenPoliticsUK](https://twitter.com/openpoliticsuk) for new changes, and notifies our  [#openpolitics IRC channel](irc://irc.freenode.net#openpolitics). It also
 has a few web pages that list vote status in a simple way, so we can see who's taking
 part, who's voted which way. There is also a [user page](http://votebot.openpolitics.org.uk/users/Floppy) for every contributor that shows
 what they have and haven't voted on.
 
-Of course, the robot is [open source](http://github.com/openpolitics/votebot), so you can check that the rules match what's agreed.
+Of course, the robot is [open source](https://github.com/openpolitics/votebot), so you can check that the rules match what's agreed.
 
 ## What next?
 

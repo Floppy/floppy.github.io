@@ -35,6 +35,6 @@ In summary; I'm not a politician, but I *do* think things need to change if we'r
 
 *If you're in the Horsham area, visit [openhorsham.org.uk](http://openhorsham.org.uk) to keep in touch with the campaign when it starts.*
 
-*To get involved in writing the manifesto, visit [openpolitics.org.uk](http://openpolitics.org.uk) and [@OpenPoliticsUK](http://twitter.com/OpenPoliticsUK) on Twitter.*
+*To get involved in writing the manifesto, visit [openpolitics.org.uk](http://openpolitics.org.uk) and [@OpenPoliticsUK](https://twitter.com/OpenPoliticsUK) on Twitter.*
 
-*And finally, you can follow me on Twitter at [@Floppy](http://twitter.com/Floppy). If you want to stand where you are, let me know!*
+*And finally, you can follow me on Twitter at [@Floppy](https://twitter.com/Floppy). If you want to stand where you are, let me know!*

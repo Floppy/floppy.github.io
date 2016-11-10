@@ -48,7 +48,7 @@ You get your deposit back if you gain 5% of the votes cast; in Horsham I think t
 
 So, I think it's legal to do what I'm trying to do. I love working in the open, so I guess it's time to tell people! I wrote a blog post, but then realised that people might want to express an interest, so cobbled together a landing page at openhorsham.org.uk (which has since been replaced by [horsham.somethingnew.org.uk](http://horsham.somethingnew.org.uk).
 
-There's a [mailchimp](http://mailchimp.com) mailing list, and a [Facebook](http://facebook.com/somethingnewhorsham) page; both were easy to set up, and I should be fine on the free mailchimp plan for a long time. Both will let me get in touch with people who are interested in spreading the word. I'm also trying out [GoSquared](http://gosquared.com) to count website visitors - they promise not to share visitor data with others, so it's privacy-friendly.
+There's a [mailchimp](http://mailchimp.com) mailing list, and a [Facebook](https://facebook.com/somethingnewhorsham) page; both were easy to set up, and I should be fine on the free mailchimp plan for a long time. Both will let me get in touch with people who are interested in spreading the word. I'm also trying out [GoSquared](http://gosquared.com) to count website visitors - they promise not to share visitor data with others, so it's privacy-friendly.
 
 Incidentally, I chose a Facebook page rather than a group. Facebook doesn't make it massively clear which is appropriate for what, but as this is a contact point for a *thing*, a page seemed more sensible.
 
@@ -63,7 +63,7 @@ The post went up here and on [medium](http://medium.com). I chose medium because
 Because I did so little before announcing, there's a *lot* I haven't done, but these are the big things that you might think you need first:
 
 * I didn't assemble a team of helpers. That can come later, and they will choose themselves.
-* I didn't change my twitter handle ([@Floppy](http://twitter.com/Floppy)) - I am who I am, I'm not going to polish my public image.
+* I didn't change my twitter handle ([@Floppy](https://twitter.com/Floppy)) - I am who I am, I'm not going to polish my public image.
 * I didn't chase the media. I thought for a while that I had to, but was reminded that it wasn't my style, so would be the wrong thing to do. They will come to me if they're interested enough.
 * I didn't agonise over a name for the campaign. I've used Open Horsham for now, but that can change later - it's a work in progress.
 

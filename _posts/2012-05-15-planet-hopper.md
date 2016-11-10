@@ -16,6 +16,6 @@ We ended up winning the best hack prize at the Harwell site, and are currently i
 
 Technically, this was my first experience with Django. In general, my first assessment was that it seemed perfectly capable, but not as slick as the Rails toolset perhaps. I'll keep playing with it though, it's always good to know more!
 
-If you want to improve Planet Hopper, you can do; the code is, as always, [on github](http://github.com/Floppy/kepler-explorer).
+If you want to improve Planet Hopper, you can do; the code is, as always, [on github](https://github.com/Floppy/kepler-explorer).
 
 **UPDATE**: We won in the global judging! "Most Inspiring" - pretty sweet!
