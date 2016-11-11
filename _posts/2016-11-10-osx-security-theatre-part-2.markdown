@@ -17,7 +17,7 @@ This part focuses on network security hygiene, and the ability to avoid surveill
 ## Uplink
 
 First up - time to get a decent Internet Service Provider. The UK is passing law after law allowing logging of connections, mandated filtering of Internet content, and so on. The government is on a path to deciding what you can do online, and being able to check up on you. They will rely on the ISPs to enforce this for them.
-s
+
 However, there is one out there that resists this at every opportunity. [Andrews & Arnold](https://aa.net.uk) is a small ISP designed for technical users, and is explicitly [opposed to monitoring and filtering](http://aa.net.uk/kb-broadband-unfiltered.html). That page includes a [warrant canary](https://en.wikipedia.org/wiki/Warrant_canary) for secret monitoring equipment as well, so that's good.
 
 As a bonus, they PGP sign all their emails, run a [support channel on IRC](http://aa.net.uk/kb-irc.html), support the [Open Rights Group](https://www.openrightsgroup.org/), and regularly give evidence to MPs about communications policy. Basically, I know they have my back, and they're now the only people I trust with my uplink.
