@@ -7,6 +7,9 @@ categories:
 - security
 ---
 
+{:.alert}
+I've now written a followup post to this one. See [part 2](/blog/2016/11/10/osx-security-theatre-part-2) for information on my ISP, Tor, and VPN setup. For password security and encryption, read on.
+
 I've always been vaguely dissatisfied with my personal security setup. I've been happy it's pretty secure and safe, but the software hasn't been great. However, that's changed recently with a few new releases, so I thought it might be worth sharing my setup with the world. I'm on OSX, so this is specific to that platform, but most things are open source and cross-platform, so there might be something to learn anyway. Also, some of you might tell me how I can improve it even further.
 
 ## Passwords
@@ -92,6 +95,9 @@ I'm interested in these [FIDO U2F keys](https://www.yubico.com/applications/fido
 However for something physical that can be lost, I'd want to be sure there was a way of having at least two keys that can unlock things, and obviously it would be hard to use with anything that needs unlocking on iOS.
 
 I also need to work on my network security and privacy. I want to get a VPN routed via my home connection for use while out and about, and some way of easily swapping onto the [Tor](http://torproject.org) network that's got decent usability for when I want to be anonymous (or look like I'm in a different country). I'll follow up with a further post if I get any of that sorted.
+
+{:.alert}
+UPDATE: I've now written [part 2](/blog/2016/11/10/osx-security-theatre-part-2), with information on my ISP, Tor, and VPN setup.
 
 ## Summary
 
