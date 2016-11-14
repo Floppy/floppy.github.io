@@ -62,6 +62,10 @@ Again, pick a good long and memorable passphrase for your PGP key. You'll be typ
 
 Once you've generated a key pair (one private, one public) using GPG Suite then you will want to back up the private key somewhere nice and secure. I currently have mine in a [Truecrypt](http://truecrypt.sourceforge.net/) volume, which is again backed up in my Dropbox account, though Truecrypt seems to be dead, and not GCHQ-proof any more, so that will change soon.
 
+{:.alert}
+UPDATE: I've binned TrueCrypt as it was [seemingly compromised](https://threatpost.com/of-truecrypt-and-warrant-canaries/106355/). Instead I just keep my exported keys inside KeePass instead.
+
+
 ### Mail integration
 
 For a long while I was using Apple's built-in Mail app as GPGTools integrated nicely with it. However, recently, I've found that [Airmail 2](http://airmailapp.com/) has a [PGP plugin](http://support.airmailapp.com/post/95764147348/gpg-pgp-plugin), and it works almost perfectly. That means I have a decent mail client *with encryption support* finally.
