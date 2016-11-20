@@ -10,7 +10,7 @@ categories:
 
 <img src='/images/poobutton.jpg' alt='The Poo Button' style='max-width: 50%; float: right; margin-left: 10px'/>
 
-A little while ago, my colleague Stuart [hacked a couple of Amazon Dash buttons to create a behaviour scoreboard for his son](https://hackernoon.com/quantified-boy-726e9558594f#.dj7xkh8ra) - an experiment in Internet of Parenting, if you will.
+A little while ago, my colleague Stuart hacked a couple of [Amazon Dash buttons](https://www.amazon.co.uk/b?ie=UTF8&node=10833773031) to [create a behaviour scoreboard for his son](https://hackernoon.com/quantified-boy-726e9558594f#.dj7xkh8ra) - an experiment in Internet of Parenting, if you will.
 
 I thought that was pretty cool, so I popped a Dash button onto my Amazon wishlist, but without a clear idea of what to do with it; just for fun. Then though, my wife asked what it was, and a couple of days later came up with an idea. And this time, my hacking around might actually be useful.
 
