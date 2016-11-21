@@ -48,6 +48,9 @@ You then set up your VPN on your devices. On OSX that's in the Network preferenc
 
 The main problem is that you need to know where to connect to. Many ISPs don't provide a static IP, so you end up using Dynamic DNS. Your router may have support for this built in, but mine doesn't, so I'm using [ddclient](https://sourceforge.net/p/ddclient/wiki/Home/) running on the Mac Mini to automatically update my [Cloudflare](https://www.cloudflare.com/) DNS records. Works like a charm. I'll probably do a separate post just on that config, because it's a little involved, but this isn't the place.
 
+{:.alert}
+I've since found a little OSX menubar app called [VPN monitor](https://itunes.apple.com/cn/app/vpn-monitor/id887410814?l=en&mt=12) that for a couple of quid automatically connects to your VPN whenever you connect to a network. You can add safe networks, like home and work, where it won't bother, but the rest of the time it'll route your traffic via the VPN automatically. Security by default is always a good thing.
+
 ## Anonymity
 
 Of course, that only gives me security, not anonymity. All the traffic still flows over my home ISP uplink as if I was in the house. For proper anonymity, we need something more, and that thing is [Tor](https://www.torproject.org).
