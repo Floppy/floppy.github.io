@@ -8,6 +8,9 @@ categories:
 - internet of things
 ---
 
+{:.alert}
+If you're visiting from the [Wired article](http://www.wired.co.uk/article/amazon-dash-hack-poo-button-internet-of-things) and want to show your appreciation somehow, you can [make a donation](https://www.justgiving.com/4w350m3/donation/direct/charity/99993#MessageAndAmount) to the [Cri du Chat Syndrome Support Group](http://criduchat.org.uk) to help families affected the syndrome that meant I did this thing in the first place. Thanks!
+
 <img src='/images/poobutton.jpg' alt='The Poo Button' style='max-width: 50%; float: right; margin-left: 10px'/>
 
 A little while ago, my colleague Stuart hacked a couple of [Amazon Dash buttons](https://www.amazon.co.uk/b?ie=UTF8&node=10833773031) to [create a behaviour scoreboard for his son](https://hackernoon.com/quantified-boy-726e9558594f#.dj7xkh8ra) - an experiment in Internet of Parenting, if you will.
