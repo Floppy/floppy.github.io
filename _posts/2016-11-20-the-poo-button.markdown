@@ -51,7 +51,7 @@ Possible dash hardware address detected: xx:xx:xx:xx:xx:xx Manufacturer: Microch
 
 The Amazon ARP one is the one we want, so we'll keep the address (just shown as x's above) for later.
 
-Now we need a bit of code to detect the button press. I've shamelessly ripped of the code Stuart created in his post - I won't repost it here, [take a look back at his post]((https://hackernoon.com/quantified-boy-726e9558594f#.dj7xkh8ra)) for the breakdown.
+Now we need a bit of code to detect the button press. I've shamelessly ripped of the code Stuart created in his post - I won't repost it here, [take a look back at his post](https://hackernoon.com/quantified-boy-726e9558594f#.dj7xkh8ra) for the breakdown.
 
 ## Storing The Data
 
