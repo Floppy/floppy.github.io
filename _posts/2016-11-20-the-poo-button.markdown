@@ -9,7 +9,7 @@ categories:
 ---
 
 {:.alert}
-If you're visiting from the [Wired article](http://www.wired.co.uk/article/amazon-dash-hack-poo-button-internet-of-things) and want to show your appreciation somehow, you can [make a donation](https://www.justgiving.com/4w350m3/donation/direct/charity/99993#MessageAndAmount) to the [Cri du Chat Syndrome Support Group](http://criduchat.org.uk) to help families affected the syndrome that meant I did this thing in the first place. Thanks!
+If you're visiting from the [Wired article](http://www.wired.co.uk/article/amazon-dash-hack-poo-button-internet-of-things) and want to show your appreciation somehow, you can [make a donation](https://www.justgiving.com/4w350m3/donation/direct/charity/99993#MessageAndAmount) to the [Cri du Chat Syndrome Support Group](http://criduchat.org.uk) to help families affected by the syndrome that meant I did this thing in the first place. Thanks!
 
 <img src='/images/poobutton.jpg' alt='The Poo Button' style='max-width: 50%; float: right; margin-left: 10px'/>
 
