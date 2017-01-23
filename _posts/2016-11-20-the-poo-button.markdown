@@ -9,7 +9,7 @@ categories:
 ---
 
 {:.alert}
-If you're visiting from the [Wired article](http://www.wired.co.uk/article/amazon-dash-hack-poo-button-internet-of-things) and want to show your appreciation somehow, you can [make a donation](https://www.justgiving.com/4w350m3/donation/direct/charity/99993#MessageAndAmount) to the [Cri du Chat Syndrome Support Group](http://criduchat.org.uk) to help families affected the syndrome that meant I did this thing in the first place. Thanks!
+If you're visiting from the [Wired article](http://www.wired.co.uk/article/amazon-dash-hack-poo-button-internet-of-things) and want to show your appreciation somehow, you can [make a donation](https://www.justgiving.com/4w350m3/donation/direct/charity/99993#MessageAndAmount) to the [Cri du Chat Syndrome Support Group](http://criduchat.org.uk) to help families affected by the syndrome that meant I did this thing in the first place. Thanks!
 
 <img src='/images/poobutton.jpg' alt='The Poo Button' style='max-width: 50%; float: right; margin-left: 10px'/>
 
@@ -51,7 +51,7 @@ Possible dash hardware address detected: xx:xx:xx:xx:xx:xx Manufacturer: Microch
 
 The Amazon ARP one is the one we want, so we'll keep the address (just shown as x's above) for later.
 
-Now we need a bit of code to detect the button press. I've shamelessly ripped of the code Stuart created in his post - I won't repost it here, [take a look back at his post]((https://hackernoon.com/quantified-boy-726e9558594f#.dj7xkh8ra)) for the breakdown.
+Now we need a bit of code to detect the button press. I've shamelessly ripped of the code Stuart created in his post - I won't repost it here, [take a look back at his post](https://hackernoon.com/quantified-boy-726e9558594f#.dj7xkh8ra) for the breakdown.
 
 ## Storing The Data
 
