@@ -1,0 +1,38 @@
+<!-- opengraph -->
+<meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+
+<!-- twitter -->
+<meta name="twitter:card" content="summary">
+
+<!-- author -->
+<meta name="twitter:site" content="@{{ site.twitter }}">
+<meta name="twitter:creator" content="@{{ site.twitter }}">
+{% if page.date %}
+  <meta property="article:author" content="https://www.facebook.com/{{ site.facebook }}">
+{% endif %}
+
+<!-- title -->
+{% capture title %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
+<meta property="og:title" content="{{ title }}">
+<meta name="twitter:title" content="{{ title }}">
+
+<!-- description -->
+{% capture description %}{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+<meta property="og:description" content="{{ description | strip }}">
+<meta name="twitter:description" content="{{ description | strip }}">
+
+<!-- image -->
+<meta property="og:image" content="{% if page.featured_image %}{{ page.featured_image.url }}{% else %}{{ site.image.card | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+<meta name="twitter:image" content="{% if page.featured_image %}{{ page.featured_image.url }}{% else %}{{ site.image.square | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+
+<!-- url -->
+{% capture url %}{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
+<meta property="og:url" content="{{ url }}">
+<meta name="twitter:url" content="{{ url }}">
+
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ site.locale }}">
+{% if page.date %}
+  <meta property="article:modified_time" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% else %}{{ page.date | date_to_xmlschema }}{% endif %}">
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% endif %}
