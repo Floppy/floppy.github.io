@@ -10,7 +10,7 @@ featured_image:
 
 <a href='http://knowyourmeme.com/memes/my-parents-are-dead-batman-slapping-robin'><img src='/images/batmanslap.jpg' alt='Link Your Sources' style='max-width: 50%; float: right; margin-left: 10px'/></a>
 
-We're in an era of lies and propaganda, euphemistically labelled "fake news" and "alternative facts". Many of the efforts of the alt-right are to muddy the waters of facts, to erode people's confidence that facts even exist.
+We're in an era of lies and propaganda, euphemistically labelled "fake news" and ["alternative facts"](https://www.theatlantic.com/politics/archive/2017/01/the-pointless-needless-lies-of-the-trump-administration/514061/). Many of the efforts of the alt-right are to muddy the waters of facts, to erode people's confidence that facts even exist.
 
 As Clay Shirky implied during Trump's election campaign, facts are not *sufficient* to win this war:
 
