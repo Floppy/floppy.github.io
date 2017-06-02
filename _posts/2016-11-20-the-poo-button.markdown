@@ -5,7 +5,7 @@ date: 2016-11-20 00:00
 comments: true
 categories:
 - coding
-- internet of things
+- iot
 ---
 
 {:.alert}
