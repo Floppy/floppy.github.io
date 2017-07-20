@@ -10,7 +10,7 @@ footer: false
 {% endif %}
 
 <div id="blog-archives">
-{% for post in posts reverse %}
+{% for post in posts %}
   {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
   <div class="row-fluid">
 	<div class="span1">
