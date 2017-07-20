@@ -47,4 +47,4 @@ It looks from the outside like I fucked it up. I was put in charge of a team, an
 
 I don't blame anyone. It just sucks and I miss it. Now I have to find something else to do, so if you need a senior technologist and are making a positive impact on the world, [hit me up](https://floppy.org.uk/cv).
 
-And to everyone who was part of that team, that little family we had; to Amanda, Sam, Stuart, Sumika, Richard, Gabin, Laura, Emilia, Tom, Jeni, Stephen, Ben, Daniel and all the others around the fuzzy edges; I love you, I miss you, and I wish I could have done better for you.
+And to everyone who was part of that team, that little family we had; to Amanda, Sam, Stuart, Adam, Sumika, Richard, Gabin, Laura, Emilia, Tom, Jeni, Stephen, Ben, Daniel and all the others around the fuzzy edges; I love you, I miss you, and I wish I could have done better for you.
