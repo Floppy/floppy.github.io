@@ -17,7 +17,7 @@ I worked at the [Open Data Institute](https://theodi.org) for a little over four
 
 I'm writing this because that all fell apart late last year, and the team I loved has gone away. The ODI is now recruiting a new team to replace it, and from the outside it looks like I screwed it all up. I had a team, it failed, the company canned it, waited six months, then got a new one. But that's *not* what happened.
 
-When I joined, I was a member of the tech team with [Sam Pikesley](https://twitter.com/pikesley), [Stuart Harrison](https://twitter.com/pezholio), and [Tom Heath](https://twitter.com/tommyh), working under [Jeni Tennison](https://twitter.com/jenit). It was a great thing. We started by writing on a wall all the things we wanted to be, and then we processed to *be* those things. To do it *right*. We made things that made the world better.
+When I joined, I was a member of the tech team with [Sam Pikesley](https://twitter.com/pikesley), [Stuart Harrison](https://twitter.com/pezholio), and [Tom Heath](https://twitter.com/tommyh), working under [Jeni Tennison](https://twitter.com/jenit). It was a great thing. We started by writing on a wall all the things we wanted to be, and then we proceeded to *be* those things. To do it *right*. We made things that made the world better.
 
 After a couple of years, the ODI reorganised itself a little as it grew, and we created a number of different programmes. One of those was the R&D programme, and I applied for and got the role as Head. We renamed it the Labs programme, and [ODI Labs](https://theodi.org/labs) was properly its own thing for the first time.
 
