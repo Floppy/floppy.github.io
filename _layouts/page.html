@@ -13,9 +13,9 @@ layout: default
   {% endif %}
   {{ content }}
 </article>
-{% if site.disqus_short_name and page.comments == true %}
+{% if page.comments == true %}
   <section>
     <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+    <div id="comments" aria-live="polite">{% include post/comments.html %}</div>
   </section>
 {% endif %}

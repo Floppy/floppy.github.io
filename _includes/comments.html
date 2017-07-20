@@ -1,0 +1,47 @@
+<section>
+  <h2>Comments</h2>
+  
+  <div id="comments" aria-live="polite">
+    {% for comment in site.data.comments[page.slug] %}
+      <div class='well'>
+        <div>
+          {{ comment[1].message  | markdownify }}
+        </div>
+        <small>
+          - <strong>{{ comment[1].name }}</strong> at {{ comment[1].date | date: '%H:%M on %b %d, %Y' }}
+        </small>
+      </div>
+    {% endfor %}
+  </div>
+
+  <h3>Add a comment</h3>
+
+  <form class='form-horizontal' method="POST" action="https://api.staticman.net/v2/entry/Floppy/floppy.github.io/master/comments">
+    <input name="options[redirect]" type="hidden" value="{{ page.url }}">
+    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+    <div class="control-group">
+      <label class="control-label">Name</label>
+      <div class="controls">
+        <input name="fields[name]" type="text" class='input-xxlarge'>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label">Email</label>
+      <div class="controls">
+        <input name="fields[email]" type="email" class='input-xxlarge'>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label">Comment<br/><small><em>You can use markdown</em><small></label>
+      <div class="controls">
+        <textarea name="fields[message]" class='input-xxlarge'></textarea>
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+         <button type="submit" class='btn btn-primary'>Comment</button>
+      </div>
+    </div>    
+  </form>
+  
+<section>
