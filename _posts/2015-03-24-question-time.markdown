@@ -31,7 +31,7 @@ completely disagree with.
 
 I had a reasonably good start though; my friend Charlie and I have been [podcasting](http://soundcloud.com/openrevolution) about
 the campaign for the last few months. It's a good way of getting used to talking about the ideas,
-and dealing with an interview format (though admittedly a friendly one). [Listening back]((http://soundcloud.com/openrevolution)) to 
+and dealing with an interview format (though admittedly a friendly one). [Listening back](http://soundcloud.com/openrevolution) to 
 the podcasts, I can hear myself getting more confident with talking about this stuff as time
 goes on, and getting better at making my point well. There's really no substitute for practice!
 
