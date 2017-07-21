@@ -7,15 +7,21 @@ task :rebuild do
 end
 
 task :htmlproofer => :rebuild do
+  HTMLProofer.check_directory("./_site", 
+    check_html: true, 
+    assume_extension: ".html",
+    check_favicon: true,
+    disable_external: true).run
+end
+
+task :links => :rebuild do
   ignored = [
     /royalmail.com/
   ]
   HTMLProofer.check_directory("./_site", 
     typhoeus: {ssl_verifypeer: false, timeout: 30}, 
     url_ignore: ignored, 
-    check_html: true, 
-    assume_extension: ".html",
-    check_favicon: true).run
+    assume_extension: ".html").run
 end
 
 task :default => :htmlproofer
