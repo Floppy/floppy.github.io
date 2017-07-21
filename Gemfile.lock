@@ -1,18 +1,3 @@
-GIT
-  remote: git://github.com/Floppy/html-proofer.git
-  revision: a8dd3c256911f5d02852f1cfc8c1bf9924abee43
-  branch: jekyll-3-extensionless-links
-  specs:
-    html-proofer (2.6.4)
-      activesupport (~> 4.2)
-      addressable (~> 2.3)
-      colored (~> 1.2)
-      mercenary (~> 0.3.2)
-      nokogiri (~> 1.5)
-      parallel (~> 1.3)
-      typhoeus (~> 0.7)
-      yell (~> 2.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -34,7 +19,7 @@ GEM
     ethon (0.10.1)
       ffi (>= 1.3.0)
     execjs (2.7.0)
-    faraday (0.12.1)
+    faraday (0.12.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.18)
     forwardable-extended (2.6.0)
@@ -90,6 +75,15 @@ GEM
     html-pipeline (2.6.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
+    html-proofer (3.7.2)
+      activesupport (>= 4.2, < 6.0)
+      addressable (~> 2.3)
+      colored (~> 1.2)
+      mercenary (~> 0.3.2)
+      nokogiri (~> 1.7)
+      parallel (~> 1.3)
+      typhoeus (~> 0.7)
+      yell (~> 2.0)
     i18n (0.8.6)
     jekyll (3.4.5)
       addressable (~> 2.4)
@@ -179,14 +173,14 @@ GEM
     mini_portile2 (2.2.0)
     minima (2.1.1)
       jekyll (~> 3.3)
-    minitest (5.10.2)
+    minitest (5.10.3)
     multipart-post (2.0.0)
     net-dns (0.8.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
-    parallel (1.10.0)
+    parallel (1.11.2)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
@@ -236,7 +230,7 @@ PLATFORMS
 DEPENDENCIES
   colorize
   github-pages
-  html-proofer!
+  html-proofer
   nokogiri
   rake
   rspec
@@ -246,4 +240,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.13.7
+   1.15.1
