@@ -12,7 +12,7 @@ There are a number of overlapping concepts. First, we have political parties, wi
 
 ## Party Manifestos
 
-Firstly, and most familiar, we have the political party manifesto. My view is that this is a collection of statements that outlines the beliefs of the party, and how it intends to attack problems. It isn't necessarily detailed, or fully costed, but is indicative of the direction that the party wishes to go. The Pirate Party UK will soon be launching their next open manifesto process, and I'm experimenting with building a new political platform under the [OpenPolitics Manifesto](http://openpolitics.org.uk/manifesto) project (an interesting aspect of which is that is designed to deprecate the party system).
+Firstly, and most familiar, we have the political party manifesto. My view is that this is a collection of statements that outlines the beliefs of the party, and how it intends to attack problems. It isn't necessarily detailed, or fully costed, but is indicative of the direction that the party wishes to go. The Pirate Party UK will soon be launching their next open manifesto process, and I'm experimenting with building a new political platform under the [OpenPolitics Manifesto](https://openpolitics.org.uk/manifesto) project (an interesting aspect of which is that is designed to deprecate the party system).
 
 ## Constitutions
 

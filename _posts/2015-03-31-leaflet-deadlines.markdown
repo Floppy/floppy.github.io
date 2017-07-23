@@ -34,6 +34,6 @@ There are 4 things that must be on the leaflet:
 
 If we do those, and don't insult any of the other candidates, I think we'll be OK.
 
-If you want to help make the best election leaflet you've ever seen, [get in touch and join our creative team](http://somethingnew.org.uk/volunteer). We've got a lot to do in a short time, so all help is appreciated!
+If you want to help make the best election leaflet you've ever seen, [get in touch and join our creative team](https://somethingnew.org.uk/volunteer). We've got a lot to do in a short time, so all help is appreciated!
 
 

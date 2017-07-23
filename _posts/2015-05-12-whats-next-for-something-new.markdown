@@ -10,7 +10,7 @@ categories:
 <div class='alert alert-info'>
   Context for new readers: I formed a party called <a href='http://www.somethingnew.org.uk'>Something New</a> and stood in the 2015
   general election in Horsham. We're a party based on open source principles, and
-  do all our policymaking openly online through the <a href='http://openpolitics.org.uk/manifesto'>OpenPolitics Manifesto</a>.
+  do all our policymaking openly online through the <a href='https://openpolitics.org.uk/manifesto'>OpenPolitics Manifesto</a>.
 </div>
 
 The general election is over, and I have to say I really enjoyed the experience. It

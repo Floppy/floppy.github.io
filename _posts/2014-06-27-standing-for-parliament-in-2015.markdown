@@ -9,7 +9,7 @@ categories:
 ---
 I've got an exciting announcement to make; **in May 2015, I'm planning to stand in the
 general election to be MP for Horsham**. I'll be running on the
-principles in the [OpenPolitics Manifesto](http://openpolitics.org.uk),
+principles in the [OpenPolitics Manifesto](https://openpolitics.org.uk),
 an open source collaborative manifesto that *anyone* can contribute to; I'm reasonably sure that's a world first.
 
 ## Why do this?
@@ -35,6 +35,6 @@ In summary; I'm not a politician, but I *do* think things need to change if we'r
 
 *If you're in the Horsham area, visit [openhorsham.org.uk](http://openhorsham.org.uk) to keep in touch with the campaign when it starts.*
 
-*To get involved in writing the manifesto, visit [openpolitics.org.uk](http://openpolitics.org.uk) and [@OpenPoliticsUK](https://twitter.com/OpenPoliticsUK) on Twitter.*
+*To get involved in writing the manifesto, visit [openpolitics.org.uk](https://openpolitics.org.uk) and [@OpenPoliticsUK](https://twitter.com/OpenPoliticsUK) on Twitter.*
 
 *And finally, you can follow me on Twitter at [@Floppy](https://twitter.com/Floppy). If you want to stand where you are, let me know!*

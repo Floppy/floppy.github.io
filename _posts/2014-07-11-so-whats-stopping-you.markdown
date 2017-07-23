@@ -29,7 +29,7 @@ How about because the major parties have it all sewn up? Well, things are changi
 
 Don't know enough? Well, neither do they, I guarantee you; that's why they're surrounded by advisors. Fortunately we have advisors too - each other.
 
-Don't know what to actually stand for? There are plenty to pick from that you can join, or you can help the [OpenPolitics Manifesto](http://openpolitics.org.uk) project, an open-source election manifesto that anyone can edit. Taking part and holding your opinions up for inspection is a great way to refine and improve them, and you *won't* be simply shot down for saying something stupid; we all do that.
+Don't know what to actually stand for? There are plenty to pick from that you can join, or you can help the [OpenPolitics Manifesto](https://openpolitics.org.uk) project, an open-source election manifesto that anyone can edit. Taking part and holding your opinions up for inspection is a great way to refine and improve them, and you *won't* be simply shot down for saying something stupid; we all do that.
 
 So, what's left? That's it's just too much hard work?
 

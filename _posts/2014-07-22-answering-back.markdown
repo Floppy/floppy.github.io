@@ -28,7 +28,7 @@ I've heard this one a number of times in the surveillance-related conversations 
 
 **Horsham's a very safe Tory seat, you'll never win there. Why not stand somewhere else?**
 
-This one's easy. I think that the parachuting-in of candidates by central parties is a terrible thing for voter engagement. The idea of candidates working their way up through marginals, then being rewarded with a nice safe seat once they're at the upper end of the party is one of the really bad aspects of our system at the moment. We actually propose in the manifesto that [candidates must live or work in the constituency they want to stand for, and have done so for a while beforehand](http://openpolitics.org.uk/manifesto/democracy.html#standing-for-election).
+This one's easy. I think that the parachuting-in of candidates by central parties is a terrible thing for voter engagement. The idea of candidates working their way up through marginals, then being rewarded with a nice safe seat once they're at the upper end of the party is one of the really bad aspects of our system at the moment. We actually propose in the manifesto that [candidates must live or work in the constituency they want to stand for, and have done so for a while beforehand](https://openpolitics.org.uk/manifesto/democracy.html#standing-for-election).
 
 So, because I *live* in Horsham, that's where I'm standing. It's the place I'm a part of, that I call home, and that I care about. Is that enough of a reason? Yes, it'll be a hard fight, but what isn't?
 

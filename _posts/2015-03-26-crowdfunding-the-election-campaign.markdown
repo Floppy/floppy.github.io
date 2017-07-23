@@ -9,7 +9,7 @@ categories:
 
 After rather a long delay, I've finally got my crowdfunding campaign launched for the election. This is a big part of the whole thing, and not just because it raises the money I need to do this right.
 
-1. It shows that it's possible to stand without rich donors bankrolling you. Limiting party donations to individuals only (and only up to £5000) is [part of our manifesto](http://openpolitics.org.uk/manifesto/democracy.html#party-funding), so it's important to show that it can work!
+1. It shows that it's possible to stand without rich donors bankrolling you. Limiting party donations to individuals only (and only up to £5000) is [part of our manifesto](https://openpolitics.org.uk/manifesto/democracy.html#party-funding), so it's important to show that it can work!
 
 2. It helps our transparency agenda; we'll be publishing the details of all our donors (not just those we have to) in our [open accounts](https://somethingnewuk.github.io/finances/), so everyone can see who's backing us.
 

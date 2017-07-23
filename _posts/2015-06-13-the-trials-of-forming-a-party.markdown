@@ -13,7 +13,7 @@ TL;DR: Something New formed in September 2014, the Electoral Commission objected
 
 ## Do we need a party?
 
-In late June 2014, I [announced](/blog/2014/06/27/standing-for-parliament-in-2015/) that I'd be standing for election in the 2015 general election, using the [OpenPolitics Manifesto](http://openpolitics.org.uk/manifesto) as my platform. It was an experiment in seeing how accessible democratic participation was, and in taking an Open Source approach to politics.
+In late June 2014, I [announced](/blog/2014/06/27/standing-for-parliament-in-2015/) that I'd be standing for election in the 2015 general election, using the [OpenPolitics Manifesto](https://openpolitics.org.uk/manifesto) as my platform. It was an experiment in seeing how accessible democratic participation was, and in taking an Open Source approach to politics.
 
 I initially announced as an Independent, but I was never really happy with that. We'd had a few discussions within the manifesto project about forming a party, about what we could be called, and so on, but nothing serious had surfaced. However, I firmly believed (and still do) that in our current system, you *have* to have a party to build a serious movement. If I stood as an Independent, there wouldn't be anything to build on afterwards.
 

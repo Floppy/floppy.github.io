@@ -13,14 +13,14 @@ I proposed that a bunch of us should start collaborating
 on the public policies we'd *like* to see, rather than just complaining on Twitter.
 
 As I'm a software developer, I suggested that we could use GitHub as a platform,
-and a few of us started doing exactly that. 15 months later, the [OpenPolitics Manifesto](http://openpolitics.org.uk)
+and a few of us started doing exactly that. 15 months later, the [OpenPolitics Manifesto](https://openpolitics.org.uk)
 contains nearly 8000 words of agreed policy ideas, has inspired me to [stand for
-election](http://www.wscountytimes.co.uk/news/local/father-of-two-launches-bid-to-be-horsham-s-next-mp-1-6168976), and has spawned a [political party](http://somethingnew.org.uk) which has adopted the manifesto (though
+election](http://www.wscountytimes.co.uk/news/local/father-of-two-launches-bid-to-be-horsham-s-next-mp-1-6168976), and has spawned a [political party](https://somethingnew.org.uk) which has adopted the manifesto (though
 it remains an independent project). I'm quite proud of all of that.
 
 Last night, someone new to the project asked me how it worked, and to clarify who
 can take part, and I realised I've never really written it up in a blog form. We have
-the [contributing guide](http://openpolitics.org.uk/contributing.html), but that's probably fairly well buried. So, in this post I'm
+the [contributing guide](https://openpolitics.org.uk/contributing.html), but that's probably fairly well buried. So, in this post I'm
 going to explain the democratic process we've arrived at over the last 15 months.
 
 ## Who can make changes?
@@ -151,6 +151,6 @@ for me that's revolutionary. How that revolution copes when it hits the mainstre
 a scary adventure I'm looking forward to, but as often stated in software, scaling problems
 are "good problems to have".
 
-If you want to get involved, visit the [OpenPolitics Manifesto](http://openpolitics.org.uk) and make a change. If you
+If you want to get involved, visit the [OpenPolitics Manifesto](https://openpolitics.org.uk) and make a change. If you
 want to vote for someone who is using it, or want to stand on the principles yourself,
-I humbly suggest you check out our party, [Something New](http://somethingnew.org.uk).
+I humbly suggest you check out our party, [Something New](https://somethingnew.org.uk).

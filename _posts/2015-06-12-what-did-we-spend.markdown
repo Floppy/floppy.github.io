@@ -7,7 +7,7 @@ categories:
 - election
 ---
 
-So, the spending returns are done, and *officially*, we raised £1620 in Horsham, but only spent £1195, leaving me with a profit of over £400! That is obvious bullshit, as you can see from our [open accounts](http://somethingnewuk.github.io/finances), so this post is all about what we *actually* spent over the last year. Also, I'll look at what was useful, and what wasn't.
+So, the spending returns are done, and *officially*, we raised £1620 in Horsham, but only spent £1195, leaving me with a profit of over £400! That is obvious bullshit, as you can see from our [open accounts](https://somethingnewuk.github.io/finances), so this post is all about what we *actually* spent over the last year. Also, I'll look at what was useful, and what wasn't.
 
 ## Horsham Spending
 

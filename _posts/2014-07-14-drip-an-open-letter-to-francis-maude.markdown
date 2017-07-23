@@ -23,7 +23,7 @@ Thirdly, the bill itself gives much cause for concern. The initial claim was tha
 
 We are a democracy. We are a free country. Secretive extension of the surveillance state, done in haste without oversight, [has no place here](http://www.dailymail.co.uk/debate/article-2690181/David-Davis-devastating-attack-loss-privacy-This-data-law-catching-terrorists-lust-power.html). The government has a responsibility to balance the needs of security services against the freedoms of its citizens, which were hard-won over hundreds of years, and should not be limited lightly.
 
-I announced a couple of weeks ago that [I intend to stand for Horsham in next year's general election](/blog/2014/06/27/standing-for-parliament-in-2015/), on a [collaborative and open-source political platform](http://openpolitics.org.uk) built by normal citizens.
+I announced a couple of weeks ago that [I intend to stand for Horsham in next year's general election](/blog/2014/06/27/standing-for-parliament-in-2015/), on a [collaborative and open-source political platform](https://openpolitics.org.uk) built by normal citizens.
 
 Horsham is my home, so my choice to stand was not *against you*, but rather *for Horsham*. However, with the government's actions over this bill, I am rather looking forward to challenging your choices and true commitment to openness and transparency over the next year.
 

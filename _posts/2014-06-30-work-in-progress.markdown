@@ -20,7 +20,7 @@ Here goes, anyway. Here's what's happened up until now.
 
 Step one in all this is perhaps the biggest. However, all you need is a desire to make the world better, to have the realisation that democracy needs people to stand up for what they believe in, and that if nobody else will do it, you'd better take it on yourself.
 
-You should have some idea what you want to stand for at this point, but I don't think it has to be final and polished. The joy of the [OpenPolitics Manifesto](http://openpolitics.org.uk) is that it will keep being refined and improved right up until the election (and beyond). It's essential to expose your ideas to some criticism and discussion though; it's a great way to refine them, and they *will* be challenged later.
+You should have some idea what you want to stand for at this point, but I don't think it has to be final and polished. The joy of the [OpenPolitics Manifesto](https://openpolitics.org.uk) is that it will keep being refined and improved right up until the election (and beyond). It's essential to expose your ideas to some criticism and discussion though; it's a great way to refine them, and they *will* be challenged later.
 
 A few people have asked why I'm standing in Horsham, which will be a hard fight. Honestly, it never occurred to stand anywhere other than where I live - why would anyone vote for me if I have no connection with the area? The parachuting-in of candidates is one broken aspect of our system if you ask me. Anyway...
 
