@@ -10,7 +10,7 @@ After talking to the electoral commission yesterday, I got interested in what lo
 
 Fortunately, this is all open data. The Electoral Commission publish the statistics about election spending on their website, all under the Open Government License. All figures in this article come from them.
 
-There is one particular dataset which we'll dive into here; the [candidate spending in the 2010 general election](http://www.electoralcommission.org.uk/find-information-by-subject/elections-and-referendums/past-elections-and-referendums/uk-general-elections/candidate-election-spending). This lists all candidates in the general election of 2010, what they spent, what they raised, and even better, what the split of spending was. It also includes the number of votes they gained, so you could do some handy analysis of spending vs seats gained, perhaps. There's lots of data in there, so what follows are excerpts, not the whole lot.
+There is one particular dataset which we'll dive into here; the [candidate spending in the 2010 general election](https://www.electoralcommission.org.uk/find-information-by-subject/elections-and-referendums/past-elections-and-referendums/uk-general-elections/candidate-election-spending). This lists all candidates in the general election of 2010, what they spent, what they raised, and even better, what the split of spending was. It also includes the number of votes they gained, so you could do some handy analysis of spending vs seats gained, perhaps. There's lots of data in there, so what follows are excerpts, not the whole lot.
 
 ## Total spending
 
@@ -142,6 +142,6 @@ This is really interesting for my planning. The actual cost of getting a leaflet
 
 This has given me some really useful insights. I'd recommend having a dig into the figures for your area as well, you might find something interesting! I think this could be a good data-driven website as well - exposing this stuff through a nice data visualisation would be lovely; maybe a project for [Democracy Club](https://twitter.com/democlub)?
 
-You can dig into the data at the link above, and [this guide](http://www.electoralcommission.org.uk/__data/assets/pdf_file/0011/163793/EPE-Part-3-Spending-and-donations-for-individual-candidates.pdf) from the Electoral Commission gives lots more detail on what it all means. It's for the 2014 EU elections, but the concepts are the same, so it's a decent reference. I'll be digging more into that guide as I go along, sorting out my own finances, so more of this to come.
+You can dig into the data at the link above, and [this guide](https://www.electoralcommission.org.uk/__data/assets/pdf_file/0011/163793/EPE-Part-3-Spending-and-donations-for-individual-candidates.pdf) from the Electoral Commission gives lots more detail on what it all means. It's for the 2014 EU elections, but the concepts are the same, so it's a decent reference. I'll be digging more into that guide as I go along, sorting out my own finances, so more of this to come.
 
 Until next time...

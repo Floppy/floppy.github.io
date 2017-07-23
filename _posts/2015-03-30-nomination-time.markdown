@@ -13,7 +13,7 @@ A while ago, I got in touch with our local elections officer to let her know tha
 
 I booked in as early as I could so that I'd have time to fix any problems; nominations are only open until 4pm on April 9th, and after that it's all over. As it's Easter weekend in between, I thought it best to give myself plenty of contingency time.
 
-Anyway, let's take a look at the forms themselves. As well as getting the forms from the elections office, you can [download standard forms](http://www.electoralcommission.org.uk/__data/assets/pdf_file/0008/183437/Nomination-pack-incl-election-agent-notification-form.pdf) from the Electoral Commission website, which is helpful. However, if you are standing, I'd get them from the local returning officer - they might have done something a bit different, you never know.
+Anyway, let's take a look at the forms themselves. As well as getting the forms from the elections office, you can [download standard forms](https://www.electoralcommission.org.uk/__data/assets/pdf_file/0008/183437/Nomination-pack-incl-election-agent-notification-form.pdf) from the Electoral Commission website, which is helpful. However, if you are standing, I'd get them from the local returning officer - they might have done something a bit different, you never know.
 
 ## Nomination Paper
 
@@ -23,7 +23,7 @@ Then, you need ten people to nominate you, known as *subscribers*. They are peop
 
 I've not got the signatures yet, and so I'll be spending this evening driving around and getting friends to sign.
 
-The first wrinkle is that you have to verify each of the subscribers against the electoral register, and enter their electoral number on the form before you go to hand it in. This means you need a copy of the register. As a candidate, you can get a copy, but only once Parliament has dissolved, which was this morning. The Electoral Commission have a [standard form to request a copy](http://www.electoralcommission.org.uk/__data/assets/word_doc/0010/141886/Register-request-form-generic.doc), which I filled in and emailed over early to my local elections office this morning.
+The first wrinkle is that you have to verify each of the subscribers against the electoral register, and enter their electoral number on the form before you go to hand it in. This means you need a copy of the register. As a candidate, you can get a copy, but only once Parliament has dissolved, which was this morning. The Electoral Commission have a [standard form to request a copy](https://www.electoralcommission.org.uk/__data/assets/word_doc/0010/141886/Register-request-form-generic.doc), which I filled in and emailed over early to my local elections office this morning.
 
 I expected a long wait, but to their credit, the office sent the register over within a couple of hours. So, I now have an excel file with 63,000 names and addresses in it, with elector numbers and everything. The restrictions on what I can do with this are obviously very strict, so no I can't send you a copy!
 
@@ -63,6 +63,6 @@ The deposit is paid in cash or by a bankers' draft, which I thought went out wit
 
 ## And that's it
 
-That's all there is to it. If anything interesting happens during the appointment to hand it all in, I'll write more, but I hope it will all go fine. Apparently people get them wrong all the time, but to be honest it didn't seem that complex. As I say, the [Electoral Commission's guidance](http://www.electoralcommission.org.uk/i-am-a/candidate-or-agent/uk-parliamentary-general-election-great-britain) is as good as always, so that's well worth a look.
+That's all there is to it. If anything interesting happens during the appointment to hand it all in, I'll write more, but I hope it will all go fine. Apparently people get them wrong all the time, but to be honest it didn't seem that complex. As I say, the [Electoral Commission's guidance](https://www.electoralcommission.org.uk/i-am-a/candidate-or-agent/uk-parliamentary-general-election-great-britain) is as good as always, so that's well worth a look.
 
 Anyway, the show is now on the road. I still need help raising money for leaflets etc, so if you like what I'm doing, [don't forget to pledge](http://www.crowdfunder.co.uk/something-new-for-horsham/)!

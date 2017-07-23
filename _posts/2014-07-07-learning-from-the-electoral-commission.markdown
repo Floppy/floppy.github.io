@@ -8,7 +8,7 @@ categories:
 ---
 So, today I spoke to the Electoral Commission. In my last post, I made a bunch of assumptions based on reading their website about what was legal and what wasn't. Today I checked all that with them, and was pretty much right, thankfully.
 
-The Commission offices all have their [phone numbers online](http://www.electoralcommission.org.uk/contact-us/our-offices), and connect you straight to people who can answer your questions. I highly recommend giving them a call if you're considering this yourself.
+The Commission offices all have their [phone numbers online](https://www.electoralcommission.org.uk/contact-us/our-offices), and connect you straight to people who can answer your questions. I highly recommend giving them a call if you're considering this yourself.
 
 So, what did we find out? (By the way - don't take this as solid legal advice, it's just my own interpretation, not guaranteed fact)
 

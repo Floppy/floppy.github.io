@@ -8,7 +8,7 @@ categories:
 - politics
 ---
 
-*This is a transcript of my part of the ODI Friday Lunchtime Lecture on 19th December, titled ["A Christmas Carol - The ghosts of open data’s past, present and future"](http://theodi.org/lunchtime-lectures/friday-lunchtime-lecture-a-christmas-carol-the-ghosts-of-open-datas-past-present-and-future)*
+*This is a transcript of my part of the ODI Friday Lunchtime Lecture on 19th December, titled ["A Christmas Carol - The ghosts of open data’s past, present and future"](https://theodi.org/lunchtime-lectures/friday-lunchtime-lecture-a-christmas-carol-the-ghosts-of-open-datas-past-present-and-future)*
 
 <iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/182268251&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 

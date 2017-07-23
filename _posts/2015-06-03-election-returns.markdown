@@ -9,7 +9,7 @@ categories:
 
 I've put it off for too long, and so for the last couple of evenings I've been completing the election spending and donation returns for the Horsham campaign. I was warned that this was an awkward process, but it's been basically fine (though we've not had to do any of the complex stuff).
 
-The Electoral Commission, as always, provide a whole load of documentation and help with filling in the data, which you can [download from their website](http://www.electoralcommission.org.uk/i-am-a/candidate-or-agent/uk-parliamentary-general-election-great-britain) (see the resources in Part 3).
+The Electoral Commission, as always, provide a whole load of documentation and help with filling in the data, which you can [download from their website](https://www.electoralcommission.org.uk/i-am-a/candidate-or-agent/uk-parliamentary-general-election-great-britain) (see the resources in Part 3).
 
 The return has to be in within 35 days of the election, so we have around another 10 days to finish it.
 

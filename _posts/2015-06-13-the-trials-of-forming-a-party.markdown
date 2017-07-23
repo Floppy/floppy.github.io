@@ -74,14 +74,14 @@ There was also the fact that the last time Something New had been registered, th
 
 OK, well, let's just talk to them. Let's work out how to appeal the decision. Turns out this was really hard.
 
-We had a look at the [EC complaints page](http://www.electoralcommission.org.uk/complaints), which said:
+We had a look at the [EC complaints page](https://www.electoralcommission.org.uk/complaints), which said:
 
 > Complaints about decisions made as part of our statutory enforcement work, or other statutory regulatory decisions taken by the Commission (for example registration of party names, descriptions and emblems) are dealt with under our regulatory policies and enforcement policy and/or case management procedures. Depending on the nature of the matter case there may be further rights of challenge by way of statutory appeals or judicial review. 
 
 Talking to the Electoral Commission, we were told:
 
 > You can complain about a decision on your application to register the party if you believe we have not adhered to proper processes in making the decision on your application. Your concerns will be independently investigated under the Commission’s complaints procedure.
-> The information about how to lodge a complaint is contained in [our guidance](http://www.electoralcommission.org.uk/__data/assets/pdf_file/0003/107697/sp-application-rp.pdf).
+> The information about how to lodge a complaint is contained in [our guidance](https://www.electoralcommission.org.uk/__data/assets/pdf_file/0003/107697/sp-application-rp.pdf).
 > As the guidance states, the complaints procedure will look at the process that led to the decision and not the decision itself. Appeals against the outcome of the decision will not be considered. You may have rights of challenge by way of judicial review to pursue this.
 
 So we can appeal the procedure but not the decision? We can't just *talk* to someone? Judicial review involves taking them to *court*, that's ludicrous! There must be a better way! 

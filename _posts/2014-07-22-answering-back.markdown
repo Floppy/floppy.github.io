@@ -40,7 +40,7 @@ This comes along a lot in the Open Data and civic technology worlds. First, I'd 
 
 I quite agree that Francis has done good things during his time in government. His creation of [GDS](https://gds.blog.gov.uk/) and the work around [gov.uk](http://gov.uk) has been excellent, and I'm quite sure that the transformation agenda currently going across the civil service will lead to great things. From what I hear, he's incredibly engaged in these things, and for that I thank him.
 
-Also, his dedication to government transparency is to be lauded (and continued in future). I probably wouldn't have the great job I have now at the [ODI](http://theodi.org) if Francis hadn't given his support to the organisation during its formation, so I have that to thank him for as well.
+Also, his dedication to government transparency is to be lauded (and continued in future). I probably wouldn't have the great job I have now at the [ODI](https://theodi.org) if Francis hadn't given his support to the organisation during its formation, so I have that to thank him for as well.
 
 However, and I'm being realistic here, if I take Francis' seat in 2015, then it'll be a sign of a much larger shift in British politics, and it's quite likely that he wouldn't have been in his job any more anyway. The likelihood of the rest of the establishment remaining unchanged, and me just taking out the one good guy in government is *very* low.
 
