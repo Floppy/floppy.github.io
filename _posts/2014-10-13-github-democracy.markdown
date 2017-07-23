@@ -56,7 +56,7 @@ However, as soon as your change is in, you get to vote, so nobody maintains a li
 
 This is really similar to the process in a bit of open source software, where existing maintainers decide what gets added in order to keep the project moving the right way.
 
-![Service Guarantees Citizenship](http://memecrunch.com/meme/L5EI/service-guarantees-citizenship/image.png)
+![Service Guarantees Citizenship](https://memecrunch.com/meme/L5EI/service-guarantees-citizenship/image.png)
 
 ## What about takeovers?
 
