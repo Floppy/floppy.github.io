@@ -10,7 +10,7 @@ A few days ago, I announced that [I intend to stand for Parliament next May](/bl
 
 The entertaining thing is that I've had to answer most these with an "I don't know", as I really don't at this stage. Really all I've got so far is an intent, a lack of self-control, and am comfortable with the fact that [I have no idea what I'm doing](http://codon.com/i-have-no-idea-what-im-doing).
 
-![I have no idea what I'm doing](http://i3.kym-cdn.com/photos/images/newsfeed/000/234/739/fa5.jpg)
+![I have no idea what I'm doing](https://quicklol.com/wp-content/uploads/2012/03/chemistry-dog-no-idea.jpg)
 
 However, my campaign is all about openness, so I'm going to blog the whole thing as I go along and learn what's what. Watch this space, and I'll walk you through the entire process, and maybe remove some of the fear so that you can do it too. I'll also try to distill the knowledge into a guide of some sort as I go along - more on that later.
 
