@@ -62,10 +62,14 @@ google_analytics_tracking_id: UA-2310810-2
 navigation:
 - text: Home
   url: /
-- text: Archive
+- text: Blog
   url: /blog
-- text: Code
-  url: /code
+- text: Talks
+  url: /talks
+- text: Projects
+  url: /projects
+- text: CV
+  url: /cv
 
 collections:
   talks:
