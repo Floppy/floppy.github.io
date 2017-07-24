@@ -69,7 +69,7 @@ navigation:
 - text: Projects
   url: /projects
 - text: CV
-  url: /cv
+  url: https://floppy.org.uk/cv
 
 collections:
   talks:
