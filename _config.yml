@@ -66,3 +66,15 @@ navigation:
   url: /blog
 - text: Code
   url: /code
+
+collections:
+  talks:
+    output: true
+    permalink: /talks/:year/:month/:day/:title/
+    
+defaults:
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk

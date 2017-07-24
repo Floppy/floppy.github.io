@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<ul>
+  {% for talk in site.talks %}
+    <li><a href='{{talk.url}}'>{{talk.title}}</a></li>
+  {% endfor %}
+</ul>
