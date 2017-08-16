@@ -9,5 +9,5 @@ env:
 matrix:
   fast_finish: true
   allow_failures:
-    env: TASK=links
+    - env: TASK=links
 script: bundle exec rake $TASK
