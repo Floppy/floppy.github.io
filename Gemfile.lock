@@ -129,6 +129,11 @@ GEM
     jekyll-sitemap (1.0.0)
       jekyll (~> 3.3)
     jekyll-swiss (0.4.0)
+    jekyll-test (0.2.0)
+      html-proofer (~> 3.7)
+      rake (~> 12.0)
+      rspec (~> 3.0)
+      rspec-html-matchers (~> 0.9)
     jekyll-theme-architect (0.1.0)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
@@ -193,7 +198,7 @@ GEM
       mini_portile2 (~> 2.2.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
-    parallel (1.11.2)
+    parallel (1.12.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
@@ -243,14 +248,10 @@ PLATFORMS
 DEPENDENCIES
   colorize
   github-pages
-  html-proofer
-  nokogiri
-  rake
-  rspec
-  rspec-html-matchers
+  jekyll-test (~> 0.2.0)
 
 RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.15.1
+   1.15.3

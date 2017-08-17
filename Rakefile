@@ -1,34 +1,7 @@
-require 'html-proofer'
+require 'jekyll/test/tasks'
+task default: "jekyll:check"
+
 require 'colorize'
-
-task :rebuild do
-  sh "rm -rf _site"
-  sh "bundle exec jekyll build"
-end
-
-task :htmlproofer => :rebuild do
-  HTMLProofer.check_directory("./_site", 
-    check_html: true, 
-    assume_extension: ".html",
-    check_favicon: true,
-    #check_sri: true, #soon!
-    check_img_http: true,
-    check_opengraph: true,
-    disable_external: true).run
-end
-
-task :links => :rebuild do
-  ignored = [
-  ]
-  HTMLProofer.check_directory("./_site", 
-    typhoeus: {ssl_verifypeer: false, ssl_verifyhost: 0,timeout: 30}, 
-    url_ignore: ignored, 
-    check_external_hash: true,
-    assume_extension: ".html").run
-end
-
-task :default => :htmlproofer
-
 namespace :generate do
 
   desc "Generate category pages from posts"
@@ -47,6 +20,7 @@ namespace :generate do
         :red
       when 2
         :yellow
+        
       else
         :green
       end

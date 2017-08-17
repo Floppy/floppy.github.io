@@ -4,8 +4,8 @@ rvm:
 sudo: false
 cache: bundler
 env:
-  - TASK=default
-  - TASK=links
+  - TASK='jekyll:check'
+  - TASK='jekyll:check_external_links'
 matrix:
   fast_finish: true
   allow_failures:
