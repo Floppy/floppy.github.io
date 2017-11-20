@@ -14,6 +14,9 @@
     {% if site.github_user %}
     <li><a href="https://github.com/{{ site.github_user }}" title="Github Profile"><i class="fa fa-lg fa-github social-navbar"></i></a></li>
     {% endif %}
+    {% if site.mastodon_user %}
+    <li><a href="https://mastodon.me.uk/@floppy" title="Mastodon Profile"><img src='/images/mastodon.svg' class="social-navbar" style="height: 20px; color: white"/></a></li>
+    {% endif %}
     {% if site.twitter_user %}
     <li><a href="https://twitter.com/{{ site.twitter_user }}" title="Twitter Profile"><i class="fa fa-lg fa-twitter social-navbar"></i></a></li>
     {% endif %}
