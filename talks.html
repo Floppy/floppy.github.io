@@ -4,7 +4,7 @@ title: Talks
 ---
 
 <div id="blog-archives">
-{% for talk in site.talks %}
+{% for talk in site.talks reversed %}
   {% capture this_year %}{{ talk.date | date: "%Y" }}{% endcapture %}
   <div class="row-fluid">
 	<div class="span1">
