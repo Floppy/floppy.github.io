@@ -19,14 +19,17 @@ title: Talks
 	<div class="span11 border-top">
 	{% endif %}
 
-	  <article>      
+	  <article>
       <div class="row-fluid">
       	<div class="span1">
-      		<h1 class="date-time"><time datetime="{{ talk.date | datetime | date_to_xmlschema }}" pubdate>{{ talk.date | date: "<span class='month'>%b</span>&nbsp;<span class='day'>%d</span><span class='year'><!--%Y--></span>"}}</time></h1>
+      		<h1 class="date-time"><time datetime="{{ talk.date | datetime | date_to_xmlschema }}" pubdate>{{ talk.date | date: "<span class='month'>%b</span>&nbsp;<span class='day'>%d</span>"}}</time></h1>
       	</div>
-      	<div class="span10">
+      	<div class="span8">
       		<h1><a href='{{talk.url}}'>{{talk.title}}</a></h1>
       	</div>
+        <div class="span2">
+          <span>{{talk.host.name}}</span>
+        </div>
       </div>
 	  </article>
 	</div>
