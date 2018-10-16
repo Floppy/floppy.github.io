@@ -72,10 +72,18 @@ collections:
   talks:
     output: true
     permalink: /talks/:year/:month/:day/:title/
-    
+  projects:
+    output: true
+    permalink: /projects/:title/
+
 defaults:
   - scope:
       path: ""
       type: talks
     values:
       layout: talk
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
