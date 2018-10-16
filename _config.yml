@@ -27,7 +27,7 @@ email: james@floppy.org.uk
 permalink: /blog/:year/:month/:day/:title/
 markdown: kramdown
 
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
 
