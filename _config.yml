@@ -74,7 +74,7 @@ collections:
     permalink: /talks/:year/:month/:day/:title/
   projects:
     output: true
-    permalink: /projects/:title/
+    permalink: /portfolio/:title/
 
 defaults:
   - scope:
