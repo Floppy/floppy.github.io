@@ -1,6 +1,6 @@
 <section>
   <h2>Comments</h2>
-  
+
   <div id="comments" aria-live="polite">
     {% for comment in site.data.comments[page.slug] %}
       <div class='well'>
@@ -37,11 +37,16 @@
         <textarea name="fields[message]" class='input-xxlarge'></textarea>
       </div>
     </div>
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="6LeFYHUUAAAAAMQb-zrBtVdLTGkvgP_FJ_A-DKaI">
+    <input type="hidden" name="options[reCaptcha][secret]" value="N6a0XZaGFhz3heoMBAF9NeLicb5nC1Mqx1Z2Vto0ru5DLSZDIC42qlPpsLjBI9yp08I63DYKOsfB8HSYo39tWa6mN1yAi8HMO0ee74kbKLLyfkNG3reqwfUrMgpZT5VJgM/ba/MD5HyVT/cAfBea4j4rMpYkhBLG1gwwHxQ+x/w=">
+    <div class="g-recaptcha" data-sitekey="6LeFYHUUAAAAAMQb-zrBtVdLTGkvgP_FJ_A-DKaI"></div>
     <div class="control-group">
       <div class="controls">
          <button type="submit" class='btn btn-primary'>Comment</button>
       </div>
-    </div>    
+    </div>
   </form>
-  
+
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
 <section>
