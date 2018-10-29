@@ -1,16 +1,21 @@
 ---
-layout: post
 title: "The Ghost of Open Data Future"
-date: 2014-12-21 21:07
-comments: true
-categories:
-- opendata
-- politics
+host:
+  url: https://theodi.org
+  name: Open Data Institute
+soundcloud: 182268251
+attribution:
+  copyrightHolder:
+    name: Open Data Institute
+    url: https://theodi.org
+  license:
+    name: CC BY-SA 2.0 UK
+    url: https://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB
 ---
 
-*This is a transcript of my part of the ODI Friday Lunchtime Lecture on 19th December, titled ["A Christmas Carol - The ghosts of open data’s past, present and future"](https://theodi.org/lunchtime-lectures/friday-lunchtime-lecture-a-christmas-carol-the-ghosts-of-open-datas-past-present-and-future)*
+This is my part of the ODI Friday Lunchtime Lecture on 19th December 2014, titled ["A Christmas Carol - The ghosts of open data’s past, present and future"](https://theodi.org/lunchtime-lectures/friday-lunchtime-lecture-a-christmas-carol-the-ghosts-of-open-datas-past-present-and-future).
 
-<iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/182268251&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+## Transcript
 
 So, we've heard from the ghosts of the past and the present, and that means I get to be the ghost of Open Data future, or more accurately, the ghost of Open Data Yet To Come (of which there is plenty if the list of unpublished datasets on data.gov.uk is anything to go by).
 
