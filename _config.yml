@@ -79,6 +79,11 @@ collections:
 defaults:
   - scope:
       path: ""
+      type: posts
+    values:
+      layout:  post
+  - scope:
+      path: ""
       type: talks
     values:
       layout: talk
