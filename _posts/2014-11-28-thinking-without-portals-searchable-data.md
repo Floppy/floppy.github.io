@@ -23,7 +23,7 @@ Well, as some of DuckDuckGo is open source, we can have a go ourselves. You can 
 
 Question is, how do we find the datasets? Real search engines crawl the web, and find everything, but I’m going to cheat. We have a database of almost 10,000 open datasets listed on the [Open Data Certificates](https://certificates.theodi.org/) site, and we can use that to drive our search results. Note: this would _not_ be a good idea for a real search engine; it’s not built to drive the kind of queries we’d need, and it doesn’t crawl the web at large (yet). However, it will do for this experiment.
 
-![null](http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/78/a2/5478a271d0d4620854000001/Screen_Shot_2014-11-28_at_14.39.07.png)
+![null](https://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/78/a2/5478a271d0d4620854000001/Screen_Shot_2014-11-28_at_14.39.07.png)
 
 With a bit of hacking around, we can create a DuckDuckGo plugin which, whenever you enter the search term “open data X”, will go to the Open Data Certificates API, search for X, and present the results back to you at the top of your normal search results. It shows the name, publisher, and certification level. If you click, it will take you straight to the page that describes the data (normally on [data.gov.uk](http://data.gov.uk)). Brilliant!
 

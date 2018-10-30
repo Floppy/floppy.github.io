@@ -12,7 +12,7 @@ attribution:
     name: CC BY-SA 2.0 UK
     url: https://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB
 ---
-In December 2015, [ODI Labs](/labs) delivered a talk to the [Sydney Blockchain Workshops](http://sydney.blockchainworkshops.org/), asking whether blockchains were always the right choice for global data infrastructure. In the talk, I explain how [blockchains](http://theodi.org/blog/data-infrastructure-technology-blockchains) are a great technology for shared-write, trust-free data collaboration networks, but warn that not everything needs those capabilities, and for many applications the technology may have undesirable aspects.
+In December 2015, [ODI Labs](https://theodi.org/labs) delivered a talk to the [Sydney Blockchain Workshops](http://sydney.blockchainworkshops.org/), asking whether blockchains were always the right choice for global data infrastructure. In the talk, I explain how [blockchains](http://theodi.org/blog/data-infrastructure-technology-blockchains) are a great technology for shared-write, trust-free data collaboration networks, but warn that not everything needs those capabilities, and for many applications the technology may have undesirable aspects.
 
 ## Transcript
 

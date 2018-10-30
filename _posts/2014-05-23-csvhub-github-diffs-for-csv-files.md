@@ -14,7 +14,7 @@ categories:
   - data
   - csv
 ---
-![null](http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/7f/3c/537f3c4b1f986a085f000010/Screen_Shot_2014-05-22_at_21.24.46.png)
+![null](https://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/7f/3c/537f3c4b1f986a085f000010/Screen_Shot_2014-05-22_at_21.24.46.png)
 
 Over the last few months, I’ve spent some time working on how we collaborate on data publishing, particularly when using [GitHub](http://github.com), an integral part of our software development process.
 

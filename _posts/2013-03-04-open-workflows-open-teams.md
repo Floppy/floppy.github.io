@@ -41,7 +41,7 @@ We’re also using Github for [issue tracking](https://github.com/theodi/open-or
 
 It took me a while to work out how to model dependencies, but simply adding a link to the master ticket from the sub-ticket (“this is needed for #42”) gives a nice open/closed view in the master ticket, which works well enough. This even works across repositories, meaning that you can use a single issue tracker for a project even if it’s split into multiple places.
 
-![Github issue tracker](http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/legacy/issues_0.png)
+![Github issue tracker](https://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/legacy/issues_0.png)
 
 ## Learning as we go
 

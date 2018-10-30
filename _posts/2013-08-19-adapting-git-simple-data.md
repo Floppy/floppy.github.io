@@ -32,7 +32,7 @@ Let’s take a look at a sample bit of data, and let’s look at the one bit of 
 
 `git diff data.csv`
 
-![git diff](http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/legacy/diff%2Dcolour.png)
+![git diff](https://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/legacy/diff%2Dcolour.png)
 
 So far, so impenetrable. I think I can see that there’s a new column in there, but if anything else changed, I’m certainly not going to spot it in amongst all that.
 
@@ -51,7 +51,7 @@ Let’s try something stupid first, and say that _every character_ should be tre
 
 `git diff --word-diff data.csv`
 
-![wordRegex=.](http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/legacy/wordRegexDot.png)
+![wordRegex=.](https://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/legacy/wordRegexDot.png)
 
 This is already a _lot_ better. We can see what’s going on at least. Not only have I added a column, but I’ve added a row for Mercury, and fixed some formatting near the end. I really should learn to split up my commits better.
 
@@ -65,7 +65,7 @@ The regular expression here took a bit of working out, so I won’t explain char
 
 `git diff --word-diff data.csv`
 
-![CSV diff](http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/legacy/csv%2Ddiff.png)
+![CSV diff](https://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/legacy/csv%2Ddiff.png)
 
 Not only do the diffs now line up to fields, we get entire field changes being shown, as in the last two lines.
 
@@ -87,7 +87,7 @@ Unfortunately for us, GitHub isn’t open source, so we can’t just change it. 
 
 Gitlab’s default view for CSV is to show it as a text diff, very similar to the first command-line one above. Not useful. However, it’s incredibly easy to configure. We add a method to detect if a file is a CSV, and then we can write a CSV-specific view. Here’s a view showing the contents of a CSV file in a table, rather than just as text, in Gitlab:
 
-![Gitlab CSV view](http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/legacy/csv_table.png)
+![Gitlab CSV view](https://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/legacy/csv_table.png)
 
 Nice and simple, but proving we can do it.
 
@@ -95,7 +95,7 @@ Next thing is to add diff support. Now, showing diffs in tabular format, that’
 
 So, back to Gitlab; all we need is the old file, the new file, a bit of coopyhx javascript, and suddenly we have a diff view of CSV files right there in your commit logs and pull requests:
 
-![CSV diff in Gitlab](http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/legacy/csv_gitlab_diff.png)
+![CSV diff in Gitlab](https://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/legacy/csv_gitlab_diff.png)
 
 This is, quite simply, spectacular. If we could get GitHub to add something like this, I think around 95% of our data sharing and collboration work would get easier. Failing that, we just need someone to host a Gitlab instance with CSV support!
 

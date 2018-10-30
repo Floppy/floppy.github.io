@@ -16,7 +16,7 @@ How do we make sure data infrastructure is always available, and always trustwor
 
 We believe that [data infrastructure](http://theodi.org/who-owns-our-data-infrastructure) is fundamental to our future. What we normally mean by this is “data as infrastructure” – data is becoming part of the infrastructure of society. In [ODI Labs](http://theodi.org/labs), we have a slightly different take on the issue: if data is to be infrastructure for society, what does that mean about the technology underlying the “infrastructure for data”?
 
-![null](http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/28/f9/5628f98e1f986a081e000021/data_infra_1.jpg)
+![null](https://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/28/f9/5628f98e1f986a081e000021/data_infra_1.jpg)
 
 _<small>Photo source: [Flickr - r2hox (CC BY-SA 2.0)](https://www.flickr.com/photos/rh2ox/9990016123/ " r2hox ")</small>_
 
@@ -34,7 +34,7 @@ There is a lot of hype about “putting things into the blockchain” at the mom
 
 ## A blockchain, or THE blockchain?
 
-![null](http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/28/fd/5628fd8b1f986a081e000025/data_infra_4.jpg)
+![null](https://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/28/fd/5628fd8b1f986a081e000025/data_infra_4.jpg)
 
 _<small>Photo source: [Flickr - r2hox (CC BY-SA 2.0)](https://www.flickr.com/photos/rh2ox/9990024683/in/photostream/ " r2hox ")</small>_
 
@@ -48,7 +48,7 @@ Is it realistic to run a distributed data store based on a pseudocurrency model?
 
 ## Immutability
 
-![null](http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/28/fb/5628fb551f986a081e000023/data_infra_2.jpg)
+![null](https://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/28/fb/5628fb551f986a081e000023/data_infra_2.jpg)
 
 _<small>Photo source: [Flickr - r2hox (CC BY-SA 2.0)](https://www.flickr.com/photos/rh2ox/9989876925/ " r2hox ")</small>_
 
@@ -68,7 +68,7 @@ How then, do we design data storage in blockchains so that immutability is limit
 
 ## Beyond blockchains
 
-![null](http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/29/00/56290077d0d46207c8000031/data_infra_5.jpg)
+![null](https://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32.cf3.rackcdn.com/uploads/assets/29/00/56290077d0d46207c8000031/data_infra_5.jpg)
 
 _<small>Photo source: [Flickr - r2hox (CC BY-SA 2.0)](https://www.flickr.com/photos/rh2ox/9989872634/in/photostream/ " r2hox ")</small>_
 
