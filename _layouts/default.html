@@ -2,12 +2,19 @@
 <html class="no-js" lang="en">
   {% include head.html %}
   <body>
-    <div>
-      {% include navigation.html %}
-      {% include contact.html %}
-    </div>
-    <div>
-      {{ content }}
+    <header>
+      {% include header.html %}
+    </header>
+    <div class='root-container'>
+      <div class='navigation'>
+        {% include navigation.html %}
+      </div>
+      <div  class='page-content'>
+        {{ content }}
+      </div>
+      <div class='contact'>
+        {% include contact.html %}
+      </div>
     </div>
     <footer>
       {% include footer.html %}
