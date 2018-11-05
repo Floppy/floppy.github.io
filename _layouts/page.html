@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article role="article">
+<div>
   {% if page.title %}
   <header>
     <div>
@@ -12,7 +12,7 @@ layout: default
   </header>
   {% endif %}
   {{ content }}
-</article>
+</div>
 {% if page.comments == true %}
   <section>
     <h1>Comments</h1>
