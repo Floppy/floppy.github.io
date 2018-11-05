@@ -1,11 +1,19 @@
 ---
 layout: default
-single: true
 ---
-
-<div>
 <article>
-  {% include article.html %}
+  <div>
+  <h1>{{ page.title }}</h1>
+  <h2>{% include post/date.html %}<i class="fa fa-calendar"></i> {{ time }} </h2>
+  </div>
+  {% include attribution.html %}
+  <div>
+    <div>
+      {% include article_banner.html %}
+      {{ content }}
+    </div>
+  </div>
+  <div>
   <footer>
     <hr>
     {% if page.category or page.categories or page.sharing != false %}
@@ -34,6 +42,7 @@ single: true
     </div>
   </footer>
 </article>
+<div>
 {% if page.comments == true %}
   {% include comments.html %}
 {% endif %}
