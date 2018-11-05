@@ -1,28 +1,16 @@
-{% include head.html %}
-<body>
-  <div>
-  	<div>
-  	  <div>
-  	  	<div>
-  	      {% include navigation.html %}
-          {% include contact.html %}
-  	    </div>
-  	  </div>
-  	</div>
-  </div>
-  <div>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  {% include head.html %}
+  <body>
     <div>
-      <div>
-        <div>
-          {{ content }}
-        </div>
-      </div>
-      <div>
-        <footer>
-          {% include footer.html %}
-        </footer>
-      </div>
+      {% include navigation.html %}
+      {% include contact.html %}
     </div>
-  </div>
-</body>
+    <div>
+      {{ content }}
+    </div>
+    <footer>
+      {% include footer.html %}
+    </footer>
+  </body>
 </html>
