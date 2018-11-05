@@ -19,7 +19,7 @@ title: Talks
 	<div>
 	{% endif %}
 
-	  <article>
+	  <div>
       <div>
       	<div>
       		<h1><time datetime="{{ talk.date | datetime | date_to_xmlschema }}" pubdate>{{ talk.date | date: "<span>%b</span>&nbsp;<span>%d</span>"}}</time></h1>
@@ -31,7 +31,7 @@ title: Talks
           <span>{{talk.host.name}}</span>
         </div>
       </div>
-	  </article>
+	  </div>
 	</div>
   </div>
 {% endfor %}
