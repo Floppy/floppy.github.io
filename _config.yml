@@ -47,15 +47,9 @@ twitter_user: floppy
 twitter_tweet_button: true
 
 # Mastodon
-mastodon_user: https://mastodon.me.uk/@floppy
-
-# Google Analytics
-google_analytics_tracking_id: UA-2310810-2
-
-## Theme settings
+mastodon_user: https://mastodon.me.uk/@Floppy
 
 # navigation
-
 navigation:
 - text: Home
   url: /
