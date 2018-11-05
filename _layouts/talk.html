@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class='container'>
+<article>
   <h1>{{page.title}}</h1>
 
   <p><a href='{{ page.host.url }}'>{{ page.host.name }}</a>, {{page.date | date: "%d %B %Y" }}</p>
@@ -14,20 +14,20 @@ layout: default
   {% unless page.embed == false %}
 
     {% if page.youtube %}
-      <iframe style="width:100%; height:40vw" src="https://www.youtube.com/embed/{{page.youtube}}" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/{{page.youtube}}" frameborder="0" allowfullscreen></iframe>
     {% endif %}
 
     {% if page.vimeo %}
-      <iframe style="width:100%; height:40vw" src="https://player.vimeo.com/video/{{page.vimeo}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/{{page.vimeo}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     {% endif %}
 
     {% if page.soundcloud %}
-      <iframe width="100%" height="150" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{page.soundcloud}}&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+      <iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{page.soundcloud}}&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
     {% endif %}
 
   {% else %}
 
-    <a href='{{page.video_url}}' class='btn btn-primary'>
+    <a href='{{page.video_url}}'>
       <i class='fa fa-play'></i> Watch now
     </a>
 

@@ -5,10 +5,10 @@ layout: default
 <article role="article">
   {% if page.title %}
   <header>
-    <div class="jumbotron">
+    <div>
       {% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}
     </div>
-    {% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
+    {% if page.date %}<p>{% include post/date.html %}{{ time }}</p>{% endif %}
   </header>
   {% endif %}
   {{ content }}
@@ -16,6 +16,6 @@ layout: default
 {% if page.comments == true %}
   <section>
     <h1>Comments</h1>
-    <div id="comments" aria-live="polite">{% include post/comments.html %}</div>
+    <div>{% include post/comments.html %}</div>
   </section>
 {% endif %}

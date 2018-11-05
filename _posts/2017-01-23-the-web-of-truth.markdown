@@ -4,11 +4,11 @@ title: The Web Of Truth
 date: 2017-01-23 00:00
 comments: true
 categories:
-featured_image: 
+featured_image:
   url: /images/batmanslap.jpg
 ---
 
-<a href='http://knowyourmeme.com/memes/my-parents-are-dead-batman-slapping-robin'><img src='/images/batmanslap.jpg' alt='Link Your Sources' style='max-width: 50%; float: right; margin-left: 10px'/></a>
+<a href='http://knowyourmeme.com/memes/my-parents-are-dead-batman-slapping-robin'><img src='/images/batmanslap.jpg' alt='Link Your Sources'/></a>
 
 We're in an era of lies and propaganda, euphemistically labelled "fake news" and ["alternative facts"](https://www.theatlantic.com/politics/archive/2017/01/the-pointless-needless-lies-of-the-trump-administration/514061/). Many of the efforts of the alt-right are to muddy the waters of facts, to [erode people's confidence that facts even exist](http://bluevirginia.us/2017/01/great-explanation-baghdad-sean-spicers-bizarre-n-korea-style-statement-yesterday).
 
@@ -17,7 +17,7 @@ As Clay Shirky implied during Trump's election campaign, facts are not *sufficie
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en-gb"><p lang="en" dir="ltr">Seeing my timeline during the convention last night made me despair. We&#39;ve brought fact-checkers to a culture war. Time to get serious.</p>&mdash; Clay Shirky (@cshirky) <a href="https://twitter.com/cshirky/status/756569741020377088">22 July 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-However, facts are *necessary*. 
+However, facts are *necessary*.
 
 More and more we need to be able to rely on the news we read and the posts we share to be factual. We can't fall into the trap of using propaganda ourselves, or not caring what we say as long as it hurts the other side. By doing that, the confusion rises further and the forces of chaos win.
 

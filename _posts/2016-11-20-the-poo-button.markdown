@@ -11,7 +11,7 @@ categories:
 {:.alert}
 If you're visiting from the [Wired article](http://www.wired.co.uk/article/amazon-dash-hack-poo-button-internet-of-things) and want to show your appreciation somehow, you can [make a donation](https://www.justgiving.com/4w350m3/donation/direct/charity/99993#MessageAndAmount) to the [Cri du Chat Syndrome Support Group](http://criduchat.org.uk) to help families affected by the syndrome that meant I did this thing in the first place. Thanks!
 
-<img src='/images/poobutton.jpg' alt='The Poo Button' style='max-width: 50%; float: right; margin-left: 10px'/>
+<img src='/images/poobutton.jpg' alt='The Poo Button'/>
 
 A little while ago, my colleague Stuart hacked a couple of [Amazon Dash buttons](https://www.amazon.co.uk/b?ie=UTF8&node=10833773031) to [create a behaviour scoreboard for his son](https://hackernoon.com/quantified-boy-726e9558594f#.dj7xkh8ra) - an experiment in Internet of Parenting, if you will.
 
@@ -35,7 +35,7 @@ Then, we install the [node-dash-button](https://github.com/hortinstein/node-dash
 
 ```
 npm install -g node-dash-button
-``` 
+```
 
 We then run `sudo /usr/local/lib/node_modules/node-dash-button/bin/findbutton` and get something like this:
 
@@ -65,7 +65,7 @@ To test it, we can send a message to the webhook with `curl` (this project is so
 curl -X POST -d '{"when": "2016-01-01T09:00Z"}' https://hooks.zapier.com/hooks/catch/.../.../
 ```
 
-Zapier detects the POST, and then sends the `when` value into my spreadsheet. Easy as pie. Now all we need to do is get the code to send that POST when it detects a button press. 
+Zapier detects the POST, and then sends the `when` value into my spreadsheet. Easy as pie. Now all we need to do is get the code to send that POST when it detects a button press.
 
 ## The Code
 

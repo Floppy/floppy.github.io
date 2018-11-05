@@ -2,15 +2,14 @@
 layout: default
 ---
 {% include header.html %}
-<div class="blog-index">
+<div>
   {% assign index = true %}
   {% assign post = site.posts[0] %}
   {% assign content = post.content %}
   <article>
     {% include article.html %}
   </article>
-  <div class="pagination">
-    <a class="prev" href="/blog">&larr; Older Posts</a>
+  <div>
+    <a href="/blog">&larr; Older Posts</a>
   </div>
 </div>
-

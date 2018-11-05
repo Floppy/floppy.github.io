@@ -5,16 +5,16 @@ categories:
 - ruby 
 ---
 <p>Recently, I was writing tests for a piece of code, and came up against some strange problems. The code talks to an external web service using RestClient (1.6.1), so of course the web service is mocked for the tests, in this case using Mocha (0.9.8).</p>
-<p class="western">The problem came when I tried to test failure modes; for instance, what happens when the service comes back with a 401 due to bad credentials? RestClient raises an exception for this containing the response, so the mock has to do the same.</p>
+<p>The problem came when I tried to test failure modes; for instance, what happens when the service comes back with a 401 due to bad credentials? RestClient raises an exception for this containing the response, so the mock has to do the same.</p>
 
 <pre>request.stubs(:put).raises(RestClient::Unauthorized.new(<br/>  stub(:code =&gt; 401, :body =&gt; nil)<br/>)</pre>
-<p class="western">So far so good. The exception is raised, and all is well. The problem comes when we try to access the response code later on in our error-handling code:</p>
+<p>So far so good. The exception is raised, and all is well. The problem comes when we try to access the response code later on in our error-handling code:</p>
 
 <pre>rescue RestClient::Exception =&gt; e
   puts e.response.code
 </pre>
-<p class="western">Seems reasonable, right? The response object should be a Mocha::Mock that responds to #code and gives back 401. Unfortunately not. We get a &#8216;stack too deep' error thrown inside a recursive method_missing call. Huh?</p>
-<p class="western">This really should work, so let's take a look inside the gems. It turns out that RestClient mixes something special into the response object (in this case the mock) for compatibility. The gem used to return Net::HTTP::Response objects, not RestClient::Response objects, so in order to retain compatibility with old code, it mixes in the behaviour of the Net::HTTP class to responses contained inside exceptions. This is taken from restclient/exceptions.rb:</p>
+<p>Seems reasonable, right? The response object should be a Mocha::Mock that responds to #code and gives back 401. Unfortunately not. We get a &#8216;stack too deep' error thrown inside a recursive method_missing call. Huh?</p>
+<p>This really should work, so let's take a look inside the gems. It turns out that RestClient mixes something special into the response object (in this case the mock) for compatibility. The gem used to return Net::HTTP::Response objects, not RestClient::Response objects, so in order to retain compatibility with old code, it mixes in the behaviour of the Net::HTTP class to responses contained inside exceptions. This is taken from restclient/exceptions.rb:</p>
 
 <pre># Compatibility : make the Response act like a <br/># Net::HTTPResponse when needed
 module ResponseForException
@@ -39,14 +39,14 @@ class Exception &lt; RuntimeError
   end
 end
 </pre>
-<p class="western">As you can see, it does this by adding its own method_missing, which accesses the <strong>net_http_res</strong> function of the response. In our mock, that doesn't exist, so of course method_missing is called ad infinitum. So, let's add it:</p>
+<p>As you can see, it does this by adding its own method_missing, which accesses the <strong>net_http_res</strong> function of the response. In our mock, that doesn't exist, so of course method_missing is called ad infinitum. So, let's add it:</p>
 
 <pre>request.stubs(:put).raises(RestClient::Unauthorized.new(<br/>  stub(:code =&gt; 401, :body =&gt; nil, :net_http_res =&gt; nil)<br/>)</pre>
-<p class="western">Better. Does it work now? Hm. No. It's still digging a method_missing hole to the Earth's core.</p>
-<p class="western">The <strong>real</strong> problem is that the method_missing that is mixed in by RestClient::Exception is masking the one in Mocha::Mock, and that one is what does the actual handling of the stub code that we pass in. So, even though we added net_http_res up there, the bit of code that handles it is never called, so we're still stuffed.</p>
-<p class="western">Now, there's not a lot we can do about that without rewriting the gems. If I <strong>was</strong> going to do that, I'd try to make sure that RestClient::Exception doesn't mask existing method_missing functions, but instead aliases them and makes sure they are still called. Not sure how easy that would be, I've not tried it, but it would be worth a shot.</p>
-<p class="western">I would try to make some general rule here about making sure your code plays nice with other code, but to be honest, I doubt you can consider every case where someone might be subverting your code by giving it things like mock objects (which could implement the mocking in any number of ways) instead of real ones. I guess there will always be a gap somewhere.</p>
-<p class="western">The solution I hit upon in the end was to change the stub. Instead of using Mocha, which relies on method_missing to implement its stubbing, I changed to OpenStruct, which doesn't, and is sufficient in this case.</p>
+<p>Better. Does it work now? Hm. No. It's still digging a method_missing hole to the Earth's core.</p>
+<p>The <strong>real</strong> problem is that the method_missing that is mixed in by RestClient::Exception is masking the one in Mocha::Mock, and that one is what does the actual handling of the stub code that we pass in. So, even though we added net_http_res up there, the bit of code that handles it is never called, so we're still stuffed.</p>
+<p>Now, there's not a lot we can do about that without rewriting the gems. If I <strong>was</strong> going to do that, I'd try to make sure that RestClient::Exception doesn't mask existing method_missing functions, but instead aliases them and makes sure they are still called. Not sure how easy that would be, I've not tried it, but it would be worth a shot.</p>
+<p>I would try to make some general rule here about making sure your code plays nice with other code, but to be honest, I doubt you can consider every case where someone might be subverting your code by giving it things like mock objects (which could implement the mocking in any number of ways) instead of real ones. I guess there will always be a gap somewhere.</p>
+<p>The solution I hit upon in the end was to change the stub. Instead of using Mocha, which relies on method_missing to implement its stubbing, I changed to OpenStruct, which doesn't, and is sufficient in this case.</p>
 
 <pre>request.stubs(:put).raises(RestClient::Unauthorized.new(<br/>  OpenStruct.new(:code =&gt; 401, :body =&gt; nil, :net_http_res =&gt; nil)<br/>)</pre>
-<p class="western">Yay, by using a stub that doesn't require method_missing to operate, it all works nicely now! My tests are saved and I can get on with some real work&#8230; about time.</p>
+<p>Yay, by using a stub that doesn't require method_missing to operate, it all works nicely now! My tests are saved and I can get on with some real work&#8230; about time.</p>

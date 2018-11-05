@@ -1,10 +1,10 @@
-<ul class="nav">
+<ul>
   {% for link in site.navigation %}
   <li {% if page.url == link.url %}class="active"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
   {% endfor %}
 </ul>
 
-<ul class="nav pull-right">
+<ul>
     {% if site.email %}
     <li><a href="mailto:{{ site.email }}" title="Email"><i class="fa fa-lg fa-envelope social-navbar"></i></a></li>
     {% endif %}
