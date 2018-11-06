@@ -3,36 +3,14 @@ layout: page
 title: Talks
 ---
 
-<div>
-{% for talk in site.talks reversed %}
-  {% capture this_year %}{{ talk.date | date: "%Y" }}{% endcapture %}
-  <div>
-	<div>
-	{% unless year == this_year %}
-	  {% assign year = this_year %}
-	    <h1>{{ year }}</h1>
-	{% endunless %}
-	</div>
-	{% if post == site.talks.first %}
-	<div>
-	{% else %}
-	<div>
-	{% endif %}
-
-	  <div>
+<div class='cards'>
+  {% for talk in site.talks reversed %}
+    <div class='card'>
+  		<h1><a href='{{talk.url}}'>{{talk.title}}</a></h1>
       <div>
-      	<div>
-      		<h1><time datetime="{{ talk.date | datetime | date_to_xmlschema }}" pubdate>{{ talk.date | date: "<span>%b</span>&nbsp;<span>%d</span>"}}</time></h1>
-      	</div>
-      	<div>
-      		<h1><a href='{{talk.url}}'>{{talk.title}}</a></h1>
-      	</div>
-        <div>
-          <span>{{talk.host.name}}</span>
-        </div>
+        <span>{{talk.host.name}}</span>,
+        <time datetime="{{ talk.date | datetime | date_to_xmlschema }}" pubdate>{{ talk.date | date: "<span>%b</span>&nbsp;<span>%d</span>&nbsp;<span>%Y</span>"}}</time>
       </div>
-	  </div>
-	</div>
-  </div>
-{% endfor %}
+    </div>
+  {% endfor %}
 </div>
