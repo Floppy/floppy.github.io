@@ -9,7 +9,6 @@ layout: default
   {% include attribution.html %}
   <div>
     <div>
-      {% include article_banner.html %}
       {{ content }}
     </div>
   </div>
@@ -42,7 +41,5 @@ layout: default
   </footer>
 </article>
 <div>
-{% if page.comments == true %}
-  {% include comments.html %}
-{% endif %}
+{% include comments.html %}
 </div>
