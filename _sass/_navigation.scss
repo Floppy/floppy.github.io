@@ -1,6 +1,7 @@
 .navigation {
 
   line-height: 2;
+  text-align: right;
 
   ul {
     padding: 0px;
@@ -10,6 +11,10 @@
 
   li {
     list-style: none;
+  }
+
+  a {
+    text-decoration: none;
   }
 
 }
