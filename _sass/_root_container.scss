@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: max-content 1fr max-content;
   grid-column-gap: 1em;
+  flex: 1 0 auto;
 
   .navigation {
     grid-column: 1;
