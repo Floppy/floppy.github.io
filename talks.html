@@ -7,9 +7,13 @@ title: Talks
   {% for talk in site.talks reversed %}
     <div class='card'>
   		<h1><a href='{{talk.url}}'>{{talk.title}}</a></h1>
-      <div>
-        <span>{{talk.host.name}}</span>,
-        <time datetime="{{ talk.date | datetime | date_to_xmlschema }}" pubdate>{{ talk.date | date: "<span>%b</span>&nbsp;<span>%d</span>&nbsp;<span>%Y</span>"}}</time>
+      <div class='details'>
+        <div>
+          {{talk.host.name}}
+        </div>
+        <div>
+          <time datetime="{{ talk.date | datetime | date_to_xmlschema }}" pubdate>{{ talk.date | date: "<span>%b</span>&nbsp;<span>%d</span>&nbsp;<span>%Y</span>"}}</time>
+        </div>
       </div>
     </div>
   {% endfor %}
