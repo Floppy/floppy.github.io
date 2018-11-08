@@ -16,7 +16,7 @@ Fairly obviously, there weren't, so I then asked "what would you *want* them to 
 
 I talked about this in a recent [ODI Friday Lunchtime Lecture](https://theodi.org/lunchtime-lectures/friday-lunchtime-lecture-data-for-democracy-how-to-stand-for-parliament-with-open-data), so you can watch the video if you like. Or, read on below...
 
-<div style="width:500px; height:281px; margin: 0px auto">
+<div>
   <iframe src="//player.vimeo.com/video/111864914" frameborder="0" width="100%" height="281px" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 

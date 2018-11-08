@@ -3,7 +3,7 @@ layout: post
 title: "Diving into election finances"
 date: 2014-07-08 19:17
 comments: true
-categories: 
+categories:
 - election
 ---
 After talking to the electoral commission yesterday, I got interested in what local candidates normally spend on their campaigns.
@@ -18,7 +18,7 @@ Let's look at campaign spending first.
 
 We had 8 candidates in the last election. During the long campaign (see yesterday's post), they were allowed to spend **£30,429.48**. During the short campaign, they were allowed to spend **£12,579.48**.
 
-<table class="table table-striped">
+<table>
 <thead>
 <tr>
 <th></th>
@@ -104,7 +104,7 @@ So, what can we learn from this?
 
 Let's dig into a bit more detail on what that money is spent on. We'll just look at the Conservatives here, as they have the largest spend.
 
-<table class='table table-striped'>
+<table>
 <thead>
 <tr>
 <th></th>

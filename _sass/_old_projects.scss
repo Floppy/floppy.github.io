@@ -1,0 +1,21 @@
+.old-projects {
+
+  a.title {
+    width: 100%;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    height: 100px;
+  }
+
+  .card h1 {
+    margin: 0;
+  }
+
+  p {
+    margin-top: 0;
+    padding: 1em;
+  }
+
+}

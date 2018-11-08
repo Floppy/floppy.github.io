@@ -7,7 +7,7 @@ categories:
 - election
 ---
 
-<div class='alert alert-info'>
+<div>
   Context for new readers: I formed a party called <a href='http://www.somethingnew.org.uk'>Something New</a> and stood in the 2015
   general election in Horsham. We're a party based on open source principles, and
   do all our policymaking openly online through the <a href='https://openpolitics.org.uk/manifesto'>OpenPolitics Manifesto</a>.
@@ -15,8 +15,8 @@ categories:
 
 The general election is over, and I have to say I really enjoyed the experience. It
 was hard work, but it felt *so good* to be putting across something positive rather
-than just complaining about the various options. I don't think I've ever seen a 
-campaign indulge in such negativity and fearmongering as this one did, so it was 
+than just complaining about the various options. I don't think I've ever seen a
+campaign indulge in such negativity and fearmongering as this one did, so it was
 a real pleasure to be able to rise above it!
 
 ## The results
@@ -32,11 +32,11 @@ and both our results come right up near the top. Doing that in our first electio
 (small c and big C) conservative areas, is something to be proud of.
 
 I think that shows that we have something here worth building on, and so I'd like
-to answer the one question that everyone asks: 
+to answer the one question that everyone asks:
 
 ## What's next?
 
-We're starting to think about the 2016 round of elections, and we have a by-election in 
+We're starting to think about the 2016 round of elections, and we have a by-election in
 Stepney Green in a few weeks, but as leader, I'm thinking mostly about how the party evolves.
 
 The party exists because in the current political climate, names are important, and
@@ -57,9 +57,9 @@ its political movement. People are [calling for it](https://medium.com/@azeem/th
 
 ## Let's work together
 
-Now I'm talking directly to the [Pirate Party](http://pirateparty.org.uk), the [Internet Democrats](http://i-dems.co.uk), 
-[Rebooting Democracy](http://rebootingdemocracy.uk), [Digital Democracy](http://truedemocracy.uk), the [Whig Party](http://whigs.uk), [MyMP](http://mymp2015.org.uk), [Populace Party](http://www.wearepopulace.uk/), 
-[Vox Pop](http://voxpopgov.com/), [Democratic Reform](http://www.democraticreform.co.uk/), a whole load of Independents, and everyone else interested in this movement. 
+Now I'm talking directly to the [Pirate Party](http://pirateparty.org.uk), the [Internet Democrats](http://i-dems.co.uk),
+[Rebooting Democracy](http://rebootingdemocracy.uk), [Digital Democracy](http://truedemocracy.uk), the [Whig Party](http://whigs.uk), [MyMP](http://mymp2015.org.uk), [Populace Party](http://www.wearepopulace.uk/),
+[Vox Pop](http://voxpopgov.com/), [Democratic Reform](http://www.democraticreform.co.uk/), a whole load of Independents, and everyone else interested in this movement.
 
 My message for you is simple.
 
@@ -81,10 +81,10 @@ no major media exposure, and it *worked*. We got better results than almost all 
 
 We set out on this path to test if the message would resonate. I think we passed that test.
 
-So, as a starting point, I would like to invite all those parties to merge with us. 
-Again, not so that I can be in charge, or through arrogance, but because *someone* has to 
-convene this, and I think we are in a good position to do so. As I said, we can talk about 
-names, logos, identity, whatever. I'm open-minded on it, and we know we can't be 
+So, as a starting point, I would like to invite all those parties to merge with us.
+Again, not so that I can be in charge, or through arrogance, but because *someone* has to
+convene this, and I think we are in a good position to do so. As I said, we can talk about
+names, logos, identity, whatever. I'm open-minded on it, and we know we can't be
 "Something New" forever.
 
 Single-issue parties won't change anything. Small fragmented parties won't change anything. The old 20th century parties won't change anything. But together, we just might be able to [build a new choice](http://www.somethingnew.org.uk/volunteer) for a society that is demanding change.

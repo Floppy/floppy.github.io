@@ -1,9 +1,9 @@
 <section>
   <h2>Comments</h2>
 
-  <div id="comments" aria-live="polite">
+  <div>
     {% for comment in site.data.comments[page.slug] %}
-      <div class='well'>
+      <div>
         <div>
           {{ comment[1].message  | markdownify }}
         </div>
@@ -16,35 +16,35 @@
 
   <h3>Add a comment</h3>
 
-  <form class='form-horizontal' method="POST" action="https://api.staticman.net/v2/entry/Floppy/floppy.github.io/master/comments">
+  <form method="POST" action="https://api.staticman.net/v2/entry/Floppy/floppy.github.io/master/comments">
     <input name="options[redirect]" type="hidden" value="https://floppy.org.uk{{ page.url }}">
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-    <div class="control-group">
-      <label class="control-label">Name</label>
-      <div class="controls">
-        <input name="fields[name]" type="text" class='input-xxlarge'>
+    <div>
+      <label>Name</label>
+      <div>
+        <input name="fields[name]" type="text">
       </div>
     </div>
-    <div class="control-group">
-      <label class="control-label">Email</label>
-      <div class="controls">
-        <input name="fields[email]" type="email" class='input-xxlarge'>
+    <div>
+      <label>Email</label>
+      <div>
+        <input name="fields[email]" type="email">
       </div>
     </div>
-    <div class="control-group">
-      <label class="control-label">Comment<br/><small><em>You can use markdown</em></small></label>
-      <div class="controls">
-        <textarea name="fields[message]" class='input-xxlarge'></textarea>
+    <div>
+      <label>Comment<br/><small><em>You can use markdown</em></small></label>
+      <div>
+        <textarea name="fields[message]"></textarea>
       </div>
     </div>
     <input type="hidden" name="options[reCaptcha][siteKey]" value="6LeFYHUUAAAAAMQb-zrBtVdLTGkvgP_FJ_A-DKaI">
     <input type="hidden" name="options[reCaptcha][secret]" value="N6a0XZaGFhz3heoMBAF9NeLicb5nC1Mqx1Z2Vto0ru5DLSZDIC42qlPpsLjBI9yp08I63DYKOsfB8HSYo39tWa6mN1yAi8HMO0ee74kbKLLyfkNG3reqwfUrMgpZT5VJgM/ba/MD5HyVT/cAfBea4j4rMpYkhBLG1gwwHxQ+x/w=">
-    <div class="control-group">
-      <div class="controls g-recaptcha" data-sitekey="6LeFYHUUAAAAAMQb-zrBtVdLTGkvgP_FJ_A-DKaI"></div>
+    <div>
+      <div data-sitekey="6LeFYHUUAAAAAMQb-zrBtVdLTGkvgP_FJ_A-DKaI"></div>
     </div>
-    <div class="control-group">
-      <div class="controls">
-         <button type="submit" class='btn btn-primary'>Comment</button>
+    <div>
+      <div>
+         <button type="submit">Comment</button>
       </div>
     </div>
   </form>

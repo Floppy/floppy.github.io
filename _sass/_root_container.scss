@@ -1,0 +1,19 @@
+.root-container {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  grid-column-gap: 1em;
+  flex: 1 0 auto;
+
+  .navigation {
+    grid-column: 1;
+  }
+
+  .page-content {
+    grid-column: 2;
+  }
+
+  .contact {
+    grid-column: 3;
+  }
+}

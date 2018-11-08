@@ -1,0 +1,28 @@
+body > header {
+
+  background-color: #444;
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+
+  a {
+    color: white;
+  }
+
+  img.mugshot {
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    margin-right: 1em;
+  }
+
+  h1, h2 {
+    margin: 0 0;
+  }
+
+  .tagline {
+    margin-left: auto;
+  }
+
+}

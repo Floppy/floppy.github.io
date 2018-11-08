@@ -1,0 +1,19 @@
+body > footer {
+
+  background-color: #444;
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+
+  a {
+    color: white;
+  }
+
+  div {
+    margin: 0 1em;
+  }
+
+}

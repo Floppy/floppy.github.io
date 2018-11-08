@@ -1,58 +1,17 @@
 ---
 ---
+@import 'normalize.scss';
 
-@import "colors";
-@import "custom/colors";
-@import "bootstrap";
-@import "bootstrap-responsive";
+@import 'fonts.scss';
+@import 'body.scss';
+@import 'site_footer.scss';
+@import 'site_header.scss';
 
-@import "flat-ui";
-@import "octoflat-partials";
-@import "solarized";
-
-div.span-one-third {
-	width: 33%;
-}
-
-div.gallery div {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-div.gallery p {
-	text-align: justify;
-  font-size: 14px;
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-div.gallery img {
-	border-radius: 15px;
-	-moz-border-radius: 15px;
-	-webkit-border-radius: 15px;
-}
-
-/* crowdfunder */
-.pf_inner h6 {
-	padding-top: 10px;
-	padding-bottom: 10px!important;
-}
-
-.footnotes {
-	font-size: 90%;
-}
-
-blockquote {
-	border-left: 5px solid lightgrey;
-	padding-left: 10px;
-}
-
-.badge a {
-	color: white;
-}
-
-input, textarea {
-	color: black !important;
-}
+@import 'root_container.scss';
+@import 'navigation.scss';
+@import 'contact.scss';
+@import 'article.scss';
+@import 'code.scss';
+@import 'cards.scss';
+@import 'tags.scss';
+@import 'old_projects.scss';

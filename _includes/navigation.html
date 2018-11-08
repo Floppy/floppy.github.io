@@ -1,27 +1,9 @@
-<ul class="nav">
-  {% for link in site.navigation %}
-  <li {% if page.url == link.url %}class="active"{% endif %}><a href="{{ link.url }}">{{ link.text }}</a></li>
-  {% endfor %}
-</ul>
-
-<ul class="nav pull-right">
-    {% if site.email %}
-    <li><a href="mailto:{{ site.email }}" title="Email"><i class="fa fa-lg fa-envelope social-navbar"></i></a></li>
-    {% endif %}
-    {% if site.keybase_user %}
-    <li><a href="https://keybase.io/{{ site.keybase_user }}" rel="me" title="Keybase Profile"><i class="fa fa-lg fa-key social-navbar"></i></a></li>
-    {% endif %}
-    {% if site.github_user %}
-    <li><a href="https://github.com/{{ site.github_user }}" rel="me" title="Github Profile"><i class="fab fa-lg fa-github social-navbar"></i></a></li>
-    {% endif %}
-    {% if site.mastodon_user %}
-    <li><a rel="me" href="https://mastodon.me.uk/@Floppy" title="Mastodon Profile"><i class="fab fa-lg fa-mastodon social-navbar"></i></a></li>
-    {% endif %}
-    {% if site.twitter_user %}
-    <li><a href="https://twitter.com/{{ site.twitter_user }}" rel="me" title="Twitter Profile"><i class="fab fa-lg fa-twitter social-navbar"></i></a></li>
-    {% endif %}
-    {% if site.facebook_user %}
-    <li><a href="https://facebook.com/{{ site.facebook_user }}" rel="me" title="Facebook Profile"><i class="fab fa-lg fa-facebook social-navbar"></i></a></li>
-    {% endif %}
-    <li><a href="/atom.xml" title="Subscribe"><i class="fa fa-rss fa-lg social-navbar"></i></a></li>
-</ul>
+<nav>
+  <ul>
+    {% for link in site.navigation %}
+      <li {% if page.url == link.url %}class="active"{% endif %}>
+        <a href="{{ link.url }}">{{ link.text }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
