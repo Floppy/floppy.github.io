@@ -4,67 +4,52 @@ https://keybase.io/floppy
 
 I hereby claim:
 
-  * I am an admin of http://floppy.org.uk
+  * I am an admin of https://floppy.org.uk
   * I am floppy (https://keybase.io/floppy) on keybase.
-  * I have a public key with fingerprint FD95 A574 673E CCB9 4A26  7169 DAB8 61E4 501F 794C
+  * I have a public key ASAvdrzr05XSiCEyyGi1o_GlOXD08rXSu4imYEi0c7O3MAo
 
-To claim this, I am signing this object:
+To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "fingerprint": "fd95a574673eccb94a267169dab861e4501f794c",
-            "host": "keybase.io",
-            "key_id": "DAB861E4501F794C",
-            "uid": "30f08fa65bdb6c99146c4a25a954ed00",
-            "username": "floppy"
-        },
-        "service": {
-            "hostname": "floppy.org.uk",
-            "protocol": "http:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "0101a228b429ac3a95fb44d52c9ec55542c644c2a62fb3d1da9096985c26c12df2a30a",
+      "host": "keybase.io",
+      "kid": "01202f76bcebd395d2882132c868b5a3f1a53970f4f2b5d2bb88a66048b473b3b7300a",
+      "uid": "30f08fa65bdb6c99146c4a25a954ed00",
+      "username": "floppy"
     },
-    "ctime": 1396259896,
-    "expire_in": 157680000,
-    "prev": "b1254351798ee9f5fd5d847d989ecc925da25b8048c5c0b949b8f1e061f75fac",
-    "seqno": 12,
-    "tag": "signature"
+    "merkle_root": {
+      "ctime": 1543147987,
+      "hash": "1d11e50950433ef7b5270bc22e8276b0cfb96e5717b1c01520fe38ae394a01d817b95d9074c048b4258ca2da1257b7a2e405d7ee0d4d18f6828368de5756e4e0",
+      "hash_meta": "a062c7b5c86bcf3f0c72f51846e387e3c8a3db7e61c37d180bb5e2d27d209676",
+      "seqno": 4005320
+    },
+    "service": {
+      "entropy": "Mf3QEqU7H0abxzpBElBJaR0m",
+      "hostname": "floppy.org.uk",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.10.1"
+  },
+  "ctime": 1543148120,
+  "expire_in": 504576000,
+  "prev": "fde156171520b5fa29c5eeb05de25121485bcc5baec121b1580abcf5e7762a12",
+  "seqno": 104,
+  "tag": "signature"
 }
 
-with the aforementioned key, yielding the PGP signature:
+which yields the signature:
 
------BEGIN PGP MESSAGE-----
-Version: GnuPG/MacGPG2 v2.0.19 (Darwin)
-Comment: GPGTools - http://gpgtools.org
-
-owGbwMvMwMXI3Rd4zEp0+lPG0wc+JjEEW9pYVCsl5adUKllVK2Wngqm0zLz01KKC
-osy8EiUrpbQUS9NEU3MTM3Pj1OTkJEuTRCMzc0Mzy5TEJAszw1QTUwPDNHNLk2Ql
-HaWM/GKQDqAxSYnFqXqZ+UAxICc+MwUo6uLoBFTvClLvBlTvDJQrBUsYG6QZWKQl
-mpkmpSSZJVtaGpqYJQMtMU20NDVJTTEwACksTi3KS8xNBTknJ7+goFKpVkcJKFaW
-mZwKcjHIYhR5vfyidL3SbKDWgqL8kvzk/BygVEZJSYEVSGdJZQFIaXlqUjzUkPik
-zLwUoLeBGspSi4oz8/OUrAyBKpNLMkGmGhpbmhmZWlpYmukopVYUZBalxmeCVJia
-m1kYAAHImtQyoJFJhkamJsamhuaWFqmplmmmaSmmKRYm5ilArcDAszQyTQF6LMnC
-wMQi2TTZABiYlkkWaYapBmbAMDRNSwQFYnFqYV4+0GwjoDsT04FmFmem5yWWlBal
-KtV2MsmwMDByMbCxMoFijoGLUwAWn8YcAgy32VaX6FyY4btZODm0TVtI967Qv3SR
-1ek1N92OqeUmrBdOUf8WX3lnncDKme9V2B/FHty3yiTzDUPYpl9ljzy/HE+9HHHx
-8aYmmV+7mYMD/9V+WH/Zakf+1VXZH94+m+UbvV7I/MbP9Qobl3Us6OtU3R8cmB29
-KVFy6vrODZZLHFVSNn97xvBuf112XJ7Toqlvji9K436w8JX6mllvrJ12OKx4vV6m
-b+/kQw7TnXWX/riuWrz6H+fe+veCCxWvdMVUluyb92/Nt7psoaPRJ0UuXyttjtpg
-Vtswv/ZukGtpxRTnnjqu2Dn+z1ptb83fpahf6/DeN1hs76IZDi/vJ+Vzl33b8GKG
-nc7kR8Z/xWwYr9bnffmnUBzUZ6AttcouPMPkCqfF1YWfAqeInjLz+BK7R/YB+wvJ
-Nb9jHq3OWMXcqfHLsXAdY+yz+4Kzq8rK1ySxfXzml7Owt5vhzIaHoo0VR4oa+E12
-GfsHam+4JJ9paj0lYkWvwW1O1v7fa3xaWzTUlP0Cd1av38fh8a+Lg13oUe7rpupr
-zefusu6sYPSc3bSmqG3C4XuvtjEH8rNVmUxRLv+15iFrB3MWh8rx1nsbONd/VHig
-VvvyquZnlyKB0uWJKg6eRb/E8t/s1Wv0rKmp6d8bnxUU3q72VMw69G5Dc9SbNO51
-koxHNu8TqHdJ/nvtdOCywy4sbTIb+xJrYlu8NvH3cq6YK3YgAwA=
-=VXPj
------END PGP MESSAGE-----
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgL3a869OV0oghMshotaPxpTlw9PK10ruIpmBItHOztzAKp3BheWxvYWTESpcCaMQg/eFWFxUgtfopxe6wXeJRIUhbzFuuwSGxWAq89ed2KhLEIIztPEbub7NIvCW8O54JZrdWYTEmPuiSDy9pOkpe7/f/AgHCo3NpZ8RACqSziqgdBsVp4HKXSoTYAaCVkZVpaO5p6EugDYm1oPxus8U/AT44QwmTQoIsZduvNu92awTU1m+LvDpKlp7MCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKqj4NAyVyqweGJObN1UIU/xzYv8zUevPh84Dv37LImgo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
 
 View my publicly-auditable identity here: https://keybase.io/floppy
-
 ==================================================================
