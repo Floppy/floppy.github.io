@@ -7,9 +7,12 @@ layout: default
   <small>
     {% include post/date.html %}
     <i class="fa fa-calendar"></i>
+    Posted
     <a href='{{ page.url | prepend:site.url }}' class='u-url' rel='canonical'>
       {{ time }}
     </a>
+    by
+    <a rel="author" href="{{ site.url }}">James</a>
   </small>
   {% include attribution.html %}
   <div>
