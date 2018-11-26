@@ -1,0 +1,7 @@
+{% if include.article.categories %}
+  <div>
+    {% for category in include.article.categories %}
+      <a class='tag p-category' href='/blog/categories/{{ category }}'>{{ category }}</a>
+    {% endfor %}
+  </div>
+{% endif %}

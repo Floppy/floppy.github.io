@@ -20,17 +20,7 @@
   </div>
   <footer>
     <hr>
-    {% if article.category or article.categories or article.sharing != false %}
-    <div>
-      {% if article.category or article.categories %}
-      <div>
-        <p>
-        {% include post/categories.html %}
-        </p>
-      </div>
-      {% endif %}
-    </div>
-    {% endif %}
+    {% include category_tags.html article=article %}
     <div>
       <div>
         <p>
