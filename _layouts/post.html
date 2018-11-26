@@ -1,52 +1,7 @@
 ---
 layout: default
 ---
-<article class="h-entry">
-  <h1 class='p-name'>{{ page.title }}</h1>
-  <small>
-    {% include post/date.html %}
-    <i class="fa fa-calendar"></i>
-    Posted
-    <a href='{{ page.url | prepend:site.url }}' class='u-url' rel='canonical'>
-      {{ time }}
-    </a>
-    by
-    <a rel="author" class='p-author' href="{{ site.url }}">James</a>
-  </small>
-  {% include attribution.html %}
-  <div>
-    <div class='e-content'>
-      {{ content }}
-    </div>
-  </div>
-  <footer>
-    <hr>
-    {% if page.category or page.categories or page.sharing != false %}
-    <div>
-      {% if page.category or page.categories %}
-      <div>
-        <p>
-        {% if updated %}{{ updated }}<br/>{% else %}{% endif %}
-        {% include post/categories.html %}
-        </p>
-      </div>
-      {% endif %}
-    </div>
-    {% endif %}
-    <div>
-      <div>
-        <p>
-          {% if page.previous.url %}
-            <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
-          {% endif %}
-          {% if page.next.url %}
-            <a href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a>
-          {% endif %}
-        </p>
-      </div>
-    </div>
-  </footer>
-</article>
+{% include article.html article=page %}
 <div>
 {% include comments.html %}
 </div>

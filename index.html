@@ -1,21 +1,8 @@
 ---
 layout: default
 ---
-{% assign post = site.posts[0] %}
-<article>
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <h2>{% include post/date.html %}<i class="fa fa-calendar"></i> {{ time }}</h2>
-  {% if post.categories %}
-    <div>
-      {% for category in post.categories %}
-        <span>{{ category }}</span>
-      {% endfor %}
-    </div>
-  {% endif %}
-  <div>
-    {{ post.content }}
-  </div>
-</article>
+{% assign latest_post = site.posts[0] %}
+{% include article.html article=latest_post %}
 <div>
   <a href="/blog">&larr; Older Posts</a>
 </div>

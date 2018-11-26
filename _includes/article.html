@@ -1,0 +1,47 @@
+{% assign article = include.article %}
+<article class="h-entry">
+  <h1 class='p-name'>{{ article.title }}</h1>
+  <small>
+    <i class="fa fa-calendar"></i>
+    Posted
+    <a href='{{ article.url | prepend:site.url }}' class='u-url' rel='canonical'>
+      <time class='dt-published' datetime="{{ article.date | datetime | date_to_xmlschema }}" pubdate>
+        {{ article.date | date_to_string }}
+      </time>
+    </a>
+    by
+    <a rel="author" class='p-author' href="{{ site.url }}">James</a>
+  </small>
+  {% include attribution.html %}
+  <div>
+    <div class='e-content'>
+      {{ article.content }}
+    </div>
+  </div>
+  <footer>
+    <hr>
+    {% if article.category or article.categories or article.sharing != false %}
+    <div>
+      {% if article.category or article.categories %}
+      <div>
+        <p>
+        {% include post/categories.html %}
+        </p>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+    <div>
+      <div>
+        <p>
+          {% if article.previous.url %}
+            <a href="{{article.previous.url}}" title="Previous Post: {{article.previous.title}}">&laquo; {{article.previous.title}}</a>
+          {% endif %}
+          {% if article.next.url %}
+            <a href="{{article.next.url}}" title="Next Post: {{article.next.title}}">{{article.next.title}} &raquo;</a>
+          {% endif %}
+        </p>
+      </div>
+    </div>
+  </footer>
+</article>
