@@ -1,0 +1,13 @@
+section.comments {
+  line-height: 1.5;
+  max-width: 40em;
+  margin: auto auto;
+
+  section.comment {
+    position: relative;
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 1em;
+    border-radius: 10px;
+  }
+}

@@ -1,54 +1,51 @@
-<section>
+<section class='comments'>
   <h2>Comments</h2>
 
-  <div>
-    {% for comment in site.data.comments[page.slug] %}
+  {% for comment in site.data.comments[page.slug] %}
+    <section class='comment'>
+      {{ comment[1].message  | markdownify }}
+      <small>
+        - <strong>{{ comment[1].name }}</strong> at {{ comment[1].date | date: '%H:%M on %b %d, %Y' }}
+      </small>
+    </section>
+  {% endfor %}
+
+  <section>
+    <h3>Add a comment</h3>
+
+    <form method="POST" action="https://api.staticman.net/v2/entry/Floppy/floppy.github.io/master/comments">
+      <input name="options[redirect]" type="hidden" value="https://floppy.org.uk{{ page.url }}">
+      <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+      <div>
+        <label>Name</label>
+        <div>
+          <input name="fields[name]" type="text">
+        </div>
+      </div>
+      <div>
+        <label>Email</label>
+        <div>
+          <input name="fields[email]" type="email">
+        </div>
+      </div>
+      <div>
+        <label>Comment<br/><small><em>You can use markdown</em></small></label>
+        <div>
+          <textarea name="fields[message]"></textarea>
+        </div>
+      </div>
+      <input type="hidden" name="options[reCaptcha][siteKey]" value="6LeFYHUUAAAAAMQb-zrBtVdLTGkvgP_FJ_A-DKaI">
+      <input type="hidden" name="options[reCaptcha][secret]" value="N6a0XZaGFhz3heoMBAF9NeLicb5nC1Mqx1Z2Vto0ru5DLSZDIC42qlPpsLjBI9yp08I63DYKOsfB8HSYo39tWa6mN1yAi8HMO0ee74kbKLLyfkNG3reqwfUrMgpZT5VJgM/ba/MD5HyVT/cAfBea4j4rMpYkhBLG1gwwHxQ+x/w=">
+      <div>
+        <div data-sitekey="6LeFYHUUAAAAAMQb-zrBtVdLTGkvgP_FJ_A-DKaI"></div>
+      </div>
       <div>
         <div>
-          {{ comment[1].message  | markdownify }}
+           <button type="submit">Comment</button>
         </div>
-        <small>
-          - <strong>{{ comment[1].name }}</strong> at {{ comment[1].date | date: '%H:%M on %b %d, %Y' }}
-        </small>
       </div>
-    {% endfor %}
-  </div>
+    </form>
 
-  <h3>Add a comment</h3>
-
-  <form method="POST" action="https://api.staticman.net/v2/entry/Floppy/floppy.github.io/master/comments">
-    <input name="options[redirect]" type="hidden" value="https://floppy.org.uk{{ page.url }}">
-    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-    <div>
-      <label>Name</label>
-      <div>
-        <input name="fields[name]" type="text">
-      </div>
-    </div>
-    <div>
-      <label>Email</label>
-      <div>
-        <input name="fields[email]" type="email">
-      </div>
-    </div>
-    <div>
-      <label>Comment<br/><small><em>You can use markdown</em></small></label>
-      <div>
-        <textarea name="fields[message]"></textarea>
-      </div>
-    </div>
-    <input type="hidden" name="options[reCaptcha][siteKey]" value="6LeFYHUUAAAAAMQb-zrBtVdLTGkvgP_FJ_A-DKaI">
-    <input type="hidden" name="options[reCaptcha][secret]" value="N6a0XZaGFhz3heoMBAF9NeLicb5nC1Mqx1Z2Vto0ru5DLSZDIC42qlPpsLjBI9yp08I63DYKOsfB8HSYo39tWa6mN1yAi8HMO0ee74kbKLLyfkNG3reqwfUrMgpZT5VJgM/ba/MD5HyVT/cAfBea4j4rMpYkhBLG1gwwHxQ+x/w=">
-    <div>
-      <div data-sitekey="6LeFYHUUAAAAAMQb-zrBtVdLTGkvgP_FJ_A-DKaI"></div>
-    </div>
-    <div>
-      <div>
-         <button type="submit">Comment</button>
-      </div>
-    </div>
-  </form>
-
-  <script src='https://www.google.com/recaptcha/api.js'></script>
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+  </section>
 <section>
