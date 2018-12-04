@@ -2,6 +2,6 @@ User-agent: *
 Disallow: /rest-book
 
 User-agent: *
-Disallow: 
+Disallow:
 
-Sitemap: /sitemap.xml 
+Sitemap: https://floppy.org.uk/sitemap.xml
