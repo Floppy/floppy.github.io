@@ -1,4 +1,7 @@
 User-agent: *
+Disallow: /rest-book
+
+User-agent: *
 Disallow: 
 
 Sitemap: /sitemap.xml 
