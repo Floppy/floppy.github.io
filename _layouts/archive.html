@@ -15,7 +15,7 @@ layout: page
       <div class='details'>
         {% include category_tags.html article=post %}
         <div>
-          <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span>%b</span>&nbsp;<span>%d</span>&nbsp;<span>%Y</span>"}}</time>
+          <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span>%b</span> <span>%d</span> <span>%Y</span>"}}</time>
         </div>
       </div>
     </div>
