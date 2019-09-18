@@ -15,7 +15,7 @@ We're in an era of lies and propaganda, euphemistically labelled "fake news" and
 As Clay Shirky implied during Trump's election campaign, facts are not *sufficient* to win this war:
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en-gb"><p lang="en" dir="ltr">Seeing my timeline during the convention last night made me despair. We&#39;ve brought fact-checkers to a culture war. Time to get serious.</p>&mdash; Clay Shirky (@cshirky) <a href="https://twitter.com/cshirky/status/756569741020377088">22 July 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8" integrity="sha384-YKuNmPEzk+rcw2RjFojCPulLWvBtylHB3pVwUvSzijPm1sAny7FIDKLJivzQPheY" crossorigin="anonymous"></script>
 
 However, facts are *necessary*.
 
