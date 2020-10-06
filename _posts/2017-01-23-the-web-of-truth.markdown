@@ -3,7 +3,7 @@ layout: post
 title: The Web Of Truth
 date: 2017-01-23 00:00
 comments: true
-categories:
+categories: []
 featured_image:
   url: /images/batmanslap.jpg
 ---

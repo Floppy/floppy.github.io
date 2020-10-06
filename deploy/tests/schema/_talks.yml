@@ -1,0 +1,13 @@
+---
+title: "String"
+host:
+  url: "String"
+  name: "String"
+# vimeo: "String"
+config:
+  path: '_talks'
+  ignore:
+  - ..
+  - .
+  - .DS_Store
+  optional: ["vimeo", "youtube"]

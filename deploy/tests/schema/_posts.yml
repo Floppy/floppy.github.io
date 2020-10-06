@@ -1,0 +1,10 @@
+---
+title: "String"
+categories: "Array"
+config:
+  path: '_posts'
+  ignore:
+  - ..
+  - .
+  - .DS_Store
+  optional: []
