@@ -3,7 +3,7 @@ layout: post
 title: "My Mentoring Journey"
 date: 2013-06-04 20:03
 comments: true
-categories:
+categories: []
 ---
 Since January, I've worked at the [Open Data Institute](http://www.theodi.org), which has been a really great experience. As well as being a non-profit with a mission to make the world better, which is already a huge win as far as I'm concerned, the organisation also puts a massive emphasis on culture and people. For a small enterprise (less than 20 people), this is amazing, and I've never seen anything quite like it anywhere I've worked.
 

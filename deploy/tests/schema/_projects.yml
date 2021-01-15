@@ -1,0 +1,9 @@
+---
+title: "String"
+config:
+  path: '_projects'
+  ignore:
+  - ..
+  - .
+  - .DS_Store
+  optional: []
