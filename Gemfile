@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.6.4"
+ruby "~> 3.0"
 
 gem 'github-pages'
 
