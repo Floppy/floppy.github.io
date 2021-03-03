@@ -8,3 +8,5 @@ group :test do
   gem 'jekyll-test'
   gem 'colorize'
 end
+
+gem "webrick", "~> 1.7"
