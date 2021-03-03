@@ -96,7 +96,7 @@ The final step is to enable network support in ChiTuBox so we can actually send 
 
 1. Load up that file in your text editor of choice.
 
-1. Search through the file for anywhere it says `bNetworkSend:0`, change it to `bNetworkSend:1`, and save.
+1. Search through the file for anywhere it says `bNetSending:0`, change it to `bNetSending:1`, and save.
 
 1. Back in ChiTuBox, import the configuration file.
 
