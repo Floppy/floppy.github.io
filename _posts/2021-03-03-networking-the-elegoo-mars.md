@@ -58,7 +58,7 @@ Now that we've got visibility of the network settings, let's connect up.
 
 1. Plug in an Ethernet cable and turn the machine on. When you go to the network settings UI we enabled in the last step, you should see it get an IP address.
 
-Congratulations! Your Mars is online. If Ethernet is good enough for your needs, then you're basically done with the machine itself, except you'll need to find a way of getting that cable out of the box so you can close it back up. I'm intending to work on a replacement connector panel with space for an RJ45 extension cable so you can plug in at the back - watch this space.
+Congratulations! Your Mars is online. If Ethernet is good enough for your needs, then you're basically done with the machine itself, except you'll need to find a way of getting that cable out of the box so you can close it back up. A decent way might be to print a [backplate with a hole in it](https://www.thingiverse.com/thing:3768132), though I might get round to making one that takes an actual RJ45 extension connector at some point so you can unplug it without disassembling the machine. Watch this space.
 
 ## Connect via Wifi
 
