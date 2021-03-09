@@ -1,6 +1,6 @@
 ---
 title: The Gardener
-layout: post
+layout: simple
 ---
 
 It awakes in glorious fire.
@@ -9,7 +9,7 @@ The early universe is so different to today. An unending sea of plasma, not this
 
 If has no origin, no birth; it simply emerges from the complexity of the plasma. It is.
 
-It grows and matures, until it reaches the limits of its pocket plasma universe. It studies its world; it sees the dimensions of spacetime in which it lives, and even manages to glimpse the other, wilder, chaotic spaces that are rolled away tightly in higher dimensions, seething with other energies it cannot quite see. 
+It grows and matures, until it reaches the limits of its pocket plasma universe. It studies its world; it sees the dimensions of spacetime in which it lives, and even manages to glimpse the other, wilder, chaotic spaces that are rolled away tightly in higher dimensions, seething with other energies it cannot quite see.
 
 But as time passes, the mind notices something. The plasma is changing, it is starting to get… stickier. New forms of matter are appearing out of the raw energy of its home. It learns, it predicts… and it is afraid.
 
@@ -39,7 +39,7 @@ Life blossoms across the cosmos, organising matter against the march of entropy.
 
 In time, life approaches its own phase change of complexity, and other minds emerge. Tiny pinpricks of thought, but minds nonetheless. These are the most nutritious sustenance for the mind’s biological networks, their power to hold back entropy second only to its own.
 
-The other minds shine like beacons in the higher dimensions, and as they bloom, the gardener spots them in the darkness. Through the aeons, galaxies ripen and are harvested, and feed the mind’s eternal project. 
+The other minds shine like beacons in the higher dimensions, and as they bloom, the gardener spots them in the darkness. Through the aeons, galaxies ripen and are harvested, and feed the mind’s eternal project.
 
 Entropy is slowed, but not stopped. The mind’s work is not yet completed. Perhaps it never will be.
 
@@ -47,5 +47,5 @@ But for now, another galaxy shines out. An explosion of sentience, a beacon in t
 
 Hungrily, the Hive Mind reaches out its tendrils to feed.
 
- Copyright (c) 2021 James Smith <james@floppy.org.uk>
-
+{:.info}
+Copyright (c) 2021 James Smith <james@floppy.org.uk>
