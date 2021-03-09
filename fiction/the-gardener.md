@@ -7,7 +7,7 @@ It awakes in glorious fire.
 
 The early universe is so different to today. An unending sea of plasma, not this empty void, slowly losing its grip on existence as it cools. In the fire of the first hours, there are currents and gradients. From those, there are patterns, and from those, mind.
 
-If has no origin, no birth; it simply emerges from the complexity of the plasma. It is.
+It has no origin, no birth; it simply emerges from the complexity of the plasma. It is.
 
 It grows and matures, until it reaches the limits of its pocket plasma universe. It studies its world; it sees the dimensions of spacetime in which it lives, and even manages to glimpse the other, wilder, chaotic spaces that are rolled away tightly in higher dimensions, seething with other energies it cannot quite see.
 
