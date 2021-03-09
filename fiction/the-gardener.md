@@ -1,8 +1,7 @@
 ---
 title: The Gardener
+layout: post
 ---
-
-# The Gardener
 
 It awakes in glorious fire.
 
