@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Your Disgustedly
+title: Yours Disgustedly
 date: 2022-10-21 10:00
 comments: true
 categories:
@@ -27,3 +27,5 @@ I wrote to my MP again...
 > Yours in severe disappointment and anger,
 
 > James Smith
+
+If you're as angry as I am, maybe [do the same](https://www.writetothem.com/).
