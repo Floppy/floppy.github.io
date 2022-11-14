@@ -7,8 +7,10 @@ on:
 jobs:
   test:
     strategy:
+      fail-fast: false
       matrix:
         task: ['jekyll:check', 'jekyll:check_external_links']
+        experimental: [false, true]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
