@@ -5,17 +5,22 @@ on:
 - pull_request
 
 jobs:
-  test:
-    strategy:
-      fail-fast: false
-      matrix:
-        task: ['jekyll:check', 'jekyll:check_external_links']
-        experimental: [false, true]
+  jekyll:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: ruby/setup-ruby@v1
       with:
         bundler-cache: true
-    - name: Run tests
-      run: bundle exec rake ${{ matrix.task }}
+    - name: Check build
+      run: bundle exec rake jekyll:check
+  links:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+    - name: Check external links
+      continue-on-error: true
+      run: bundle exec rake jekyll:check_external_links
