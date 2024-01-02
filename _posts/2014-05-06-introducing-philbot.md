@@ -1,12 +1,13 @@
 ---
 title: Introducing Philbot - a DIY storage appliance
-attribution:
-  copyrightHolder:
-    name: Open Data Institute
-    url: https://theodi.org
-  license:
-    name: CC BY-SA 2.0 UK
-    url: https://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB
+republished:
+  attribution:
+    copyrightHolder:
+      name: Open Data Institute
+      url: https://theodi.org
+    license:
+      name: CC BY-SA 2.0 UK
+      url: https://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB
 categories:
   - odi
 ---

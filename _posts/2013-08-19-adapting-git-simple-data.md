@@ -1,12 +1,13 @@
 ---
 title: Adapting Git for simple data
-attribution:
-  copyrightHolder:
-    name: Open Data Institute
-    url: https://theodi.org
-  license:
-    name: CC BY-SA 2.0 UK
-    url: https://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB
+republished:
+  attribution:
+    copyrightHolder:
+      name: Open Data Institute
+      url: https://theodi.org
+    license:
+      name: CC BY-SA 2.0 UK
+      url: https://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB
 categories:
   - odi
   - git
@@ -43,11 +44,11 @@ We also need to use git’s –word-diff option, which is used to show differenc
 Let’s try something stupid first, and say that _every character_ should be treated as a separate word when doing word-diffs. We add a csv file type to a shared git attributes file, and add a diff filter for CSV that specifies a simple word regex that will match any character:
 
     # ~/.config/git/attributes
-    *.csv	diff=csv
+    *.csv diff=csv
 
     # ~/.gitconfig
     [diff "csv"]
-    	wordRegex = .
+     wordRegex = .
 
 `git diff --word-diff data.csv`
 
@@ -59,7 +60,7 @@ However good this looks, it’s not right. The diff picks up the wrong bits as p
 
     # ~/.gitconfig
     [diff "csv"]
-    	wordRegex = [^,\n]+[,\n]|[,]
+     wordRegex = [^,\n]+[,\n]|[,]
 
 The regular expression here took a bit of working out, so I won’t explain character by character, but suffice it to say that it tells git that ‘words’ are things that end in commas or newlines. That turns out to do exactly what we want:
 

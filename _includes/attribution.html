@@ -1,6 +1,20 @@
-{% if page.attribution %}
-  <p class='attribution'>
-    This content is copyright <a href='{{ page.attribution.copyrightHolder.url }}'>{{ page.attribution.copyrightHolder.name }}</a>,
-    republished under <a href='{{ page.attribution.license.url }}'>{{ page.attribution.license.name }}</a>.
-  </p>
+{% if page.republished %}
+<p class='attribution'>
+  This content is copyright
+  <a href='{{ page.republished.attribution.copyrightHolder.url }}'>{{
+    page.republished.attribution.copyrightHolder.name
+    }}</a>,
+  republished
+  {% if page.republished.attribution.license %}
+  under
+  <a href='{{ page.republished.attribution.license.url }}'>{{
+    page.republished.attribution.license.name
+    }}</a>.
+  {% else %}
+  with permission.
+  {% endif %}
+  {% if page.republished.originalUrl %}
+  Originally published at <a href='{{ page.republished.originalUrl }}'>{{ page.republished.originalUrl }}</a>
+  {% endif %}
+</p>
 {% endif %}

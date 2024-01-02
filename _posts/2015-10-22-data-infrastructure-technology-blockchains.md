@@ -1,12 +1,13 @@
 ---
 title: 'Data infrastructure technology: are blockchains the answer?'
-attribution:
-  copyrightHolder:
-    name: Open Data Institute
-    url: https://theodi.org
-  license:
-    name: CC BY-SA 2.0 UK
-    url: https://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB
+republished:
+  attribution:
+    copyrightHolder:
+      name: Open Data Institute
+      url: https://theodi.org
+    license:
+      name: CC BY-SA 2.0 UK
+      url: https://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB
 categories:
   - odi
   - data
@@ -22,9 +23,9 @@ _<small>Photo source: [Flickr - r2hox (CC BY-SA 2.0)](https://www.flickr.com/pho
 
 If data is becoming essential to society, then it must be:
 
-*   resilient – always available when needed, with access able to route around damage. It can’t drop offline because of a datacentre outage, or a forgotten domain renewal.
-*   robust – data must be verifiable and reliable, resistant to tampering. The concepts of [maldata](https://thehackernews.com/2014/05/microsoft-security-essential-found.html) and data spam aren’t in wide circulation yet, but at some point they will be.
-*   scalable – having vital data hosted on a single server will not scale up when that dataset is suddenly in high demand.
+* resilient – always available when needed, with access able to route around damage. It can’t drop offline because of a datacentre outage, or a forgotten domain renewal.
+* robust – data must be verifiable and reliable, resistant to tampering. The concepts of [maldata](https://thehackernews.com/2014/05/microsoft-security-essential-found.html) and data spam aren’t in wide circulation yet, but at some point they will be.
+* scalable – having vital data hosted on a single server will not scale up when that dataset is suddenly in high demand.
 
 A new class of technologies is appearing that cope with many of these problems. In particular, distributed data storage – where the data doesn’t reside in one place but across the network itself – is on the rise. And a lot of people are talking about one specific implementation of that idea: blockchains.
 

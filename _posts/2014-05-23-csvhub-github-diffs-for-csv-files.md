@@ -1,12 +1,13 @@
 ---
 title: CSVHub - GitHub diffs for CSV files
-attribution:
-  copyrightHolder:
-    name: Open Data Institute
-    url: https://theodi.org
-  license:
-    name: CC BY-SA 2.0 UK
-    url: https://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB
+republished:
+  attribution:
+    copyrightHolder:
+      name: Open Data Institute
+      url: https://theodi.org
+    license:
+      name: CC BY-SA 2.0 UK
+      url: https://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB
 categories:
   - odi
   - github
@@ -32,9 +33,9 @@ It will let you see additions, deletions and modifications per-cell, in both com
 
 Want some examples? Install the extension and take a look at these:
 
-*   [theodi/test-data](https://github.com/theodi/test-data/commit/9f391e6e35963b96aa0eed56c20ccd70f326e1f7)
-*   [datasets/s-and-p-500-companies](https://github.com/datasets/s-and-p-500-companies/commit/e64871e745a0d34ec3a0ae1b702886a1925d4cdf#diff-fc13dde00d8f846b940d1524b58652f9R269)
-*   [datasets/gold-prices](https://github.com/datasets/gold-prices/commit/92d91c206a3b5ab2b4bb74575409eff1221d31cb)
+* [theodi/test-data](https://github.com/theodi/test-data/commit/9f391e6e35963b96aa0eed56c20ccd70f326e1f7)
+* [datasets/s-and-p-500-companies](https://github.com/datasets/s-and-p-500-companies/commit/e64871e745a0d34ec3a0ae1b702886a1925d4cdf#diff-fc13dde00d8f846b940d1524b58652f9R269)
+* [datasets/gold-prices](https://github.com/datasets/gold-prices/commit/92d91c206a3b5ab2b4bb74575409eff1221d31cb)
 
 It’s open source, of course, so if you want to contribute improvements, or find any errors in it, you can visit the [GitHub repository](https://github.com/theodi/csvhub).
 
