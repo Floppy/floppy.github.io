@@ -1,6 +1,12 @@
 body > header {
 
-  background-color: #444;
+  background: #444 repeating-linear-gradient(
+    -45deg,
+    #444,
+    #444 20px,
+    #404040 20px,
+    #404040 40px
+  );
   color: white;
   padding: 1em;
   display: flex;
