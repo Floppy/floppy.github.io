@@ -33,7 +33,7 @@ However, wards vary widely in population, so it's not just a matter of
 going to each one once. I should really go to the larger ones more, to try
 and cover the population more evenly.
 
-![Wards](/images/horsham_wards.png)
+![Wards](/images/2014-10-08-face-to-face/horsham_wards.png)
 
 The [Ordnance Survey election map](http://www.ordnancesurvey.co.uk/electionmaps) shows wards as well as constituencies,
 so it's easy enough to find which wards we need to cover. Each area has an
@@ -209,7 +209,7 @@ to the budget too - if it costs me £30 a week for a room, times 28 weeks... erk
 
 But, it's important, so it's time to put my money where my mouth is.
 
-## Let's Go!
+## Let's Go
 
 So, armed with that information and a plan, I've started booking things, and I actually ran
 the first event in the series last night in Roffey North. Keep an eye on the [calendar](http://horsham.somethingnew.org.uk/calendar) for future events, and I'll add them as I get the venues booked in, and if you're in Horsham, hopefully I'll see you soon at an event near you!
