@@ -49,9 +49,9 @@ As it turned out, Something New had been registered before, by Alex. He'd never 
 ## First Refusal
 
 {: .pull-right}
-![Stop](/images/stop.gif)
+![Stop](/images/2015-06-13-the-trials-of-forming-a-party/stop.gif)
 
-On the 27th October, we got a really annoying email from the Electoral Commission. 
+On the 27th October, we got a really annoying email from the Electoral Commission.
 
 > I am writing to let you know that the Commission has considered your application and is unable to register your proposed party name.
 
@@ -76,7 +76,7 @@ OK, well, let's just talk to them. Let's work out how to appeal the decision. Tu
 
 We had a look at the [EC complaints page](https://www.electoralcommission.org.uk/complaints), which said:
 
-> Complaints about decisions made as part of our statutory enforcement work, or other statutory regulatory decisions taken by the Commission (for example registration of party names, descriptions and emblems) are dealt with under our regulatory policies and enforcement policy and/or case management procedures. Depending on the nature of the matter case there may be further rights of challenge by way of statutory appeals or judicial review. 
+> Complaints about decisions made as part of our statutory enforcement work, or other statutory regulatory decisions taken by the Commission (for example registration of party names, descriptions and emblems) are dealt with under our regulatory policies and enforcement policy and/or case management procedures. Depending on the nature of the matter case there may be further rights of challenge by way of statutory appeals or judicial review.
 
 Talking to the Electoral Commission, we were told:
 
@@ -84,7 +84,7 @@ Talking to the Electoral Commission, we were told:
 > The information about how to lodge a complaint is contained in [our guidance](https://www.electoralcommission.org.uk/__data/assets/pdf_file/0003/107697/sp-application-rp.pdf).
 > As the guidance states, the complaints procedure will look at the process that led to the decision and not the decision itself. Appeals against the outcome of the decision will not be considered. You may have rights of challenge by way of judicial review to pursue this.
 
-So we can appeal the procedure but not the decision? We can't just *talk* to someone? Judicial review involves taking them to *court*, that's ludicrous! There must be a better way! 
+So we can appeal the procedure but not the decision? We can't just *talk* to someone? Judicial review involves taking them to *court*, that's ludicrous! There must be a better way!
 
 But no. No luck in all our attempts to discuss with them.
 
@@ -95,7 +95,7 @@ At this point, we were also trying to get in touch with the [Democratic Republic
 ## Pre-action letter
 
 {: .pull-right}
-![Bob Loblaw](/images/loblaw.gif)
+![Bob Loblaw](/images/2015-06-13-the-trials-of-forming-a-party/loblaw.gif)
 
 Nothing was helping, so in early November we took the first step towards judicial review. We knew that we couldn't actually take them to court, but the first step was to write a pre-action letter outlining our case and intention. If that didn't work, then we'd have to drop it.
 
@@ -116,7 +116,7 @@ Anyway, after a couple more conversations, he agreed to remove the description f
 ## Legal response
 
 {: .pull-right}
-![Headdesk](/images/headdesk.gif)
+![Headdesk](/images/2015-06-13-the-trials-of-forming-a-party/headdesk.gif)
 
 Another week after, we got a response from the Commission's lawyer. It was very long and detailed, but consisted basically of a very long "we get to decide and we disagree with you", finishing with something along the lines of "you could have just *talked* to us instead of threatening court".
 
@@ -151,7 +151,7 @@ Incidentally, at this point, we're almost into campaign season proper, and we ca
 ## Christmas Present
 
 {: .pull-right}
-![Eyebrows](/images/eyebrows.gif)
+![Eyebrows](/images/2015-06-13-the-trials-of-forming-a-party/eyebrows.gif)
 
 On Christmas Eve, *another month later*, I got an email from the EC saying that until the DRP remove the description, our application cannot proceed.
 
@@ -196,10 +196,10 @@ Then, at the end of February, I finally get an email saying that we should be re
 
 I call back on the Monday after. Nope. Probably this week instead.
 
-## Success!
+## Success
 
 {: .pull-right}
-![Yes!](/images/yes.gif)
+![Yes!](/images/2015-06-13-the-trials-of-forming-a-party/yes.gif)
 
 It seems like I called a thousand times, though I think it was only another week's delay before, finally, we got it!
 
@@ -211,6 +211,6 @@ We were registered as [PP2486](http://search.electoralcommission.org.uk/English/
 
 ## What a pain
 
-This was probably the biggest hurdle we had to get over in the whole election process. It wasted a lot of time, energy, and caused a lot of stress that was (in my view) completely unnecessary. Everything else went smoothly. 
+This was probably the biggest hurdle we had to get over in the whole election process. It wasted a lot of time, energy, and caused a lot of stress that was (in my view) completely unnecessary. Everything else went smoothly.
 
 I don't believe, unlike some, that the Commission were being obstructive intentionally. I do think though that their combination of vague internal guidance, unhelpful appeal procedures, inconsistent account management, and an extremely slow bureaucracy *can* make it look that way, sometimes.
