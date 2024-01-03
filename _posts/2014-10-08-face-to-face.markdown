@@ -33,7 +33,7 @@ However, wards vary widely in population, so it's not just a matter of
 going to each one once. I should really go to the larger ones more, to try
 and cover the population more evenly.
 
-![Wards](/images/2014-10-08-face-to-face/horsham_wards.png)
+![Wards](/images/posts/2014-10-08-face-to-face/horsham_wards.png)
 
 The [Ordnance Survey election map](http://www.ordnancesurvey.co.uk/electionmaps) shows wards as well as constituencies,
 so it's easy enough to find which wards we need to cover. Each area has an

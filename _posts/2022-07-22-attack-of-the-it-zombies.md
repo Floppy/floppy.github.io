@@ -24,7 +24,7 @@ Any institution that’s been around since before the Information Age (however y
 
 If we were to draw this in a modern technical architecture diagram (I’m using the [C4 model](https://c4model.com/) in [PlantUML](https://www.plantuml.com/) for these diagrams), it might look like this:
 
-![A system diagram showing 5 people (Alice, Bob, Carol, Dave, and Eve) talking to each other and using three systems (Systems 1, 2, and 3) which are labelled as paper in a filing cabinet.](/images/2022-07-22-attack-of-the-it-zombies/image1.png)
+![A system diagram showing 5 people (Alice, Bob, Carol, Dave, and Eve) talking to each other and using three systems (Systems 1, 2, and 3) which are labelled as paper in a filing cabinet.](/images/posts/2022-07-22-attack-of-the-it-zombies/image1.png)
 
 The systems storing the information are paper and filing cabinets, and all the data flows through the people and their tangled web of communications.
 
@@ -34,7 +34,7 @@ Moving into the digital realm, organisations took these processes and replaced t
 
 If we reflect that, our diagram now looks like this:
 
-![A system diagram similar to the one before, except now the systems are 'digital forms' reading and writing from databases. Eve, who was only linked to the other people in the system before, is now making queries of the databases as well.](/images/2022-07-22-attack-of-the-it-zombies/image2.png)
+![A system diagram similar to the one before, except now the systems are 'digital forms' reading and writing from databases. Eve, who was only linked to the other people in the system before, is now making queries of the databases as well.](/images/posts/2022-07-22-attack-of-the-it-zombies/image2.png)
 
 It’s OK, some new things are possible, like Eve digging into the databases directly for her audit information, but it’s not really a different system.
 
@@ -44,7 +44,7 @@ But that’s not the case at all. Yes, paper itself is basic, but secretly every
 
 I mean, of course, human brains. Let’s redraw our diagram, treating our people as technical systems rather than humans, and peel back the layers so we can see inside the brains (ew).
 
-![Another diagram of the same system as last time. This time, the humans in the system are drawn as systems themselves, with a brain doing the talking and using, as well as reading from and writing to a 'memory' database.](/images/2022-07-22-attack-of-the-it-zombies/image3.png)
+![Another diagram of the same system as last time. This time, the humans in the system are drawn as systems themselves, with a brain doing the talking and using, as well as reading from and writing to a 'memory' database.](/images/posts/2022-07-22-attack-of-the-it-zombies/image3.png)
 
 Now we have a truer view of the system, and we can see that if we want to do proper digital transformation of it, we have a problem. If we only think about changing the digital systems, which is the usual context, we’re leaving out a vast part of the existing system. And that part of the system will _route around damage_. It could treat our transformation as damage to its data stores, and instead find other options. For example, shadow systems and personal knowledge.
 
@@ -52,7 +52,7 @@ So, the job of digital transformation is not to make the system smarter. That’
 
 So how do we do this? Well, how about we replace the meat computers with actual computers? Let’s start with some recent hotness, a bit of [Robotic Process Automation (RPA)](https://en.wikipedia.org/wiki/Robotic_process_automation) (or as we old hackers call it, scraping).
 
-![In this diagram, the humans are all at the top, using two web services that read from and write to RPA bots and vice versa. Those robots then read from and write to the digital form systems from before, which do the same to the databases. The humans are no longer linked to each other.](/images/2022-07-22-attack-of-the-it-zombies/image4.png)
+![In this diagram, the humans are all at the top, using two web services that read from and write to RPA bots and vice versa. Those robots then read from and write to the digital form systems from before, which do the same to the databases. The humans are no longer linked to each other.](/images/posts/2022-07-22-attack-of-the-it-zombies/image4.png)
 
 Now our digital systems are used by actual robots, and the humans are out at the edges where they can do uniquely human work like decision making, caring about people, solving unforeseeable problems, and watching Countdown with a cup of tea. There’s a whole seductive thing about automating these sorts of tasks instead of the stuff in the middle – for instance, [AI that makes court judgments](https://www.theguardian.com/technology/2016/oct/24/artificial-intelligence-judge-university-college-london-computer-scientists). This is The Wrong Approach, but that’s a whole other post. Let me know if you want me to write it sometime.
 
@@ -82,7 +82,7 @@ If we can transform our data and connections properly and intentionally, we can 
 
 In the end, when we consider the whole system, maybe we can end up with something more like this (I know I’ve skipped ahead a huge amount here; this is a really complex problem solving process, which many others have explored better than I can here. Maybe next time):
 
-![A diagram of the same system, but now with a layer of shared microservices between the legacy systems and RPA bots. The shared microservices communicate between each other automatically to transfer data over APIs, and the humans interact with those services individually.](/images/2022-07-22-attack-of-the-it-zombies/image5.png)
+![A diagram of the same system, but now with a layer of shared microservices between the legacy systems and RPA bots. The shared microservices communicate between each other automatically to transfer data over APIs, and the humans interact with those services individually.](/images/posts/2022-07-22-attack-of-the-it-zombies/image5.png)
 
 The transformed data and joined up domain means that the services can work together, and lets us move the human data storage into that coherent digital domain over time.
 

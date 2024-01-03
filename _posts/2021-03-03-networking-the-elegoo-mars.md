@@ -56,7 +56,7 @@ Now that we've got visibility of the network settings, let's connect up.
 
 1. Unscrew the four screws in the rear side panel. You might want to slacken off the screws on the top and bottom that hold the vertical pillars in place too, so you can move the panel.
 
-1. Slide the rear panel off. On the left of the machine, you should see the motherboard, and on there if you have the right variant, you will see an RJ45 connector. ![RJ45 connector](/images/2021-03-03-networking-the-elegoo-mars/ethernet.jpeg)
+1. Slide the rear panel off. On the left of the machine, you should see the motherboard, and on there if you have the right variant, you will see an RJ45 connector. ![RJ45 connector](/images/posts/2021-03-03-networking-the-elegoo-mars/ethernet.jpeg)
 
 1. Plug in an Ethernet cable and turn the machine on. When you go to the network settings UI we enabled in the last step, you should see it get an IP address.
 
@@ -69,15 +69,15 @@ If you want Wifi though, there's a bit more to do. It's time to install that [Ch
 {:.info}
 Note: It *might* be possible to use any old EPS8266 board, but from the [Wifi page on ChiTu's website](https://www.chitusystems.com/2020/11/03/how-to-activate-the-wifi-module-function-on-your-3d-printer/) it seems you still need to buy some sort of official code even once you've installed their firmware. Still, if you try it, let me know if you get it working!
 
-1. Remove the front panel from the printer in the same way as you did the back, and slide it out. Don't break the display ribbon cable. ![Motherboard](/images/2021-03-03-networking-the-elegoo-mars/motherboard.jpeg)
+1. Remove the front panel from the printer in the same way as you did the back, and slide it out. Don't break the display ribbon cable. ![Motherboard](/images/posts/2021-03-03-networking-the-elegoo-mars/motherboard.jpeg)
 
-1. Take a look at your board. You're looking for a black 8-pin header at the top of the board, snuggled behind the vertical pillar. It's got "WIFI" written underneath it. If you've got one, then you're good to go. ![Wifi header](/images/2021-03-03-networking-the-elegoo-mars/wifi_header.jpeg)
+1. Take a look at your board. You're looking for a black 8-pin header at the top of the board, snuggled behind the vertical pillar. It's got "WIFI" written underneath it. If you've got one, then you're good to go. ![Wifi header](/images/posts/2021-03-03-networking-the-elegoo-mars/wifi_header.jpeg)
 
 1. Unscrew the top screws from the vertical pillar, and loosen the bottom ones, so that you can move the pillar out a bit. I used the panels to hold up the top while I did this.
 
 1. With the pillar moved out a little, you should be able to insert the Wifi module into the black header (obviously do this with the printer off). It fits pointing downwards towards the other side of the motherboard, not sticking up above it.
 
-1. Turn on your printer. You should see a red LED come on on the Wifi module. ![Wifi board](/images/2021-03-03-networking-the-elegoo-mars/wifi_board.jpeg)
+1. Turn on your printer. You should see a red LED come on on the Wifi module. ![Wifi board](/images/posts/2021-03-03-networking-the-elegoo-mars/wifi_board.jpeg)
 
 1. Reassemble the vertical pillar and fix the front and rear panels back into place.
 
@@ -105,7 +105,7 @@ Now, when you have sliced your print, above the save button you should see "Netw
 
 Once the upload is complete, it will even ask you if you want to start the print! Proceed to enjoy the feeling of success as you start a resin print without leaving your chair. You can also print the file from the screen in the usual way, the file is on the USB stick just as if you'd copied it there yourself.
 
-![Print!](/images/2021-03-03-networking-the-elegoo-mars/print.jpeg)
+![Print!](/images/posts/2021-03-03-networking-the-elegoo-mars/print.jpeg)
 
 ## ERROR: lp0 on fire
 

@@ -88,7 +88,7 @@ We had 8 candidates in the last election. During the long campaign (see yesterda
 </tbody>
 </table>
 
-[![2010 Horsham Campaign Spending](/images/2014-07-08-diving-into-election-finances/2010_horsham_campaign_spending.png)](https://plot.ly/~Floppy/1)
+[![2010 Horsham Campaign Spending](/images/posts/2014-07-08-diving-into-election-finances/2010_horsham_campaign_spending.png)](https://plot.ly/~Floppy/1)
 
 So, what can we learn from this?
 

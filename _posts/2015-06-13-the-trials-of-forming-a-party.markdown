@@ -49,7 +49,7 @@ As it turned out, Something New had been registered before, by Alex. He'd never 
 ## First Refusal
 
 {: .pull-right}
-![Stop](/images/2015-06-13-the-trials-of-forming-a-party/stop.gif)
+![Stop](/images/posts/2015-06-13-the-trials-of-forming-a-party/stop.gif)
 
 On the 27th October, we got a really annoying email from the Electoral Commission.
 
@@ -95,7 +95,7 @@ At this point, we were also trying to get in touch with the [Democratic Republic
 ## Pre-action letter
 
 {: .pull-right}
-![Bob Loblaw](/images/2015-06-13-the-trials-of-forming-a-party/loblaw.gif)
+![Bob Loblaw](/images/posts/2015-06-13-the-trials-of-forming-a-party/loblaw.gif)
 
 Nothing was helping, so in early November we took the first step towards judicial review. We knew that we couldn't actually take them to court, but the first step was to write a pre-action letter outlining our case and intention. If that didn't work, then we'd have to drop it.
 
@@ -116,7 +116,7 @@ Anyway, after a couple more conversations, he agreed to remove the description f
 ## Legal response
 
 {: .pull-right}
-![Headdesk](/images/2015-06-13-the-trials-of-forming-a-party/headdesk.gif)
+![Headdesk](/images/posts/2015-06-13-the-trials-of-forming-a-party/headdesk.gif)
 
 Another week after, we got a response from the Commission's lawyer. It was very long and detailed, but consisted basically of a very long "we get to decide and we disagree with you", finishing with something along the lines of "you could have just *talked* to us instead of threatening court".
 
@@ -151,7 +151,7 @@ Incidentally, at this point, we're almost into campaign season proper, and we ca
 ## Christmas Present
 
 {: .pull-right}
-![Eyebrows](/images/2015-06-13-the-trials-of-forming-a-party/eyebrows.gif)
+![Eyebrows](/images/posts/2015-06-13-the-trials-of-forming-a-party/eyebrows.gif)
 
 On Christmas Eve, *another month later*, I got an email from the EC saying that until the DRP remove the description, our application cannot proceed.
 
@@ -199,7 +199,7 @@ I call back on the Monday after. Nope. Probably this week instead.
 ## Success
 
 {: .pull-right}
-![Yes!](/images/2015-06-13-the-trials-of-forming-a-party/yes.gif)
+![Yes!](/images/posts/2015-06-13-the-trials-of-forming-a-party/yes.gif)
 
 It seems like I called a thousand times, though I think it was only another week's delay before, finally, we got it!
 
