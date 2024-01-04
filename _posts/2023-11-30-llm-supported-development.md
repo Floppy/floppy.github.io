@@ -30,7 +30,7 @@ Sweep goes away and starts adding comments to the ticket about what it's doing. 
 
 ![Sweep planning out what it's going to write](/images/posts/2023-11-30-llm-supported-development/coding.png)
 
-Once it's done that, it [opens a pull request](https://github.com/Floppy/van_dam/pull/1653) with its changes, just as a human would. The tests and checks run, and if something fails, Sweep automatically reads the errors, feeding it back into the changes it made. You can then do a human pass over the PR (as you would with any code) and provide feedback just as you would for a human colleague.
+Once it's done that, it [opens a pull request](https://github.com/manyfold3d/manyfold/pull/1653) with its changes, just as a human would. The tests and checks run, and if something fails, Sweep automatically reads the errors, feeding it back into the changes it made. You can then do a human pass over the PR (as you would with any code) and provide feedback just as you would for a human colleague.
 
 ![A detailed PR description , written by Sweep](/images/posts/2023-11-30-llm-supported-development/pr.png)
 
