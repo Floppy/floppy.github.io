@@ -40,12 +40,11 @@ titlecase: true       # Converts page and post titles to titlecase
 # Github repositories
 github_user: Floppy
 
-# Keybase.io
-keybase_user: floppy
+# PGP
+keyoxide_user: BB87E90E3A03BA98FD1E7C43BF20545FD5122D5D
 
-# Twitter
-twitter_user: floppy
-twitter_tweet_button: true
+# Matrix
+matrix_user: "@james:floppy.org.uk"
 
 # Mastodon
 mastodon_user: https://mastodon.me.uk/@Floppy
