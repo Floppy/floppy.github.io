@@ -2,12 +2,12 @@
   <h2>Comments</h2>
 
   {% for comment in site.data.comments[page.slug] %}
-    <section class='comment'>
-      {{ comment[1].message  | markdownify }}
-      <small>
-        - <strong>{{ comment[1].name }}</strong> at {{ comment[1].date | date: '%H:%M on %b %d, %Y' }}
-      </small>
-    </section>
+  <section class='comment'>
+    {{ comment[1].message | markdownify }}
+    <small>
+      - <strong>{{ comment[1].name }}</strong> at {{ comment[1].date | date: '%H:%M on %b %d, %Y' }}
+    </small>
+  </section>
   {% endfor %}
 
   <section>
@@ -29,23 +29,24 @@
         </div>
       </div>
       <div>
-        <label>Comment<br/><small><em>You can use markdown</em></small></label>
+        <label>Comment<br /><small><em>You can use markdown</em></small></label>
         <div>
           <textarea name="fields[message]"></textarea>
         </div>
       </div>
       <input type="hidden" name="options[reCaptcha][siteKey]" value="6LeFYHUUAAAAAMQb-zrBtVdLTGkvgP_FJ_A-DKaI">
-      <input type="hidden" name="options[reCaptcha][secret]" value="N6a0XZaGFhz3heoMBAF9NeLicb5nC1Mqx1Z2Vto0ru5DLSZDIC42qlPpsLjBI9yp08I63DYKOsfB8HSYo39tWa6mN1yAi8HMO0ee74kbKLLyfkNG3reqwfUrMgpZT5VJgM/ba/MD5HyVT/cAfBea4j4rMpYkhBLG1gwwHxQ+x/w=">
+      <input type="hidden" name="options[reCaptcha][secret]"
+        value="N6a0XZaGFhz3heoMBAF9NeLicb5nC1Mqx1Z2Vto0ru5DLSZDIC42qlPpsLjBI9yp08I63DYKOsfB8HSYo39tWa6mN1yAi8HMO0ee74kbKLLyfkNG3reqwfUrMgpZT5VJgM/ba/MD5HyVT/cAfBea4j4rMpYkhBLG1gwwHxQ+x/w=">
       <div>
         <div data-sitekey="6LeFYHUUAAAAAMQb-zrBtVdLTGkvgP_FJ_A-DKaI"></div>
       </div>
       <div>
         <div>
-           <button type="submit">Comment</button>
+          <button type="submit">Comment</button>
         </div>
       </div>
     </form>
 
     <script src='https://www.google.com/recaptcha/api.js' data-proofer-ignore></script>
   </section>
-<section>
+</section>
